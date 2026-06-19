@@ -1,0 +1,20 @@
+[
+  {
+    "id": "test-001",
+    "title": "理芽 配信テスト",
+    "channelName": "理芽",
+    "group": "V.W.P",
+    "startAt": "2026-06-20T21:00:00+09:00",
+    "url": "https://www.youtube.com/",
+    "thumbnailUrl": ""
+  },
+  {
+    "id": "test-002",
+    "title": "花譜 雑談テスト",
+    "channelName": "花譜",
+    "group": "V.W.P",
+    "startAt": "2026-06-21T20:00:00+09:00",
+    "url": "https://www.youtube.com/",
+    "thumbnailUrl": ""
+  }
+]

@@ -1,26 +1,51 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-19T13:02:00+09:00",
+  "generatedAt": "2026-06-21T03:25:17+09:00",
   "groups": [
+    {
+      "groupId": "kamitsubaki",
+      "displayName": "KAMITSUBAKI",
+      "description": "神椿関連チャンネル"
+    },
     {
       "groupId": "vwp",
       "displayName": "V.W.P",
       "description": "V.W.P関連チャンネル"
     },
     {
+      "groupId": "kuusou",
+      "displayName": "空爽",
+      "description": "CIEL / Sooda / 空爽関連"
+    },
+    {
+      "groupId": "girls_revolution_project",
+      "displayName": "少女革命計画",
+      "description": "少女革命計画関連チャンネル"
+    },
+    {
+      "groupId": "tsumitobatsu",
+      "displayName": "罪十罰",
+      "description": "少女革命計画 罪十罰"
+    },
+    {
+      "groupId": "shinseiki",
+      "displayName": "心世紀",
+      "description": "少女革命計画 心世紀"
+    },
+    {
       "groupId": "solo",
-      "displayName": "ソロ",
-      "description": "個人チャンネル"
+      "displayName": "個人メイン",
+      "description": "個人のメインチャンネル"
+    },
+    {
+      "groupId": "sub_channel",
+      "displayName": "配信/サブ",
+      "description": "配信・メンバーシップ用などのサブチャンネル"
     },
     {
       "groupId": "official",
-      "displayName": "公式/番組",
-      "description": "公式・番組系"
-    },
-    {
-      "groupId": "other",
-      "displayName": "その他",
-      "description": "その他関連"
+      "displayName": "公式/グループ",
+      "description": "公式・グループチャンネル"
     }
   ],
   "channels": [
@@ -28,43 +53,52 @@
       "talentId": "kaf",
       "displayName": "花譜",
       "groupIds": [
+        "kamitsubaki",
         "vwp",
         "solo"
       ],
       "tags": [
+        "main",
         "artist"
       ],
       "youtubeChannelId": "UCQ1U65-CQdIoZ2_NA4Z4F7A",
+      "uploadsPlaylistId": "UUQ1U65-CQdIoZ2_NA4Z4F7A",
       "channelName": "花譜 -KAF-",
       "colorKey": "kaf",
       "enabled": true
     },
     {
-      "talentId": "rim",
+      "talentId": "rime",
       "displayName": "理芽",
       "groupIds": [
+        "kamitsubaki",
         "vwp",
         "solo"
       ],
       "tags": [
+        "main",
         "artist"
       ],
       "youtubeChannelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "uploadsPlaylistId": "UUfBkUgaJ6eqYA9_TX2cmq9A",
       "channelName": "理芽 -RIM-",
-      "colorKey": "rim",
+      "colorKey": "rime",
       "enabled": true
     },
     {
       "talentId": "harusaruhi",
       "displayName": "春猿火",
       "groupIds": [
+        "kamitsubaki",
         "vwp",
         "solo"
       ],
       "tags": [
+        "main",
         "artist"
       ],
       "youtubeChannelId": "UCE7gtjLeZKNXLp5YURzYYeg",
+      "uploadsPlaylistId": "UUE7gtjLeZKNXLp5YURzYYeg",
       "channelName": "春猿火 -HARUSARUHI-",
       "colorKey": "harusaruhi",
       "enabled": true
@@ -73,13 +107,16 @@
       "talentId": "isekaijoucho",
       "displayName": "ヰ世界情緒",
       "groupIds": [
+        "kamitsubaki",
         "vwp",
         "solo"
       ],
       "tags": [
+        "main",
         "artist"
       ],
       "youtubeChannelId": "UCah4_WVjmr8XA7i5aigwV-Q",
+      "uploadsPlaylistId": "UUah4_WVjmr8XA7i5aigwV-Q",
       "channelName": "ヰ世界情緒 -Isekaijoucho-",
       "colorKey": "isekaijoucho",
       "enabled": true
@@ -88,14 +125,107 @@
       "talentId": "koko",
       "displayName": "幸祜",
       "groupIds": [
+        "kamitsubaki",
         "vwp",
         "solo"
       ],
       "tags": [
+        "main",
         "artist"
       ],
       "youtubeChannelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "uploadsPlaylistId": "UU7Gow-kNHq21oejSIDg9PAg",
       "channelName": "幸祜 -KOKO-",
+      "colorKey": "koko",
+      "enabled": true
+    },
+    {
+      "talentId": "kaf_mikakunin",
+      "displayName": "花譜 -未確認少女観測部-",
+      "groupIds": [
+        "kamitsubaki",
+        "vwp",
+        "sub_channel"
+      ],
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "youtubeChannelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
+      "uploadsPlaylistId": "UUkJYa9mVS25eHOO9bM7YK3Q",
+      "channelName": "花譜 -未確認少女観測部-",
+      "colorKey": "kaf",
+      "enabled": true
+    },
+    {
+      "talentId": "rime_strange_girl_club",
+      "displayName": "理芽 -STRANGE GIRL CLUB-",
+      "groupIds": [
+        "kamitsubaki",
+        "vwp",
+        "sub_channel"
+      ],
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "youtubeChannelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "uploadsPlaylistId": "UUZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "colorKey": "rime",
+      "enabled": true
+    },
+    {
+      "talentId": "harusaruhi_taifu_club",
+      "displayName": "春猿火 -台風倶楽部-",
+      "groupIds": [
+        "kamitsubaki",
+        "vwp",
+        "sub_channel"
+      ],
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "youtubeChannelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "uploadsPlaylistId": "UU5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 -台風倶楽部-",
+      "colorKey": "harusaruhi",
+      "enabled": true
+    },
+    {
+      "talentId": "isekaijoucho_denshi",
+      "displayName": "ヰ世界情緒 -ヰ世界電子通信部-",
+      "groupIds": [
+        "kamitsubaki",
+        "vwp",
+        "sub_channel"
+      ],
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "youtubeChannelId": "UC3VN9h8fokwB2XURWHNcdWw",
+      "uploadsPlaylistId": "UU3VN9h8fokwB2XURWHNcdWw",
+      "channelName": "ヰ世界情緒 -ヰ世界電子通信部-",
+      "colorKey": "isekaijoucho",
+      "enabled": true
+    },
+    {
+      "talentId": "koko_kofuku_kakucho",
+      "displayName": "幸祜 -幸福拡張部電脳科-",
+      "groupIds": [
+        "kamitsubaki",
+        "vwp",
+        "sub_channel"
+      ],
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "youtubeChannelId": "UCyCbd63S29BuFOkJC2-aR4g",
+      "uploadsPlaylistId": "UUyCbd63S29BuFOkJC2-aR4g",
+      "channelName": "幸祜 -幸福拡張部電脳科-",
       "colorKey": "koko",
       "enabled": true
     },
@@ -103,29 +233,225 @@
       "talentId": "ciel",
       "displayName": "CIEL",
       "groupIds": [
+        "kamitsubaki",
+        "kuusou",
         "solo"
       ],
       "tags": [
+        "main",
         "artist"
       ],
       "youtubeChannelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
+      "uploadsPlaylistId": "UURvkXFtB70ZADg4L6A8L3wQ",
       "channelName": "CIEL",
       "colorKey": "ciel",
       "enabled": true
     },
     {
-      "talentId": "official",
-      "displayName": "KAMITSUBAKI公式",
+      "talentId": "sooda",
+      "displayName": "Sooda",
       "groupIds": [
+        "kamitsubaki",
+        "kuusou",
+        "solo"
+      ],
+      "tags": [
+        "main",
+        "artist"
+      ],
+      "youtubeChannelId": "UCRYh9eOSnwcT6aftSf8hYUw",
+      "uploadsPlaylistId": "UURYh9eOSnwcT6aftSf8hYUw",
+      "channelName": "Sooda",
+      "colorKey": "sooda",
+      "enabled": true
+    },
+    {
+      "talentId": "mikoto",
+      "displayName": "美古途",
+      "groupIds": [
+        "kamitsubaki",
+        "girls_revolution_project",
+        "tsumitobatsu",
+        "solo"
+      ],
+      "tags": [
+        "main",
+        "artist"
+      ],
+      "youtubeChannelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "uploadsPlaylistId": "UU1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途",
+      "colorKey": "mikoto",
+      "enabled": true
+    },
+    {
+      "talentId": "yunagi",
+      "displayName": "夕凪機",
+      "groupIds": [
+        "kamitsubaki",
+        "girls_revolution_project",
+        "tsumitobatsu",
+        "solo"
+      ],
+      "tags": [
+        "main",
+        "artist"
+      ],
+      "youtubeChannelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "uploadsPlaylistId": "UU9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機",
+      "colorKey": "yunagi",
+      "enabled": true
+    },
+    {
+      "talentId": "hinageshi",
+      "displayName": "氷夏至",
+      "groupIds": [
+        "kamitsubaki",
+        "girls_revolution_project",
+        "tsumitobatsu",
+        "solo"
+      ],
+      "tags": [
+        "main",
+        "artist"
+      ],
+      "youtubeChannelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "uploadsPlaylistId": "UUTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至",
+      "colorKey": "hinageshi",
+      "enabled": true
+    },
+    {
+      "talentId": "kakyoin",
+      "displayName": "佳鏡院",
+      "groupIds": [
+        "kamitsubaki",
+        "girls_revolution_project",
+        "shinseiki",
+        "solo"
+      ],
+      "tags": [
+        "main",
+        "artist"
+      ],
+      "youtubeChannelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "uploadsPlaylistId": "UU0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院",
+      "colorKey": "kakyoin",
+      "enabled": true
+    },
+    {
+      "talentId": "orihime",
+      "displayName": "御莉姫",
+      "groupIds": [
+        "kamitsubaki",
+        "girls_revolution_project",
+        "shinseiki",
+        "solo"
+      ],
+      "tags": [
+        "main",
+        "artist"
+      ],
+      "youtubeChannelId": "UCPzB4ROWho13wC9ngTCz1hA",
+      "uploadsPlaylistId": "UUPzB4ROWho13wC9ngTCz1hA",
+      "channelName": "御莉姫",
+      "colorKey": "orihime",
+      "enabled": true
+    },
+    {
+      "talentId": "garasumiya",
+      "displayName": "硝子宮",
+      "groupIds": [
+        "kamitsubaki",
+        "girls_revolution_project",
+        "shinseiki",
+        "solo"
+      ],
+      "tags": [
+        "main",
+        "artist"
+      ],
+      "youtubeChannelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "uploadsPlaylistId": "UUzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮",
+      "colorKey": "garasumiya",
+      "enabled": true
+    },
+    {
+      "talentId": "kamitsubaki_official",
+      "displayName": "KAMITSUBAKI STUDIO",
+      "groupIds": [
+        "kamitsubaki",
         "official"
       ],
       "tags": [
         "official"
       ],
       "youtubeChannelId": "UCAOhUv73jM5iCpOhuJOQzxA",
+      "uploadsPlaylistId": "UUAOhUv73jM5iCpOhuJOQzxA",
       "channelName": "KAMITSUBAKI STUDIO",
       "colorKey": "official",
       "enabled": true
+    },
+    {
+      "talentId": "vwp_official",
+      "displayName": "V.W.P",
+      "groupIds": [
+        "kamitsubaki",
+        "vwp",
+        "official"
+      ],
+      "tags": [
+        "official",
+        "group"
+      ],
+      "youtubeChannelId": "UCfiSo8tO3WPU-8YOgr4Ba6g",
+      "uploadsPlaylistId": "UUfiSo8tO3WPU-8YOgr4Ba6g",
+      "channelName": "V.W.P -Virtual Witch Phenomenon-",
+      "colorKey": "vwp",
+      "enabled": true
+    },
+    {
+      "talentId": "kuusou_official_todo",
+      "displayName": "空爽 公式（ID未確定）",
+      "groupIds": [
+        "kamitsubaki",
+        "kuusou",
+        "official"
+      ],
+      "tags": [
+        "official",
+        "group",
+        "todo"
+      ],
+      "youtubeChannelId": "TODO_KUUSOU_OFFICIAL_TODO",
+      "channelName": "空爽 公式（ID未確定）",
+      "colorKey": "kuusou",
+      "enabled": false,
+      "handleUrl": "https://www.youtube.com/@kuusou_virtual",
+      "note": "チャンネルID確定後に youtubeChannelId を UC... に置換して enabled を true にしてください。"
+    },
+    {
+      "talentId": "grp_official_todo",
+      "displayName": "少女革命計画 公式（ID未確定）",
+      "groupIds": [
+        "kamitsubaki",
+        "girls_revolution_project",
+        "official"
+      ],
+      "tags": [
+        "official",
+        "group",
+        "todo"
+      ],
+      "youtubeChannelId": "TODO_GRP_OFFICIAL_TODO",
+      "channelName": "少女革命計画 公式（ID未確定）",
+      "colorKey": "girls_revolution_project",
+      "enabled": false,
+      "handleUrl": "https://www.youtube.com/@girls_rev_pj",
+      "note": "チャンネルID確定後に youtubeChannelId を UC... に置換して enabled を true にしてください。"
     }
   ]
 }

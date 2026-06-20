@@ -138,14 +138,7 @@ function isPlaceholderChannelId(channelId) {
 }
 
 function getBestThumbnail(thumbnails = {}) {
-  return (
-    thumbnails.maxres?.url ||
-    thumbnails.standard?.url ||
-    thumbnails.high?.url ||
-    thumbnails.medium?.url ||
-    thumbnails.default?.url ||
-    ''
-  );
+  return thumbnails.high?.url || thumbnails.medium?.url || thumbnails.default?.url || '';
 }
 
 function toIsoString(value) {

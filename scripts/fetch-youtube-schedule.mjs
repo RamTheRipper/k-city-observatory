@@ -9,7 +9,10 @@ const channelsPath = path.join(publicDir, 'channels.json');
 const schedulePath = path.join(publicDir, 'schedule.json');
 const manualSchedulePath = path.join(publicDir, 'manual-schedule.json');
 const youtubeApiBase = 'https://www.googleapis.com/youtube/v3';
-const eventTypes = ['upcoming', 'live', 'completed'];
+const defaultEventTypes = ['upcoming', 'live'];
+const completedEventType = 'completed';
+const maxSearchResults = 5;
+const maxVideosListIds = 50;
 
 class YouTubeApiError extends Error {
   constructor(message, statusCode, endpoint) {
@@ -17,10 +20,23 @@ class YouTubeApiError extends Error {
     this.name = 'YouTubeApiError';
     this.statusCode = statusCode;
     this.endpoint = endpoint;
+    this.isQuotaExceeded = /quota/i.test(message);
   }
 }
 
-function createEventStats() {
+function shouldIncludeCompleted() {
+  return (
+    process.argv.includes('--include-completed') ||
+    process.env.INCLUDE_COMPLETED === 'true' ||
+    process.env.FETCH_COMPLETED === 'true'
+  );
+}
+
+function getEventTypes() {
+  return shouldIncludeCompleted() ? [...defaultEventTypes, completedEventType] : defaultEventTypes;
+}
+
+function createEventStats(eventTypes) {
   return Object.fromEntries(
     eventTypes.map((eventType) => [
       eventType,
@@ -29,6 +45,7 @@ function createEventStats() {
         detailResults: 0,
         withLiveStreamingDetails: 0,
         convertedSchedules: 0,
+        convertedFromSearchFallback: 0,
         missingDetails: 0,
         missingLiveStreamingDetails: 0,
         missingDate: 0,
@@ -175,7 +192,7 @@ function getStartInfo(snippet = {}, liveStreamingDetails = {}) {
   return { startAt: new Date().toISOString(), source: 'fallback-now' };
 }
 
-function mapScheduleItem(video, channel, eventType) {
+function mapScheduleItemFromDetail(video, channel, eventType) {
   const snippet = video.snippet || {};
   const liveStreamingDetails = video.liveStreamingDetails || {};
   const videoId = video.id;
@@ -205,6 +222,30 @@ function mapScheduleItem(video, channel, eventType) {
   };
 }
 
+function mapScheduleItemFromSearchResult(result) {
+  const snippet = result.snippet || {};
+  const channel = result.channel;
+  const videoId = result.videoId;
+  const startAt = toIsoString(snippet.publishedAt) || new Date().toISOString();
+
+  return {
+    id: videoId,
+    title: snippet.title || 'Untitled',
+    channelId: channel.youtubeChannelId,
+    channelName: getScheduleChannelName(channel, snippet),
+    startAt,
+    endAt: null,
+    url: `https://www.youtube.com/watch?v=${videoId}`,
+    thumbnailUrl: getBestThumbnail(snippet.thumbnails),
+    group: channel.group,
+    groupIds: channel.groupIds,
+    tags: channel.tags,
+    category: channel.category || '',
+    status: result.eventType === 'live' ? 'live' : 'upcoming',
+    isManual: false,
+  };
+}
+
 async function youtubeGet(endpoint, params, apiKey) {
   const url = new URL(`${youtubeApiBase}/${endpoint}`);
 
@@ -228,7 +269,9 @@ async function youtubeGet(endpoint, params, apiKey) {
   return data;
 }
 
-async function searchVideos(channel, eventType, apiKey) {
+async function searchVideos(channel, eventType, apiKey, counters) {
+  counters.executedSearchCalls += 1;
+
   try {
     const data = await youtubeGet(
       'search',
@@ -238,7 +281,7 @@ async function searchVideos(channel, eventType, apiKey) {
         type: 'video',
         eventType,
         order: 'date',
-        maxResults: eventType === 'completed' ? 8 : 5,
+        maxResults: maxSearchResults,
       },
       apiKey,
     );
@@ -246,6 +289,7 @@ async function searchVideos(channel, eventType, apiKey) {
     const videos = (data.items || [])
       .map((item) => ({
         videoId: item.id?.videoId,
+        snippet: item.snippet || {},
         channel,
         eventType,
       }))
@@ -263,34 +307,49 @@ async function searchVideos(channel, eventType, apiKey) {
       `YouTube API search failed: status=${status}, channel="${getChannelLabel(
         channel,
       )}", youtubeChannelId="${channel.youtubeChannelId}", eventType=${eventType}, message="${message}"`,
+      { cause: error },
     );
   }
 }
 
-async function fetchVideoDetails(videoIds, apiKey) {
-  if (videoIds.length === 0) {
+async function fetchVideoDetails(videoIds, apiKey, counters) {
+  const limitedVideoIds = videoIds.slice(0, maxVideosListIds);
+
+  if (videoIds.length > maxVideosListIds) {
+    console.warn(
+      `[quota] videos.list input truncated from ${videoIds.length} to ${maxVideosListIds} IDs.`,
+    );
+  }
+
+  if (limitedVideoIds.length === 0) {
     console.warn('[youtube] videos.list skipped because search returned 0 unique video IDs.');
     return [];
   }
+
+  counters.executedVideosListCalls += 1;
 
   try {
     const data = await youtubeGet(
       'videos',
       {
         part: 'snippet,liveStreamingDetails',
-        id: videoIds.join(','),
-        maxResults: 50,
+        id: limitedVideoIds.join(','),
+        maxResults: maxVideosListIds,
       },
       apiKey,
     );
 
     const items = data.items || [];
-    console.log(`[youtube] videos.list enriched ${items.length}/${videoIds.length} unique videos.`);
+    console.log(
+      `[youtube] videos.list call #${counters.executedVideosListCalls}: requested=${limitedVideoIds.length}, enriched=${items.length}.`,
+    );
     return items;
   } catch (error) {
     const status = error instanceof YouTubeApiError ? error.statusCode : 'unknown';
     const message = error instanceof Error ? error.message : String(error);
-    throw new Error(`YouTube API videos.list failed: status=${status}, message="${message}"`);
+    throw new Error(`YouTube API videos.list failed: status=${status}, message="${message}"`, {
+      cause: error,
+    });
   }
 }
 
@@ -306,11 +365,11 @@ function dedupeSchedules(items) {
   return [...byId.values()].sort((a, b) => new Date(a.startAt) - new Date(b.startAt));
 }
 
-function logStats(stats) {
+function logStats(stats, eventTypes) {
   for (const eventType of eventTypes) {
     const stat = stats[eventType];
     console.log(
-      `[summary] ${eventType}: search=${stat.searchResults}, details=${stat.detailResults}, withLiveStreamingDetails=${stat.withLiveStreamingDetails}, converted=${stat.convertedSchedules}.`,
+      `[summary] ${eventType}: search=${stat.searchResults}, details=${stat.detailResults}, withLiveStreamingDetails=${stat.withLiveStreamingDetails}, converted=${stat.convertedSchedules}, searchFallback=${stat.convertedFromSearchFallback}.`,
     );
 
     if (eventType === 'completed') {
@@ -319,6 +378,25 @@ function logStats(stats) {
       );
     }
   }
+}
+
+function isQuotaExceeded(error) {
+  if (error instanceof YouTubeApiError) {
+    return error.isQuotaExceeded;
+  }
+
+  if (error instanceof Error) {
+    return /quota/i.test(error.message) || isQuotaExceeded(error.cause);
+  }
+
+  return false;
+}
+
+async function writeSchedule(output) {
+  console.log(`[schedule] Output path: ${schedulePath}`);
+  console.log(`[schedule] Writing ${output.length} schedules.`);
+  await writeFile(schedulePath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
+  console.log(`[schedule] Wrote ${output.length} schedules to ${schedulePath}.`);
 }
 
 async function main() {
@@ -332,11 +410,20 @@ async function main() {
   const enabledChannels = channels.filter(
     (channel) => channel.enabled && !isPlaceholderChannelId(channel.youtubeChannelId),
   );
+  const eventTypes = getEventTypes();
+  const counters = {
+    plannedSearchCalls: enabledChannels.length * eventTypes.length,
+    executedSearchCalls: 0,
+    executedVideosListCalls: 0,
+  };
 
   console.log(`[channels] Loading file: ${channelsPath}`);
   console.log(`[channels] Loaded channels: ${channels.length}.`);
   console.log(`[channels] enabled=true channels: ${enabledCount}.`);
   console.log(`[channels] fetch targets after excluding placeholders: ${enabledChannels.length}.`);
+  console.log(`[quota] Event types for this run: ${eventTypes.join(', ')}.`);
+  console.log(`[quota] Planned search.list calls: ${counters.plannedSearchCalls}.`);
+  console.log('[quota] Planned videos.list calls: 0 or 1, batched up to 50 video IDs.');
 
   for (const channel of enabledChannels) {
     console.log(`[channels] target: ${getChannelLabel(channel)} (${channel.youtubeChannelId})`);
@@ -348,20 +435,21 @@ async function main() {
   }
 
   try {
-    const stats = createEventStats();
+    const stats = createEventStats(eventTypes);
     const searchResults = [];
 
     for (const channel of enabledChannels) {
       console.log(`[youtube] Fetching channel "${getChannelLabel(channel)}" (${channel.youtubeChannelId}).`);
 
       for (const eventType of eventTypes) {
-        const videos = await searchVideos(channel, eventType, apiKey);
+        const videos = await searchVideos(channel, eventType, apiKey, counters);
         stats[eventType].searchResults += videos.length;
         searchResults.push(...videos);
       }
     }
 
     const videoIds = [...new Set(searchResults.map((item) => item.videoId))];
+    console.log(`[quota] Executed search.list calls: ${counters.executedSearchCalls}.`);
     console.log(`[youtube] search.list collected ${searchResults.length} results.`);
     console.log(`[youtube] Unique video IDs for videos.list: ${videoIds.length}.`);
 
@@ -369,7 +457,23 @@ async function main() {
       console.warn('[youtube] search.list returned 0 results. Writing an empty generated schedule.');
     }
 
-    const detailItems = await fetchVideoDetails(videoIds, apiKey);
+    let detailItems = [];
+    let usedSearchFallback = false;
+
+    try {
+      detailItems = await fetchVideoDetails(videoIds, apiKey, counters);
+    } catch (error) {
+      if (!isQuotaExceeded(error)) {
+        throw error;
+      }
+
+      usedSearchFallback = true;
+      console.warn('[quota] Quota exceeded during videos.list. Skipping detail enrichment.');
+      console.warn('[quota] Updating schedule from already fetched upcoming/live search results only.');
+    }
+
+    console.log(`[quota] Executed videos.list calls: ${counters.executedVideosListCalls}.`);
+
     const detailById = new Map(detailItems.map((item) => [item.id, item]));
     const manualSchedules = (await readJson(manualSchedulePath, [])).map((item) => ({
       ...item,
@@ -380,17 +484,24 @@ async function main() {
     const schedules = [];
 
     for (const result of searchResults) {
-      const detail = detailById.get(result.videoId);
       const stat = stats[result.eventType];
+      const detail = detailById.get(result.videoId);
 
       if (!detail) {
         stat.missingDetails += 1;
+
+        if (usedSearchFallback && result.eventType !== completedEventType) {
+          stat.convertedSchedules += 1;
+          stat.convertedFromSearchFallback += 1;
+          schedules.push(mapScheduleItemFromSearchResult(result));
+        }
+
         continue;
       }
 
       stat.detailResults += 1;
 
-      const mapped = mapScheduleItem(detail, result.channel, result.eventType);
+      const mapped = mapScheduleItemFromDetail(detail, result.channel, result.eventType);
 
       if (mapped.diagnostics.hasLiveStreamingDetails) {
         stat.withLiveStreamingDetails += 1;
@@ -406,9 +517,9 @@ async function main() {
       schedules.push(mapped.item);
     }
 
-    logStats(stats);
+    logStats(stats, eventTypes);
 
-    if (stats.completed.searchResults > 0 && stats.completed.convertedSchedules === 0) {
+    if (stats.completed?.searchResults > 0 && stats.completed.convertedSchedules === 0) {
       console.warn(
         `[diagnostics] completed search returned ${stats.completed.searchResults} videos but converted 0 schedules. Reasons: missingDetails=${stats.completed.missingDetails}, missingLiveStreamingDetails=${stats.completed.missingLiveStreamingDetails}, missingDate=${stats.completed.missingDate}.`,
       );
@@ -420,20 +531,25 @@ async function main() {
       console.warn('[schedule] Output contains 0 schedules. Writing [] to public/schedule.json.');
     }
 
-    console.log(`[schedule] Output path: ${schedulePath}`);
-    console.log(`[schedule] Writing ${output.length} schedules.`);
-    await writeFile(schedulePath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
-    console.log(`[schedule] Wrote ${output.length} schedules to ${schedulePath}.`);
+    await writeSchedule(output);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    console.error(`Failed to fetch YouTube schedule: ${message}`);
+
+    if (isQuotaExceeded(error)) {
+      console.error(`[quota] Quota exceeded; skipping schedule update and keeping existing public/schedule.json. ${message}`);
+    } else {
+      console.error(`Failed to fetch YouTube schedule: ${message}`);
+    }
+
+    console.log(`[quota] Executed search.list calls: ${counters.executedSearchCalls}.`);
+    console.log(`[quota] Executed videos.list calls: ${counters.executedVideosListCalls}.`);
 
     if (Array.isArray(existingSchedule)) {
       console.error('Keeping existing public/schedule.json.');
       return;
     }
 
-    await writeFile(schedulePath, '[]\n', 'utf8');
+    await writeSchedule([]);
     console.error('No valid existing schedule found. Wrote an empty schedule.json.');
   }
 }

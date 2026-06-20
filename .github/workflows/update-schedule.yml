@@ -2,8 +2,17 @@ name: Update YouTube schedule
 
 on:
   workflow_dispatch:
+    inputs:
+      include_completed:
+        description: 'Also fetch completed/archive videos. Uses more quota.'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
   schedule:
-    - cron: '17 */2 * * *'
+    - cron: '17 */6 * * *'
 
 permissions:
   contents: write
@@ -29,6 +38,7 @@ jobs:
         run: node scripts/fetch-youtube-schedule.mjs
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          INCLUDE_COMPLETED: ${{ github.event.inputs.include_completed || 'false' }}
 
       - name: Commit schedule changes
         run: |

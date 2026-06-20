@@ -12,6 +12,7 @@ import { loadSettings, saveSettings } from './utils/storage';
 import './App.css';
 
 const assetPath = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
+const fallbackGroup = 'other';
 
 async function fetchJson(fileName: string): Promise<unknown> {
   const response = await fetch(assetPath(fileName), { cache: 'no-store' });
@@ -50,7 +51,7 @@ function normalizeChannel(rawChannel: unknown): ChannelItem | null {
     name,
     displayName: channel.displayName ? String(channel.displayName) : undefined,
     channelName: channel.channelName ? String(channel.channelName) : undefined,
-    group: groupIds[0] || (channel.group ? String(channel.group) : 'その他'),
+    group: groupIds[0] || (channel.group ? String(channel.group) : fallbackGroup),
     groupIds,
     tags: asArray(channel.tags).map(String),
     category: channel.category ? String(channel.category) : undefined,
@@ -78,7 +79,16 @@ function uniqueSorted(values: string[]): string[] {
 }
 
 function mergeSelectedChannels(settings: UserSettings, channels: ChannelItem[]): UserSettings {
-  if (settings.selectedChannelIds.length > 0 || channels.length === 0) {
+  if (channels.length === 0) {
+    return settings;
+  }
+
+  const availableChannelIds = new Set(channels.map((channel) => channel.channelId));
+  const hasKnownSelectedChannel = settings.selectedChannelIds.some((channelId) =>
+    availableChannelIds.has(channelId),
+  );
+
+  if (settings.selectedChannelIds.length > 0 && hasKnownSelectedChannel) {
     return settings;
   }
 
@@ -94,6 +104,7 @@ function App() {
   const [settings, setSettings] = useState<UserSettings>(() => loadSettings());
   const [logs, setLogs] = useState<LogEntry[]>([]);
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
+  const [isChannelSettingsOpen, setIsChannelSettingsOpen] = useState(false);
   const [notificationPermission, setNotificationPermission] = useState<
     NotificationPermission | 'unsupported'
   >(() => ('Notification' in window ? Notification.permission : 'unsupported'));
@@ -140,7 +151,9 @@ function App() {
         }
 
         const message =
-          error instanceof Error ? error.message : 'データ読み込み中に不明なエラーが発生しました';
+          error instanceof Error
+            ? error.message
+            : 'データ読み込み中に不明なエラーが発生しました';
         addLog('error', message);
       }
     }
@@ -184,7 +197,7 @@ function App() {
       }
 
       new Notification('K都市観測局', {
-        body: `${target.channelName} の配信が30分以内に開始します: ${target.title}`,
+        body: `${target.channelName} の配信が30分以内に始まります: ${target.title}`,
       });
 
       setSettings((currentSettings) => ({
@@ -206,8 +219,8 @@ function App() {
   const groups = useMemo(
     () =>
       uniqueSorted([
-        ...channels.map((channel) => channel.group || '未分類'),
-        ...schedules.map((schedule) => schedule.group || '未分類'),
+        ...channels.map((channel) => channel.group || fallbackGroup),
+        ...schedules.map((schedule) => schedule.group || fallbackGroup),
       ]),
     [channels, schedules],
   );
@@ -218,7 +231,7 @@ function App() {
     const now = new Date();
 
     return schedules.filter((schedule) => {
-      const group = schedule.group || '未分類';
+      const group = schedule.group || fallbackGroup;
       const matchesGroup = settings.selectedGroup === 'all' || group === settings.selectedGroup;
       const matchesChannel =
         selectedChannelIds.size === 0 || selectedChannelIds.has(schedule.channelId);
@@ -263,30 +276,25 @@ function App() {
 
   return (
     <main className="app">
-      <Header
-        scheduleCount={schedules.length}
-        channelCount={channels.length}
-        lastUpdatedAt={lastUpdatedAt}
+      <Header lastUpdatedAt={lastUpdatedAt} />
+
+      <FilterPanel
+        groups={groups}
+        settings={settings}
+        onChange={updateSettings}
+        onReset={resetFilters}
+        onOpenChannelSettings={() => setIsChannelSettingsOpen(true)}
       />
 
-      <div className="layout">
-        <div className="mainColumn">
-          <FilterPanel
-            groups={groups}
-            settings={settings}
-            onChange={updateSettings}
-            onReset={resetFilters}
-          />
+      <CalendarView
+        schedules={filteredSchedules}
+        favoriteChannelIds={settings.favoriteChannelIds}
+        statusFilter={settings.statusFilter}
+      />
 
-          <CalendarView
-            schedules={filteredSchedules}
-            favoriteChannelIds={settings.favoriteChannelIds}
-            statusFilter={settings.statusFilter}
-          />
-        </div>
-
-        <aside className="sideColumn">
-          <ChannelSettings channels={channels} settings={settings} onChange={updateSettings} />
+      <details className="utilityDetails">
+        <summary>通知とログ</summary>
+        <div className="utilityGrid">
           <NotificationSettings
             settings={settings}
             permission={notificationPermission}
@@ -294,8 +302,39 @@ function App() {
             onRequestPermission={requestNotificationPermission}
           />
           <LogPanel logs={logs} settings={settings} onChange={updateSettings} />
-        </aside>
-      </div>
+        </div>
+      </details>
+
+      {isChannelSettingsOpen ? (
+        <div
+          className="modalBackdrop"
+          role="presentation"
+          onClick={() => setIsChannelSettingsOpen(false)}
+        >
+          <section
+            className="settingsDialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="channel-settings-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="dialogHeader">
+              <div>
+                <h2 id="channel-settings-title">配信者設定</h2>
+                <p>表示する配信者とお気に入りを選択できます。</p>
+              </div>
+              <button
+                type="button"
+                className="iconButton"
+                onClick={() => setIsChannelSettingsOpen(false)}
+              >
+                閉じる
+              </button>
+            </div>
+            <ChannelSettings channels={channels} settings={settings} onChange={updateSettings} />
+          </section>
+        </div>
+      ) : null}
     </main>
   );
 }

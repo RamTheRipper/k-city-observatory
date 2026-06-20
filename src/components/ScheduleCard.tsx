@@ -9,12 +9,12 @@ type ScheduleCardProps = {
 const statusLabels: Record<string, string> = {
   upcoming: '予定',
   live: '配信中',
-  archived: '過去配信',
+  archived: '過去',
   unknown: '不明',
 };
 
 export function ScheduleCard({ schedule, isFavorite }: ScheduleCardProps) {
-  const groupLabel = schedule.group || '未分類';
+  const groupLabel = schedule.group || 'その他';
   const tags = schedule.tags ?? [];
 
   return (

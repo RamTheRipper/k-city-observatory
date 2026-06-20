@@ -1,119 +1,110 @@
 .app {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1060px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 32px 0 48px;
+  padding: 32px 0 56px;
   color: #eef3f8;
   text-align: left;
 }
 
 .appHeader {
-  display: grid;
-  grid-template-columns: 1fr minmax(260px, 380px);
-  gap: 24px;
-  align-items: end;
-  margin-bottom: 24px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #293241;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #273244;
 }
 
 .eyebrow {
   margin: 0 0 8px;
-  color: #91d5ff;
+  color: #7cc9ff;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0;
+}
+
+.headerTitleRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-end;
 }
 
 .appHeader h1 {
   margin: 0;
   color: #ffffff;
   font-size: 34px;
-  line-height: 1.2;
+  line-height: 1.18;
 }
 
 .lead {
   max-width: 680px;
   margin: 10px 0 0;
-  color: #aeb8c7;
+  color: #b6c1d2;
 }
 
-.headerStats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin: 0;
-}
-
-.headerStats div,
-.panel,
-.dayBlock {
-  border: 1px solid #2f394a;
-  border-radius: 8px;
-  background: #171d27;
-}
-
-.headerStats div {
-  padding: 12px;
-}
-
-.headerStats dt {
-  color: #91a0b5;
-  font-size: 12px;
-}
-
-.headerStats dd {
-  margin: 4px 0 0;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
-  gap: 20px;
-  align-items: start;
-}
-
-.mainColumn,
-.sideColumn,
-.calendarView {
-  display: grid;
-  gap: 16px;
-}
-
-.panel {
-  padding: 16px;
+.updatedAt {
+  flex: 0 0 auto;
+  color: #9aa8ba;
+  font-size: 13px;
 }
 
 .filterPanel {
   display: grid;
-  grid-template-columns: repeat(2, minmax(180px, 1fr)) auto auto;
-  gap: 12px;
-  align-items: end;
+  gap: 14px;
+  margin-bottom: 22px;
 }
 
-.field {
-  display: grid;
-  gap: 6px;
+.statusTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.field label,
-.switchRow {
-  color: #c6d0df;
+.statusTab {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid #344154;
+  border-radius: 999px;
+  color: #dce7f5;
+  background: #151d29;
+  font: inherit;
+  cursor: pointer;
+}
+
+.statusTab:hover,
+.statusTab[aria-selected='true'] {
+  border-color: #74c9ff;
+  color: #07111d;
+  background: #86d5ff;
+}
+
+.filterBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #2c384b;
+  border-radius: 10px;
+  background: #141b26;
+}
+
+.selectField {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #c8d3e2;
   font-size: 14px;
 }
 
 select,
 button {
-  min-height: 40px;
-  border: 1px solid #3a4658;
+  min-height: 38px;
+  border: 1px solid #39475b;
   border-radius: 8px;
   font: inherit;
 }
 
 select {
-  width: 100%;
+  min-width: 150px;
   padding: 0 10px;
   color: #edf4fb;
   background: #202836;
@@ -122,24 +113,33 @@ select {
 button {
   padding: 0 14px;
   color: #e9f6ff;
-  background: #263244;
+  background: #253145;
   cursor: pointer;
 }
 
 button:hover {
   border-color: #83d5ff;
-  background: #203a4c;
+  background: #21394b;
 }
 
-.secondaryButton {
-  white-space: nowrap;
+.ghostButton,
+.iconButton {
+  border-color: #344154;
+  color: #cbd8e8;
+  background: transparent;
+}
+
+.settingsButton {
+  margin-left: auto;
 }
 
 .switchRow {
   display: inline-flex;
   gap: 8px;
   align-items: center;
-  min-height: 40px;
+  min-height: 38px;
+  color: #c8d3e2;
+  font-size: 14px;
 }
 
 .switchRow.compact {
@@ -152,53 +152,43 @@ input[type='checkbox'] {
   accent-color: #83d5ff;
 }
 
-.dayBlock {
-  padding: 16px;
+.calendarView {
+  display: grid;
+  gap: 18px;
 }
 
-.dayBlock h2,
-.panelHeader h2 {
-  margin: 0;
+.dayBlock {
+  padding-top: 4px;
+}
+
+.dayBlock h2 {
+  margin: 0 0 10px;
   color: #ffffff;
   font-size: 18px;
   line-height: 1.3;
 }
 
-.panelHeader {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.panelHeader p {
-  color: #91a0b5;
-  font-size: 13px;
-}
-
 .scheduleList {
   display: grid;
   gap: 12px;
-  margin-top: 12px;
 }
 
 .scheduleCard {
   display: grid;
-  grid-template-columns: 168px 1fr;
-  gap: 14px;
+  grid-template-columns: 228px minmax(0, 1fr);
+  gap: 16px;
   padding: 12px;
-  border: 1px solid #344052;
-  border-radius: 8px;
-  background: #111721;
+  border: 1px solid #2b3544;
+  border-radius: 10px;
+  background: #111822;
 }
 
 .scheduleThumbnail {
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 6px;
+  border-radius: 8px;
   object-fit: cover;
-  background: #0b1018;
+  background: #080d14;
 }
 
 .placeholderThumbnail {
@@ -210,8 +200,9 @@ input[type='checkbox'] {
 }
 
 .scheduleBody {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 8px;
+  align-content: start;
   min-width: 0;
 }
 
@@ -219,31 +210,30 @@ input[type='checkbox'] {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  color: #91d5ff;
+  color: #93a7bd;
   font-size: 13px;
 }
 
 .scheduleTitleRow {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 8px 0;
 }
 
 .scheduleTitleRow h3 {
   min-width: 0;
   margin: 0;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.35;
 }
 
 .statusBadge {
   flex: 0 0 auto;
-  padding: 3px 8px;
+  padding: 4px 9px;
   border-radius: 999px;
-  color: #101722;
+  color: #07111d;
   font-size: 12px;
   font-weight: 700;
 }
@@ -269,7 +259,7 @@ input[type='checkbox'] {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-  margin: 0 0 10px;
+  margin: 0;
   color: #cbd5e1;
 }
 
@@ -289,7 +279,6 @@ input[type='checkbox'] {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 12px;
 }
 
 .tagList span {
@@ -301,50 +290,80 @@ input[type='checkbox'] {
 }
 
 .scheduleCard a {
-  align-self: flex-start;
-  margin-top: auto;
-  color: #8fd3ff;
-  font-weight: 700;
-}
-
-.channelList,
-.logList {
-  display: grid;
-  gap: 10px;
-}
-
-.channelRow {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
-  gap: 10px;
-  align-items: center;
-  padding: 10px;
+  justify-self: start;
+  margin-top: 2px;
+  padding: 8px 12px;
   border-radius: 8px;
-  background: #111721;
-}
-
-.channelRow strong,
-.channelRow span {
-  display: block;
-}
-
-.channelRow strong {
-  color: #f2f7fb;
+  color: #06111d;
+  background: #8bd7ff;
   font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.channelRow span,
 .mutedText,
 .emptyText {
   color: #93a1b5;
 }
 
-.channelRow label {
+.emptyText {
   display: inline-flex;
-  gap: 6px;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px dashed #334155;
+  border-radius: 8px;
+  background: #101722;
+  font-size: 14px;
+}
+
+.utilityDetails {
+  margin-top: 28px;
+  border-top: 1px solid #273244;
+  color: #b8c5d6;
+}
+
+.utilityDetails summary {
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.utilityGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: 14px;
+  padding-bottom: 16px;
+}
+
+.notificationSettings,
+.logPanel {
+  padding: 14px;
+  border: 1px solid #2c384b;
+  border-radius: 10px;
+  background: #121a25;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
   align-items: center;
-  color: #c8d2e1;
+  margin-bottom: 12px;
+}
+
+.panelHeader h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.panelHeader p {
+  color: #91a0b5;
   font-size: 13px;
+}
+
+.logList {
+  display: grid;
+  gap: 10px;
 }
 
 .logEntry {
@@ -372,29 +391,118 @@ input[type='checkbox'] {
   color: #e2d48a;
 }
 
-.emptyText {
-  margin: 12px 0 0;
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(3, 8, 14, 0.72);
 }
 
-@media (max-width: 980px) {
-  .appHeader,
-  .layout {
+.settingsDialog {
+  width: min(760px, 100%);
+  max-height: min(760px, calc(100svh - 36px));
+  overflow: auto;
+  padding: 20px;
+  border: 1px solid #344154;
+  border-radius: 12px;
+  background: #121a25;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
+}
+
+.dialogHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.dialogHeader h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.dialogHeader p {
+  margin-top: 6px;
+  color: #aab8ca;
+}
+
+.channelSettings {
+  display: grid;
+  gap: 18px;
+}
+
+.channelGroup h3 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.channelList {
+  display: grid;
+  gap: 8px;
+}
+
+.channelRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #293647;
+  border-radius: 8px;
+  background: #0f1620;
+}
+
+.channelRow strong,
+.channelRow span {
+  display: block;
+}
+
+.channelRow strong {
+  color: #f2f7fb;
+  font-size: 14px;
+}
+
+.channelRow span {
+  color: #93a1b5;
+  font-size: 12px;
+}
+
+.channelRow label {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  color: #c8d2e1;
+  font-size: 13px;
+}
+
+@media (max-width: 820px) {
+  .headerTitleRow,
+  .utilityGrid {
     grid-template-columns: 1fr;
   }
 
-  .sideColumn {
-    grid-row: auto;
+  .headerTitleRow {
+    display: grid;
+    align-items: start;
+  }
+
+  .settingsButton {
+    margin-left: 0;
   }
 }
 
 @media (max-width: 720px) {
   .app {
-    width: min(100% - 20px, 1180px);
+    width: min(100% - 20px, 1060px);
     padding-top: 20px;
   }
 
-  .headerStats,
-  .filterPanel,
   .scheduleCard,
   .channelRow {
     grid-template-columns: 1fr;

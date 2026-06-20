@@ -47,7 +47,11 @@ export function getCalendarDays(baseDate: Date, days = 7): Date[] {
   });
 }
 
-export function isWithinVisibleRange(schedule: ScheduleItem, statusFilter: string, now: Date): boolean {
+export function isWithinVisibleRange(
+  schedule: ScheduleItem,
+  statusFilter: string,
+  now: Date,
+): boolean {
   const startAt = parseDate(schedule.startAt);
 
   if (!startAt) {

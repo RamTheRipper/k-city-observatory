@@ -7,7 +7,29 @@ type ChannelSettingsProps = {
 };
 
 function getChannelName(channel: ChannelItem): string {
-  return channel.displayName || channel.name || channel.channelId;
+  return channel.displayName || channel.channelName || channel.name || channel.channelId;
+}
+
+function getGroupLabel(group: string): string {
+  const labels: Record<string, string> = {
+    vwp: 'V.W.P',
+    solo: 'solo',
+    official: 'official',
+    other: 'その他',
+  };
+
+  return labels[group] ?? group;
+}
+
+function groupChannels(channels: ChannelItem[]): [string, ChannelItem[]][] {
+  const grouped = new Map<string, ChannelItem[]>();
+
+  for (const channel of channels) {
+    const group = channel.groupIds?.[0] || channel.group || 'other';
+    grouped.set(group, [...(grouped.get(group) ?? []), channel]);
+  }
+
+  return [...grouped.entries()];
 }
 
 export function ChannelSettings({ channels, settings, onChange }: ChannelSettingsProps) {
@@ -31,40 +53,40 @@ export function ChannelSettings({ channels, settings, onChange }: ChannelSetting
   }
 
   return (
-    <section className="panel channelSettings" aria-label="チャンネル設定">
-      <div className="panelHeader">
-        <h2>配信者設定</h2>
-        <p>{channels.length}件</p>
-      </div>
+    <section className="channelSettings" aria-label="配信者設定">
+      {groupChannels(channels).map(([group, groupChannels]) => (
+        <div key={group} className="channelGroup">
+          <h3>{getGroupLabel(group)}</h3>
+          <div className="channelList">
+            {groupChannels.map((channel) => (
+              <div key={channel.channelId} className="channelRow">
+                <div>
+                  <strong>{getChannelName(channel)}</strong>
+                  <span>{channel.channelName || channel.channelId}</span>
+                </div>
 
-      <div className="channelList">
-        {channels.map((channel) => (
-          <div key={channel.channelId} className="channelRow">
-            <div>
-              <strong>{getChannelName(channel)}</strong>
-              <span>{channel.group || '未分類'}</span>
-            </div>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={selectedChannelIds.has(channel.channelId)}
+                    onChange={() => toggleSelected(channel.channelId)}
+                  />
+                  表示
+                </label>
 
-            <label>
-              <input
-                type="checkbox"
-                checked={selectedChannelIds.has(channel.channelId)}
-                onChange={() => toggleSelected(channel.channelId)}
-              />
-              表示
-            </label>
-
-            <label>
-              <input
-                type="checkbox"
-                checked={favoriteChannelIds.has(channel.channelId)}
-                onChange={() => toggleFavorite(channel.channelId)}
-              />
-              お気に入り
-            </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={favoriteChannelIds.has(channel.channelId)}
+                    onChange={() => toggleFavorite(channel.channelId)}
+                  />
+                  お気に入り
+                </label>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 }

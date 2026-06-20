@@ -17,7 +17,7 @@ export function NotificationSettings({
     permission === 'unsupported' ? '非対応' : permission === 'default' ? '未確認' : permission;
 
   return (
-    <section className="panel notificationSettings" aria-label="通知設定">
+    <section className="notificationSettings" aria-label="通知設定">
       <div className="panelHeader">
         <h2>通知</h2>
         <p>権限: {permissionLabel}</p>
@@ -34,7 +34,7 @@ export function NotificationSettings({
         30分前通知
       </label>
 
-      <button type="button" className="secondaryButton" onClick={onRequestPermission}>
+      <button type="button" className="ghostButton" onClick={onRequestPermission}>
         通知権限を確認
       </button>
     </section>

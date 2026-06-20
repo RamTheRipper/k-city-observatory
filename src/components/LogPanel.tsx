@@ -11,7 +11,7 @@ export function LogPanel({ logs, settings, onChange }: LogPanelProps) {
   const visibleLogs = logs.filter((log) => log.level !== 'debug' || settings.debugEnabled);
 
   return (
-    <section className="panel logPanel" aria-label="ログ">
+    <section className="logPanel" aria-label="ログ">
       <div className="panelHeader">
         <h2>ログ</h2>
         <label className="switchRow compact">

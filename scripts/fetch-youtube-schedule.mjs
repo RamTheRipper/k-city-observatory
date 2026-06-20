@@ -470,12 +470,78 @@ function dedupeSchedules(items) {
   const byId = new Map();
 
   for (const item of items) {
-    if (!byId.has(item.id)) {
-      byId.set(item.id, item);
+    const videoId = getVideoId(item);
+
+    if (videoId && !byId.has(videoId)) {
+      byId.set(videoId, item);
     }
   }
 
   return [...byId.values()].sort((a, b) => new Date(a.startAt) - new Date(b.startAt));
+}
+
+function normalizeManualSchedule(item) {
+  const videoId = getVideoId(item);
+  const scheduledStartTime = toIsoString(item.scheduledStartTime);
+  const startAt = scheduledStartTime || toIsoString(item.startAt) || null;
+
+  if (!videoId || !startAt) {
+    return null;
+  }
+
+  return {
+    ...item,
+    id: item.id || videoId,
+    videoId,
+    startAt,
+    scheduledStartTime,
+    actualStartTime: toIsoString(item.actualStartTime),
+    actualEndTime: toIsoString(item.actualEndTime),
+    publishedAt: toIsoString(item.publishedAt),
+    url: item.url || `https://www.youtube.com/watch?v=${videoId}`,
+    thumbnailUrl:
+      item.thumbnailUrl || (videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : ''),
+    status: item.status || 'upcoming',
+    source: 'manual',
+    startAtSource: scheduledStartTime ? 'manual-scheduledStartTime' : 'manual-startAt',
+    isManual: true,
+  };
+}
+
+function applyManualSchedules(schedules, manualSchedules) {
+  const byId = new Map(schedules.map((item) => [getVideoId(item), item]));
+  let mergedCount = 0;
+  let addedCount = 0;
+
+  for (const manual of manualSchedules) {
+    const videoId = getVideoId(manual);
+    const existing = byId.get(videoId);
+
+    if (existing) {
+      byId.set(videoId, {
+        ...existing,
+        ...manual,
+        title: manual.title || existing.title,
+        channelId: manual.channelId || existing.channelId,
+        channelName: manual.channelName || existing.channelName,
+        group: manual.group || existing.group,
+        groupIds: manual.groupIds || existing.groupIds,
+        tags: manual.tags || existing.tags,
+        category: manual.category || existing.category,
+        url: manual.url || existing.url,
+        thumbnailUrl: manual.thumbnailUrl || existing.thumbnailUrl,
+        source: 'manual',
+        isManual: true,
+      });
+      mergedCount += 1;
+    } else {
+      byId.set(videoId, manual);
+      addedCount += 1;
+    }
+  }
+
+  console.log(`[manual] Applied manual schedules: merged=${mergedCount}, added=${addedCount}.`);
+  return [...byId.values()];
 }
 
 function logStats(stats, eventTypes) {
@@ -612,11 +678,9 @@ async function main() {
     console.log(`[quota] Executed videos.list calls: ${counters.executedVideosListCalls}.`);
 
     const detailById = new Map(detailItems.map((item) => [item.id, item]));
-    const manualSchedules = (await readJson(manualSchedulePath, [])).map((item) => ({
-      ...item,
-      isManual: true,
-      source: 'manual',
-    }));
+    const manualSchedules = (await readJson(manualSchedulePath, []))
+      .map(normalizeManualSchedule)
+      .filter(Boolean);
     console.log(`[manual] Loaded ${manualSchedules.length} manual schedules.`);
 
     const schedules = [];
@@ -663,7 +727,7 @@ async function main() {
       );
     }
 
-    const output = dedupeSchedules([...schedules, ...manualSchedules]);
+    const output = dedupeSchedules(applyManualSchedules(schedules, manualSchedules));
 
     if (output.length === 0) {
       console.warn('[schedule] Output contains 0 schedules. Writing [] to public/schedule.json.');

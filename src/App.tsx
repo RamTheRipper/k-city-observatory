@@ -32,6 +32,14 @@ async function fetchJson(fileName: string): Promise<unknown> {
   return response.json();
 }
 
+async function fetchOptionalJson(fileName: string, fallback: unknown): Promise<unknown> {
+  try {
+    return await fetchJson(fileName);
+  } catch {
+    return fallback;
+  }
+}
+
 function asArray(value: unknown): unknown[] {
   return Array.isArray(value) ? value : [];
 }
@@ -124,6 +132,50 @@ function normalizeScheduleDocument(value: unknown): ScheduleDocument {
   return { items: [] };
 }
 
+function getScheduleId(schedule: ScheduleItem): string {
+  return schedule.videoId || schedule.id;
+}
+
+function normalizeManualSchedules(value: unknown): ScheduleItem[] {
+  return asArray(value)
+    .flatMap((item) => {
+      if (!item || typeof item !== 'object') {
+        return [];
+      }
+
+      const schedule = item as ScheduleItem;
+      const videoId = getScheduleId(schedule);
+      const startAt = schedule.scheduledStartTime || schedule.startAt;
+
+      if (!videoId || !startAt) {
+        return [];
+      }
+
+      return [{
+        ...schedule,
+        id: schedule.id || videoId,
+        videoId,
+        startAt,
+        source: 'manual' as const,
+        startAtSource: schedule.scheduledStartTime ? 'manual-scheduledStartTime' : 'manual-startAt',
+        isManual: true,
+      }];
+    });
+}
+
+function applyManualSchedules(schedules: ScheduleItem[], manualSchedules: ScheduleItem[]): ScheduleItem[] {
+  const byId = new Map(schedules.map((schedule) => [getScheduleId(schedule), schedule]));
+
+  for (const manual of manualSchedules) {
+    const id = getScheduleId(manual);
+    const existing = byId.get(id);
+
+    byId.set(id, existing ? { ...existing, ...manual, isManual: true, source: 'manual' } : manual);
+  }
+
+  return [...byId.values()];
+}
+
 function uniqueSorted(values: string[]): string[] {
   return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'ja-JP'));
 }
@@ -187,12 +239,14 @@ function App() {
 
     async function loadData() {
       try {
-        const [scheduleData, channelData] = await Promise.all([
+        const [scheduleData, channelData, manualScheduleData] = await Promise.all([
           fetchJson('schedule.json'),
           fetchJson('channels.json'),
+          fetchOptionalJson('manual-schedule.json', []),
         ]);
         const scheduleDocument = normalizeScheduleDocument(scheduleData);
-        const nextSchedules = scheduleDocument.items;
+        const manualSchedules = normalizeManualSchedules(manualScheduleData);
+        const nextSchedules = applyManualSchedules(scheduleDocument.items, manualSchedules);
         const nextChannels = normalizeChannels(channelData);
         const nextGroups = normalizeGroups(channelData);
 
@@ -207,7 +261,7 @@ function App() {
         setLastUpdatedAt(scheduleDocument.generatedAt ?? new Date().toISOString());
         addLog(
           'info',
-          `データを読み込みました: 配信 ${nextSchedules.length}件 / 配信者 ${nextChannels.length}件`,
+          `データを読み込みました: 配信 ${nextSchedules.length}件 / 手動補完 ${manualSchedules.length}件 / 配信者 ${nextChannels.length}件`,
         );
         addLog('debug', 'schedule.json / channels.json を public から取得しました');
       } catch (error) {

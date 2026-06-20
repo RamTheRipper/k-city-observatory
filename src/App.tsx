@@ -18,6 +18,13 @@ import './App.css';
 
 const assetPath = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
 const fallbackGroup = 'other';
+const groupDisplayOrder = [
+  'vwp',
+  'girls_revolution_project',
+  'sinsekai_record',
+  'kuusou',
+  'official',
+];
 
 async function fetchJson(fileName: string): Promise<unknown> {
   const response = await fetch(assetPath(fileName), { cache: 'no-store' });
@@ -228,8 +235,20 @@ function applyChannelGroupsToSchedules(
   });
 }
 
-function uniqueSorted(values: string[]): string[] {
-  return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'ja-JP'));
+function uniqueOrderedGroups(values: string[]): string[] {
+  const uniqueGroups = [...new Set(values.filter(Boolean))];
+  const orderByGroup = new Map(groupDisplayOrder.map((group, index) => [group, index]));
+
+  return uniqueGroups.sort((a, b) => {
+    const orderA = orderByGroup.get(a);
+    const orderB = orderByGroup.get(b);
+
+    if (orderA !== undefined || orderB !== undefined) {
+      return (orderA ?? Number.MAX_SAFE_INTEGER) - (orderB ?? Number.MAX_SAFE_INTEGER);
+    }
+
+    return a.localeCompare(b, 'ja-JP');
+  });
 }
 
 function mergeSelectedChannels(settings: UserSettings, channels: ChannelItem[]): UserSettings {
@@ -424,7 +443,7 @@ function App() {
 
   const groupOptions = useMemo(
     () =>
-      uniqueSorted([
+      uniqueOrderedGroups([
         ...channels.map((channel) => channel.group || fallbackGroup),
         ...schedules.map((schedule) => schedule.group || fallbackGroup),
       ]),

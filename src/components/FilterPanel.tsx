@@ -19,6 +19,14 @@ const statusOptions: { value: StatusFilter; label: string }[] = [
   { value: 'archived', label: '過去' },
 ];
 
+const groupDisplayOrder = [
+  'vwp',
+  'girls_revolution_project',
+  'sinsekai_record',
+  'kuusou',
+  'official',
+];
+
 function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
   const definedLabel = groupLabels.find((item) => item.groupId === group)?.displayName;
 
@@ -29,9 +37,9 @@ function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
   const labels: Record<string, string> = {
     all: 'すべて',
     vwp: 'V.W.P',
-    kuusou: '空爽',
     girls_revolution_project: '少女革命計画',
-    kamitsubaki: 'KAMITSUBAKI',
+    sinsekai_record: 'SINSEKAI RECORD',
+    kuusou: '空爽',
     official: 'KAMITSUBAKI STUDIO / 公式',
     other: 'その他',
   };
@@ -51,8 +59,18 @@ export function FilterPanel({
   onReload,
 }: FilterPanelProps) {
   const apiUsage = health?.apiUsage;
+  const orderByGroup = new Map(groupDisplayOrder.map((group, index) => [group, index]));
   const groupCounts = apiUsage?.groupCounts
-    ? Object.entries(apiUsage.groupCounts).sort(([a], [b]) => a.localeCompare(b, 'ja-JP'))
+    ? Object.entries(apiUsage.groupCounts).sort(([a], [b]) => {
+        const orderA = orderByGroup.get(a);
+        const orderB = orderByGroup.get(b);
+
+        if (orderA !== undefined || orderB !== undefined) {
+          return (orderA ?? Number.MAX_SAFE_INTEGER) - (orderB ?? Number.MAX_SAFE_INTEGER);
+        }
+
+        return a.localeCompare(b, 'ja-JP');
+      })
     : [];
 
   return (

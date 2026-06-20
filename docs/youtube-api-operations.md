@@ -37,7 +37,7 @@ YouTube Data APIの主な単価は以下の想定です。
 
 ## 監視対象チャンネル
 
-`public/channels.json` を元定義、`public/data/channels.json` を公開用の実行時データとして扱います。取得スクリプトは `public/channels.json` を読み、内容を `public/data/channels.json` に同期します。現在はV.W.P本体、V.W.Pのサブ・メンバーシップ系チャンネル、CIEL、Sooda、空爽、少女革命計画を監視対象にしています。
+`public/channels.json` を元定義、`public/data/channels.json` を公開用の実行時データとして扱います。取得スクリプトは `public/channels.json` を読み、内容を `public/data/channels.json` に同期します。現在はV.W.P本体、V.W.Pのサブ・メンバーシップ系チャンネル、少女革命計画、SINSEKAI RECORD、CIEL、Sooda、空爽を監視対象にしています。
 
 `primaryGroupId` はアプリ上の主表示グループです。少女革命計画メンバー6人は `primaryGroupId: "girls_revolution_project"` に固定し、KAMITSUBAKI親カテゴリ側へ誤表示されないようにします。`groupIds` は補助的な所属・絞り込み用です。メンバーシップ用サブチャンネルも、APIで取得できる公開予定だけが対象です。メンバー限定、限定公開、非公開の自動取得は対象外です。
 

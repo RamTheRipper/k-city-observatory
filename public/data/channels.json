@@ -9,19 +9,19 @@
       "description": "V.W.P関連チャンネル"
     },
     {
-      "groupId": "kuusou",
-      "displayName": "空爽",
-      "description": "CIEL / Sooda / 空爽関連チャンネル"
-    },
-    {
       "groupId": "girls_revolution_project",
       "displayName": "少女革命計画",
       "description": "少女革命計画関連チャンネル"
     },
     {
-      "groupId": "kamitsubaki",
-      "displayName": "KAMITSUBAKI",
-      "description": "KAMITSUBAKI STUDIO親カテゴリ"
+      "groupId": "sinsekai_record",
+      "displayName": "SINSEKAI RECORD",
+      "description": "SINSEKAI RECORD関連チャンネル"
+    },
+    {
+      "groupId": "kuusou",
+      "displayName": "空爽",
+      "description": "CIEL / Sooda / 空爽関連チャンネル"
     },
     {
       "groupId": "official",
@@ -214,56 +214,6 @@
       "enabled": true
     },
     {
-      "talentId": "ciel",
-      "displayName": "CIEL",
-      "primaryGroupId": "kuusou",
-      "groupIds": [
-        "kuusou"
-      ],
-      "tags": [
-        "main"
-      ],
-      "youtubeChannelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
-      "uploadsPlaylistId": "UURvkXFtB70ZADg4L6A8L3wQ",
-      "channelName": "CIEL",
-      "colorKey": "ciel",
-      "enabled": true
-    },
-    {
-      "talentId": "sooda",
-      "displayName": "Sooda",
-      "primaryGroupId": "kuusou",
-      "groupIds": [
-        "kuusou"
-      ],
-      "tags": [
-        "main"
-      ],
-      "youtubeChannelId": "UCRYh9eOSnwcT6aftSf8hYUw",
-      "uploadsPlaylistId": "UURYh9eOSnwcT6aftSf8hYUw",
-      "channelName": "Sooda",
-      "colorKey": "sooda",
-      "enabled": true
-    },
-    {
-      "talentId": "kuusou_official",
-      "displayName": "空爽",
-      "primaryGroupId": "kuusou",
-      "groupIds": [
-        "kuusou",
-        "official"
-      ],
-      "tags": [
-        "official",
-        "group"
-      ],
-      "youtubeChannelId": "UCJxwvbBoawRJtVgPgvMg-Qg",
-      "uploadsPlaylistId": "UUJxwvbBoawRJtVgPgvMg-Qg",
-      "channelName": "空爽",
-      "colorKey": "kuusou",
-      "enabled": true
-    },
-    {
       "talentId": "girls_revolution_project_official",
       "displayName": "少女革命計画公式",
       "primaryGroupId": "girls_revolution_project",
@@ -384,12 +334,93 @@
       "enabled": true
     },
     {
+      "talentId": "asu",
+      "displayName": "明透",
+      "primaryGroupId": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "tags": [
+        "main"
+      ],
+      "youtubeChannelId": "UCBLGjbYv6-xxju1i44RjnnA",
+      "uploadsPlaylistId": "UUBLGjbYv6-xxju1i44RjnnA",
+      "channelName": "明透 -ᴀsᴜ-",
+      "colorKey": "asu",
+      "enabled": true
+    },
+    {
+      "talentId": "bema",
+      "displayName": "琶舞",
+      "primaryGroupId": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "tags": [
+        "main"
+      ],
+      "youtubeChannelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "uploadsPlaylistId": "UUO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "colorKey": "bema",
+      "enabled": true
+    },
+    {
+      "talentId": "ciel",
+      "displayName": "CIEL",
+      "primaryGroupId": "kuusou",
+      "groupIds": [
+        "kuusou"
+      ],
+      "tags": [
+        "main"
+      ],
+      "youtubeChannelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
+      "uploadsPlaylistId": "UURvkXFtB70ZADg4L6A8L3wQ",
+      "channelName": "CIEL",
+      "colorKey": "ciel",
+      "enabled": true
+    },
+    {
+      "talentId": "sooda",
+      "displayName": "Sooda",
+      "primaryGroupId": "kuusou",
+      "groupIds": [
+        "kuusou"
+      ],
+      "tags": [
+        "main"
+      ],
+      "youtubeChannelId": "UCRYh9eOSnwcT6aftSf8hYUw",
+      "uploadsPlaylistId": "UURYh9eOSnwcT6aftSf8hYUw",
+      "channelName": "Sooda",
+      "colorKey": "sooda",
+      "enabled": true
+    },
+    {
+      "talentId": "kuusou_official",
+      "displayName": "空爽",
+      "primaryGroupId": "kuusou",
+      "groupIds": [
+        "kuusou",
+        "official"
+      ],
+      "tags": [
+        "official",
+        "group"
+      ],
+      "youtubeChannelId": "UCJxwvbBoawRJtVgPgvMg-Qg",
+      "uploadsPlaylistId": "UUJxwvbBoawRJtVgPgvMg-Qg",
+      "channelName": "空爽",
+      "colorKey": "kuusou",
+      "enabled": true
+    },
+    {
       "talentId": "kamitsubaki_official",
       "displayName": "KAMITSUBAKI公式",
       "primaryGroupId": "official",
       "groupIds": [
-        "official",
-        "kamitsubaki"
+        "official"
       ],
       "tags": [
         "official"

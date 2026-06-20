@@ -7,6 +7,14 @@ type ChannelSettingsProps = {
   groupLabels: GroupItem[];
 };
 
+const groupDisplayOrder = [
+  'vwp',
+  'girls_revolution_project',
+  'sinsekai_record',
+  'kuusou',
+  'official',
+];
+
 function getChannelName(channel: ChannelItem): string {
   return channel.displayName || channel.channelName || channel.name || channel.channelId;
 }
@@ -20,9 +28,9 @@ function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
 
   const labels: Record<string, string> = {
     vwp: 'V.W.P',
-    kuusou: '空爽',
     girls_revolution_project: '少女革命計画',
-    kamitsubaki: 'KAMITSUBAKI',
+    sinsekai_record: 'SINSEKAI RECORD',
+    kuusou: '空爽',
     official: 'KAMITSUBAKI STUDIO / 公式',
     other: 'その他',
   };
@@ -38,7 +46,18 @@ function groupChannels(channels: ChannelItem[]): [string, ChannelItem[]][] {
     grouped.set(group, [...(grouped.get(group) ?? []), channel]);
   }
 
-  return [...grouped.entries()];
+  const orderByGroup = new Map(groupDisplayOrder.map((group, index) => [group, index]));
+
+  return [...grouped.entries()].sort(([groupA], [groupB]) => {
+    const orderA = orderByGroup.get(groupA);
+    const orderB = orderByGroup.get(groupB);
+
+    if (orderA !== undefined || orderB !== undefined) {
+      return (orderA ?? Number.MAX_SAFE_INTEGER) - (orderB ?? Number.MAX_SAFE_INTEGER);
+    }
+
+    return groupA.localeCompare(groupB, 'ja-JP');
+  });
 }
 
 export function ChannelSettings({ channels, settings, onChange, groupLabels }: ChannelSettingsProps) {

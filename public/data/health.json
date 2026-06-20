@@ -10,14 +10,15 @@
     "lastSuccessAt": "2026-06-20T18:46:34.051Z",
     "lastError": null,
     "fetchedScope": "upcoming",
-    "loadedChannels": 22,
-    "enabledChannels": 22,
-    "fetchTargets": 22,
+    "loadedChannels": 24,
+    "enabledChannels": 24,
+    "fetchTargets": 24,
     "skippedChannels": [],
     "groupCounts": {
       "vwp": 11,
-      "kuusou": 3,
       "girls_revolution_project": 7,
+      "sinsekai_record": 2,
+      "kuusou": 3,
       "official": 1
     }
   }

@@ -52,6 +52,30 @@
   margin-bottom: 22px;
 }
 
+.topNotificationSettings {
+  margin: -6px 0 18px;
+}
+
+.notificationSettings {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.notificationControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: center;
+}
+
+.notificationHint {
+  margin: 8px 0 0;
+  color: #92400e;
+  font-size: 13px;
+}
+
 .statusTabs {
   display: flex;
   flex-wrap: wrap;
@@ -372,32 +396,6 @@ input[type='checkbox'] {
   font-size: 14px;
 }
 
-.utilityDetails {
-  margin-top: 28px;
-  border-top: 1px solid #e5e7eb;
-  color: #4b5563;
-}
-
-.utilityDetails summary {
-  padding: 14px 0;
-  cursor: pointer;
-}
-
-.utilityGrid {
-  display: grid;
-  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
-  gap: 14px;
-  padding-bottom: 16px;
-}
-
-.notificationSettings,
-.logPanel {
-  padding: 14px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  background: #ffffff;
-}
-
 .panelHeader {
   display: flex;
   justify-content: space-between;
@@ -415,36 +413,6 @@ input[type='checkbox'] {
 .panelHeader p {
   color: #6b7280;
   font-size: 13px;
-}
-
-.logList {
-  display: grid;
-  gap: 10px;
-}
-
-.logEntry {
-  display: grid;
-  grid-template-columns: 124px 48px 1fr;
-  gap: 8px;
-  margin: 0;
-  color: #374151;
-  font-size: 12px;
-}
-
-.logEntry span {
-  color: #6b7280;
-}
-
-.logEntry-error strong {
-  color: #be123c;
-}
-
-.logEntry-info strong {
-  color: #2563eb;
-}
-
-.logEntry-debug strong {
-  color: #92400e;
 }
 
 .modalBackdrop {
@@ -538,8 +506,7 @@ input[type='checkbox'] {
 }
 
 @media (max-width: 820px) {
-  .headerTitleRow,
-  .utilityGrid {
+  .headerTitleRow {
     grid-template-columns: 1fr;
   }
 
@@ -568,7 +535,4 @@ input[type='checkbox'] {
     flex-direction: column;
   }
 
-  .logEntry {
-    grid-template-columns: 1fr;
-  }
 }

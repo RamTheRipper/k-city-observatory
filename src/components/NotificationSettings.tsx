@@ -14,29 +14,60 @@ export function NotificationSettings({
   onRequestPermission,
 }: NotificationSettingsProps) {
   const permissionLabel =
-    permission === 'unsupported' ? '非対応' : permission === 'default' ? '未確認' : permission;
+    permission === 'unsupported' ? '???' : permission === 'default' ? '???' : permission;
+  const notificationsEnabled =
+    settings.notificationBeforeStartEnabled || settings.notificationAtStartEnabled;
+
+  function updateNotificationSettings(next: Partial<UserSettings>): void {
+    const nextSettings = { ...settings, ...next };
+    onChange({
+      ...nextSettings,
+      notificationEnabled:
+        nextSettings.notificationBeforeStartEnabled || nextSettings.notificationAtStartEnabled,
+    });
+  }
 
   return (
-    <section className="notificationSettings" aria-label="通知設定">
+    <section className="notificationSettings topNotificationSettings" aria-label="????">
       <div className="panelHeader">
-        <h2>通知</h2>
-        <p>権限: {permissionLabel}</p>
+        <div>
+          <h2>????</h2>
+          <p>?????????????????</p>
+        </div>
+        <p>??: {permissionLabel}</p>
       </div>
 
-      <label className="switchRow">
-        <input
-          type="checkbox"
-          checked={settings.notificationEnabled}
-          onChange={(event) =>
-            onChange({ ...settings, notificationEnabled: event.target.checked })
-          }
-        />
-        30分前通知
-      </label>
+      <div className="notificationControls">
+        <label className="switchRow">
+          <input
+            type="checkbox"
+            checked={settings.notificationBeforeStartEnabled}
+            onChange={(event) =>
+              updateNotificationSettings({ notificationBeforeStartEnabled: event.target.checked })
+            }
+          />
+          30??
+        </label>
 
-      <button type="button" className="ghostButton" onClick={onRequestPermission}>
-        通知権限を確認
-      </button>
+        <label className="switchRow">
+          <input
+            type="checkbox"
+            checked={settings.notificationAtStartEnabled}
+            onChange={(event) =>
+              updateNotificationSettings({ notificationAtStartEnabled: event.target.checked })
+            }
+          />
+          ?????
+        </label>
+
+        <button type="button" className="ghostButton" onClick={onRequestPermission}>
+          ???????
+        </button>
+      </div>
+
+      {notificationsEnabled && permission !== 'granted' ? (
+        <p className="notificationHint">????????????????????????????</p>
+      ) : null}
     </section>
   );
 }

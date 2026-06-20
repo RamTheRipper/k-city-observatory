@@ -1,6 +1,5 @@
 export type ScheduleStatus = 'upcoming' | 'live' | 'ended' | 'archived' | 'unknown';
 export type StatusFilter = ScheduleStatus | 'all';
-export type LogLevel = 'error' | 'info' | 'debug';
 
 export type ScheduleItem = {
   id: string;
@@ -100,14 +99,10 @@ export type UserSettings = {
   showFavoritesOnly: boolean;
   statusFilter: StatusFilter;
   notificationEnabled: boolean;
-  debugEnabled: boolean;
+  notificationBeforeStartEnabled: boolean;
+  notificationAtStartEnabled: boolean;
   notifiedScheduleIds: string[];
+  notifiedBeforeStartScheduleIds: string[];
+  notifiedStartScheduleIds: string[];
   knownChannelIds: string[];
-};
-
-export type LogEntry = {
-  id: string;
-  level: LogLevel;
-  message: string;
-  createdAt: string;
 };

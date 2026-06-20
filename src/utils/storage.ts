@@ -10,8 +10,11 @@ export const defaultSettings: UserSettings = {
   showFavoritesOnly: false,
   statusFilter: 'upcoming',
   notificationEnabled: false,
-  debugEnabled: false,
+  notificationBeforeStartEnabled: false,
+  notificationAtStartEnabled: false,
   notifiedScheduleIds: [],
+  notifiedBeforeStartScheduleIds: [],
+  notifiedStartScheduleIds: [],
   knownChannelIds: [],
 };
 
@@ -32,6 +35,11 @@ export function normalizeSettings(value: unknown): UserSettings {
   const statusFilter = isStatusFilter(source.statusFilter)
     ? source.statusFilter
     : defaultSettings.statusFilter;
+  const legacyNotifiedScheduleIds = stringArrayOrDefault(source.notifiedScheduleIds, []);
+  const notificationBeforeStartEnabled =
+    typeof source.notificationBeforeStartEnabled === 'boolean'
+      ? source.notificationBeforeStartEnabled
+      : Boolean(source.notificationEnabled);
 
   return {
     selectedGroup: typeof source.selectedGroup === 'string' ? source.selectedGroup : 'all',
@@ -40,8 +48,14 @@ export function normalizeSettings(value: unknown): UserSettings {
     showFavoritesOnly: Boolean(source.showFavoritesOnly),
     statusFilter,
     notificationEnabled: Boolean(source.notificationEnabled),
-    debugEnabled: Boolean(source.debugEnabled),
-    notifiedScheduleIds: stringArrayOrDefault(source.notifiedScheduleIds, []),
+    notificationBeforeStartEnabled,
+    notificationAtStartEnabled: Boolean(source.notificationAtStartEnabled),
+    notifiedScheduleIds: legacyNotifiedScheduleIds,
+    notifiedBeforeStartScheduleIds: stringArrayOrDefault(
+      source.notifiedBeforeStartScheduleIds,
+      legacyNotifiedScheduleIds,
+    ),
+    notifiedStartScheduleIds: stringArrayOrDefault(source.notifiedStartScheduleIds, []),
     knownChannelIds: stringArrayOrDefault(source.knownChannelIds, []),
   };
 }

@@ -3,20 +3,16 @@ import { CalendarView } from './components/CalendarView';
 import { ChannelSettings } from './components/ChannelSettings';
 import { FilterPanel } from './components/FilterPanel';
 import { Header } from './components/Header';
-import { LogPanel } from './components/LogPanel';
 import { NotificationSettings } from './components/NotificationSettings';
 import type {
   ChannelItem,
   GroupItem,
   HealthDocument,
-  LogEntry,
-  LogLevel,
   ScheduleDocument,
   ScheduleItem,
   UserSettings,
 } from './types';
 import { isWithinVisibleRange, parseDate } from './utils/date';
-import { createLog } from './utils/logger';
 import { loadSettings, saveSettings } from './utils/storage';
 import './App.css';
 
@@ -272,7 +268,6 @@ function App() {
   const [channels, setChannels] = useState<ChannelItem[]>([]);
   const [groups, setGroups] = useState<GroupItem[]>([]);
   const [settings, setSettings] = useState<UserSettings>(() => loadSettings());
-  const [logs, setLogs] = useState<LogEntry[]>([]);
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
   const [health, setHealth] = useState<HealthDocument | null>(null);
   const [isReloading, setIsReloading] = useState(false);
@@ -280,17 +275,6 @@ function App() {
   const [notificationPermission, setNotificationPermission] = useState<
     NotificationPermission | 'unsupported'
   >(() => ('Notification' in window ? Notification.permission : 'unsupported'));
-
-  const addLog = useCallback((level: LogLevel, message: string) => {
-    const entry = createLog(level, message);
-    setLogs((currentLogs) => [entry, ...currentLogs].slice(0, 80));
-
-    if (level === 'error') {
-      console.error(message);
-    } else {
-      console.info(message);
-    }
-  }, []);
 
   const loadData = useCallback(async (options?: { silent?: boolean }) => {
     setIsReloading(true);
@@ -322,22 +306,20 @@ function App() {
       );
 
       if (!options?.silent) {
-        addLog(
-          'info',
+        console.info(
           `データを読み込みました: 配信 ${nextSchedules.length}件 / 手動補完 ${manualSchedules.length}件 / 配信者 ${nextChannels.length}件`,
         );
       }
-      addLog('debug', 'public/data のJSONを再取得しました');
     } catch (error) {
       const message =
         error instanceof Error
           ? error.message
           : 'データ読み込み中に不明なエラーが発生しました';
-      addLog('error', message);
+      console.error(message);
     } finally {
       setIsReloading(false);
     }
-  }, [addLog]);
+  }, []);
 
   useEffect(() => {
     const timerId = window.setTimeout(() => {
@@ -351,51 +333,93 @@ function App() {
     try {
       saveSettings(settings);
     } catch {
-      window.setTimeout(() => addLog('error', 'localStorage への設定保存に失敗しました'), 0);
+      window.setTimeout(() => console.error('localStorage への設定保存に失敗しました'), 0);
     }
-  }, [addLog, settings]);
+  }, [settings]);
 
   useEffect(() => {
-    if (!settings.notificationEnabled || notificationPermission !== 'granted') {
+    if (
+      (!settings.notificationBeforeStartEnabled && !settings.notificationAtStartEnabled) ||
+      notificationPermission !== 'granted'
+    ) {
       return;
     }
 
     const timerId = window.setInterval(() => {
       const now = new Date();
-      const notifiedIds = new Set(settings.notifiedScheduleIds);
-      const target = schedules.find((schedule) => {
-        const startAt = parseDate(schedule.startAt);
+      const beforeNotifiedIds = new Set(settings.notifiedBeforeStartScheduleIds);
+      const startNotifiedIds = new Set(settings.notifiedStartScheduleIds);
+      const beforeTarget = settings.notificationBeforeStartEnabled
+        ? schedules.find((schedule) => {
+            const startAt = parseDate(schedule.startAt);
 
-        if (!startAt || notifiedIds.has(schedule.id) || ['archived', 'ended'].includes(schedule.status)) {
-          return false;
-        }
+            if (
+              !startAt ||
+              beforeNotifiedIds.has(schedule.id) ||
+              ['archived', 'ended'].includes(schedule.status)
+            ) {
+              return false;
+            }
 
-        const minutesUntilStart = (startAt.getTime() - now.getTime()) / 60000;
-        return minutesUntilStart > 0 && minutesUntilStart <= 30;
-      });
+            const minutesUntilStart = (startAt.getTime() - now.getTime()) / 60000;
+            return minutesUntilStart > 0 && minutesUntilStart <= 30;
+          })
+        : undefined;
+      const startTarget = settings.notificationAtStartEnabled
+        ? schedules.find((schedule) => {
+            const startAt = parseDate(schedule.startAt);
 
-      if (!target) {
-        return;
+            if (
+              !startAt ||
+              startNotifiedIds.has(schedule.id) ||
+              ['archived', 'ended'].includes(schedule.status)
+            ) {
+              return false;
+            }
+
+            const minutesSinceStart = (now.getTime() - startAt.getTime()) / 60000;
+            return minutesSinceStart >= 0 && minutesSinceStart < 1.5;
+          })
+        : undefined;
+
+      if (beforeTarget) {
+        new Notification('K都市観測局', {
+          body: `${beforeTarget.channelName} の配信が30分以内に始まります: ${beforeTarget.title}`,
+        });
+
+        setSettings((currentSettings) => ({
+          ...currentSettings,
+          notifiedScheduleIds: [
+            ...new Set([...currentSettings.notifiedScheduleIds, beforeTarget.id]),
+          ],
+          notifiedBeforeStartScheduleIds: [
+            ...new Set([...currentSettings.notifiedBeforeStartScheduleIds, beforeTarget.id]),
+          ],
+        }));
       }
 
-      new Notification('K都市観測局', {
-        body: `${target.channelName} の配信が30分以内に始まります: ${target.title}`,
-      });
+      if (startTarget) {
+        new Notification('K都市観測局', {
+          body: `${startTarget.channelName} の配信開始時刻です: ${startTarget.title}`,
+        });
 
-      setSettings((currentSettings) => ({
-        ...currentSettings,
-        notifiedScheduleIds: [...new Set([...currentSettings.notifiedScheduleIds, target.id])],
-      }));
-      addLog('info', `通知を送信しました: ${target.title}`);
+        setSettings((currentSettings) => ({
+          ...currentSettings,
+          notifiedStartScheduleIds: [
+            ...new Set([...currentSettings.notifiedStartScheduleIds, startTarget.id]),
+          ],
+        }));
+      }
     }, 60_000);
 
     return () => window.clearInterval(timerId);
   }, [
-    addLog,
     notificationPermission,
     schedules,
-    settings.notificationEnabled,
-    settings.notifiedScheduleIds,
+    settings.notificationAtStartEnabled,
+    settings.notificationBeforeStartEnabled,
+    settings.notifiedBeforeStartScheduleIds,
+    settings.notifiedStartScheduleIds,
   ]);
 
   const groupOptions = useMemo(
@@ -437,7 +461,6 @@ function App() {
 
   function updateSettings(nextSettings: UserSettings): void {
     setSettings(nextSettings);
-    addLog('debug', '設定を更新しました');
   }
 
   function resetFilters(): void {
@@ -447,24 +470,29 @@ function App() {
       showFavoritesOnly: false,
       statusFilter: 'upcoming',
     }));
-    addLog('info', 'フィルターをリセットしました');
   }
 
   async function requestNotificationPermission(): Promise<void> {
     if (!('Notification' in window)) {
       setNotificationPermission('unsupported');
-      addLog('error', 'このブラウザは通知に対応していません');
+      console.error('このブラウザは通知に対応していません');
       return;
     }
 
     const permission = await Notification.requestPermission();
     setNotificationPermission(permission);
-    addLog(permission === 'granted' ? 'info' : 'error', `通知権限: ${permission}`);
   }
 
   return (
     <main className="app">
       <Header lastUpdatedAt={lastUpdatedAt} />
+
+      <NotificationSettings
+        settings={settings}
+        permission={notificationPermission}
+        onChange={updateSettings}
+        onRequestPermission={requestNotificationPermission}
+      />
 
       <FilterPanel
         groups={groupOptions}
@@ -484,19 +512,6 @@ function App() {
         statusFilter={settings.statusFilter}
         groupLabels={groups}
       />
-
-      <details className="utilityDetails">
-        <summary>通知とログ</summary>
-        <div className="utilityGrid">
-          <NotificationSettings
-            settings={settings}
-            permission={notificationPermission}
-            onChange={updateSettings}
-            onRequestPermission={requestNotificationPermission}
-          />
-          <LogPanel logs={logs} settings={settings} onChange={updateSettings} />
-        </div>
-      </details>
 
       {isChannelSettingsOpen ? (
         <div

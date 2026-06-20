@@ -8,6 +8,7 @@ import { NotificationSettings } from './components/NotificationSettings';
 import type {
   ChannelItem,
   GroupItem,
+  HealthDocument,
   LogEntry,
   LogLevel,
   ScheduleDocument,
@@ -32,12 +33,22 @@ async function fetchJson(fileName: string): Promise<unknown> {
   return response.json();
 }
 
-async function fetchOptionalJson(fileName: string, fallback: unknown): Promise<unknown> {
-  try {
-    return await fetchJson(fileName);
-  } catch {
+async function fetchJsonWithFallback(fileNames: string[], fallback?: unknown): Promise<unknown> {
+  let lastError: unknown;
+
+  for (const fileName of fileNames) {
+    try {
+      return await fetchJson(fileName);
+    } catch (error) {
+      lastError = error;
+    }
+  }
+
+  if (arguments.length >= 2) {
     return fallback;
   }
+
+  throw lastError instanceof Error ? lastError : new Error(`${fileNames.join(', ')} の読み込みに失敗しました`);
 }
 
 function asArray(value: unknown): unknown[] {
@@ -132,6 +143,24 @@ function normalizeScheduleDocument(value: unknown): ScheduleDocument {
   return { items: [] };
 }
 
+function normalizeHealthDocument(value: unknown): HealthDocument | null {
+  if (!value || typeof value !== 'object') {
+    return null;
+  }
+
+  const source = value as Partial<HealthDocument>;
+
+  if (!source.apiUsage) {
+    return null;
+  }
+
+  return {
+    schemaVersion: source.schemaVersion,
+    generatedAt: source.generatedAt,
+    apiUsage: source.apiUsage,
+  };
+}
+
 function getScheduleId(schedule: ScheduleItem): string {
   return schedule.videoId || schedule.id;
 }
@@ -218,6 +247,8 @@ function App() {
   const [settings, setSettings] = useState<UserSettings>(() => loadSettings());
   const [logs, setLogs] = useState<LogEntry[]>([]);
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
+  const [health, setHealth] = useState<HealthDocument | null>(null);
+  const [isReloading, setIsReloading] = useState(false);
   const [isChannelSettingsOpen, setIsChannelSettingsOpen] = useState(false);
   const [notificationPermission, setNotificationPermission] = useState<
     NotificationPermission | 'unsupported'
@@ -234,55 +265,57 @@ function App() {
     }
   }, []);
 
-  useEffect(() => {
-    let isMounted = true;
+  const loadData = useCallback(async (options?: { silent?: boolean }) => {
+    setIsReloading(true);
 
-    async function loadData() {
-      try {
-        const [scheduleData, channelData, manualScheduleData] = await Promise.all([
-          fetchJson('schedule.json'),
-          fetchJson('channels.json'),
-          fetchOptionalJson('manual-schedule.json', []),
-        ]);
-        const scheduleDocument = normalizeScheduleDocument(scheduleData);
-        const manualSchedules = normalizeManualSchedules(manualScheduleData);
-        const nextSchedules = applyManualSchedules(scheduleDocument.items, manualSchedules);
-        const nextChannels = normalizeChannels(channelData);
-        const nextGroups = normalizeGroups(channelData);
+    try {
+      const [scheduleData, channelData, manualScheduleData, healthData] = await Promise.all([
+        fetchJsonWithFallback(['data/schedule.json', 'schedule.json']),
+        fetchJsonWithFallback(['data/channels.json', 'channels.json']),
+        fetchJsonWithFallback(['data/manual-schedule.json', 'manual-schedule.json'], []),
+        fetchJsonWithFallback(['data/health.json'], null),
+      ]);
+      const scheduleDocument = normalizeScheduleDocument(scheduleData);
+      const manualSchedules = normalizeManualSchedules(manualScheduleData);
+      const nextSchedules = applyManualSchedules(scheduleDocument.items, manualSchedules);
+      const nextChannels = normalizeChannels(channelData);
+      const nextGroups = normalizeGroups(channelData);
+      const nextHealth = normalizeHealthDocument(healthData);
 
-        if (!isMounted) {
-          return;
-        }
+      setSchedules(nextSchedules);
+      setChannels(nextChannels);
+      setGroups(nextGroups);
+      setHealth(nextHealth);
+      setSettings((currentSettings) => mergeSelectedChannels(currentSettings, nextChannels));
+      setLastUpdatedAt(
+        scheduleDocument.generatedAt ?? nextHealth?.apiUsage.lastSuccessAt ?? new Date().toISOString(),
+      );
 
-        setSchedules(nextSchedules);
-        setChannels(nextChannels);
-        setGroups(nextGroups);
-        setSettings((currentSettings) => mergeSelectedChannels(currentSettings, nextChannels));
-        setLastUpdatedAt(scheduleDocument.generatedAt ?? new Date().toISOString());
+      if (!options?.silent) {
         addLog(
           'info',
           `データを読み込みました: 配信 ${nextSchedules.length}件 / 手動補完 ${manualSchedules.length}件 / 配信者 ${nextChannels.length}件`,
         );
-        addLog('debug', 'schedule.json / channels.json を public から取得しました');
-      } catch (error) {
-        if (!isMounted) {
-          return;
-        }
-
-        const message =
-          error instanceof Error
-            ? error.message
-            : 'データ読み込み中に不明なエラーが発生しました';
-        addLog('error', message);
       }
+      addLog('debug', 'public/data のJSONを再取得しました');
+    } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : 'データ読み込み中に不明なエラーが発生しました';
+      addLog('error', message);
+    } finally {
+      setIsReloading(false);
     }
-
-    loadData();
-
-    return () => {
-      isMounted = false;
-    };
   }, [addLog]);
+
+  useEffect(() => {
+    const timerId = window.setTimeout(() => {
+      void loadData({ silent: false });
+    }, 0);
+
+    return () => window.clearTimeout(timerId);
+  }, [loadData]);
 
   useEffect(() => {
     try {
@@ -303,7 +336,7 @@ function App() {
       const target = schedules.find((schedule) => {
         const startAt = parseDate(schedule.startAt);
 
-        if (!startAt || notifiedIds.has(schedule.id) || schedule.status === 'archived') {
+        if (!startAt || notifiedIds.has(schedule.id) || ['archived', 'ended'].includes(schedule.status)) {
           return false;
         }
 
@@ -358,6 +391,8 @@ function App() {
         !settings.showFavoritesOnly || favoriteChannelIds.has(schedule.channelId);
       const matchesStatus =
         settings.statusFilter === 'all' ||
+        (settings.statusFilter === 'archived' &&
+          ['archived', 'ended'].includes(schedule.status)) ||
         (settings.statusFilter !== 'unknown' && schedule.status === settings.statusFilter) ||
         (settings.statusFilter === 'unknown' && schedule.status === 'unknown');
       const matchesRange = isWithinVisibleRange(schedule, settings.statusFilter, now);
@@ -404,6 +439,9 @@ function App() {
         onReset={resetFilters}
         onOpenChannelSettings={() => setIsChannelSettingsOpen(true)}
         groupLabels={groups}
+        health={health}
+        isReloading={isReloading}
+        onReload={() => loadData()}
       />
 
       <CalendarView

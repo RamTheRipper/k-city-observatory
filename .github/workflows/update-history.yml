@@ -1,15 +1,15 @@
-name: Update upcoming schedule
+name: Update stream history
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '41 18 * * *'
 
 permissions:
   contents: write
 
 jobs:
-  update-schedule:
+  update-history:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,8 +25,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch upcoming YouTube schedule
-        run: node scripts/fetch-youtube-schedule.mjs --scope=upcoming
+      - name: Fetch YouTube stream history
+        run: node scripts/fetch-youtube-schedule.mjs --scope=history
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
@@ -40,5 +40,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data/schedule.json public/data/channels.json public/data/health.json
-          git commit -m "Update upcoming YouTube schedule"
+          git commit -m "Update YouTube stream history"
           git push

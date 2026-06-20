@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "fetch:schedule": "node scripts/fetch-youtube-schedule.mjs",
+    "fetch:schedule": "node scripts/fetch-youtube-schedule.mjs --scope=upcoming",
+    "fetch:status": "node scripts/fetch-youtube-schedule.mjs --scope=status",
+    "fetch:history": "node scripts/fetch-youtube-schedule.mjs --scope=history",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

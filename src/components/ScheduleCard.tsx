@@ -10,6 +10,7 @@ type ScheduleCardProps = {
 const statusLabels: Record<string, string> = {
   upcoming: '予定',
   live: '配信中',
+  ended: '過去',
   archived: '過去',
   unknown: '不明',
 };

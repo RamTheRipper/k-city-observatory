@@ -21,7 +21,7 @@ export function CalendarView({
     return aTime - bTime;
   });
 
-  if (statusFilter === 'archived') {
+  if (statusFilter === 'archived' || statusFilter === 'ended') {
     return (
       <section className="calendarView" aria-label="過去配信">
         <div className="dayBlock">

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": null,
+  "apiUsage": {
+    "searchListCalls": 0,
+    "videosListCalls": 0,
+    "channelsListCalls": 0,
+    "playlistItemsListCalls": 0,
+    "estimatedUnits": 0,
+    "lastSuccessAt": null,
+    "lastError": null,
+    "fetchedScope": "manual"
+  }
+}

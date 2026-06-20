@@ -20,7 +20,7 @@ function stringArrayOrDefault(value: unknown, fallback: string[]): string[] {
 }
 
 function isStatusFilter(value: unknown): value is StatusFilter {
-  return ['upcoming', 'live', 'archived', 'unknown', 'all'].includes(String(value));
+  return ['upcoming', 'live', 'ended', 'archived', 'unknown', 'all'].includes(String(value));
 }
 
 export function normalizeSettings(value: unknown): UserSettings {

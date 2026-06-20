@@ -1,15 +1,15 @@
-name: Update upcoming schedule
+name: Update stream status
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '23 * * * *'
 
 permissions:
   contents: write
 
 jobs:
-  update-schedule:
+  update-status:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,20 +25,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch upcoming YouTube schedule
-        run: node scripts/fetch-youtube-schedule.mjs --scope=upcoming
+      - name: Refresh YouTube stream status
+        run: node scripts/fetch-youtube-schedule.mjs --scope=status
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
       - name: Commit data changes
         run: |
-          if git diff --quiet -- public/data/schedule.json public/data/channels.json public/data/health.json; then
+          if git diff --quiet -- public/data/schedule.json public/data/health.json; then
             echo "No data changes."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/schedule.json public/data/channels.json public/data/health.json
-          git commit -m "Update upcoming YouTube schedule"
+          git add public/data/schedule.json public/data/health.json
+          git commit -m "Update YouTube stream status"
           git push

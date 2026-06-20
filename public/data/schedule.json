@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-20T15:54:40.681Z",
+  "items": [
+    {
+      "id": "BAmkHKb7KJk",
+      "videoId": "BAmkHKb7KJk",
+      "title": "目指せ動員数No.1！新作ボードゲーム「KAMITSUBAKI FES Star Reach WARS」",
+      "channelId": "UCAOhUv73jM5iCpOhuJOQzxA",
+      "channelName": "KAMITSUBAKI STUDIO",
+      "startAt": "2026-06-16T01:55:55.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=BAmkHKb7KJk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BAmkHKb7KJk/hqdefault_live.jpg",
+      "group": "official",
+      "groupIds": [
+        "official"
+      ],
+      "tags": [
+        "official"
+      ],
+      "category": "",
+      "status": "unknown",
+      "scheduledStartTime": null,
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-16T01:55:55.000Z",
+      "source": "youtube-search-fallback",
+      "startAtSource": "publishedAt",
+      "isManual": false
+    },
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき/ Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "startAt": "2026-06-20T11:36:15.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp",
+        "solo"
+      ],
+      "tags": [
+        "artist"
+      ],
+      "category": "",
+      "status": "unknown",
+      "scheduledStartTime": null,
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-20T11:36:15.000Z",
+      "source": "youtube-search-fallback",
+      "startAtSource": "publishedAt",
+      "isManual": false
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import type { GroupItem, StatusFilter, UserSettings } from '../types';
+import type { GroupItem, HealthDocument, StatusFilter, UserSettings } from '../types';
 
 type FilterPanelProps = {
   groups: string[];
@@ -7,6 +7,9 @@ type FilterPanelProps = {
   onReset: () => void;
   onOpenChannelSettings: () => void;
   groupLabels: GroupItem[];
+  health: HealthDocument | null;
+  isReloading: boolean;
+  onReload: () => void;
 };
 
 const statusOptions: { value: StatusFilter; label: string }[] = [
@@ -41,7 +44,12 @@ export function FilterPanel({
   onReset,
   onOpenChannelSettings,
   groupLabels,
+  health,
+  isReloading,
+  onReload,
 }: FilterPanelProps) {
+  const apiUsage = health?.apiUsage;
+
   return (
     <section className="filterPanel" aria-label="フィルター">
       <div className="statusTabs" role="tablist" aria-label="表示対象">
@@ -91,7 +99,22 @@ export function FilterPanel({
         <button type="button" className="ghostButton settingsButton" onClick={onOpenChannelSettings}>
           配信者設定
         </button>
+
+        <button type="button" className="reloadButton" onClick={onReload} disabled={isReloading}>
+          {isReloading ? '再読み込み中' : '最新データを再読み込み'}
+        </button>
       </div>
+
+      {apiUsage ? (
+        <div className={apiUsage.lastError ? 'healthStrip healthStrip-warning' : 'healthStrip'}>
+          <span>取得範囲: {apiUsage.fetchedScope}</span>
+          <span>推定API使用量: {apiUsage.estimatedUnits} units</span>
+          {apiUsage.lastSuccessAt ? <span>最終成功: {apiUsage.lastSuccessAt}</span> : null}
+          {apiUsage.lastError ? (
+            <strong>データ更新が停止している可能性があります: {apiUsage.lastError.message}</strong>
+          ) : null}
+        </div>
+      ) : null}
     </section>
   );
 }

@@ -1,4 +1,4 @@
-export type ScheduleStatus = 'upcoming' | 'live' | 'archived' | 'unknown';
+export type ScheduleStatus = 'upcoming' | 'live' | 'ended' | 'archived' | 'unknown';
 export type StatusFilter = ScheduleStatus | 'all';
 export type LogLevel = 'error' | 'info' | 'debug';
 
@@ -36,6 +36,29 @@ export type ScheduleDocument = {
   schemaVersion?: number;
   generatedAt?: string;
   items: ScheduleItem[];
+};
+
+export type ApiUsage = {
+  searchListCalls: number;
+  videosListCalls: number;
+  channelsListCalls: number;
+  playlistItemsListCalls: number;
+  estimatedUnits: number;
+  lastSuccessAt: string | null;
+  lastError: {
+    message: string;
+    status?: number | null;
+    scope?: string;
+    reason?: string;
+    occurredAt?: string;
+  } | null;
+  fetchedScope: 'upcoming' | 'status' | 'history' | 'manual' | 'unknown' | string;
+};
+
+export type HealthDocument = {
+  schemaVersion?: number;
+  generatedAt?: string;
+  apiUsage: ApiUsage;
 };
 
 export type ChannelItem = {

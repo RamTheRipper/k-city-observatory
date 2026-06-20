@@ -201,8 +201,12 @@ function getVideoId(item) {
   return item?.videoId || item?.id || '';
 }
 
-function getFallbackThumbnail(videoId, thumbnails = {}) {
-  return getBestThumbnail(thumbnails) || (videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : '');
+function getFallbackThumbnail(videoId, thumbnails = {}, existingThumbnailUrl = '') {
+  return (
+    getBestThumbnail(thumbnails) ||
+    existingThumbnailUrl ||
+    (videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : '')
+  );
 }
 
 function mapScheduleItemFromDetail(video, channel, eventType) {
@@ -252,11 +256,19 @@ function mapScheduleItemFromSearchResult(result, existingById) {
   const videoId = result.videoId;
   const publishedAt = toIsoString(snippet.publishedAt);
   const existing = existingById.get(videoId);
-  const startAt = existing?.scheduledStartTime || existing?.startAt || publishedAt || new Date().toISOString();
-  const startAtSource = existing?.scheduledStartTime
+  const existingScheduledStartTime = toIsoString(existing?.scheduledStartTime);
+  const existingActualStartTime = toIsoString(existing?.actualStartTime);
+  const existingActualEndTime = toIsoString(existing?.actualEndTime);
+  const fallbackGeneratedAt = new Date().toISOString();
+  const startAt =
+    existingScheduledStartTime ||
+    (result.eventType === 'live' ? existingActualStartTime : null) ||
+    publishedAt ||
+    fallbackGeneratedAt;
+  const startAtSource = existingScheduledStartTime
     ? 'existing-scheduledStartTime'
-    : existing?.startAt
-      ? 'existing-startAt'
+    : result.eventType === 'live' && existingActualStartTime
+      ? 'existing-actualStartTime'
       : publishedAt
         ? 'publishedAt'
         : 'fallback-now';
@@ -270,7 +282,7 @@ function mapScheduleItemFromSearchResult(result, existingById) {
     startAt,
     endAt: null,
     url: `https://www.youtube.com/watch?v=${videoId}`,
-    thumbnailUrl: getFallbackThumbnail(videoId, snippet.thumbnails),
+    thumbnailUrl: getFallbackThumbnail(videoId, snippet.thumbnails, existing?.thumbnailUrl),
     group: channel.group,
     groupIds: channel.groupIds,
     tags: channel.tags,
@@ -278,12 +290,12 @@ function mapScheduleItemFromSearchResult(result, existingById) {
     status:
       result.eventType === 'live'
         ? 'live'
-        : result.eventType === 'upcoming' && startAtSource === 'publishedAt'
+        : result.eventType === 'upcoming' && !existingScheduledStartTime
           ? 'unknown'
           : 'upcoming',
-    scheduledStartTime: existing?.scheduledStartTime ?? null,
-    actualStartTime: existing?.actualStartTime ?? null,
-    actualEndTime: existing?.actualEndTime ?? null,
+    scheduledStartTime: existingScheduledStartTime,
+    actualStartTime: existingActualStartTime,
+    actualEndTime: existingActualEndTime,
     publishedAt,
     source: 'youtube-search-fallback',
     startAtSource,

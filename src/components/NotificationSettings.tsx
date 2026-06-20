@@ -14,7 +14,7 @@ export function NotificationSettings({
   onRequestPermission,
 }: NotificationSettingsProps) {
   const permissionLabel =
-    permission === 'unsupported' ? '???' : permission === 'default' ? '???' : permission;
+    permission === 'unsupported' ? '非対応' : permission === 'default' ? '未確認' : permission;
   const notificationsEnabled =
     settings.notificationBeforeStartEnabled || settings.notificationAtStartEnabled;
 
@@ -28,13 +28,13 @@ export function NotificationSettings({
   }
 
   return (
-    <section className="notificationSettings topNotificationSettings" aria-label="????">
+    <section className="notificationSettings topNotificationSettings" aria-label="通知設定">
       <div className="panelHeader">
         <div>
-          <h2>????</h2>
-          <p>?????????????????</p>
+          <h2>通知設定</h2>
+          <p>ページを開いている間だけ通知します</p>
         </div>
-        <p>??: {permissionLabel}</p>
+        <p>権限: {permissionLabel}</p>
       </div>
 
       <div className="notificationControls">
@@ -46,7 +46,7 @@ export function NotificationSettings({
               updateNotificationSettings({ notificationBeforeStartEnabled: event.target.checked })
             }
           />
-          30??
+          30分前
         </label>
 
         <label className="switchRow">
@@ -57,16 +57,16 @@ export function NotificationSettings({
               updateNotificationSettings({ notificationAtStartEnabled: event.target.checked })
             }
           />
-          ?????
+          配信開始時
         </label>
 
         <button type="button" className="ghostButton" onClick={onRequestPermission}>
-          ???????
+          通知権限を確認
         </button>
       </div>
 
       {notificationsEnabled && permission !== 'granted' ? (
-        <p className="notificationHint">????????????????????????????</p>
+        <p className="notificationHint">通知を受け取るにはブラウザの通知権限を許可してください。</p>
       ) : null}
     </section>
   );

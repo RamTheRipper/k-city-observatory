@@ -45,31 +45,58 @@ async function loadEnvLocal() {
   }
 }
 
-async function readJsonArray(filePath, fallback = []) {
+async function readJson(filePath, fallback) {
   try {
     const content = await readFile(filePath, 'utf8');
-    const parsed = JSON.parse(content);
-    return Array.isArray(parsed) ? parsed : fallback;
+    return JSON.parse(content);
   } catch {
     return fallback;
   }
 }
 
+function asArray(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+function extractChannels(value) {
+  if (Array.isArray(value)) {
+    return value;
+  }
+
+  if (value && typeof value === 'object' && Array.isArray(value.channels)) {
+    return value.channels;
+  }
+
+  return [];
+}
+
 function normalizeChannel(channel) {
+  const groupIds = asArray(channel.groupIds).map(String);
+  const youtubeChannelId = String(channel.youtubeChannelId || channel.channelId || '');
+
   return {
-    channelId: String(channel.channelId || ''),
-    name: String(channel.name || channel.displayName || channel.channelId || ''),
+    talentId: channel.talentId ? String(channel.talentId) : undefined,
+    youtubeChannelId,
+    channelId: youtubeChannelId,
+    name: String(channel.name || channel.displayName || channel.channelName || youtubeChannelId),
     displayName: channel.displayName ? String(channel.displayName) : undefined,
-    group: channel.group ? String(channel.group) : undefined,
-    tags: Array.isArray(channel.tags) ? channel.tags.map(String) : [],
+    channelName: channel.channelName ? String(channel.channelName) : undefined,
+    group: groupIds[0] || (channel.group ? String(channel.group) : 'その他'),
+    groupIds,
+    tags: asArray(channel.tags).map(String),
     category: channel.category ? String(channel.category) : undefined,
     thumbnailUrl: channel.thumbnailUrl ? String(channel.thumbnailUrl) : '',
+    colorKey: channel.colorKey ? String(channel.colorKey) : undefined,
     enabled: channel.enabled !== false,
   };
 }
 
 function getChannelLabel(channel) {
-  return channel.displayName || channel.name || channel.channelId || 'unknown channel';
+  return channel.displayName || channel.channelName || channel.name || channel.youtubeChannelId;
+}
+
+function getScheduleChannelName(channel, snippet = {}) {
+  return channel.channelName || channel.displayName || channel.name || snippet.channelTitle || channel.channelId;
 }
 
 function isPlaceholderChannelId(channelId) {
@@ -112,7 +139,7 @@ function normalizeStatus(eventType, liveStreamingDetails = {}) {
   return 'unknown';
 }
 
-function getStartAt(eventType, snippet = {}, liveStreamingDetails = {}) {
+function getStartAt(snippet = {}, liveStreamingDetails = {}) {
   return (
     toIsoString(liveStreamingDetails.scheduledStartTime) ||
     toIsoString(liveStreamingDetails.actualStartTime) ||
@@ -130,14 +157,15 @@ function mapScheduleItem(video, channel, eventType) {
   return {
     id: videoId,
     title: snippet.title || 'Untitled',
-    channelId: channel.channelId,
-    channelName: channel.displayName || channel.name || snippet.channelTitle || channel.channelId,
-    startAt: getStartAt(eventType, snippet, liveStreamingDetails),
+    channelId: channel.youtubeChannelId,
+    channelName: getScheduleChannelName(channel, snippet),
+    startAt: getStartAt(snippet, liveStreamingDetails),
     endAt: toIsoString(liveStreamingDetails.actualEndTime),
     url: `https://www.youtube.com/watch?v=${videoId}`,
     thumbnailUrl: getBestThumbnail(snippet.thumbnails),
-    group: channel.group || 'その他',
-    tags: channel.tags || [],
+    group: channel.group,
+    groupIds: channel.groupIds,
+    tags: channel.tags,
     category: channel.category || '',
     status: normalizeStatus(eventType, liveStreamingDetails),
     isManual: false,
@@ -173,7 +201,7 @@ async function searchVideos(channel, eventType, apiKey) {
       'search',
       {
         part: 'snippet',
-        channelId: channel.channelId,
+        channelId: channel.youtubeChannelId,
         type: 'video',
         eventType,
         order: 'date',
@@ -191,7 +219,7 @@ async function searchVideos(channel, eventType, apiKey) {
       .filter((item) => item.videoId);
 
     console.log(
-      `[youtube] ${getChannelLabel(channel)}: ${eventType} search returned ${videos.length} videos.`,
+      `[youtube] ${getChannelLabel(channel)} (${channel.youtubeChannelId}) ${eventType}: ${videos.length} videos.`,
     );
 
     return videos;
@@ -201,7 +229,7 @@ async function searchVideos(channel, eventType, apiKey) {
     throw new Error(
       `YouTube API search failed: status=${status}, channel="${getChannelLabel(
         channel,
-      )}", eventType=${eventType}, message="${message}"`,
+      )}", youtubeChannelId="${channel.youtubeChannelId}", eventType=${eventType}, message="${message}"`,
     );
   }
 }
@@ -249,24 +277,25 @@ async function main() {
   await loadEnvLocal();
 
   const apiKey = process.env.YOUTUBE_API_KEY;
-  const existingSchedule = await readJsonArray(schedulePath);
-  const channels = (await readJsonArray(channelsPath)).map(normalizeChannel);
+  const existingSchedule = await readJson(schedulePath, []);
+  const channelsData = await readJson(channelsPath, { channels: [] });
+  const channels = extractChannels(channelsData).map(normalizeChannel);
   const enabledCount = channels.filter((channel) => channel.enabled).length;
   const enabledChannels = channels.filter(
-    (channel) => channel.enabled && !isPlaceholderChannelId(channel.channelId),
+    (channel) => channel.enabled && !isPlaceholderChannelId(channel.youtubeChannelId),
   );
 
-  console.log(`[channels] Loaded ${channels.length} channels from public/channels.json.`);
+  console.log(`[channels] Loading file: ${channelsPath}`);
+  console.log(`[channels] Loaded channels: ${channels.length}.`);
   console.log(`[channels] enabled=true channels: ${enabledCount}.`);
   console.log(`[channels] fetch targets after excluding placeholders: ${enabledChannels.length}.`);
 
-  if (!apiKey) {
-    console.warn('YOUTUBE_API_KEY is not set. Keeping existing public/schedule.json.');
-    return;
+  for (const channel of enabledChannels) {
+    console.log(`[channels] target: ${getChannelLabel(channel)} (${channel.youtubeChannelId})`);
   }
 
-  if (enabledChannels.length === 0) {
-    console.warn('No enabled real channel IDs found. Keeping existing public/schedule.json.');
+  if (!apiKey) {
+    console.warn('YOUTUBE_API_KEY is not set. Keeping existing public/schedule.json.');
     return;
   }
 
@@ -274,7 +303,7 @@ async function main() {
     const searchResults = [];
 
     for (const channel of enabledChannels) {
-      console.log(`[youtube] Fetching channel "${getChannelLabel(channel)}" (${channel.channelId}).`);
+      console.log(`[youtube] Fetching channel "${getChannelLabel(channel)}" (${channel.youtubeChannelId}).`);
 
       for (const eventType of eventTypes) {
         const videos = await searchVideos(channel, eventType, apiKey);
@@ -287,12 +316,12 @@ async function main() {
     console.log(`[youtube] Unique video IDs for videos.list: ${videoIds.length}.`);
 
     if (searchResults.length === 0) {
-      console.warn('[youtube] search.list returned 0 results. This is not treated as a failure.');
+      console.warn('[youtube] search.list returned 0 results. Writing an empty generated schedule.');
     }
 
     const detailItems = await fetchVideoDetails(videoIds, apiKey);
     const detailById = new Map(detailItems.map((item) => [item.id, item]));
-    const manualSchedules = (await readJsonArray(manualSchedulePath)).map((item) => ({
+    const manualSchedules = (await readJson(manualSchedulePath, [])).map((item) => ({
       ...item,
       isManual: true,
     }));
@@ -312,18 +341,18 @@ async function main() {
     }
 
     await writeFile(schedulePath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
-    console.log(`[schedule] Wrote ${output.length} schedules to public/schedule.json.`);
+    console.log(`[schedule] Wrote ${output.length} schedules to ${schedulePath}.`);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`Failed to fetch YouTube schedule: ${message}`);
 
-    if (existingSchedule.length > 0) {
+    if (Array.isArray(existingSchedule)) {
       console.error('Keeping existing public/schedule.json.');
       return;
     }
 
     await writeFile(schedulePath, '[]\n', 'utf8');
-    console.error('No existing schedule found. Wrote an empty schedule.json.');
+    console.error('No valid existing schedule found. Wrote an empty schedule.json.');
   }
 }
 

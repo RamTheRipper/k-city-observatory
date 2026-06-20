@@ -12,6 +12,7 @@ export type ScheduleItem = {
   url?: string;
   thumbnailUrl?: string;
   group?: string;
+  groupIds?: string[];
   tags?: string[];
   category?: string;
   status: ScheduleStatus;
@@ -20,12 +21,17 @@ export type ScheduleItem = {
 
 export type ChannelItem = {
   channelId: string;
+  youtubeChannelId?: string;
   name: string;
   displayName?: string;
+  channelName?: string;
   group?: string;
+  groupIds?: string[];
   tags?: string[];
   category?: string;
   thumbnailUrl?: string;
+  talentId?: string;
+  colorKey?: string;
   enabled?: boolean;
 };
 

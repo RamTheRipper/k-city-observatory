@@ -13,15 +13,64 @@ import './App.css';
 
 const assetPath = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
 
-async function fetchJson<T>(fileName: string): Promise<T[]> {
+async function fetchJson(fileName: string): Promise<unknown> {
   const response = await fetch(assetPath(fileName), { cache: 'no-store' });
 
   if (!response.ok) {
     throw new Error(`${fileName} の読み込みに失敗しました (${response.status})`);
   }
 
-  const data = (await response.json()) as unknown;
-  return Array.isArray(data) ? (data as T[]) : [];
+  return response.json();
+}
+
+function asArray(value: unknown): unknown[] {
+  return Array.isArray(value) ? value : [];
+}
+
+function normalizeChannel(rawChannel: unknown): ChannelItem | null {
+  if (!rawChannel || typeof rawChannel !== 'object') {
+    return null;
+  }
+
+  const channel = rawChannel as Record<string, unknown>;
+  const groupIds = asArray(channel.groupIds).map(String);
+  const youtubeChannelId = String(channel.youtubeChannelId || channel.channelId || '');
+  const name = String(
+    channel.name || channel.displayName || channel.channelName || youtubeChannelId || 'unknown',
+  );
+
+  if (!youtubeChannelId) {
+    return null;
+  }
+
+  return {
+    channelId: youtubeChannelId,
+    youtubeChannelId,
+    talentId: channel.talentId ? String(channel.talentId) : undefined,
+    name,
+    displayName: channel.displayName ? String(channel.displayName) : undefined,
+    channelName: channel.channelName ? String(channel.channelName) : undefined,
+    group: groupIds[0] || (channel.group ? String(channel.group) : 'その他'),
+    groupIds,
+    tags: asArray(channel.tags).map(String),
+    category: channel.category ? String(channel.category) : undefined,
+    thumbnailUrl: channel.thumbnailUrl ? String(channel.thumbnailUrl) : '',
+    colorKey: channel.colorKey ? String(channel.colorKey) : undefined,
+    enabled: channel.enabled !== false,
+  };
+}
+
+function normalizeChannels(value: unknown): ChannelItem[] {
+  const source =
+    value && typeof value === 'object' && Array.isArray((value as { channels?: unknown }).channels)
+      ? (value as { channels: unknown[] }).channels
+      : asArray(value);
+
+  return source.map(normalizeChannel).filter((channel): channel is ChannelItem => Boolean(channel));
+}
+
+function normalizeSchedules(value: unknown): ScheduleItem[] {
+  return asArray(value) as ScheduleItem[];
 }
 
 function uniqueSorted(values: string[]): string[] {
@@ -65,10 +114,12 @@ function App() {
 
     async function loadData() {
       try {
-        const [nextSchedules, nextChannels] = await Promise.all([
-          fetchJson<ScheduleItem>('schedule.json'),
-          fetchJson<ChannelItem>('channels.json'),
+        const [scheduleData, channelData] = await Promise.all([
+          fetchJson('schedule.json'),
+          fetchJson('channels.json'),
         ]);
+        const nextSchedules = normalizeSchedules(scheduleData);
+        const nextChannels = normalizeChannels(channelData);
 
         if (!isMounted) {
           return;

@@ -20,6 +20,23 @@ class YouTubeApiError extends Error {
   }
 }
 
+function createEventStats() {
+  return Object.fromEntries(
+    eventTypes.map((eventType) => [
+      eventType,
+      {
+        searchResults: 0,
+        detailResults: 0,
+        withLiveStreamingDetails: 0,
+        convertedSchedules: 0,
+        missingDetails: 0,
+        missingLiveStreamingDetails: 0,
+        missingDate: 0,
+      },
+    ]),
+  );
+}
+
 async function loadEnvLocal() {
   const envPath = path.join(rootDir, '.env.local');
 
@@ -139,36 +156,52 @@ function normalizeStatus(eventType, liveStreamingDetails = {}) {
   return 'unknown';
 }
 
-function getStartAt(snippet = {}, liveStreamingDetails = {}) {
-  return (
-    toIsoString(liveStreamingDetails.scheduledStartTime) ||
-    toIsoString(liveStreamingDetails.actualStartTime) ||
-    toIsoString(liveStreamingDetails.actualEndTime) ||
-    toIsoString(snippet.publishedAt) ||
-    new Date().toISOString()
-  );
+function getStartInfo(snippet = {}, liveStreamingDetails = {}) {
+  const candidates = [
+    ['scheduledStartTime', liveStreamingDetails.scheduledStartTime],
+    ['actualStartTime', liveStreamingDetails.actualStartTime],
+    ['actualEndTime', liveStreamingDetails.actualEndTime],
+    ['publishedAt', snippet.publishedAt],
+  ];
+
+  for (const [source, value] of candidates) {
+    const isoString = toIsoString(value);
+
+    if (isoString) {
+      return { startAt: isoString, source };
+    }
+  }
+
+  return { startAt: new Date().toISOString(), source: 'fallback-now' };
 }
 
 function mapScheduleItem(video, channel, eventType) {
   const snippet = video.snippet || {};
   const liveStreamingDetails = video.liveStreamingDetails || {};
   const videoId = video.id;
+  const { startAt, source } = getStartInfo(snippet, liveStreamingDetails);
 
   return {
-    id: videoId,
-    title: snippet.title || 'Untitled',
-    channelId: channel.youtubeChannelId,
-    channelName: getScheduleChannelName(channel, snippet),
-    startAt: getStartAt(snippet, liveStreamingDetails),
-    endAt: toIsoString(liveStreamingDetails.actualEndTime),
-    url: `https://www.youtube.com/watch?v=${videoId}`,
-    thumbnailUrl: getBestThumbnail(snippet.thumbnails),
-    group: channel.group,
-    groupIds: channel.groupIds,
-    tags: channel.tags,
-    category: channel.category || '',
-    status: normalizeStatus(eventType, liveStreamingDetails),
-    isManual: false,
+    item: {
+      id: videoId,
+      title: snippet.title || 'Untitled',
+      channelId: channel.youtubeChannelId,
+      channelName: getScheduleChannelName(channel, snippet),
+      startAt,
+      endAt: toIsoString(liveStreamingDetails.actualEndTime),
+      url: `https://www.youtube.com/watch?v=${videoId}`,
+      thumbnailUrl: getBestThumbnail(snippet.thumbnails),
+      group: channel.group,
+      groupIds: channel.groupIds,
+      tags: channel.tags,
+      category: channel.category || '',
+      status: normalizeStatus(eventType, liveStreamingDetails),
+      isManual: false,
+    },
+    diagnostics: {
+      hasLiveStreamingDetails: Object.keys(liveStreamingDetails).length > 0,
+      startAtSource: source,
+    },
   };
 }
 
@@ -219,7 +252,7 @@ async function searchVideos(channel, eventType, apiKey) {
       .filter((item) => item.videoId);
 
     console.log(
-      `[youtube] ${getChannelLabel(channel)} (${channel.youtubeChannelId}) ${eventType}: ${videos.length} videos.`,
+      `[youtube] ${getChannelLabel(channel)} (${channel.youtubeChannelId}) ${eventType}: search=${videos.length}.`,
     );
 
     return videos;
@@ -273,6 +306,21 @@ function dedupeSchedules(items) {
   return [...byId.values()].sort((a, b) => new Date(a.startAt) - new Date(b.startAt));
 }
 
+function logStats(stats) {
+  for (const eventType of eventTypes) {
+    const stat = stats[eventType];
+    console.log(
+      `[summary] ${eventType}: search=${stat.searchResults}, details=${stat.detailResults}, withLiveStreamingDetails=${stat.withLiveStreamingDetails}, converted=${stat.convertedSchedules}.`,
+    );
+
+    if (eventType === 'completed') {
+      console.log(
+        `[summary] completed diagnostics: missingDetails=${stat.missingDetails}, missingLiveStreamingDetails=${stat.missingLiveStreamingDetails}, missingDate=${stat.missingDate}.`,
+      );
+    }
+  }
+}
+
 async function main() {
   await loadEnvLocal();
 
@@ -300,6 +348,7 @@ async function main() {
   }
 
   try {
+    const stats = createEventStats();
     const searchResults = [];
 
     for (const channel of enabledChannels) {
@@ -307,6 +356,7 @@ async function main() {
 
       for (const eventType of eventTypes) {
         const videos = await searchVideos(channel, eventType, apiKey);
+        stats[eventType].searchResults += videos.length;
         searchResults.push(...videos);
       }
     }
@@ -327,19 +377,51 @@ async function main() {
     }));
     console.log(`[manual] Loaded ${manualSchedules.length} manual schedules.`);
 
-    const schedules = searchResults
-      .map((result) => {
-        const detail = detailById.get(result.videoId);
-        return detail ? mapScheduleItem(detail, result.channel, result.eventType) : null;
-      })
-      .filter(Boolean);
+    const schedules = [];
+
+    for (const result of searchResults) {
+      const detail = detailById.get(result.videoId);
+      const stat = stats[result.eventType];
+
+      if (!detail) {
+        stat.missingDetails += 1;
+        continue;
+      }
+
+      stat.detailResults += 1;
+
+      const mapped = mapScheduleItem(detail, result.channel, result.eventType);
+
+      if (mapped.diagnostics.hasLiveStreamingDetails) {
+        stat.withLiveStreamingDetails += 1;
+      } else {
+        stat.missingLiveStreamingDetails += 1;
+      }
+
+      if (mapped.diagnostics.startAtSource === 'fallback-now') {
+        stat.missingDate += 1;
+      }
+
+      stat.convertedSchedules += 1;
+      schedules.push(mapped.item);
+    }
+
+    logStats(stats);
+
+    if (stats.completed.searchResults > 0 && stats.completed.convertedSchedules === 0) {
+      console.warn(
+        `[diagnostics] completed search returned ${stats.completed.searchResults} videos but converted 0 schedules. Reasons: missingDetails=${stats.completed.missingDetails}, missingLiveStreamingDetails=${stats.completed.missingLiveStreamingDetails}, missingDate=${stats.completed.missingDate}.`,
+      );
+    }
 
     const output = dedupeSchedules([...schedules, ...manualSchedules]);
 
     if (output.length === 0) {
-      console.warn('[schedule] Output contains 0 schedules.');
+      console.warn('[schedule] Output contains 0 schedules. Writing [] to public/schedule.json.');
     }
 
+    console.log(`[schedule] Output path: ${schedulePath}`);
+    console.log(`[schedule] Writing ${output.length} schedules.`);
     await writeFile(schedulePath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
     console.log(`[schedule] Wrote ${output.length} schedules to ${schedulePath}.`);
   } catch (error) {

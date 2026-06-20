@@ -1,0 +1,32 @@
+[
+  {
+    "channelId": "UC_REPLACE_WITH_REAL_CHANNEL_ID_1",
+    "name": "理芽",
+    "displayName": "理芽",
+    "group": "SINSEKAI",
+    "tags": ["KAMITSUBAKI", "SINSEKAI"],
+    "category": "artist",
+    "thumbnailUrl": "",
+    "enabled": false
+  },
+  {
+    "channelId": "UC_REPLACE_WITH_REAL_CHANNEL_ID_2",
+    "name": "V.W.P",
+    "displayName": "V.W.P",
+    "group": "V.W.P",
+    "tags": ["KAMITSUBAKI", "V.W.P"],
+    "category": "unit",
+    "thumbnailUrl": "",
+    "enabled": false
+  },
+  {
+    "channelId": "UC_REPLACE_WITH_REAL_CHANNEL_ID_3",
+    "name": "KAMITSUBAKI STUDIO",
+    "displayName": "KAMITSUBAKI STUDIO",
+    "group": "その他",
+    "tags": ["KAMITSUBAKI"],
+    "category": "studio",
+    "thumbnailUrl": "",
+    "enabled": false
+  }
+]

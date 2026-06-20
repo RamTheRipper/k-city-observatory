@@ -1,46 +1,250 @@
-import sampleSchedule from './data/sampleSchedule.json';
-import type { StreamSchedule } from './types/stream';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { CalendarView } from './components/CalendarView';
+import { ChannelSettings } from './components/ChannelSettings';
+import { FilterPanel } from './components/FilterPanel';
+import { Header } from './components/Header';
+import { LogPanel } from './components/LogPanel';
+import { NotificationSettings } from './components/NotificationSettings';
+import type { ChannelItem, LogEntry, LogLevel, ScheduleItem, UserSettings } from './types';
+import { isWithinVisibleRange, parseDate } from './utils/date';
+import { createLog } from './utils/logger';
+import { loadSettings, saveSettings } from './utils/storage';
 import './App.css';
 
-function formatDateTime(startAt: string): string {
-  const date = new Date(startAt);
+const assetPath = (fileName: string) => `${import.meta.env.BASE_URL}${fileName}`;
 
-  return new Intl.DateTimeFormat('ja-JP', {
-    month: '2-digit',
-    day: '2-digit',
-    weekday: 'short',
-    hour: '2-digit',
-    minute: '2-digit',
-  }).format(date);
+async function fetchJson<T>(fileName: string): Promise<T[]> {
+  const response = await fetch(assetPath(fileName), { cache: 'no-store' });
+
+  if (!response.ok) {
+    throw new Error(`${fileName} の読み込みに失敗しました (${response.status})`);
+  }
+
+  const data = (await response.json()) as unknown;
+  return Array.isArray(data) ? (data as T[]) : [];
+}
+
+function uniqueSorted(values: string[]): string[] {
+  return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'ja-JP'));
+}
+
+function mergeSelectedChannels(settings: UserSettings, channels: ChannelItem[]): UserSettings {
+  if (settings.selectedChannelIds.length > 0 || channels.length === 0) {
+    return settings;
+  }
+
+  return {
+    ...settings,
+    selectedChannelIds: channels.map((channel) => channel.channelId),
+  };
 }
 
 function App() {
-  const schedules = sampleSchedule as StreamSchedule[];
+  const [schedules, setSchedules] = useState<ScheduleItem[]>([]);
+  const [channels, setChannels] = useState<ChannelItem[]>([]);
+  const [settings, setSettings] = useState<UserSettings>(() => loadSettings());
+  const [logs, setLogs] = useState<LogEntry[]>([]);
+  const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
+  const [notificationPermission, setNotificationPermission] = useState<
+    NotificationPermission | 'unsupported'
+  >(() => ('Notification' in window ? Notification.permission : 'unsupported'));
+
+  const addLog = useCallback((level: LogLevel, message: string) => {
+    const entry = createLog(level, message);
+    setLogs((currentLogs) => [entry, ...currentLogs].slice(0, 80));
+
+    if (level === 'error') {
+      console.error(message);
+    } else {
+      console.info(message);
+    }
+  }, []);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadData() {
+      try {
+        const [nextSchedules, nextChannels] = await Promise.all([
+          fetchJson<ScheduleItem>('schedule.json'),
+          fetchJson<ChannelItem>('channels.json'),
+        ]);
+
+        if (!isMounted) {
+          return;
+        }
+
+        setSchedules(nextSchedules);
+        setChannels(nextChannels);
+        setSettings((currentSettings) => mergeSelectedChannels(currentSettings, nextChannels));
+        setLastUpdatedAt(new Date().toISOString());
+        addLog(
+          'info',
+          `データを読み込みました: 配信 ${nextSchedules.length}件 / 配信者 ${nextChannels.length}件`,
+        );
+        addLog('debug', 'schedule.json / channels.json を public から取得しました');
+      } catch (error) {
+        if (!isMounted) {
+          return;
+        }
+
+        const message =
+          error instanceof Error ? error.message : 'データ読み込み中に不明なエラーが発生しました';
+        addLog('error', message);
+      }
+    }
+
+    loadData();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [addLog]);
+
+  useEffect(() => {
+    try {
+      saveSettings(settings);
+    } catch {
+      window.setTimeout(() => addLog('error', 'localStorage への設定保存に失敗しました'), 0);
+    }
+  }, [addLog, settings]);
+
+  useEffect(() => {
+    if (!settings.notificationEnabled || notificationPermission !== 'granted') {
+      return;
+    }
+
+    const timerId = window.setInterval(() => {
+      const now = new Date();
+      const notifiedIds = new Set(settings.notifiedScheduleIds);
+      const target = schedules.find((schedule) => {
+        const startAt = parseDate(schedule.startAt);
+
+        if (!startAt || notifiedIds.has(schedule.id) || schedule.status === 'archived') {
+          return false;
+        }
+
+        const minutesUntilStart = (startAt.getTime() - now.getTime()) / 60000;
+        return minutesUntilStart > 0 && minutesUntilStart <= 30;
+      });
+
+      if (!target) {
+        return;
+      }
+
+      new Notification('K都市観測局', {
+        body: `${target.channelName} の配信が30分以内に開始します: ${target.title}`,
+      });
+
+      setSettings((currentSettings) => ({
+        ...currentSettings,
+        notifiedScheduleIds: [...new Set([...currentSettings.notifiedScheduleIds, target.id])],
+      }));
+      addLog('info', `通知を送信しました: ${target.title}`);
+    }, 60_000);
+
+    return () => window.clearInterval(timerId);
+  }, [
+    addLog,
+    notificationPermission,
+    schedules,
+    settings.notificationEnabled,
+    settings.notifiedScheduleIds,
+  ]);
+
+  const groups = useMemo(
+    () =>
+      uniqueSorted([
+        ...channels.map((channel) => channel.group || '未分類'),
+        ...schedules.map((schedule) => schedule.group || '未分類'),
+      ]),
+    [channels, schedules],
+  );
+
+  const filteredSchedules = useMemo(() => {
+    const selectedChannelIds = new Set(settings.selectedChannelIds);
+    const favoriteChannelIds = new Set(settings.favoriteChannelIds);
+    const now = new Date();
+
+    return schedules.filter((schedule) => {
+      const group = schedule.group || '未分類';
+      const matchesGroup = settings.selectedGroup === 'all' || group === settings.selectedGroup;
+      const matchesChannel =
+        selectedChannelIds.size === 0 || selectedChannelIds.has(schedule.channelId);
+      const matchesFavorite =
+        !settings.showFavoritesOnly || favoriteChannelIds.has(schedule.channelId);
+      const matchesStatus =
+        settings.statusFilter === 'all' ||
+        (settings.statusFilter !== 'unknown' && schedule.status === settings.statusFilter) ||
+        (settings.statusFilter === 'unknown' && schedule.status === 'unknown');
+      const matchesRange = isWithinVisibleRange(schedule, settings.statusFilter, now);
+
+      return matchesGroup && matchesChannel && matchesFavorite && matchesStatus && matchesRange;
+    });
+  }, [schedules, settings]);
+
+  function updateSettings(nextSettings: UserSettings): void {
+    setSettings(nextSettings);
+    addLog('debug', '設定を更新しました');
+  }
+
+  function resetFilters(): void {
+    setSettings((currentSettings) => ({
+      ...currentSettings,
+      selectedGroup: 'all',
+      showFavoritesOnly: false,
+      statusFilter: 'upcoming',
+    }));
+    addLog('info', 'フィルターをリセットしました');
+  }
+
+  async function requestNotificationPermission(): Promise<void> {
+    if (!('Notification' in window)) {
+      setNotificationPermission('unsupported');
+      addLog('error', 'このブラウザは通知に対応していません');
+      return;
+    }
+
+    const permission = await Notification.requestPermission();
+    setNotificationPermission(permission);
+    addLog(permission === 'granted' ? 'info' : 'error', `通知権限: ${permission}`);
+  }
 
   return (
     <main className="app">
-      <header className="appHeader">
-        <h1>K都市観測局</h1>
-        <p>神椿関連の配信予定を観測します。</p>
-      </header>
+      <Header
+        scheduleCount={schedules.length}
+        channelCount={channels.length}
+        lastUpdatedAt={lastUpdatedAt}
+      />
 
-      <section className="scheduleList">
-        {schedules.map((stream) => (
-          <article key={stream.id} className="scheduleCard">
-            <div className="scheduleMeta">
-              <span>{stream.group}</span>
-              <span>{formatDateTime(stream.startAt)}</span>
-            </div>
+      <div className="layout">
+        <div className="mainColumn">
+          <FilterPanel
+            groups={groups}
+            settings={settings}
+            onChange={updateSettings}
+            onReset={resetFilters}
+          />
 
-            <h2>{stream.title}</h2>
-            <p>{stream.channelName}</p>
+          <CalendarView
+            schedules={filteredSchedules}
+            favoriteChannelIds={settings.favoriteChannelIds}
+            statusFilter={settings.statusFilter}
+          />
+        </div>
 
-            <a href={stream.url} target="_blank" rel="noreferrer">
-              YouTubeで開く
-            </a>
-          </article>
-        ))}
-      </section>
+        <aside className="sideColumn">
+          <ChannelSettings channels={channels} settings={settings} onChange={updateSettings} />
+          <NotificationSettings
+            settings={settings}
+            permission={notificationPermission}
+            onChange={updateSettings}
+            onRequestPermission={requestNotificationPermission}
+          />
+          <LogPanel logs={logs} settings={settings} onChange={updateSettings} />
+        </aside>
+      </div>
     </main>
   );
 }

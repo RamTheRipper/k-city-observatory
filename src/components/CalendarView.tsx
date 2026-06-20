@@ -1,4 +1,4 @@
-import type { ScheduleItem, StatusFilter } from '../types';
+import type { GroupItem, ScheduleItem, StatusFilter } from '../types';
 import { formatDayLabel, getCalendarDays, parseDate, toDateKey } from '../utils/date';
 import { ScheduleCard } from './ScheduleCard';
 
@@ -6,9 +6,15 @@ type CalendarViewProps = {
   schedules: ScheduleItem[];
   favoriteChannelIds: string[];
   statusFilter: StatusFilter;
+  groupLabels: GroupItem[];
 };
 
-export function CalendarView({ schedules, favoriteChannelIds, statusFilter }: CalendarViewProps) {
+export function CalendarView({
+  schedules,
+  favoriteChannelIds,
+  statusFilter,
+  groupLabels,
+}: CalendarViewProps) {
   const sortedSchedules = [...schedules].sort((a, b) => {
     const aTime = parseDate(a.startAt)?.getTime() ?? 0;
     const bTime = parseDate(b.startAt)?.getTime() ?? 0;
@@ -27,6 +33,7 @@ export function CalendarView({ schedules, favoriteChannelIds, statusFilter }: Ca
                   key={schedule.id}
                   schedule={schedule}
                   isFavorite={favoriteChannelIds.includes(schedule.channelId)}
+                  groupLabels={groupLabels}
                 />
               ))}
             </div>
@@ -59,6 +66,7 @@ export function CalendarView({ schedules, favoriteChannelIds, statusFilter }: Ca
                     key={schedule.id}
                     schedule={schedule}
                     isFavorite={favoriteChannelIds.includes(schedule.channelId)}
+                    groupLabels={groupLabels}
                   />
                 ))}
               </div>

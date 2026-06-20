@@ -1,16 +1,23 @@
-import type { ChannelItem, UserSettings } from '../types';
+import type { ChannelItem, GroupItem, UserSettings } from '../types';
 
 type ChannelSettingsProps = {
   channels: ChannelItem[];
   settings: UserSettings;
   onChange: (settings: UserSettings) => void;
+  groupLabels: GroupItem[];
 };
 
 function getChannelName(channel: ChannelItem): string {
   return channel.displayName || channel.channelName || channel.name || channel.channelId;
 }
 
-function getGroupLabel(group: string): string {
+function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
+  const definedLabel = groupLabels.find((item) => item.groupId === group)?.displayName;
+
+  if (definedLabel) {
+    return definedLabel;
+  }
+
   const labels: Record<string, string> = {
     vwp: 'V.W.P',
     solo: 'solo',
@@ -32,7 +39,7 @@ function groupChannels(channels: ChannelItem[]): [string, ChannelItem[]][] {
   return [...grouped.entries()];
 }
 
-export function ChannelSettings({ channels, settings, onChange }: ChannelSettingsProps) {
+export function ChannelSettings({ channels, settings, onChange, groupLabels }: ChannelSettingsProps) {
   const selectedChannelIds = new Set(settings.selectedChannelIds);
   const favoriteChannelIds = new Set(settings.favoriteChannelIds);
 
@@ -56,7 +63,7 @@ export function ChannelSettings({ channels, settings, onChange }: ChannelSetting
     <section className="channelSettings" aria-label="配信者設定">
       {groupChannels(channels).map(([group, groupChannels]) => (
         <div key={group} className="channelGroup">
-          <h3>{getGroupLabel(group)}</h3>
+          <h3>{getGroupLabel(group, groupLabels)}</h3>
           <div className="channelList">
             {groupChannels.map((channel) => (
               <div key={channel.channelId} className="channelRow">

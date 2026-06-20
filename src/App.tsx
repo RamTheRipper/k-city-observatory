@@ -5,7 +5,15 @@ import { FilterPanel } from './components/FilterPanel';
 import { Header } from './components/Header';
 import { LogPanel } from './components/LogPanel';
 import { NotificationSettings } from './components/NotificationSettings';
-import type { ChannelItem, LogEntry, LogLevel, ScheduleItem, UserSettings } from './types';
+import type {
+  ChannelItem,
+  GroupItem,
+  LogEntry,
+  LogLevel,
+  ScheduleDocument,
+  ScheduleItem,
+  UserSettings,
+} from './types';
 import { isWithinVisibleRange, parseDate } from './utils/date';
 import { createLog } from './utils/logger';
 import { loadSettings, saveSettings } from './utils/storage';
@@ -70,8 +78,50 @@ function normalizeChannels(value: unknown): ChannelItem[] {
   return source.map(normalizeChannel).filter((channel): channel is ChannelItem => Boolean(channel));
 }
 
-function normalizeSchedules(value: unknown): ScheduleItem[] {
-  return asArray(value) as ScheduleItem[];
+function normalizeGroups(value: unknown): GroupItem[] {
+  if (!value || typeof value !== 'object') {
+    return [];
+  }
+
+  return asArray((value as { groups?: unknown }).groups)
+    .flatMap((group) => {
+      if (!group || typeof group !== 'object') {
+        return [];
+      }
+
+      const source = group as Record<string, unknown>;
+      const groupId = source.groupId ? String(source.groupId) : '';
+
+      if (!groupId) {
+        return [];
+      }
+
+      const item: GroupItem = {
+        groupId,
+        displayName: source.displayName ? String(source.displayName) : groupId,
+        description: source.description ? String(source.description) : undefined,
+      };
+
+      return [item];
+    });
+}
+
+function normalizeScheduleDocument(value: unknown): ScheduleDocument {
+  if (Array.isArray(value)) {
+    return { items: value as ScheduleItem[] };
+  }
+
+  if (value && typeof value === 'object') {
+    const source = value as { generatedAt?: unknown; items?: unknown };
+
+    return {
+      schemaVersion: 1,
+      generatedAt: source.generatedAt ? String(source.generatedAt) : undefined,
+      items: asArray(source.items) as ScheduleItem[],
+    };
+  }
+
+  return { items: [] };
 }
 
 function uniqueSorted(values: string[]): string[] {
@@ -83,24 +133,36 @@ function mergeSelectedChannels(settings: UserSettings, channels: ChannelItem[]):
     return settings;
   }
 
-  const availableChannelIds = new Set(channels.map((channel) => channel.channelId));
-  const hasKnownSelectedChannel = settings.selectedChannelIds.some((channelId) =>
-    availableChannelIds.has(channelId),
-  );
+  const channelIds = channels.map((channel) => channel.channelId);
 
-  if (settings.selectedChannelIds.length > 0 && hasKnownSelectedChannel) {
-    return settings;
+  if (settings.selectedChannelIds.length === 0) {
+    return {
+      ...settings,
+      selectedChannelIds: channelIds,
+      knownChannelIds: channelIds,
+    };
+  }
+
+  const knownChannelIds = new Set(settings.knownChannelIds);
+  const selectedChannelIds = new Set(settings.selectedChannelIds);
+
+  for (const channelId of channelIds) {
+    if (!knownChannelIds.has(channelId)) {
+      selectedChannelIds.add(channelId);
+    }
   }
 
   return {
     ...settings,
-    selectedChannelIds: channels.map((channel) => channel.channelId),
+    selectedChannelIds: channelIds.filter((channelId) => selectedChannelIds.has(channelId)),
+    knownChannelIds: channelIds,
   };
 }
 
 function App() {
   const [schedules, setSchedules] = useState<ScheduleItem[]>([]);
   const [channels, setChannels] = useState<ChannelItem[]>([]);
+  const [groups, setGroups] = useState<GroupItem[]>([]);
   const [settings, setSettings] = useState<UserSettings>(() => loadSettings());
   const [logs, setLogs] = useState<LogEntry[]>([]);
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
@@ -129,8 +191,10 @@ function App() {
           fetchJson('schedule.json'),
           fetchJson('channels.json'),
         ]);
-        const nextSchedules = normalizeSchedules(scheduleData);
+        const scheduleDocument = normalizeScheduleDocument(scheduleData);
+        const nextSchedules = scheduleDocument.items;
         const nextChannels = normalizeChannels(channelData);
+        const nextGroups = normalizeGroups(channelData);
 
         if (!isMounted) {
           return;
@@ -138,8 +202,9 @@ function App() {
 
         setSchedules(nextSchedules);
         setChannels(nextChannels);
+        setGroups(nextGroups);
         setSettings((currentSettings) => mergeSelectedChannels(currentSettings, nextChannels));
-        setLastUpdatedAt(new Date().toISOString());
+        setLastUpdatedAt(scheduleDocument.generatedAt ?? new Date().toISOString());
         addLog(
           'info',
           `データを読み込みました: 配信 ${nextSchedules.length}件 / 配信者 ${nextChannels.length}件`,
@@ -216,7 +281,7 @@ function App() {
     settings.notifiedScheduleIds,
   ]);
 
-  const groups = useMemo(
+  const groupOptions = useMemo(
     () =>
       uniqueSorted([
         ...channels.map((channel) => channel.group || fallbackGroup),
@@ -279,17 +344,19 @@ function App() {
       <Header lastUpdatedAt={lastUpdatedAt} />
 
       <FilterPanel
-        groups={groups}
+        groups={groupOptions}
         settings={settings}
         onChange={updateSettings}
         onReset={resetFilters}
         onOpenChannelSettings={() => setIsChannelSettingsOpen(true)}
+        groupLabels={groups}
       />
 
       <CalendarView
         schedules={filteredSchedules}
         favoriteChannelIds={settings.favoriteChannelIds}
         statusFilter={settings.statusFilter}
+        groupLabels={groups}
       />
 
       <details className="utilityDetails">
@@ -331,7 +398,12 @@ function App() {
                 閉じる
               </button>
             </div>
-            <ChannelSettings channels={channels} settings={settings} onChange={updateSettings} />
+            <ChannelSettings
+              channels={channels}
+              settings={settings}
+              onChange={updateSettings}
+              groupLabels={groups}
+            />
           </section>
         </div>
       ) : null}

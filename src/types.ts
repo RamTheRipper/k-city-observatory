@@ -4,6 +4,7 @@ export type LogLevel = 'error' | 'info' | 'debug';
 
 export type ScheduleItem = {
   id: string;
+  videoId?: string;
   title: string;
   channelId: string;
   channelName: string;
@@ -16,7 +17,25 @@ export type ScheduleItem = {
   tags?: string[];
   category?: string;
   status: ScheduleStatus;
+  scheduledStartTime?: string | null;
+  actualStartTime?: string | null;
+  actualEndTime?: string | null;
+  publishedAt?: string | null;
+  source?: 'youtube-details' | 'youtube-search-fallback' | 'manual';
+  startAtSource?: string;
   isManual?: boolean;
+};
+
+export type GroupItem = {
+  groupId: string;
+  displayName: string;
+  description?: string;
+};
+
+export type ScheduleDocument = {
+  schemaVersion?: number;
+  generatedAt?: string;
+  items: ScheduleItem[];
 };
 
 export type ChannelItem = {
@@ -44,6 +63,7 @@ export type UserSettings = {
   notificationEnabled: boolean;
   debugEnabled: boolean;
   notifiedScheduleIds: string[];
+  knownChannelIds: string[];
 };
 
 export type LogEntry = {

@@ -1,4 +1,4 @@
-import type { StatusFilter, UserSettings } from '../types';
+import type { GroupItem, StatusFilter, UserSettings } from '../types';
 
 type FilterPanelProps = {
   groups: string[];
@@ -6,6 +6,7 @@ type FilterPanelProps = {
   onChange: (settings: UserSettings) => void;
   onReset: () => void;
   onOpenChannelSettings: () => void;
+  groupLabels: GroupItem[];
 };
 
 const statusOptions: { value: StatusFilter; label: string }[] = [
@@ -15,7 +16,13 @@ const statusOptions: { value: StatusFilter; label: string }[] = [
   { value: 'archived', label: '過去' },
 ];
 
-function getGroupLabel(group: string): string {
+function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
+  const definedLabel = groupLabels.find((item) => item.groupId === group)?.displayName;
+
+  if (definedLabel) {
+    return definedLabel;
+  }
+
   const labels: Record<string, string> = {
     all: 'すべて',
     vwp: 'V.W.P',
@@ -33,6 +40,7 @@ export function FilterPanel({
   onChange,
   onReset,
   onOpenChannelSettings,
+  groupLabels,
 }: FilterPanelProps) {
   return (
     <section className="filterPanel" aria-label="フィルター">
@@ -61,7 +69,7 @@ export function FilterPanel({
             <option value="all">すべて</option>
             {groups.map((group) => (
               <option key={group} value={group}>
-                {getGroupLabel(group)}
+                {getGroupLabel(group, groupLabels)}
               </option>
             ))}
           </select>

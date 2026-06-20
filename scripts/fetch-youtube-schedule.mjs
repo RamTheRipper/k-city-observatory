@@ -11,7 +11,7 @@ const manualSchedulePath = path.join(publicDir, 'manual-schedule.json');
 const youtubeApiBase = 'https://www.googleapis.com/youtube/v3';
 const defaultEventTypes = ['upcoming', 'live'];
 const completedEventType = 'completed';
-const maxSearchResults = 5;
+const maxSearchResults = 10;
 const maxVideosListIds = 50;
 
 class YouTubeApiError extends Error {
@@ -115,7 +115,7 @@ function normalizeChannel(channel) {
     name: String(channel.name || channel.displayName || channel.channelName || youtubeChannelId),
     displayName: channel.displayName ? String(channel.displayName) : undefined,
     channelName: channel.channelName ? String(channel.channelName) : undefined,
-    group: groupIds[0] || (channel.group ? String(channel.group) : 'その他'),
+    group: groupIds[0] || (channel.group ? String(channel.group) : 'other'),
     groupIds,
     tags: asArray(channel.tags).map(String),
     category: channel.category ? String(channel.category) : undefined,
@@ -138,7 +138,7 @@ function isPlaceholderChannelId(channelId) {
 }
 
 function getBestThumbnail(thumbnails = {}) {
-  return thumbnails.high?.url || thumbnails.medium?.url || thumbnails.default?.url || '';
+  return thumbnails.maxres?.url || thumbnails.high?.url || thumbnails.medium?.url || thumbnails.default?.url || '';
 }
 
 function toIsoString(value) {
@@ -185,27 +185,58 @@ function getStartInfo(snippet = {}, liveStreamingDetails = {}) {
   return { startAt: new Date().toISOString(), source: 'fallback-now' };
 }
 
+function getExistingScheduleItems(value) {
+  if (Array.isArray(value)) {
+    return value;
+  }
+
+  if (value && typeof value === 'object' && Array.isArray(value.items)) {
+    return value.items;
+  }
+
+  return [];
+}
+
+function getVideoId(item) {
+  return item?.videoId || item?.id || '';
+}
+
+function getFallbackThumbnail(videoId, thumbnails = {}) {
+  return getBestThumbnail(thumbnails) || (videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : '');
+}
+
 function mapScheduleItemFromDetail(video, channel, eventType) {
   const snippet = video.snippet || {};
   const liveStreamingDetails = video.liveStreamingDetails || {};
   const videoId = video.id;
   const { startAt, source } = getStartInfo(snippet, liveStreamingDetails);
+  const status =
+    eventType === 'upcoming' && source === 'publishedAt'
+      ? 'unknown'
+      : normalizeStatus(eventType, liveStreamingDetails);
 
   return {
     item: {
       id: videoId,
+      videoId,
       title: snippet.title || 'Untitled',
       channelId: channel.youtubeChannelId,
       channelName: getScheduleChannelName(channel, snippet),
       startAt,
       endAt: toIsoString(liveStreamingDetails.actualEndTime),
       url: `https://www.youtube.com/watch?v=${videoId}`,
-      thumbnailUrl: getBestThumbnail(snippet.thumbnails),
+      thumbnailUrl: getFallbackThumbnail(videoId, snippet.thumbnails),
       group: channel.group,
       groupIds: channel.groupIds,
       tags: channel.tags,
       category: channel.category || '',
-      status: normalizeStatus(eventType, liveStreamingDetails),
+      status,
+      scheduledStartTime: toIsoString(liveStreamingDetails.scheduledStartTime),
+      actualStartTime: toIsoString(liveStreamingDetails.actualStartTime),
+      actualEndTime: toIsoString(liveStreamingDetails.actualEndTime),
+      publishedAt: toIsoString(snippet.publishedAt),
+      source: 'youtube-details',
+      startAtSource: source,
       isManual: false,
     },
     diagnostics: {
@@ -215,26 +246,47 @@ function mapScheduleItemFromDetail(video, channel, eventType) {
   };
 }
 
-function mapScheduleItemFromSearchResult(result) {
+function mapScheduleItemFromSearchResult(result, existingById) {
   const snippet = result.snippet || {};
   const channel = result.channel;
   const videoId = result.videoId;
-  const startAt = toIsoString(snippet.publishedAt) || new Date().toISOString();
+  const publishedAt = toIsoString(snippet.publishedAt);
+  const existing = existingById.get(videoId);
+  const startAt = existing?.scheduledStartTime || existing?.startAt || publishedAt || new Date().toISOString();
+  const startAtSource = existing?.scheduledStartTime
+    ? 'existing-scheduledStartTime'
+    : existing?.startAt
+      ? 'existing-startAt'
+      : publishedAt
+        ? 'publishedAt'
+        : 'fallback-now';
 
   return {
     id: videoId,
+    videoId,
     title: snippet.title || 'Untitled',
     channelId: channel.youtubeChannelId,
     channelName: getScheduleChannelName(channel, snippet),
     startAt,
     endAt: null,
     url: `https://www.youtube.com/watch?v=${videoId}`,
-    thumbnailUrl: getBestThumbnail(snippet.thumbnails),
+    thumbnailUrl: getFallbackThumbnail(videoId, snippet.thumbnails),
     group: channel.group,
     groupIds: channel.groupIds,
     tags: channel.tags,
     category: channel.category || '',
-    status: result.eventType === 'live' ? 'live' : 'upcoming',
+    status:
+      result.eventType === 'live'
+        ? 'live'
+        : result.eventType === 'upcoming' && startAtSource === 'publishedAt'
+          ? 'unknown'
+          : 'upcoming',
+    scheduledStartTime: existing?.scheduledStartTime ?? null,
+    actualStartTime: existing?.actualStartTime ?? null,
+    actualEndTime: existing?.actualEndTime ?? null,
+    publishedAt,
+    source: 'youtube-search-fallback',
+    startAtSource,
     isManual: false,
   };
 }
@@ -305,45 +357,101 @@ async function searchVideos(channel, eventType, apiKey, counters) {
   }
 }
 
-async function fetchVideoDetails(videoIds, apiKey, counters) {
-  const limitedVideoIds = videoIds.slice(0, maxVideosListIds);
-
-  if (videoIds.length > maxVideosListIds) {
-    console.warn(
-      `[quota] videos.list input truncated from ${videoIds.length} to ${maxVideosListIds} IDs.`,
-    );
-  }
-
-  if (limitedVideoIds.length === 0) {
-    console.warn('[youtube] videos.list skipped because search returned 0 unique video IDs.');
-    return [];
-  }
-
-  counters.executedVideosListCalls += 1;
+async function searchActiveBroadcasts(channel, apiKey, counters) {
+  counters.executedSearchCalls += 1;
 
   try {
     const data = await youtubeGet(
-      'videos',
+      'search',
       {
-        part: 'snippet,liveStreamingDetails',
-        id: limitedVideoIds.join(','),
-        maxResults: maxVideosListIds,
+        part: 'snippet',
+        channelId: channel.youtubeChannelId,
+        type: 'video',
+        order: 'date',
+        maxResults: maxSearchResults,
       },
       apiKey,
     );
 
-    const items = data.items || [];
+    const videos = (data.items || [])
+      .map((item) => {
+        const liveBroadcastContent = item.snippet?.liveBroadcastContent;
+        const eventType =
+          liveBroadcastContent === 'live' || liveBroadcastContent === 'upcoming'
+            ? liveBroadcastContent
+            : null;
+
+        return {
+          videoId: item.id?.videoId,
+          snippet: item.snippet || {},
+          channel,
+          eventType,
+        };
+      })
+      .filter((item) => item.videoId && item.eventType);
+
+    const upcomingCount = videos.filter((item) => item.eventType === 'upcoming').length;
+    const liveCount = videos.filter((item) => item.eventType === 'live').length;
     console.log(
-      `[youtube] videos.list call #${counters.executedVideosListCalls}: requested=${limitedVideoIds.length}, enriched=${items.length}.`,
+      `[youtube] ${getChannelLabel(channel)} (${channel.youtubeChannelId}) active search: upcoming=${upcomingCount}, live=${liveCount}.`,
     );
-    return items;
+
+    return videos;
   } catch (error) {
     const status = error instanceof YouTubeApiError ? error.statusCode : 'unknown';
     const message = error instanceof Error ? error.message : String(error);
-    throw new Error(`YouTube API videos.list failed: status=${status}, message="${message}"`, {
-      cause: error,
-    });
+    throw new Error(
+      `YouTube API active search failed: status=${status}, channel="${getChannelLabel(
+        channel,
+      )}", youtubeChannelId="${channel.youtubeChannelId}", message="${message}"`,
+      { cause: error },
+    );
   }
+}
+
+async function fetchVideoDetails(videoIds, apiKey, counters) {
+  if (videoIds.length === 0) {
+    console.warn('[youtube] videos.list skipped because search returned 0 unique video IDs.');
+    return [];
+  }
+
+  const chunks = [];
+
+  for (let index = 0; index < videoIds.length; index += maxVideosListIds) {
+    chunks.push(videoIds.slice(index, index + maxVideosListIds));
+  }
+
+  const output = [];
+
+  for (const chunk of chunks) {
+    counters.executedVideosListCalls += 1;
+
+    try {
+      const data = await youtubeGet(
+        'videos',
+        {
+          part: 'snippet,liveStreamingDetails,status',
+          id: chunk.join(','),
+          maxResults: maxVideosListIds,
+        },
+        apiKey,
+      );
+
+      const items = data.items || [];
+      console.log(
+        `[youtube] videos.list call #${counters.executedVideosListCalls}: requested=${chunk.length}, enriched=${items.length}.`,
+      );
+      output.push(...items);
+    } catch (error) {
+      const status = error instanceof YouTubeApiError ? error.statusCode : 'unknown';
+      const message = error instanceof Error ? error.message : String(error);
+      throw new Error(`YouTube API videos.list failed: status=${status}, message="${message}"`, {
+        cause: error,
+      });
+    }
+  }
+
+  return output;
 }
 
 function dedupeSchedules(items) {
@@ -388,7 +496,19 @@ function isQuotaExceeded(error) {
 async function writeSchedule(output) {
   console.log(`[schedule] Output path: ${schedulePath}`);
   console.log(`[schedule] Writing ${output.length} schedules.`);
-  await writeFile(schedulePath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
+  await writeFile(
+    schedulePath,
+    `${JSON.stringify(
+      {
+        schemaVersion: 1,
+        generatedAt: new Date().toISOString(),
+        items: output,
+      },
+      null,
+      2,
+    )}\n`,
+    'utf8',
+  );
   console.log(`[schedule] Wrote ${output.length} schedules to ${schedulePath}.`);
 }
 
@@ -397,6 +517,10 @@ async function main() {
 
   const apiKey = process.env.YOUTUBE_API_KEY;
   const existingSchedule = await readJson(schedulePath, []);
+  const existingScheduleItems = getExistingScheduleItems(existingSchedule);
+  const existingById = new Map(
+    existingScheduleItems.map((item) => [getVideoId(item), item]).filter(([id]) => id),
+  );
   const channelsData = await readJson(channelsPath, { channels: [] });
   const channels = extractChannels(channelsData).map(normalizeChannel);
   const enabledCount = channels.filter((channel) => channel.enabled).length;
@@ -405,7 +529,7 @@ async function main() {
   );
   const eventTypes = getEventTypes();
   const counters = {
-    plannedSearchCalls: enabledChannels.length * eventTypes.length,
+    plannedSearchCalls: enabledChannels.length + (shouldIncludeCompleted() ? enabledChannels.length : 0),
     executedSearchCalls: 0,
     executedVideosListCalls: 0,
   };
@@ -415,8 +539,9 @@ async function main() {
   console.log(`[channels] enabled=true channels: ${enabledCount}.`);
   console.log(`[channels] fetch targets after excluding placeholders: ${enabledChannels.length}.`);
   console.log(`[quota] Event types for this run: ${eventTypes.join(', ')}.`);
+  console.log('[quota] upcoming/live are fetched with one combined search.list call per channel.');
   console.log(`[quota] Planned search.list calls: ${counters.plannedSearchCalls}.`);
-  console.log('[quota] Planned videos.list calls: 0 or 1, batched up to 50 video IDs.');
+  console.log('[quota] Planned videos.list calls: 0 or more, batched in chunks of up to 50 video IDs.');
 
   for (const channel of enabledChannels) {
     console.log(`[channels] target: ${getChannelLabel(channel)} (${channel.youtubeChannelId})`);
@@ -434,9 +559,16 @@ async function main() {
     for (const channel of enabledChannels) {
       console.log(`[youtube] Fetching channel "${getChannelLabel(channel)}" (${channel.youtubeChannelId}).`);
 
-      for (const eventType of eventTypes) {
-        const videos = await searchVideos(channel, eventType, apiKey, counters);
-        stats[eventType].searchResults += videos.length;
+      const activeVideos = await searchActiveBroadcasts(channel, apiKey, counters);
+
+      for (const video of activeVideos) {
+        stats[video.eventType].searchResults += 1;
+        searchResults.push(video);
+      }
+
+      if (shouldIncludeCompleted()) {
+        const videos = await searchVideos(channel, completedEventType, apiKey, counters);
+        stats[completedEventType].searchResults += videos.length;
         searchResults.push(...videos);
       }
     }
@@ -471,6 +603,7 @@ async function main() {
     const manualSchedules = (await readJson(manualSchedulePath, [])).map((item) => ({
       ...item,
       isManual: true,
+      source: 'manual',
     }));
     console.log(`[manual] Loaded ${manualSchedules.length} manual schedules.`);
 
@@ -486,7 +619,7 @@ async function main() {
         if (usedSearchFallback && result.eventType !== completedEventType) {
           stat.convertedSchedules += 1;
           stat.convertedFromSearchFallback += 1;
-          schedules.push(mapScheduleItemFromSearchResult(result));
+          schedules.push(mapScheduleItemFromSearchResult(result, existingById));
         }
 
         continue;
@@ -537,7 +670,7 @@ async function main() {
     console.log(`[quota] Executed search.list calls: ${counters.executedSearchCalls}.`);
     console.log(`[quota] Executed videos.list calls: ${counters.executedVideosListCalls}.`);
 
-    if (Array.isArray(existingSchedule)) {
+    if (existingScheduleItems.length > 0 || Array.isArray(existingSchedule)) {
       console.error('Keeping existing public/schedule.json.');
       return;
     }

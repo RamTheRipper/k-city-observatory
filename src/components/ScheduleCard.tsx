@@ -1,9 +1,10 @@
-import type { ScheduleItem } from '../types';
+import type { GroupItem, ScheduleItem } from '../types';
 import { formatDateTime } from '../utils/date';
 
 type ScheduleCardProps = {
   schedule: ScheduleItem;
   isFavorite: boolean;
+  groupLabels: GroupItem[];
 };
 
 const statusLabels: Record<string, string> = {
@@ -13,8 +14,16 @@ const statusLabels: Record<string, string> = {
   unknown: '不明',
 };
 
-export function ScheduleCard({ schedule, isFavorite }: ScheduleCardProps) {
-  const groupLabel = schedule.group || 'その他';
+function getGroupLabel(group: string | undefined, groupLabels: GroupItem[]): string {
+  if (!group) {
+    return 'その他';
+  }
+
+  return groupLabels.find((item) => item.groupId === group)?.displayName ?? group;
+}
+
+export function ScheduleCard({ schedule, isFavorite, groupLabels }: ScheduleCardProps) {
+  const groupLabel = getGroupLabel(schedule.group, groupLabels);
   const tags = schedule.tags ?? [];
 
   return (

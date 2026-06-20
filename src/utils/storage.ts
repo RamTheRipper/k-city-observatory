@@ -12,6 +12,7 @@ export const defaultSettings: UserSettings = {
   notificationEnabled: false,
   debugEnabled: false,
   notifiedScheduleIds: [],
+  knownChannelIds: [],
 };
 
 function stringArrayOrDefault(value: unknown, fallback: string[]): string[] {
@@ -41,6 +42,7 @@ export function normalizeSettings(value: unknown): UserSettings {
     notificationEnabled: Boolean(source.notificationEnabled),
     debugEnabled: Boolean(source.debugEnabled),
     notifiedScheduleIds: stringArrayOrDefault(source.notifiedScheduleIds, []),
+    knownChannelIds: stringArrayOrDefault(source.knownChannelIds, []),
   };
 }
 

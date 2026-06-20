@@ -89,9 +89,11 @@ Actions ログと `health.json` には `search.list`、`videos.list`、`channels
     {
       "talentId": "rim",
       "displayName": "理芽",
-      "groupIds": ["vwp", "solo"],
-      "tags": ["artist"],
+      "primaryGroupId": "vwp",
+      "groupIds": ["vwp"],
+      "tags": ["main"],
       "youtubeChannelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "uploadsPlaylistId": "UUfBkUgaJ6eqYA9_TX2cmq9A",
       "channelName": "理芽 -RIM-",
       "colorKey": "rim",
       "enabled": true

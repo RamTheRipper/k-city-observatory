@@ -14,6 +14,7 @@ export type ScheduleItem = {
   thumbnailUrl?: string;
   group?: string;
   groupIds?: string[];
+  primaryGroupId?: string;
   tags?: string[];
   category?: string;
   status: ScheduleStatus;
@@ -48,11 +49,25 @@ export type ApiUsage = {
   lastError: {
     message: string;
     status?: number | null;
+    statusCode?: number | null;
     scope?: string;
     reason?: string;
     occurredAt?: string;
   } | null;
   fetchedScope: 'upcoming' | 'status' | 'history' | 'manual' | 'unknown' | string;
+  loadedChannels?: number;
+  enabledChannels?: number;
+  fetchTargets?: number;
+  skippedChannels?: SkippedChannel[];
+  groupCounts?: Record<string, number>;
+};
+
+export type SkippedChannel = {
+  channelId: string;
+  channelName: string;
+  reason: string;
+  enabled: boolean;
+  groupIds: string[];
 };
 
 export type HealthDocument = {
@@ -69,6 +84,7 @@ export type ChannelItem = {
   channelName?: string;
   group?: string;
   groupIds?: string[];
+  primaryGroupId?: string;
   tags?: string[];
   category?: string;
   thumbnailUrl?: string;

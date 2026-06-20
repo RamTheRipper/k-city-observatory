@@ -14,11 +14,10 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
       "group": "vwp",
       "groupIds": [
-        "vwp",
-        "solo"
+        "vwp"
       ],
       "tags": [
-        "artist"
+        "main"
       ],
       "category": "",
       "status": "upcoming",
@@ -28,7 +27,8 @@
       "publishedAt": null,
       "source": "manual",
       "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
+      "isManual": true,
+      "primaryGroupId": "vwp"
     },
     {
       "id": "BAmkHKb7KJk",
@@ -42,7 +42,8 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/BAmkHKb7KJk/maxresdefault_live.jpg",
       "group": "official",
       "groupIds": [
-        "official"
+        "official",
+        "kamitsubaki"
       ],
       "tags": [
         "official"
@@ -55,7 +56,8 @@
       "publishedAt": "2026-06-16T01:55:55.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "isManual": false,
+      "primaryGroupId": "official"
     }
   ]
 }

@@ -62,6 +62,9 @@ function normalizeChannel(rawChannel: unknown): ChannelItem | null {
 
   const channel = rawChannel as Record<string, unknown>;
   const groupIds = asArray(channel.groupIds).map(String);
+  const primaryGroupId = channel.primaryGroupId
+    ? String(channel.primaryGroupId)
+    : groupIds[0] || (channel.group ? String(channel.group) : fallbackGroup);
   const youtubeChannelId = String(channel.youtubeChannelId || channel.channelId || '');
   const name = String(
     channel.name || channel.displayName || channel.channelName || youtubeChannelId || 'unknown',
@@ -78,8 +81,9 @@ function normalizeChannel(rawChannel: unknown): ChannelItem | null {
     name,
     displayName: channel.displayName ? String(channel.displayName) : undefined,
     channelName: channel.channelName ? String(channel.channelName) : undefined,
-    group: groupIds[0] || (channel.group ? String(channel.group) : fallbackGroup),
+    group: primaryGroupId,
     groupIds,
+    primaryGroupId,
     tags: asArray(channel.tags).map(String),
     category: channel.category ? String(channel.category) : undefined,
     thumbnailUrl: channel.thumbnailUrl ? String(channel.thumbnailUrl) : '',
@@ -205,6 +209,29 @@ function applyManualSchedules(schedules: ScheduleItem[], manualSchedules: Schedu
   return [...byId.values()];
 }
 
+function applyChannelGroupsToSchedules(
+  schedules: ScheduleItem[],
+  channels: ChannelItem[],
+): ScheduleItem[] {
+  const channelsById = new Map(channels.map((channel) => [channel.channelId, channel]));
+
+  return schedules.map((schedule) => {
+    const channel = channelsById.get(schedule.channelId);
+
+    if (!channel) {
+      return schedule;
+    }
+
+    return {
+      ...schedule,
+      group: channel.primaryGroupId || channel.group || schedule.group,
+      groupIds: channel.groupIds?.length ? channel.groupIds : schedule.groupIds,
+      primaryGroupId: channel.primaryGroupId || channel.group || schedule.primaryGroupId,
+      tags: channel.tags?.length ? channel.tags : schedule.tags,
+    };
+  });
+}
+
 function uniqueSorted(values: string[]): string[] {
   return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'ja-JP'));
 }
@@ -277,9 +304,12 @@ function App() {
       ]);
       const scheduleDocument = normalizeScheduleDocument(scheduleData);
       const manualSchedules = normalizeManualSchedules(manualScheduleData);
-      const nextSchedules = applyManualSchedules(scheduleDocument.items, manualSchedules);
       const nextChannels = normalizeChannels(channelData);
       const nextGroups = normalizeGroups(channelData);
+      const nextSchedules = applyChannelGroupsToSchedules(
+        applyManualSchedules(scheduleDocument.items, manualSchedules),
+        nextChannels,
+      );
       const nextHealth = normalizeHealthDocument(healthData);
 
       setSchedules(nextSchedules);
@@ -384,7 +414,11 @@ function App() {
 
     return schedules.filter((schedule) => {
       const group = schedule.group || fallbackGroup;
-      const matchesGroup = settings.selectedGroup === 'all' || group === settings.selectedGroup;
+      const scheduleGroupIds = schedule.groupIds ?? [];
+      const matchesGroup =
+        settings.selectedGroup === 'all' ||
+        group === settings.selectedGroup ||
+        scheduleGroupIds.includes(settings.selectedGroup);
       const matchesChannel =
         selectedChannelIds.size === 0 || selectedChannelIds.has(schedule.channelId);
       const matchesFavorite =

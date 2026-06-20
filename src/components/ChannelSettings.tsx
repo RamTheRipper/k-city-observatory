@@ -20,8 +20,10 @@ function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
 
   const labels: Record<string, string> = {
     vwp: 'V.W.P',
-    solo: 'solo',
-    official: 'official',
+    kuusou: '空爽',
+    girls_revolution_project: '少女革命計画',
+    kamitsubaki: 'KAMITSUBAKI',
+    official: 'KAMITSUBAKI STUDIO / 公式',
     other: 'その他',
   };
 
@@ -32,7 +34,7 @@ function groupChannels(channels: ChannelItem[]): [string, ChannelItem[]][] {
   const grouped = new Map<string, ChannelItem[]>();
 
   for (const channel of channels) {
-    const group = channel.groupIds?.[0] || channel.group || 'other';
+    const group = channel.primaryGroupId || channel.group || channel.groupIds?.[0] || 'other';
     grouped.set(group, [...(grouped.get(group) ?? []), channel]);
   }
 

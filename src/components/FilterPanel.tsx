@@ -29,8 +29,10 @@ function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
   const labels: Record<string, string> = {
     all: 'すべて',
     vwp: 'V.W.P',
-    solo: 'ソロ',
-    official: '公式/番組',
+    kuusou: '空爽',
+    girls_revolution_project: '少女革命計画',
+    kamitsubaki: 'KAMITSUBAKI',
+    official: 'KAMITSUBAKI STUDIO / 公式',
     other: 'その他',
   };
 
@@ -49,6 +51,9 @@ export function FilterPanel({
   onReload,
 }: FilterPanelProps) {
   const apiUsage = health?.apiUsage;
+  const groupCounts = apiUsage?.groupCounts
+    ? Object.entries(apiUsage.groupCounts).sort(([a], [b]) => a.localeCompare(b, 'ja-JP'))
+    : [];
 
   return (
     <section className="filterPanel" aria-label="フィルター">
@@ -108,7 +113,24 @@ export function FilterPanel({
       {apiUsage ? (
         <div className={apiUsage.lastError ? 'healthStrip healthStrip-warning' : 'healthStrip'}>
           <span>取得範囲: {apiUsage.fetchedScope}</span>
+          {apiUsage.loadedChannels !== undefined ? (
+            <span>
+              チャンネル: {apiUsage.enabledChannels ?? 0}/{apiUsage.loadedChannels} 有効 / fetch{' '}
+              {apiUsage.fetchTargets ?? 0}
+            </span>
+          ) : null}
           <span>推定API使用量: {apiUsage.estimatedUnits} units</span>
+          {groupCounts.length > 0 ? (
+            <span>
+              グループ別:{' '}
+              {groupCounts
+                .map(([group, count]) => `${getGroupLabel(group, groupLabels)} ${count}`)
+                .join(' / ')}
+            </span>
+          ) : null}
+          {apiUsage.skippedChannels?.length ? (
+            <span>取得対象外: {apiUsage.skippedChannels.length}</span>
+          ) : null}
           {apiUsage.lastSuccessAt ? <span>最終成功: {apiUsage.lastSuccessAt}</span> : null}
           {apiUsage.lastError ? (
             <strong>データ更新が停止している可能性があります: {apiUsage.lastError.message}</strong>

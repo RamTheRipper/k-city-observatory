@@ -1,5 +1,5 @@
-import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
+import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 
@@ -11,30 +11,38 @@ const manualSchedulePath = path.join(publicDir, 'manual-schedule.json');
 const youtubeApiBase = 'https://www.googleapis.com/youtube/v3';
 const eventTypes = ['upcoming', 'live', 'completed'];
 
-function loadEnvLocal() {
+class YouTubeApiError extends Error {
+  constructor(message, statusCode, endpoint) {
+    super(message);
+    this.name = 'YouTubeApiError';
+    this.statusCode = statusCode;
+    this.endpoint = endpoint;
+  }
+}
+
+async function loadEnvLocal() {
   const envPath = path.join(rootDir, '.env.local');
 
   if (!existsSync(envPath)) {
     return;
   }
 
-  const content = readFile(envPath, 'utf8');
-  return content.then((text) => {
-    for (const line of text.split(/\r?\n/)) {
-      const trimmed = line.trim();
+  const content = await readFile(envPath, 'utf8');
 
-      if (!trimmed || trimmed.startsWith('#') || !trimmed.includes('=')) {
-        continue;
-      }
+  for (const line of content.split(/\r?\n/)) {
+    const trimmed = line.trim();
 
-      const [key, ...valueParts] = trimmed.split('=');
-      const value = valueParts.join('=').trim().replace(/^["']|["']$/g, '');
-
-      if (key && process.env[key] === undefined) {
-        process.env[key] = value;
-      }
+    if (!trimmed || trimmed.startsWith('#') || !trimmed.includes('=')) {
+      continue;
     }
-  });
+
+    const [key, ...valueParts] = trimmed.split('=');
+    const value = valueParts.join('=').trim().replace(/^["']|["']$/g, '');
+
+    if (key && process.env[key] === undefined) {
+      process.env[key] = value;
+    }
+  }
 }
 
 async function readJsonArray(filePath, fallback = []) {
@@ -58,6 +66,10 @@ function normalizeChannel(channel) {
     thumbnailUrl: channel.thumbnailUrl ? String(channel.thumbnailUrl) : '',
     enabled: channel.enabled !== false,
   };
+}
+
+function getChannelLabel(channel) {
+  return channel.displayName || channel.name || channel.channelId || 'unknown channel';
 }
 
 function isPlaceholderChannelId(channelId) {
@@ -132,8 +144,8 @@ function mapScheduleItem(video, channel, eventType) {
   };
 }
 
-async function youtubeGet(pathname, params, apiKey) {
-  const url = new URL(`${youtubeApiBase}/${pathname}`);
+async function youtubeGet(endpoint, params, apiKey) {
+  const url = new URL(`${youtubeApiBase}/${endpoint}`);
 
   for (const [key, value] of Object.entries(params)) {
     if (value !== undefined && value !== null && value !== '') {
@@ -148,52 +160,77 @@ async function youtubeGet(pathname, params, apiKey) {
   const data = body ? JSON.parse(body) : {};
 
   if (!response.ok) {
-    const message = data?.error?.message || `${pathname} failed with ${response.status}`;
-    throw new Error(message);
+    const message = data?.error?.message || `${endpoint} failed with ${response.status}`;
+    throw new YouTubeApiError(message, response.status, endpoint);
   }
 
   return data;
 }
 
 async function searchVideos(channel, eventType, apiKey) {
-  const data = await youtubeGet(
-    'search',
-    {
-      part: 'snippet',
-      channelId: channel.channelId,
-      type: 'video',
-      eventType,
-      order: 'date',
-      maxResults: eventType === 'completed' ? 8 : 5,
-    },
-    apiKey,
-  );
+  try {
+    const data = await youtubeGet(
+      'search',
+      {
+        part: 'snippet',
+        channelId: channel.channelId,
+        type: 'video',
+        eventType,
+        order: 'date',
+        maxResults: eventType === 'completed' ? 8 : 5,
+      },
+      apiKey,
+    );
 
-  return (data.items || [])
-    .map((item) => ({
-      videoId: item.id?.videoId,
-      channel,
-      eventType,
-    }))
-    .filter((item) => item.videoId);
+    const videos = (data.items || [])
+      .map((item) => ({
+        videoId: item.id?.videoId,
+        channel,
+        eventType,
+      }))
+      .filter((item) => item.videoId);
+
+    console.log(
+      `[youtube] ${getChannelLabel(channel)}: ${eventType} search returned ${videos.length} videos.`,
+    );
+
+    return videos;
+  } catch (error) {
+    const status = error instanceof YouTubeApiError ? error.statusCode : 'unknown';
+    const message = error instanceof Error ? error.message : String(error);
+    throw new Error(
+      `YouTube API search failed: status=${status}, channel="${getChannelLabel(
+        channel,
+      )}", eventType=${eventType}, message="${message}"`,
+    );
+  }
 }
 
 async function fetchVideoDetails(videoIds, apiKey) {
   if (videoIds.length === 0) {
+    console.warn('[youtube] videos.list skipped because search returned 0 unique video IDs.');
     return [];
   }
 
-  const data = await youtubeGet(
-    'videos',
-    {
-      part: 'snippet,liveStreamingDetails',
-      id: videoIds.join(','),
-      maxResults: 50,
-    },
-    apiKey,
-  );
+  try {
+    const data = await youtubeGet(
+      'videos',
+      {
+        part: 'snippet,liveStreamingDetails',
+        id: videoIds.join(','),
+        maxResults: 50,
+      },
+      apiKey,
+    );
 
-  return data.items || [];
+    const items = data.items || [];
+    console.log(`[youtube] videos.list enriched ${items.length}/${videoIds.length} unique videos.`);
+    return items;
+  } catch (error) {
+    const status = error instanceof YouTubeApiError ? error.statusCode : 'unknown';
+    const message = error instanceof Error ? error.message : String(error);
+    throw new Error(`YouTube API videos.list failed: status=${status}, message="${message}"`);
+  }
 }
 
 function dedupeSchedules(items) {
@@ -213,16 +250,20 @@ async function main() {
 
   const apiKey = process.env.YOUTUBE_API_KEY;
   const existingSchedule = await readJsonArray(schedulePath);
+  const channels = (await readJsonArray(channelsPath)).map(normalizeChannel);
+  const enabledCount = channels.filter((channel) => channel.enabled).length;
+  const enabledChannels = channels.filter(
+    (channel) => channel.enabled && !isPlaceholderChannelId(channel.channelId),
+  );
+
+  console.log(`[channels] Loaded ${channels.length} channels from public/channels.json.`);
+  console.log(`[channels] enabled=true channels: ${enabledCount}.`);
+  console.log(`[channels] fetch targets after excluding placeholders: ${enabledChannels.length}.`);
 
   if (!apiKey) {
     console.warn('YOUTUBE_API_KEY is not set. Keeping existing public/schedule.json.');
     return;
   }
-
-  const channels = (await readJsonArray(channelsPath)).map(normalizeChannel);
-  const enabledChannels = channels.filter(
-    (channel) => channel.enabled && !isPlaceholderChannelId(channel.channelId),
-  );
 
   if (enabledChannels.length === 0) {
     console.warn('No enabled real channel IDs found. Keeping existing public/schedule.json.');
@@ -233,6 +274,8 @@ async function main() {
     const searchResults = [];
 
     for (const channel of enabledChannels) {
+      console.log(`[youtube] Fetching channel "${getChannelLabel(channel)}" (${channel.channelId}).`);
+
       for (const eventType of eventTypes) {
         const videos = await searchVideos(channel, eventType, apiKey);
         searchResults.push(...videos);
@@ -240,12 +283,20 @@ async function main() {
     }
 
     const videoIds = [...new Set(searchResults.map((item) => item.videoId))];
+    console.log(`[youtube] search.list collected ${searchResults.length} results.`);
+    console.log(`[youtube] Unique video IDs for videos.list: ${videoIds.length}.`);
+
+    if (searchResults.length === 0) {
+      console.warn('[youtube] search.list returned 0 results. This is not treated as a failure.');
+    }
+
     const detailItems = await fetchVideoDetails(videoIds, apiKey);
     const detailById = new Map(detailItems.map((item) => [item.id, item]));
     const manualSchedules = (await readJsonArray(manualSchedulePath)).map((item) => ({
       ...item,
       isManual: true,
     }));
+    console.log(`[manual] Loaded ${manualSchedules.length} manual schedules.`);
 
     const schedules = searchResults
       .map((result) => {
@@ -256,8 +307,12 @@ async function main() {
 
     const output = dedupeSchedules([...schedules, ...manualSchedules]);
 
+    if (output.length === 0) {
+      console.warn('[schedule] Output contains 0 schedules.');
+    }
+
     await writeFile(schedulePath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
-    console.log(`Wrote ${output.length} schedules to public/schedule.json.`);
+    console.log(`[schedule] Wrote ${output.length} schedules to public/schedule.json.`);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`Failed to fetch YouTube schedule: ${message}`);

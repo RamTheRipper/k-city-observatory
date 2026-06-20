@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-20T18:46:34.049Z",
+  "generatedAt": "2026-06-20T19:58:35.143Z",
   "items": [
     {
       "id": "__ilvqAGXDs",
       "videoId": "__ilvqAGXDs",
       "title": "【歌枠】ヨルシカ縛り!!🌃🦌いくぞ!! #夕凪機生放送",
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-06-20T11:00:00.000Z",
       "endAt": "2026-06-20T12:44:16.000Z",
       "url": "https://www.youtube.com/watch?v=__ilvqAGXDs",
@@ -16,6 +16,7 @@
       "groupIds": [
         "girls_revolution_project"
       ],
+      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
@@ -27,15 +28,14 @@
       "publishedAt": "2026-06-20T14:01:43.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "girls_revolution_project"
+      "isManual": false
     },
     {
       "id": "wf7ZgAPB-bM",
       "videoId": "wf7ZgAPB-bM",
       "title": "【歌枠】夏至の日の海のうた⊹ ࣪ ˖🏝️ #氷夏至生放送",
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-06-21T10:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=wf7ZgAPB-bM",
@@ -44,6 +44,7 @@
       "groupIds": [
         "girls_revolution_project"
       ],
+      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
@@ -55,15 +56,14 @@
       "publishedAt": "2026-06-20T10:52:11.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "girls_revolution_project"
+      "isManual": false
     },
     {
       "id": "iZuHY3TUVPU",
       "videoId": "iZuHY3TUVPU",
       "title": "【VRChat配信 ワールド巡り編🌐 #2】春猿火「台風倶楽部-生配信」",
       "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
-      "channelName": "春猿火 -台風倶楽部-",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
       "startAt": "2026-06-21T11:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=iZuHY3TUVPU",
@@ -72,6 +72,7 @@
       "groupIds": [
         "vwp"
       ],
+      "primaryGroupId": "vwp",
       "tags": [
         "sub",
         "membership"
@@ -84,8 +85,7 @@
       "publishedAt": "2026-06-17T13:40:12.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "vwp"
+      "isManual": false
     },
     {
       "id": "c6KeOF5lR-g",
@@ -101,6 +101,7 @@
       "groupIds": [
         "vwp"
       ],
+      "primaryGroupId": "vwp",
       "tags": [
         "main"
       ],
@@ -112,8 +113,7 @@
       "publishedAt": null,
       "source": "manual",
       "startAtSource": "manual-scheduledStartTime",
-      "isManual": true,
-      "primaryGroupId": "vwp"
+      "isManual": true
     },
     {
       "id": "BAmkHKb7KJk",
@@ -127,9 +127,9 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/BAmkHKb7KJk/maxresdefault_live.jpg",
       "group": "official",
       "groupIds": [
-        "official",
-        "kamitsubaki"
+        "official"
       ],
+      "primaryGroupId": "official",
       "tags": [
         "official"
       ],
@@ -141,15 +141,74 @@
       "publishedAt": "2026-06-16T01:55:55.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "official"
+      "isManual": false
+    },
+    {
+      "id": "Z7lYGvMylbU",
+      "videoId": "Z7lYGvMylbU",
+      "title": "KUUSOU VIRTUAL MINI LIVE 「空爽パレット」開催直前特番！！",
+      "channelId": "UCJxwvbBoawRJtVgPgvMg-Qg",
+      "channelName": "空爽",
+      "startAt": "2026-06-26T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Z7lYGvMylbU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Z7lYGvMylbU/maxresdefault_live.jpg",
+      "group": "kuusou",
+      "groupIds": [
+        "kuusou",
+        "official"
+      ],
+      "primaryGroupId": "kuusou",
+      "tags": [
+        "official",
+        "group"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-26T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-19T10:23:04.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "G1o4KiyY26I",
+      "videoId": "G1o4KiyY26I",
+      "title": "KUUSOU VIRTUAL MINI LIVE 「空爽パレット」",
+      "channelId": "UCJxwvbBoawRJtVgPgvMg-Qg",
+      "channelName": "空爽",
+      "startAt": "2026-06-27T09:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=G1o4KiyY26I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/G1o4KiyY26I/maxresdefault_live.jpg",
+      "group": "kuusou",
+      "groupIds": [
+        "kuusou",
+        "official"
+      ],
+      "primaryGroupId": "kuusou",
+      "tags": [
+        "official",
+        "group"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-27T09:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-05-21T07:54:33.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
     },
     {
       "id": "g4u9tu3Bv98",
       "videoId": "g4u9tu3Bv98",
       "title": "FREE CHAT",
       "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
-      "channelName": "春猿火 -台風倶楽部-",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
       "startAt": "2026-11-14T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=g4u9tu3Bv98",
@@ -158,6 +217,7 @@
       "groupIds": [
         "vwp"
       ],
+      "primaryGroupId": "vwp",
       "tags": [
         "sub",
         "membership"
@@ -170,8 +230,7 @@
       "publishedAt": "2022-05-27T07:49:19.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "vwp"
+      "isManual": false
     },
     {
       "id": "_cMS4_S6SEs",
@@ -187,6 +246,7 @@
       "groupIds": [
         "vwp"
       ],
+      "primaryGroupId": "vwp",
       "tags": [
         "sub",
         "membership"
@@ -199,8 +259,7 @@
       "publishedAt": "2022-05-10T05:05:52.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "vwp"
+      "isManual": false
     },
     {
       "id": "K3qP4CuVyLc",
@@ -216,6 +275,7 @@
       "groupIds": [
         "vwp"
       ],
+      "primaryGroupId": "vwp",
       "tags": [
         "sub",
         "membership"
@@ -228,8 +288,7 @@
       "publishedAt": "2022-05-09T08:52:56.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "vwp"
+      "isManual": false
     },
     {
       "id": "5nu9FoloUF0",
@@ -245,6 +304,7 @@
       "groupIds": [
         "vwp"
       ],
+      "primaryGroupId": "vwp",
       "tags": [
         "sub",
         "membership"
@@ -257,8 +317,7 @@
       "publishedAt": "2022-05-11T12:08:16.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "vwp"
+      "isManual": false
     },
     {
       "id": "djSTx-VbLPU",
@@ -274,6 +333,7 @@
       "groupIds": [
         "vwp"
       ],
+      "primaryGroupId": "vwp",
       "tags": [
         "sub",
         "membership"
@@ -286,15 +346,14 @@
       "publishedAt": "2022-05-10T04:04:57.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "vwp"
+      "isManual": false
     },
     {
       "id": "xVJGH1tiW3g",
       "videoId": "xVJGH1tiW3g",
       "title": "【佳鏡院】FREE CHAT",
       "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
-      "channelName": "佳鏡院",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
       "startAt": "2027-10-30T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=xVJGH1tiW3g",
@@ -303,6 +362,7 @@
       "groupIds": [
         "girls_revolution_project"
       ],
+      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
@@ -314,15 +374,14 @@
       "publishedAt": "2025-10-31T08:58:36.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "girls_revolution_project"
+      "isManual": false
     },
     {
       "id": "3apdP8-XfGA",
       "videoId": "3apdP8-XfGA",
       "title": "【御莉姫】FREE CHAT",
       "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫",
+      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
       "startAt": "2027-10-30T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=3apdP8-XfGA",
@@ -331,6 +390,7 @@
       "groupIds": [
         "girls_revolution_project"
       ],
+      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
@@ -342,15 +402,14 @@
       "publishedAt": "2025-10-31T09:00:29.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "girls_revolution_project"
+      "isManual": false
     },
     {
       "id": "1DHMNx6t9SQ",
       "videoId": "1DHMNx6t9SQ",
       "title": "【硝子宮】FREE CHAT",
       "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
       "startAt": "2027-10-30T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=1DHMNx6t9SQ",
@@ -359,6 +418,7 @@
       "groupIds": [
         "girls_revolution_project"
       ],
+      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
@@ -370,15 +430,14 @@
       "publishedAt": "2025-10-31T08:56:50.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "girls_revolution_project"
+      "isManual": false
     },
     {
       "id": "zDWMNzRw5no",
       "videoId": "zDWMNzRw5no",
       "title": "【夕凪機】FREE CHAT",
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2027-11-01T07:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=zDWMNzRw5no",
@@ -387,6 +446,7 @@
       "groupIds": [
         "girls_revolution_project"
       ],
+      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
@@ -398,15 +458,14 @@
       "publishedAt": "2025-11-01T06:59:05.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "girls_revolution_project"
+      "isManual": false
     },
     {
       "id": "gQDDgBKNAdo",
       "videoId": "gQDDgBKNAdo",
       "title": "【美古途】FREE CHAT",
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
-      "channelName": "美古途",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2027-11-01T07:10:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=gQDDgBKNAdo",
@@ -415,6 +474,7 @@
       "groupIds": [
         "girls_revolution_project"
       ],
+      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
@@ -426,15 +486,14 @@
       "publishedAt": "2025-11-01T07:52:19.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "girls_revolution_project"
+      "isManual": false
     },
     {
       "id": "njyY35RD9vs",
       "videoId": "njyY35RD9vs",
       "title": "【氷夏至】FREE CHAT",
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2027-11-01T07:15:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=njyY35RD9vs",
@@ -443,6 +502,7 @@
       "groupIds": [
         "girls_revolution_project"
       ],
+      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
@@ -454,8 +514,7 @@
       "publishedAt": "2025-11-01T07:13:04.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
-      "isManual": false,
-      "primaryGroupId": "girls_revolution_project"
+      "isManual": false
     }
   ]
 }

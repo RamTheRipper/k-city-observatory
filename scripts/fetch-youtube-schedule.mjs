@@ -211,7 +211,13 @@ function getGroupCounts(channels) {
 }
 
 function getScheduleChannelName(channel, snippet = {}) {
-  return channel.channelName || channel.displayName || channel.name || snippet.channelTitle || channel.channelId;
+  return (
+    channel.channelName ||
+    channel.displayName ||
+    channel.name ||
+    snippet.channelTitle ||
+    channel.channelId
+  );
 }
 
 function isPlaceholderChannelId(channelId) {
@@ -219,7 +225,13 @@ function isPlaceholderChannelId(channelId) {
 }
 
 function getBestThumbnail(thumbnails = {}) {
-  return thumbnails.maxres?.url || thumbnails.high?.url || thumbnails.medium?.url || thumbnails.default?.url || '';
+  return (
+    thumbnails.maxres?.url ||
+    thumbnails.high?.url ||
+    thumbnails.medium?.url ||
+    thumbnails.default?.url ||
+    ''
+  );
 }
 
 function getFallbackThumbnail(videoId, thumbnails = {}, existingThumbnailUrl = '') {
@@ -431,7 +443,11 @@ function applyManualSchedules(schedules, manualSchedules) {
         channelName: manual.channelName || existing.channelName,
         group: manual.group || existing.group,
         groupIds: manual.groupIds || existing.groupIds,
-        primaryGroupId: manual.primaryGroupId || manual.group || existing.primaryGroupId || existing.group,
+        primaryGroupId:
+          manual.primaryGroupId ||
+          manual.group ||
+          existing.primaryGroupId ||
+          existing.group,
         tags: manual.tags || existing.tags,
         category: manual.category || existing.category,
         url: manual.url || existing.url,
@@ -459,7 +475,12 @@ function filterRecentHistory(items, now = new Date()) {
       return true;
     }
 
-    const date = new Date(item.actualEndTime || item.actualStartTime || item.publishedAt || item.startAt);
+    const date = new Date(
+      item.actualEndTime ||
+        item.actualStartTime ||
+        item.publishedAt ||
+        item.startAt,
+    );
     return !Number.isNaN(date.getTime()) && date >= archiveStart;
   });
 }
@@ -665,15 +686,25 @@ async function loadManualSchedules() {
 }
 
 async function loadInputs() {
-  const channelsData = await readFirstJson([legacyChannelsPath, dataChannelsPath], { channels: [] });
-  const scheduleData = await readFirstJson([dataSchedulePath, legacySchedulePath], { items: [] });
+  const channelsData = await readFirstJson(
+    [legacyChannelsPath, dataChannelsPath],
+    { channels: [] },
+  );
+  const scheduleData = await readFirstJson(
+    [dataSchedulePath, legacySchedulePath],
+    { items: [] },
+  );
   const channels = extractChannels(channelsData).map(normalizeChannel);
   const skippedChannels = [];
   const enabledChannels = channels.filter((channel) => {
     const reason = getSkipReason(channel);
 
+    const groupIds = (channel.groupIds || []).join(',');
+    const primaryGroup = channel.primaryGroupId || channel.group;
+    const channelId = channel.youtubeChannelId || '(none)';
+
     console.log(
-      `[channels] ${getChannelLabel(channel)} channelId=${channel.youtubeChannelId || '(none)'} enabled=${channel.enabled} primaryGroup=${channel.primaryGroupId || channel.group} groupIds=${(channel.groupIds || []).join(',')}`,
+      `[channels] ${getChannelLabel(channel)} channelId=${channelId} enabled=${channel.enabled} primaryGroup=${primaryGroup} groupIds=${groupIds}`,
     );
 
     if (reason) {
@@ -738,7 +769,12 @@ function mergeSchedules(existingItems, nextItems, manualSchedules, channels) {
   }
 
   return dedupeSchedules(
-    filterRecentHistory(applyChannelMetadata(applyManualSchedules([...merged.values()], manualSchedules), channels)),
+    filterRecentHistory(
+      applyChannelMetadata(
+        applyManualSchedules([...merged.values()], manualSchedules),
+        channels,
+      ),
+    ),
   );
 }
 
@@ -765,7 +801,9 @@ async function runUpcoming({ enabledChannels, existingItems, apiKey, counters })
       throw error;
     }
 
-    console.warn('[quota] videos.list quota exceeded during upcoming. Falling back to search.list results.');
+    console.warn(
+      '[quota] videos.list quota exceeded during upcoming. Falling back to search.list results.',
+    );
   }
 
   const detailById = new Map(detailItems.map((item) => [item.id, item]));
@@ -777,8 +815,15 @@ async function runUpcoming({ enabledChannels, existingItems, apiKey, counters })
 }
 
 async function runStatus({ enabledChannels, existingItems, apiKey, counters }) {
-  const channelById = new Map(enabledChannels.map((channel) => [channel.youtubeChannelId, channel]));
-  const targetItems = existingItems.filter((item) => ['upcoming', 'live', 'unknown'].includes(item.status));
+  const channelById = new Map(
+    enabledChannels.map((channel) => [channel.youtubeChannelId, channel]),
+  );
+  const targetItems = existingItems.filter((item) =>
+    ['upcoming', 'live', 'unknown'].includes(item.status),
+  );
+
+  console.log(`[status] Target schedules for videos.list: ${targetItems.length}.`);
+
   const details = await fetchVideoDetails(
     targetItems.map((item) => getVideoId(item)),
     apiKey,
@@ -823,7 +868,12 @@ async function runHistory({ enabledChannels, apiKey, counters }) {
     .map((detail) => mapDetailToSchedule(detail, channelByVideoId.get(detail.id), 'ended'))
     .filter((item) => {
       const hasLiveDetails = item.actualStartTime || item.actualEndTime || item.scheduledStartTime;
-      const date = new Date(item.actualEndTime || item.actualStartTime || item.publishedAt || item.startAt);
+      const date = new Date(
+        item.actualEndTime ||
+          item.actualStartTime ||
+          item.publishedAt ||
+          item.startAt,
+      );
       return hasLiveDetails && !Number.isNaN(date.getTime()) && date >= cutoff;
     });
 }
@@ -835,7 +885,13 @@ async function main() {
   const scope = getScope();
   const counters = createCounters(scope);
   const apiKey = process.env.YOUTUBE_API_KEY;
-  const { channelsData, channels, enabledChannels, existingItems, diagnostics } = await loadInputs();
+  const {
+    channelsData,
+    channels,
+    enabledChannels,
+    existingItems,
+    diagnostics,
+  } = await loadInputs();
   const manualSchedules = await loadManualSchedules();
 
   await writeJson(dataChannelsPath, channelsData);
@@ -861,10 +917,22 @@ async function main() {
     const output = mergeSchedules(existingItems, fetchedItems, manualSchedules, channels);
     await writeSchedule(output);
     await writeHealth(counters, { success: true, diagnostics });
-    console.log(`[quota] apiUsage=${JSON.stringify({ ...counters, estimatedUnits: estimateUnits(counters) })}`);
+    console.log(
+      `[quota] apiUsage=${JSON.stringify({
+        ...counters,
+        estimatedUnits: estimateUnits(counters),
+      })}`,
+    );
   } catch (error) {
     const errorInfo = getErrorInfo(error);
-    console.error(`[youtube] Failed to fetch ${scope}. Keeping existing schedule. ${errorInfo.message}`);
+
+    if (errorInfo.quotaExceeded) {
+      console.error(`[quota] Quota exceeded during ${scope}. Keeping existing schedule.`);
+    }
+
+    console.error(
+      `[youtube] Failed to fetch ${scope}. Keeping existing schedule. ${errorInfo.message}`,
+    );
     await writeHealth(counters, { success: false, error: errorInfo, diagnostics });
   }
 }

@@ -27,8 +27,13 @@
     {
       "talentId": "kaf",
       "displayName": "花譜",
-      "groupIds": ["vwp", "solo"],
-      "tags": ["artist"],
+      "groupIds": [
+        "vwp",
+        "solo"
+      ],
+      "tags": [
+        "artist"
+      ],
       "youtubeChannelId": "UCQ1U65-CQdIoZ2_NA4Z4F7A",
       "channelName": "花譜 -KAF-",
       "colorKey": "kaf",
@@ -37,8 +42,13 @@
     {
       "talentId": "rim",
       "displayName": "理芽",
-      "groupIds": ["vwp", "solo"],
-      "tags": ["artist"],
+      "groupIds": [
+        "vwp",
+        "solo"
+      ],
+      "tags": [
+        "artist"
+      ],
       "youtubeChannelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
       "channelName": "理芽 -RIM-",
       "colorKey": "rim",
@@ -47,8 +57,13 @@
     {
       "talentId": "harusaruhi",
       "displayName": "春猿火",
-      "groupIds": ["vwp", "solo"],
-      "tags": ["artist"],
+      "groupIds": [
+        "vwp",
+        "solo"
+      ],
+      "tags": [
+        "artist"
+      ],
       "youtubeChannelId": "UCE7gtjLeZKNXLp5YURzYYeg",
       "channelName": "春猿火 -HARUSARUHI-",
       "colorKey": "harusaruhi",
@@ -57,8 +72,13 @@
     {
       "talentId": "isekaijoucho",
       "displayName": "ヰ世界情緒",
-      "groupIds": ["vwp", "solo"],
-      "tags": ["artist"],
+      "groupIds": [
+        "vwp",
+        "solo"
+      ],
+      "tags": [
+        "artist"
+      ],
       "youtubeChannelId": "UCah4_WVjmr8XA7i5aigwV-Q",
       "channelName": "ヰ世界情緒 -Isekaijoucho-",
       "colorKey": "isekaijoucho",
@@ -67,8 +87,13 @@
     {
       "talentId": "koko",
       "displayName": "幸祜",
-      "groupIds": ["vwp", "solo"],
-      "tags": ["artist"],
+      "groupIds": [
+        "vwp",
+        "solo"
+      ],
+      "tags": [
+        "artist"
+      ],
       "youtubeChannelId": "UC7Gow-kNHq21oejSIDg9PAg",
       "channelName": "幸祜 -KOKO-",
       "colorKey": "koko",
@@ -77,8 +102,12 @@
     {
       "talentId": "ciel",
       "displayName": "CIEL",
-      "groupIds": ["solo"],
-      "tags": ["artist"],
+      "groupIds": [
+        "solo"
+      ],
+      "tags": [
+        "artist"
+      ],
       "youtubeChannelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
       "channelName": "CIEL",
       "colorKey": "ciel",
@@ -87,8 +116,12 @@
     {
       "talentId": "official",
       "displayName": "KAMITSUBAKI公式",
-      "groupIds": ["official"],
-      "tags": ["official"],
+      "groupIds": [
+        "official"
+      ],
+      "tags": [
+        "official"
+      ],
       "youtubeChannelId": "UCAOhUv73jM5iCpOhuJOQzxA",
       "channelName": "KAMITSUBAKI STUDIO",
       "colorKey": "official",

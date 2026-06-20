@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": null,
+  "generatedAt": "2026-06-20T18:31:25.677Z",
   "apiUsage": {
-    "searchListCalls": 0,
-    "videosListCalls": 0,
+    "searchListCalls": 7,
+    "videosListCalls": 1,
     "channelsListCalls": 0,
     "playlistItemsListCalls": 0,
-    "estimatedUnits": 0,
-    "lastSuccessAt": null,
+    "estimatedUnits": 701,
+    "lastSuccessAt": "2026-06-20T18:31:25.677Z",
     "lastError": null,
-    "fetchedScope": "manual"
+    "fetchedScope": "upcoming"
   }
 }

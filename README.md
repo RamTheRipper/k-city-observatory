@@ -2,6 +2,8 @@
 
 神椿/KAMITSUBAKI 関連の YouTube 配信予定を一覧・日別カレンダーで確認する React + TypeScript + Vite アプリです。
 
+このリポジトリおよびWebアプリはファン制作の非公式ツールです。KAMITSUBAKI STUDIO、THINKR、各アーティスト、各プロジェクトの公式サービスではありません。
+
 フロントエンドは YouTube Data API を直接呼びません。GitHub Actions またはローカルの Node スクリプトで `public/data/schedule.json` を生成し、React 側は `public/data/schedule.json`、`public/data/channels.json`、`public/data/health.json` を読み込みます。
 
 ## ローカル起動

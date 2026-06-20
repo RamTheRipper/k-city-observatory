@@ -33,7 +33,13 @@ YouTube Data APIの主な単価は以下の想定です。
 - `channels.list`: 1 unit / call
 - `playlistItems.list`: 1 unit / call
 
-7チャンネルの場合、upcoming取得は `search.list` 7回で約700 units、詳細補完の `videos.list` が1回なら約1 unitです。status更新は `videos.list` のみなので、対象videoIdが50件以下なら約1 unitです。history更新は `channels.list` が必要なチャンネル数、`playlistItems.list` がチャンネル数、`videos.list` が最大50件ごとの回数だけ増えます。
+22チャンネルの場合、upcoming取得は `search.list` 22回で約2200 units、詳細補完の `videos.list` が1回なら約1 unitです。status更新は `videos.list` のみなので、対象videoIdが50件以下なら約1 unitです。history更新は `channels.list` が必要なチャンネル数、`playlistItems.list` がチャンネル数、`videos.list` が最大50件ごとの回数だけ増えます。
+
+## 監視対象チャンネル
+
+`public/channels.json` と `public/data/channels.json` は同じ内容に同期します。現在はKAMITSUBAKI/V.W.P本体、V.W.Pのサブ・メンバーシップ系チャンネル、Sooda、空爽、少女革命計画、心世紀、罪十罰を監視対象にしています。
+
+`groupIds[0]` はアプリ上の主グループとして扱うため、複数所属の場合は主表示したいグループを先頭に置きます。メンバーシップ用サブチャンネルも、APIで取得できる公開予定だけが対象です。メンバー限定、限定公開、非公開の自動取得は対象外です。
 
 ## Google Cloud Consoleで見る項目
 

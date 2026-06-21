@@ -566,3 +566,184 @@ input[type='checkbox'] {
   }
 
 }
+
+@media (min-width: 960px) {
+  .app {
+    width: min(1240px, calc(100% - 56px));
+    padding: 40px 0 72px;
+  }
+
+  .appHeader {
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+  }
+
+  .appHeader h1 {
+    font-size: 40px;
+  }
+
+  .lead {
+    max-width: 760px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .updatedAt {
+    font-size: 14px;
+  }
+
+  .filterPanel {
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .notificationSettings,
+  .filterBar {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .statusTabs {
+    gap: 10px;
+  }
+
+  .statusTab {
+    min-height: 44px;
+    padding: 0 20px;
+    font-size: 15px;
+  }
+
+  select,
+  button {
+    min-height: 44px;
+  }
+
+  button {
+    padding: 0 18px;
+  }
+
+  select {
+    min-width: 180px;
+    padding: 0 14px;
+  }
+
+  .selectField,
+  .switchRow {
+    font-size: 15px;
+  }
+
+  .switchRow {
+    min-height: 44px;
+    padding: 6px 4px;
+  }
+
+  input[type='checkbox'] {
+    width: 22px;
+    height: 22px;
+  }
+
+  .calendarView {
+    gap: 24px;
+  }
+
+  .dayBlock h2 {
+    margin-bottom: 14px;
+    font-size: 21px;
+  }
+
+  .scheduleList {
+    gap: 16px;
+  }
+
+  .scheduleCard {
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 22px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .scheduleThumbnail {
+    border-radius: 10px;
+  }
+
+  .scheduleBody {
+    gap: 10px;
+  }
+
+  .scheduleMeta {
+    font-size: 14px;
+  }
+
+  .scheduleTitleRow h3 {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .statusBadge {
+    padding: 5px 11px;
+    font-size: 13px;
+  }
+
+  .channelName {
+    font-size: 16px;
+  }
+
+  .tagList span,
+  .manualMark {
+    font-size: 13px;
+  }
+
+  .scheduleCard a {
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+
+  .emptyText {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+
+  .settingsDialog {
+    width: min(900px, 100%);
+    padding: 24px;
+  }
+
+  .channelSettings {
+    gap: 22px;
+  }
+
+  .channelSettingsActions {
+    gap: 10px;
+  }
+
+  .channelGroup h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .channelList {
+    gap: 10px;
+  }
+
+  .channelRow {
+    gap: 14px;
+    padding: 12px;
+  }
+
+  .channelRow strong {
+    font-size: 15px;
+  }
+
+  .channelRow span {
+    font-size: 13px;
+  }
+
+  .largeCheck {
+    min-height: 44px;
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+}

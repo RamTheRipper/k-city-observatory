@@ -201,37 +201,26 @@ button:disabled {
 
 .switchRow {
   display: inline-flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
-  min-height: 42px;
-  padding: 8px 12px;
-  border: 1px solid #d1d5db;
-  border-radius: 999px;
+  min-height: 40px;
+  padding: 4px 2px;
   color: #374151;
-  background: #ffffff;
   font-size: 14px;
-  font-weight: 700;
   cursor: pointer;
   user-select: none;
-  transition:
-    border-color 0.15s ease,
-    background 0.15s ease,
-    color 0.15s ease;
 }
 
-.switchRow:hover,
 .largeCheck:hover {
   border-color: #93c5fd;
   background: #eff6ff;
 }
 
-.switchRow:focus-within,
 .largeCheck:focus-within {
   outline: 3px solid rgba(37, 99, 235, 0.22);
   outline-offset: 2px;
 }
 
-.switchRow:has(input:checked),
 .largeCheck:has(input:checked) {
   border-color: #2563eb;
   color: #1d4ed8;
@@ -537,10 +526,10 @@ input[type='checkbox'] {
   display: inline-flex;
   gap: 10px;
   align-items: center;
-  min-height: 44px;
-  padding: 8px 12px;
+  min-height: 40px;
+  padding: 6px 10px;
   border: 1px solid #d1d5db;
-  border-radius: 999px;
+  border-radius: 8px;
   color: #374151;
   background: #ffffff;
   font-size: 13px;

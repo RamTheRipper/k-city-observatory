@@ -181,7 +181,29 @@ function normalizeHealthDocument(value: unknown): HealthDocument | null {
 }
 
 function getScheduleId(schedule: ScheduleItem): string {
-  return schedule.videoId || schedule.id;
+  return schedule.videoId || extractVideoIdFromUrl(schedule.url) || schedule.id || '';
+}
+
+function extractVideoIdFromUrl(url: string | undefined): string {
+  if (!url) {
+    return '';
+  }
+
+  try {
+    const parsedUrl = new URL(url);
+
+    if (parsedUrl.hostname === 'youtu.be') {
+      return parsedUrl.pathname.split('/').filter(Boolean)[0] || '';
+    }
+
+    if (parsedUrl.searchParams.has('v')) {
+      return parsedUrl.searchParams.get('v') || '';
+    }
+
+    return parsedUrl.pathname.match(/\/(?:shorts|live|embed)\/([^/?#]+)/)?.[1] || '';
+  } catch {
+    return url.match(/(?:v=|youtu\.be\/|\/live\/|\/embed\/)([a-zA-Z0-9_-]{6,})/)?.[1] || '';
+  }
 }
 
 function normalizeManualSchedules(value: unknown): ScheduleItem[] {
@@ -218,7 +240,49 @@ function applyManualSchedules(schedules: ScheduleItem[], manualSchedules: Schedu
     const id = getScheduleId(manual);
     const existing = byId.get(id);
 
-    byId.set(id, existing ? { ...existing, ...manual, isManual: true, source: 'manual' } : manual);
+    if (!id) {
+      continue;
+    }
+
+    if (!existing) {
+      byId.set(id, manual);
+      continue;
+    }
+
+    const hasYoutubeData =
+      existing.source === 'youtube-details' || existing.source === 'youtube-search-fallback';
+
+    byId.set(id, {
+      ...manual,
+      ...existing,
+      id: existing.id || manual.id || id,
+      videoId: existing.videoId || manual.videoId || id,
+      title: hasYoutubeData ? existing.title || manual.title : manual.title || existing.title,
+      channelId: existing.channelId || manual.channelId,
+      channelName: existing.channelName || manual.channelName,
+      group: manual.group || existing.group,
+      groupIds: manual.groupIds || existing.groupIds,
+      primaryGroupId: manual.primaryGroupId || manual.group || existing.primaryGroupId || existing.group,
+      tags: manual.tags || existing.tags,
+      category: manual.category || existing.category,
+      url: existing.url || manual.url,
+      thumbnailUrl: hasYoutubeData
+        ? existing.thumbnailUrl || manual.thumbnailUrl
+        : manual.thumbnailUrl || existing.thumbnailUrl,
+      startAt: hasYoutubeData ? existing.startAt || manual.startAt : manual.startAt || existing.startAt,
+      scheduledStartTime: hasYoutubeData
+        ? existing.scheduledStartTime || manual.scheduledStartTime
+        : manual.scheduledStartTime || existing.scheduledStartTime,
+      actualStartTime: existing.actualStartTime || manual.actualStartTime,
+      actualEndTime: existing.actualEndTime || manual.actualEndTime,
+      publishedAt: existing.publishedAt || manual.publishedAt,
+      status: hasYoutubeData ? existing.status || manual.status : manual.status || existing.status,
+      source: hasYoutubeData ? existing.source : 'manual',
+      startAtSource: hasYoutubeData
+        ? existing.startAtSource || manual.startAtSource
+        : manual.startAtSource || existing.startAtSource,
+      isManual: true,
+    });
   }
 
   return [...byId.values()];

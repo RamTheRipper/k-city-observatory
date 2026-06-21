@@ -147,8 +147,32 @@ function getScheduleItems(value) {
   return [];
 }
 
+function extractVideoIdFromUrl(url) {
+  if (!url || typeof url !== 'string') {
+    return '';
+  }
+
+  try {
+    const parsedUrl = new URL(url);
+
+    if (parsedUrl.hostname === 'youtu.be') {
+      return parsedUrl.pathname.split('/').filter(Boolean)[0] || '';
+    }
+
+    if (parsedUrl.searchParams.has('v')) {
+      return parsedUrl.searchParams.get('v') || '';
+    }
+
+    const shortsMatch = parsedUrl.pathname.match(/\/(?:shorts|live|embed)\/([^/?#]+)/);
+    return shortsMatch?.[1] || '';
+  } catch {
+    const match = url.match(/(?:v=|youtu\.be\/|\/live\/|\/embed\/)([a-zA-Z0-9_-]{6,})/);
+    return match?.[1] || '';
+  }
+}
+
 function getVideoId(item) {
-  return item?.videoId || item?.id || '';
+  return item?.videoId || extractVideoIdFromUrl(item?.url) || item?.id || '';
 }
 
 function toIsoString(value) {
@@ -429,18 +453,42 @@ function applyManualSchedules(schedules, manualSchedules) {
   const byId = new Map(schedules.map((item) => [getVideoId(item), item]));
   let mergedCount = 0;
   let addedCount = 0;
+  let youtubeSyncedCount = 0;
+  let preservedManualCount = 0;
+  let updatedStartTimeCount = 0;
 
   for (const manual of manualSchedules) {
     const videoId = getVideoId(manual);
     const existing = byId.get(videoId);
 
     if (existing) {
+      const hasYoutubeData =
+        existing.source === 'youtube-details' || existing.source === 'youtube-search-fallback';
+      const previousStartAt = manual.scheduledStartTime || manual.startAt;
+      const nextStartAt =
+        existing.scheduledStartTime || existing.startAt || manual.scheduledStartTime || manual.startAt;
+
+      if (hasYoutubeData) {
+        youtubeSyncedCount += 1;
+      } else {
+        preservedManualCount += 1;
+      }
+
+      if (previousStartAt && nextStartAt && previousStartAt !== nextStartAt) {
+        updatedStartTimeCount += 1;
+        console.log(
+          `[manual] Updated start time from YouTube: videoId=${videoId} old=${previousStartAt} new=${nextStartAt}.`,
+        );
+      }
+
       byId.set(videoId, {
-        ...existing,
         ...manual,
-        title: manual.title || existing.title,
-        channelId: manual.channelId || existing.channelId,
-        channelName: manual.channelName || existing.channelName,
+        ...existing,
+        id: existing.id || manual.id || videoId,
+        videoId,
+        title: hasYoutubeData ? existing.title || manual.title : manual.title || existing.title,
+        channelId: existing.channelId || manual.channelId,
+        channelName: existing.channelName || manual.channelName,
         group: manual.group || existing.group,
         groupIds: manual.groupIds || existing.groupIds,
         primaryGroupId:
@@ -450,19 +498,35 @@ function applyManualSchedules(schedules, manualSchedules) {
           existing.group,
         tags: manual.tags || existing.tags,
         category: manual.category || existing.category,
-        url: manual.url || existing.url,
-        thumbnailUrl: manual.thumbnailUrl || existing.thumbnailUrl,
-        source: 'manual',
+        url: existing.url || manual.url,
+        thumbnailUrl: hasYoutubeData
+          ? existing.thumbnailUrl || manual.thumbnailUrl
+          : manual.thumbnailUrl || existing.thumbnailUrl,
+        startAt: hasYoutubeData ? existing.startAt || manual.startAt : manual.startAt || existing.startAt,
+        scheduledStartTime: hasYoutubeData
+          ? existing.scheduledStartTime || manual.scheduledStartTime
+          : manual.scheduledStartTime || existing.scheduledStartTime,
+        actualStartTime: existing.actualStartTime || manual.actualStartTime,
+        actualEndTime: existing.actualEndTime || manual.actualEndTime,
+        publishedAt: existing.publishedAt || manual.publishedAt,
+        status: hasYoutubeData ? existing.status || manual.status : manual.status || existing.status,
+        source: hasYoutubeData ? existing.source : 'manual',
+        startAtSource: hasYoutubeData
+          ? existing.startAtSource || manual.startAtSource
+          : manual.startAtSource || existing.startAtSource,
         isManual: true,
       });
       mergedCount += 1;
     } else {
+      console.warn(`[manual] Keeping manual schedule without YouTube details: videoId=${videoId}.`);
       byId.set(videoId, manual);
       addedCount += 1;
     }
   }
 
-  console.log(`[manual] Applied manual schedules: merged=${mergedCount}, added=${addedCount}.`);
+  console.log(
+    `[manual] Applied manual schedules: merged=${mergedCount}, added=${addedCount}, youtubeSynced=${youtubeSyncedCount}, preservedManual=${preservedManualCount}, updatedStartTimes=${updatedStartTimeCount}.`,
+  );
   return [...byId.values()];
 }
 
@@ -844,15 +908,35 @@ async function runUpcoming({ enabledChannels, existingItems, apiKey, counters })
   });
 }
 
-async function runStatus({ enabledChannels, existingItems, apiKey, counters }) {
+async function runStatus({ enabledChannels, existingItems, manualSchedules, apiKey, counters }) {
   const channelById = new Map(
     enabledChannels.map((channel) => [channel.youtubeChannelId, channel]),
   );
-  const targetItems = existingItems.filter((item) =>
-    ['upcoming', 'live', 'unknown'].includes(item.status),
-  );
+  const targetItemsById = new Map();
+
+  for (const item of [...existingItems, ...manualSchedules]) {
+    const videoId = getVideoId(item);
+
+    if (!videoId) {
+      continue;
+    }
+
+    if (
+      item.isManual ||
+      item.source === 'manual' ||
+      ['upcoming', 'live', 'unknown'].includes(item.status)
+    ) {
+      targetItemsById.set(videoId, { ...item, videoId });
+    }
+  }
+
+  const targetItems = [...targetItemsById.values()];
+  const manualTargetCount = targetItems.filter(
+    (item) => item.isManual || item.source === 'manual',
+  ).length;
 
   console.log(`[status] Target schedules for videos.list: ${targetItems.length}.`);
+  console.log(`[manual] Manual schedules targeted for YouTube sync: ${manualTargetCount}.`);
 
   const details = await fetchVideoDetails(
     targetItems.map((item) => getVideoId(item)),
@@ -944,7 +1028,13 @@ async function main() {
     if (scope === 'upcoming') {
       fetchedItems = await runUpcoming({ enabledChannels, existingItems, apiKey, counters });
     } else if (scope === 'status') {
-      fetchedItems = await runStatus({ enabledChannels, existingItems, apiKey, counters });
+      fetchedItems = await runStatus({
+        enabledChannels,
+        existingItems,
+        manualSchedules,
+        apiKey,
+        counters,
+      });
     } else if (scope === 'history') {
       fetchedItems = await runHistory({ enabledChannels, apiKey, counters });
     }

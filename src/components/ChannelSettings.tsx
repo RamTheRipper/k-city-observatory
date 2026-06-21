@@ -19,6 +19,10 @@ function getChannelName(channel: ChannelItem): string {
   return channel.displayName || channel.channelName || channel.name || channel.channelId;
 }
 
+function toInputId(prefix: string, channelId: string): string {
+  return `${prefix}-${channelId.replace(/[^a-zA-Z0-9_-]/g, '-')}`;
+}
+
 function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
   const definedLabel = groupLabels.find((item) => item.groupId === group)?.displayName;
 
@@ -87,14 +91,25 @@ export function ChannelSettings({ channels, settings, onChange, groupLabels }: C
           <h3>{getGroupLabel(group, groupLabels)}</h3>
           <div className="channelList">
             {groupChannels.map((channel) => (
-              <div key={channel.channelId} className="channelRow">
+              <div
+                key={channel.channelId}
+                className={
+                  selectedChannelIds.has(channel.channelId)
+                    ? 'channelRow channelRow-selected'
+                    : 'channelRow'
+                }
+              >
                 <div>
                   <strong>{getChannelName(channel)}</strong>
                   <span>{channel.channelName || channel.channelId}</span>
                 </div>
 
-                <label>
+                <label
+                  className="largeCheck"
+                  htmlFor={toInputId('channel-visible', channel.channelId)}
+                >
                   <input
+                    id={toInputId('channel-visible', channel.channelId)}
                     type="checkbox"
                     checked={selectedChannelIds.has(channel.channelId)}
                     onChange={() => toggleSelected(channel.channelId)}
@@ -102,8 +117,12 @@ export function ChannelSettings({ channels, settings, onChange, groupLabels }: C
                   表示
                 </label>
 
-                <label>
+                <label
+                  className="largeCheck"
+                  htmlFor={toInputId('channel-favorite', channel.channelId)}
+                >
                   <input
+                    id={toInputId('channel-favorite', channel.channelId)}
                     type="checkbox"
                     checked={favoriteChannelIds.has(channel.channelId)}
                     onChange={() => toggleFavorite(channel.channelId)}

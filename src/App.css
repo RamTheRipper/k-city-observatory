@@ -201,11 +201,41 @@ button:disabled {
 
 .switchRow {
   display: inline-flex;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
-  min-height: 38px;
+  min-height: 42px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
   color: #374151;
+  background: #ffffff;
   font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.switchRow:hover,
+.largeCheck:hover {
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+
+.switchRow:focus-within,
+.largeCheck:focus-within {
+  outline: 3px solid rgba(37, 99, 235, 0.22);
+  outline-offset: 2px;
+}
+
+.switchRow:has(input:checked),
+.largeCheck:has(input:checked) {
+  border-color: #2563eb;
+  color: #1d4ed8;
+  background: #dbeafe;
 }
 
 .switchRow.compact {
@@ -213,9 +243,10 @@ button:disabled {
 }
 
 input[type='checkbox'] {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   accent-color: #2563eb;
+  cursor: pointer;
 }
 
 .calendarView {
@@ -482,6 +513,11 @@ input[type='checkbox'] {
   background: #f9fafb;
 }
 
+.channelRow-selected {
+  border-color: #bfdbfe;
+  background: #f8fbff;
+}
+
 .channelRow strong,
 .channelRow span {
   display: block;
@@ -497,12 +533,25 @@ input[type='checkbox'] {
   font-size: 12px;
 }
 
-.channelRow label {
+.largeCheck {
   display: inline-flex;
-  gap: 6px;
+  gap: 10px;
   align-items: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
   color: #374151;
+  background: #ffffff;
   font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
 }
 
 @media (max-width: 820px) {
@@ -529,6 +578,11 @@ input[type='checkbox'] {
   .scheduleCard,
   .channelRow {
     grid-template-columns: 1fr;
+  }
+
+  .largeCheck {
+    justify-content: center;
+    width: 100%;
   }
 
   .scheduleTitleRow {

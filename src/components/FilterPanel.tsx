@@ -1,4 +1,4 @@
-import type { GroupItem, HealthDocument, StatusFilter, UserSettings } from '../types';
+import type { GroupItem, StatusFilter, UserSettings } from '../types';
 
 type FilterPanelProps = {
   groups: string[];
@@ -7,7 +7,6 @@ type FilterPanelProps = {
   onReset: () => void;
   onOpenChannelSettings: () => void;
   groupLabels: GroupItem[];
-  health: HealthDocument | null;
   isReloading: boolean;
   onReload: () => void;
 };
@@ -15,14 +14,6 @@ type FilterPanelProps = {
 const statusOptions: { value: StatusFilter; label: string }[] = [
   { value: 'upcoming', label: '今後・配信中' },
   { value: 'past', label: '過去' },
-];
-
-const groupDisplayOrder = [
-  'vwp',
-  'girls_revolution_project',
-  'sinsekai_record',
-  'kuusou',
-  'official',
 ];
 
 function getGroupLabel(group: string, groupLabels: GroupItem[]): string {
@@ -52,25 +43,9 @@ export function FilterPanel({
   onReset,
   onOpenChannelSettings,
   groupLabels,
-  health,
   isReloading,
   onReload,
 }: FilterPanelProps) {
-  const apiUsage = health?.apiUsage;
-  const orderByGroup = new Map(groupDisplayOrder.map((group, index) => [group, index]));
-  const groupCounts = apiUsage?.groupCounts
-    ? Object.entries(apiUsage.groupCounts).sort(([a], [b]) => {
-        const orderA = orderByGroup.get(a);
-        const orderB = orderByGroup.get(b);
-
-        if (orderA !== undefined || orderB !== undefined) {
-          return (orderA ?? Number.MAX_SAFE_INTEGER) - (orderB ?? Number.MAX_SAFE_INTEGER);
-        }
-
-        return a.localeCompare(b, 'ja-JP');
-      })
-    : [];
-
   return (
     <section className="filterPanel" aria-label="フィルター">
       <div className="statusTabs" role="tablist" aria-label="表示対象">
@@ -126,33 +101,6 @@ export function FilterPanel({
         </button>
       </div>
 
-      {apiUsage ? (
-        <div className={apiUsage.lastError ? 'healthStrip healthStrip-warning' : 'healthStrip'}>
-          <span>取得範囲: {apiUsage.fetchedScope}</span>
-          {apiUsage.loadedChannels !== undefined ? (
-            <span>
-              チャンネル: {apiUsage.enabledChannels ?? 0}/{apiUsage.loadedChannels} 有効 / fetch{' '}
-              {apiUsage.fetchTargets ?? 0}
-            </span>
-          ) : null}
-          <span>推定API使用量: {apiUsage.estimatedUnits} units</span>
-          {groupCounts.length > 0 ? (
-            <span>
-              グループ別:{' '}
-              {groupCounts
-                .map(([group, count]) => `${getGroupLabel(group, groupLabels)} ${count}`)
-                .join(' / ')}
-            </span>
-          ) : null}
-          {apiUsage.skippedChannels?.length ? (
-            <span>取得対象外: {apiUsage.skippedChannels.length}</span>
-          ) : null}
-          {apiUsage.lastSuccessAt ? <span>最終成功: {apiUsage.lastSuccessAt}</span> : null}
-          {apiUsage.lastError ? (
-            <strong>データ更新が停止している可能性があります: {apiUsage.lastError.message}</strong>
-          ) : null}
-        </div>
-      ) : null}
     </section>
   );
 }

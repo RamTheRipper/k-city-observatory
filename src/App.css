@@ -179,26 +179,6 @@ button:disabled {
   background: #374151;
 }
 
-.healthStrip {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-  align-items: center;
-  color: #4b5563;
-  font-size: 12px;
-}
-
-.healthStrip strong {
-  color: #92400e;
-}
-
-.healthStrip-warning {
-  padding: 10px 12px;
-  border: 1px solid #fcd34d;
-  border-radius: 8px;
-  background: #fffbeb;
-}
-
 .switchRow {
   display: inline-flex;
   gap: 8px;

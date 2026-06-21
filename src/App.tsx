@@ -331,7 +331,6 @@ function App() {
     statusFilter: getTabFromUrl(),
   }));
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
-  const [health, setHealth] = useState<HealthDocument | null>(null);
   const [isReloading, setIsReloading] = useState(false);
   const [isChannelSettingsOpen, setIsChannelSettingsOpen] = useState(false);
   const [notificationPermission, setNotificationPermission] = useState<
@@ -361,7 +360,6 @@ function App() {
       setSchedules(nextSchedules);
       setChannels(nextChannels);
       setGroups(nextGroups);
-      setHealth(nextHealth);
       setSettings((currentSettings) => mergeSelectedChannels(currentSettings, nextChannels));
       setLastUpdatedAt(
         scheduleDocument.generatedAt ?? nextHealth?.apiUsage.lastSuccessAt ?? new Date().toISOString(),
@@ -586,7 +584,6 @@ function App() {
         onReset={resetFilters}
         onOpenChannelSettings={() => setIsChannelSettingsOpen(true)}
         groupLabels={groups}
-        health={health}
         isReloading={isReloading}
         onReload={() => loadData()}
       />

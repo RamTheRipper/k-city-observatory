@@ -1,4 +1,4 @@
-import type { ScheduleItem, ScheduleStatus } from '../types';
+import type { ScheduleItem } from '../types';
 
 export function parseDate(value: string): Date | null {
   if (!/^\d{4}-\d{2}-\d{2}T.+(?:Z|[+-]\d{2}:\d{2})$/.test(value)) {
@@ -28,19 +28,11 @@ export function formatDateTime(value: string): string {
 export function getEffectiveScheduleStatus(
   schedule: ScheduleItem,
   now = new Date(),
-): ScheduleStatus {
-  if (schedule.status === 'live') {
-    return 'live';
-  }
-
-  if (schedule.actualStartTime && !schedule.actualEndTime) {
-    return 'live';
-  }
-
+): 'upcoming' | 'ended' {
   const startAt = parseDate(schedule.startAt);
 
   if (!startAt) {
-    return schedule.status;
+    return 'ended';
   }
 
   if (startAt.getTime() > now.getTime()) {
@@ -87,15 +79,20 @@ export function isWithinVisibleRange(
     return true;
   }
 
+  const startDateKey = toDateKey(startAt);
+  const todayKey = toDateKey(now);
+
   const futureEnd = new Date(now);
   futureEnd.setDate(futureEnd.getDate() + 7);
+  const futureEndKey = toDateKey(futureEnd);
 
   const archiveStart = new Date(now);
   archiveStart.setMonth(archiveStart.getMonth() - 1);
+  const archiveStartKey = toDateKey(archiveStart);
 
   if (statusFilter === 'past') {
-    return startAt >= archiveStart && startAt <= now;
+    return startDateKey >= archiveStartKey && startDateKey < todayKey;
   }
 
-  return startAt >= archiveStart && startAt <= futureEnd;
+  return startDateKey >= todayKey && startDateKey <= futureEndKey;
 }

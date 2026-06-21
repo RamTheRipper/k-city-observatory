@@ -9,10 +9,7 @@ type ScheduleCardProps = {
 
 const statusLabels: Record<string, string> = {
   upcoming: '予定',
-  live: '配信中',
-  ended: '過去',
-  archived: '過去',
-  unknown: '不明',
+  ended: '配信済み',
 };
 
 function getGroupLabel(group: string | undefined, groupLabels: GroupItem[]): string {
@@ -45,7 +42,7 @@ export function ScheduleCard({ schedule, isFavorite, groupLabels }: ScheduleCard
         <div className="scheduleTitleRow">
           <h3>{schedule.title}</h3>
           <span className={`statusBadge statusBadge-${effectiveStatus}`}>
-            {statusLabels[effectiveStatus] ?? statusLabels.unknown}
+            {statusLabels[effectiveStatus]}
           </span>
         </div>
 

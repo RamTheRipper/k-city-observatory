@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-20T23:38:12.546Z",
+  "generatedAt": "2026-06-21T04:00:25.803Z",
   "items": [
     {
       "id": "cYkrCz0KaGA",
@@ -1298,7 +1298,7 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "ended",
+      "status": "upcoming",
       "scheduledStartTime": "2026-06-21T10:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
@@ -1327,7 +1327,7 @@
         "membership"
       ],
       "category": "",
-      "status": "ended",
+      "status": "upcoming",
       "scheduledStartTime": "2026-06-21T11:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
@@ -1383,7 +1383,7 @@
         "official"
       ],
       "category": "",
-      "status": "ended",
+      "status": "upcoming",
       "scheduledStartTime": "2026-06-22T10:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
@@ -1413,7 +1413,7 @@
         "group"
       ],
       "category": "",
-      "status": "ended",
+      "status": "upcoming",
       "scheduledStartTime": "2026-06-26T10:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
@@ -1443,7 +1443,7 @@
         "group"
       ],
       "category": "",
-      "status": "ended",
+      "status": "upcoming",
       "scheduledStartTime": "2026-06-27T09:30:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,

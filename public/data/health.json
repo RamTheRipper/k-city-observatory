@@ -1,19 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T05:20:06.572Z",
+  "generatedAt": "2026-06-21T10:06:58.792Z",
   "apiUsage": {
-    "searchListCalls": 13,
-    "videosListCalls": 0,
+    "searchListCalls": 24,
+    "videosListCalls": 1,
     "channelsListCalls": 0,
     "playlistItemsListCalls": 0,
-    "estimatedUnits": 1300,
-    "lastSuccessAt": "2026-06-21T04:00:25.805Z",
-    "lastError": {
-      "message": "Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:944129100306'.",
-      "quotaExceeded": true,
-      "statusCode": 429,
-      "endpoint": "search"
-    },
+    "estimatedUnits": 2401,
+    "lastSuccessAt": "2026-06-21T10:06:58.792Z",
+    "lastError": null,
     "fetchedScope": "upcoming",
     "loadedChannels": 24,
     "enabledChannels": 24,

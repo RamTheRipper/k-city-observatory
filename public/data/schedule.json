@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T04:00:25.803Z",
+  "generatedAt": "2026-06-21T10:06:58.790Z",
   "items": [
     {
       "id": "cYkrCz0KaGA",
@@ -1298,9 +1298,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-06-21T10:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-06-21T09:56:15.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-06-20T10:52:11.000Z",
       "source": "youtube-details",
@@ -1388,6 +1388,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-06-16T01:55:55.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "sWa2cz4hxTY",
+      "videoId": "sWa2cz4hxTY",
+      "title": "【初コラボ】春猿火さんと！歌みたトークやマシュマロもぐもぐ【琶舞/春猿火/神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-06-24T11:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=sWa2cz4hxTY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sWa2cz4hxTY/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-24T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-21T02:49:04.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

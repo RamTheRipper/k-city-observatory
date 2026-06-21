@@ -3,7 +3,7 @@ name: Update stream status
 on:
   workflow_dispatch:
   schedule:
-    - cron: '23 * * * *'
+    - cron: '0 3,9,15,21 * * *'
 
 permissions:
   contents: write
@@ -32,10 +32,16 @@ jobs:
 
       - name: Commit data changes
         run: |
+          echo "Changed files after status refresh:"
+          git status --short -- public/data/schedule.json public/data/health.json
+
           if git diff --quiet -- public/data/schedule.json public/data/health.json; then
             echo "No data changes."
             exit 0
           fi
+
+          echo "Data timestamps:"
+          node -e 'const fs=require("fs"); for (const file of ["public/data/schedule.json","public/data/health.json"]) { const data=JSON.parse(fs.readFileSync(file,"utf8")); console.log(file + ": generatedAt=" + (data.generatedAt || "(none)") + " lastSuccessAt=" + (data.apiUsage?.lastSuccessAt || "(n/a)") + " lastError=" + (data.apiUsage?.lastError?.message || "(none)")); }'
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -294,6 +294,34 @@ function mergeSelectedChannels(settings: UserSettings, channels: ChannelItem[]):
   };
 }
 
+function getFavoriteChannelKey(channel: ChannelItem | undefined): string | null {
+  if (!channel) {
+    return null;
+  }
+
+  return channel.colorKey || channel.talentId || channel.channelId;
+}
+
+function expandFavoriteChannelIds(favoriteChannelIds: string[], channels: ChannelItem[]): string[] {
+  const channelsById = new Map(channels.map((channel) => [channel.channelId, channel]));
+  const favoriteIds = new Set(favoriteChannelIds);
+  const favoriteKeys = new Set(
+    favoriteChannelIds
+      .map((channelId) => getFavoriteChannelKey(channelsById.get(channelId)))
+      .filter((key): key is string => Boolean(key)),
+  );
+
+  for (const channel of channels) {
+    const favoriteKey = getFavoriteChannelKey(channel);
+
+    if (favoriteKey && favoriteKeys.has(favoriteKey)) {
+      favoriteIds.add(channel.channelId);
+    }
+  }
+
+  return [...favoriteIds];
+}
+
 function App() {
   const [schedules, setSchedules] = useState<ScheduleItem[]>([]);
   const [channels, setChannels] = useState<ChannelItem[]>([]);
@@ -479,9 +507,14 @@ function App() {
     [channels, schedules],
   );
 
+  const effectiveFavoriteChannelIds = useMemo(
+    () => expandFavoriteChannelIds(settings.favoriteChannelIds, channels),
+    [channels, settings.favoriteChannelIds],
+  );
+
   const filteredSchedules = useMemo(() => {
     const selectedChannelIds = new Set(settings.selectedChannelIds);
-    const favoriteChannelIds = new Set(settings.favoriteChannelIds);
+    const favoriteChannelIds = new Set(effectiveFavoriteChannelIds);
     const now = new Date();
 
     return schedules.filter((schedule) => {
@@ -504,7 +537,7 @@ function App() {
 
       return matchesGroup && matchesChannel && matchesFavorite && matchesStatus && matchesRange;
     });
-  }, [schedules, settings]);
+  }, [effectiveFavoriteChannelIds, schedules, settings]);
 
   function updateSettings(nextSettings: UserSettings): void {
     if (nextSettings.statusFilter !== settings.statusFilter) {
@@ -560,7 +593,7 @@ function App() {
 
       <CalendarView
         schedules={filteredSchedules}
-        favoriteChannelIds={settings.favoriteChannelIds}
+        favoriteChannelIds={effectiveFavoriteChannelIds}
         statusFilter={settings.statusFilter}
         groupLabels={groups}
       />

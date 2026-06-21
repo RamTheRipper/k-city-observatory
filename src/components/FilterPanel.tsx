@@ -13,10 +13,8 @@ type FilterPanelProps = {
 };
 
 const statusOptions: { value: StatusFilter; label: string }[] = [
-  { value: 'all', label: 'すべて' },
-  { value: 'upcoming', label: '今後' },
-  { value: 'live', label: '配信中' },
-  { value: 'archived', label: '過去' },
+  { value: 'upcoming', label: '今後・配信中' },
+  { value: 'past', label: '過去' },
 ];
 
 const groupDisplayOrder = [

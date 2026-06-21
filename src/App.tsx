@@ -10,6 +10,7 @@ import type {
   HealthDocument,
   ScheduleDocument,
   ScheduleItem,
+  StatusFilter,
   UserSettings,
 } from './types';
 import { getEffectiveScheduleStatus, isWithinVisibleRange, parseDate } from './utils/date';
@@ -25,6 +26,17 @@ const groupDisplayOrder = [
   'kuusou',
   'official',
 ];
+
+function getTabFromUrl(): StatusFilter {
+  const tab = new URLSearchParams(window.location.search).get('tab');
+  return tab === 'past' ? 'past' : 'upcoming';
+}
+
+function updateTabUrl(tab: StatusFilter): void {
+  const url = new URL(window.location.href);
+  url.searchParams.set('tab', tab);
+  window.history.replaceState(null, '', url);
+}
 
 async function fetchJson(fileName: string): Promise<unknown> {
   const response = await fetch(assetPath(fileName), { cache: 'no-store' });
@@ -286,7 +298,10 @@ function App() {
   const [schedules, setSchedules] = useState<ScheduleItem[]>([]);
   const [channels, setChannels] = useState<ChannelItem[]>([]);
   const [groups, setGroups] = useState<GroupItem[]>([]);
-  const [settings, setSettings] = useState<UserSettings>(() => loadSettings());
+  const [settings, setSettings] = useState<UserSettings>(() => ({
+    ...loadSettings(),
+    statusFilter: getTabFromUrl(),
+  }));
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
   const [health, setHealth] = useState<HealthDocument | null>(null);
   const [isReloading, setIsReloading] = useState(false);
@@ -347,6 +362,18 @@ function App() {
 
     return () => window.clearTimeout(timerId);
   }, [loadData]);
+
+  useEffect(() => {
+    updateTabUrl(getTabFromUrl());
+
+    const handlePopState = () => {
+      const nextTab = getTabFromUrl();
+      setSettings((currentSettings) => ({ ...currentSettings, statusFilter: nextTab }));
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   useEffect(() => {
     try {
@@ -470,11 +497,9 @@ function App() {
       const matchesFavorite =
         !settings.showFavoritesOnly || favoriteChannelIds.has(schedule.channelId);
       const matchesStatus =
-        settings.statusFilter === 'all' ||
-        (settings.statusFilter === 'archived' &&
-          ['archived', 'ended'].includes(effectiveStatus)) ||
-        (settings.statusFilter !== 'unknown' && effectiveStatus === settings.statusFilter) ||
-        (settings.statusFilter === 'unknown' && effectiveStatus === 'unknown');
+        settings.statusFilter === 'past'
+          ? ['archived', 'ended'].includes(effectiveStatus)
+          : ['live', 'upcoming'].includes(effectiveStatus);
       const matchesRange = isWithinVisibleRange(schedule, settings.statusFilter, now);
 
       return matchesGroup && matchesChannel && matchesFavorite && matchesStatus && matchesRange;
@@ -482,6 +507,10 @@ function App() {
   }, [schedules, settings]);
 
   function updateSettings(nextSettings: UserSettings): void {
+    if (nextSettings.statusFilter !== settings.statusFilter) {
+      updateTabUrl(nextSettings.statusFilter);
+    }
+
     setSettings(nextSettings);
   }
 
@@ -492,6 +521,7 @@ function App() {
       showFavoritesOnly: false,
       statusFilter: 'upcoming',
     }));
+    updateTabUrl('upcoming');
   }
 
   async function requestNotificationPermission(): Promise<void> {

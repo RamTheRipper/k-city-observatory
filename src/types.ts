@@ -1,5 +1,5 @@
 export type ScheduleStatus = 'upcoming' | 'live' | 'ended' | 'archived' | 'unknown';
-export type StatusFilter = ScheduleStatus | 'all';
+export type StatusFilter = 'upcoming' | 'past';
 
 export type ScheduleItem = {
   id: string;

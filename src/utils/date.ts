@@ -93,13 +93,9 @@ export function isWithinVisibleRange(
   const archiveStart = new Date(now);
   archiveStart.setMonth(archiveStart.getMonth() - 1);
 
-  if (statusFilter === 'archived' || statusFilter === 'ended') {
+  if (statusFilter === 'past') {
     return startAt >= archiveStart && startAt <= now;
   }
 
-  if (statusFilter === 'all') {
-    return startAt >= archiveStart && startAt <= futureEnd;
-  }
-
-  return startAt <= futureEnd;
+  return startAt >= archiveStart && startAt <= futureEnd;
 }

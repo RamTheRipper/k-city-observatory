@@ -23,7 +23,7 @@ function stringArrayOrDefault(value: unknown, fallback: string[]): string[] {
 }
 
 function isStatusFilter(value: unknown): value is StatusFilter {
-  return ['upcoming', 'live', 'ended', 'archived', 'unknown', 'all'].includes(String(value));
+  return ['upcoming', 'past'].includes(String(value));
 }
 
 export function normalizeSettings(value: unknown): UserSettings {
@@ -32,9 +32,12 @@ export function normalizeSettings(value: unknown): UserSettings {
   }
 
   const source = value as Partial<UserSettings>;
-  const statusFilter = isStatusFilter(source.statusFilter)
-    ? source.statusFilter
-    : defaultSettings.statusFilter;
+  const rawStatusFilter = (source as { statusFilter?: unknown }).statusFilter;
+  const statusFilter = rawStatusFilter === 'archived' || rawStatusFilter === 'ended'
+    ? 'past'
+    : isStatusFilter(rawStatusFilter)
+      ? rawStatusFilter
+      : defaultSettings.statusFilter;
   const legacyNotifiedScheduleIds = stringArrayOrDefault(source.notifiedScheduleIds, []);
   const notificationBeforeStartEnabled =
     typeof source.notificationBeforeStartEnabled === 'boolean'

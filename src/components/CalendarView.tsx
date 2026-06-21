@@ -15,13 +15,14 @@ export function CalendarView({
   statusFilter,
   groupLabels,
 }: CalendarViewProps) {
+  const isPastTab = statusFilter === 'past';
   const sortedSchedules = [...schedules].sort((a, b) => {
     const aTime = parseDate(a.startAt)?.getTime() ?? 0;
     const bTime = parseDate(b.startAt)?.getTime() ?? 0;
-    return aTime - bTime;
+    return isPastTab ? bTime - aTime : aTime - bTime;
   });
 
-  if (statusFilter === 'archived' || statusFilter === 'ended') {
+  if (isPastTab) {
     return (
       <section className="calendarView" aria-label="過去配信">
         <div className="dayBlock">

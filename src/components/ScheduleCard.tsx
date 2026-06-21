@@ -1,5 +1,5 @@
 import type { GroupItem, ScheduleItem } from '../types';
-import { formatDateTime } from '../utils/date';
+import { formatDateTime, getEffectiveScheduleStatus } from '../utils/date';
 
 type ScheduleCardProps = {
   schedule: ScheduleItem;
@@ -26,6 +26,7 @@ function getGroupLabel(group: string | undefined, groupLabels: GroupItem[]): str
 export function ScheduleCard({ schedule, isFavorite, groupLabels }: ScheduleCardProps) {
   const groupLabel = getGroupLabel(schedule.group, groupLabels);
   const tags = schedule.tags ?? [];
+  const effectiveStatus = getEffectiveScheduleStatus(schedule);
 
   return (
     <article className="scheduleCard">
@@ -43,8 +44,8 @@ export function ScheduleCard({ schedule, isFavorite, groupLabels }: ScheduleCard
 
         <div className="scheduleTitleRow">
           <h3>{schedule.title}</h3>
-          <span className={`statusBadge statusBadge-${schedule.status}`}>
-            {statusLabels[schedule.status] ?? statusLabels.unknown}
+          <span className={`statusBadge statusBadge-${effectiveStatus}`}>
+            {statusLabels[effectiveStatus] ?? statusLabels.unknown}
           </span>
         </div>
 

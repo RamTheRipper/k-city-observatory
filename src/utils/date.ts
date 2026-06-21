@@ -1,6 +1,10 @@
-import type { ScheduleItem } from '../types';
+import type { ScheduleItem, ScheduleStatus } from '../types';
 
 export function parseDate(value: string): Date | null {
+  if (!/^\d{4}-\d{2}-\d{2}T.+(?:Z|[+-]\d{2}:\d{2})$/.test(value)) {
+    return null;
+  }
+
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? null : date;
 }
@@ -19,6 +23,31 @@ export function formatDateTime(value: string): string {
     hour: '2-digit',
     minute: '2-digit',
   }).format(date);
+}
+
+export function getEffectiveScheduleStatus(
+  schedule: ScheduleItem,
+  now = new Date(),
+): ScheduleStatus {
+  if (schedule.status === 'live') {
+    return 'live';
+  }
+
+  if (schedule.actualStartTime && !schedule.actualEndTime) {
+    return 'live';
+  }
+
+  const startAt = parseDate(schedule.startAt);
+
+  if (!startAt) {
+    return schedule.status;
+  }
+
+  if (startAt.getTime() > now.getTime()) {
+    return 'upcoming';
+  }
+
+  return 'ended';
 }
 
 export function formatDayLabel(date: Date): string {

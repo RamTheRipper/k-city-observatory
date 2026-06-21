@@ -12,7 +12,7 @@ import type {
   ScheduleItem,
   UserSettings,
 } from './types';
-import { isWithinVisibleRange, parseDate } from './utils/date';
+import { getEffectiveScheduleStatus, isWithinVisibleRange, parseDate } from './utils/date';
 import { loadSettings, saveSettings } from './utils/storage';
 import './App.css';
 
@@ -371,11 +371,12 @@ function App() {
       const beforeTarget = settings.notificationBeforeStartEnabled
         ? schedules.find((schedule) => {
             const startAt = parseDate(schedule.startAt);
+            const effectiveStatus = getEffectiveScheduleStatus(schedule, now);
 
             if (
               !startAt ||
               beforeNotifiedIds.has(schedule.id) ||
-              ['archived', 'ended'].includes(schedule.status)
+              ['archived', 'ended'].includes(effectiveStatus)
             ) {
               return false;
             }
@@ -387,11 +388,12 @@ function App() {
       const startTarget = settings.notificationAtStartEnabled
         ? schedules.find((schedule) => {
             const startAt = parseDate(schedule.startAt);
+            const effectiveStatus = getEffectiveScheduleStatus(schedule, now);
 
             if (
               !startAt ||
               startNotifiedIds.has(schedule.id) ||
-              ['archived', 'ended'].includes(schedule.status)
+              ['archived', 'ended'].includes(effectiveStatus)
             ) {
               return false;
             }
@@ -456,6 +458,7 @@ function App() {
     const now = new Date();
 
     return schedules.filter((schedule) => {
+      const effectiveStatus = getEffectiveScheduleStatus(schedule, now);
       const group = schedule.group || fallbackGroup;
       const scheduleGroupIds = schedule.groupIds ?? [];
       const matchesGroup =
@@ -469,9 +472,9 @@ function App() {
       const matchesStatus =
         settings.statusFilter === 'all' ||
         (settings.statusFilter === 'archived' &&
-          ['archived', 'ended'].includes(schedule.status)) ||
-        (settings.statusFilter !== 'unknown' && schedule.status === settings.statusFilter) ||
-        (settings.statusFilter === 'unknown' && schedule.status === 'unknown');
+          ['archived', 'ended'].includes(effectiveStatus)) ||
+        (settings.statusFilter !== 'unknown' && effectiveStatus === settings.statusFilter) ||
+        (settings.statusFilter === 'unknown' && effectiveStatus === 'unknown');
       const matchesRange = isWithinVisibleRange(schedule, settings.statusFilter, now);
 
       return matchesGroup && matchesChannel && matchesFavorite && matchesStatus && matchesRange;

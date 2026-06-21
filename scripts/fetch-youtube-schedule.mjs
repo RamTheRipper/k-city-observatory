@@ -485,6 +485,35 @@ function filterRecentHistory(items, now = new Date()) {
   });
 }
 
+function getEffectiveScheduleStatus(item, now = new Date()) {
+  if (item.status === 'live') {
+    return 'live';
+  }
+
+  if (item.actualStartTime && !item.actualEndTime) {
+    return 'live';
+  }
+
+  const startAt = new Date(item.startAt);
+
+  if (Number.isNaN(startAt.getTime())) {
+    return item.status || 'unknown';
+  }
+
+  if (startAt.getTime() > now.getTime()) {
+    return 'upcoming';
+  }
+
+  return 'ended';
+}
+
+function normalizeScheduleStatuses(items, now = new Date()) {
+  return items.map((item) => ({
+    ...item,
+    status: getEffectiveScheduleStatus(item, now),
+  }));
+}
+
 async function youtubeGet(endpoint, params, apiKey, counters) {
   const url = new URL(`${youtubeApiBase}/${endpoint}`);
 
@@ -617,13 +646,14 @@ async function fetchRecentUploadVideoIds(channel, apiKey, counters) {
 }
 
 async function writeSchedule(output) {
+  const normalizedOutput = normalizeScheduleStatuses(output);
   const document = {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
-    items: output,
+    items: normalizedOutput,
   };
 
-  console.log(`[schedule] Writing ${output.length} schedules to ${dataSchedulePath}.`);
+  console.log(`[schedule] Writing ${normalizedOutput.length} schedules to ${dataSchedulePath}.`);
   await writeJson(dataSchedulePath, document);
 }
 
@@ -865,16 +895,21 @@ async function runHistory({ enabledChannels, apiKey, counters }) {
   cutoff.setDate(cutoff.getDate() - historyDays);
 
   return details
-    .map((detail) => mapDetailToSchedule(detail, channelByVideoId.get(detail.id), 'ended'))
+    .map((detail) => mapDetailToSchedule(detail, channelByVideoId.get(detail.id), 'unknown'))
     .filter((item) => {
-      const hasLiveDetails = item.actualStartTime || item.actualEndTime || item.scheduledStartTime;
+      const isArchiveLike = item.actualStartTime || item.actualEndTime;
       const date = new Date(
         item.actualEndTime ||
           item.actualStartTime ||
           item.publishedAt ||
           item.startAt,
       );
-      return hasLiveDetails && !Number.isNaN(date.getTime()) && date >= cutoff;
+      return (
+        isArchiveLike &&
+        !Number.isNaN(date.getTime()) &&
+        date >= cutoff &&
+        date <= new Date()
+      );
     });
 }
 

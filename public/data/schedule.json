@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T14:23:19.701Z",
+  "generatedAt": "2026-06-21T14:35:10.846Z",
   "items": [
-    {
-      "id": "cYkrCz0KaGA",
-      "videoId": "cYkrCz0KaGA",
-      "title": "【ゲスト回：推しと究極の二択トーク💭】春猿火 「台風倶楽部-生配信」SPゲスト：RARA(VALIS)",
-      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
-      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
-      "startAt": "2026-05-21T12:00:00.000Z",
-      "endAt": "2026-05-21T13:05:54.000Z",
-      "url": "https://www.youtube.com/watch?v=cYkrCz0KaGA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/cYkrCz0KaGA/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-21T12:00:00.000Z",
-      "actualStartTime": "2026-05-21T12:00:31.000Z",
-      "actualEndTime": "2026-05-21T13:05:54.000Z",
-      "publishedAt": "2026-05-21T13:42:17.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "FgTaLi1ReFM",
       "videoId": "FgTaLi1ReFM",
@@ -1286,9 +1257,9 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-06-21T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-06-21T12:20:19.000Z",
       "url": "https://www.youtube.com/watch?v=wf7ZgAPB-bM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/wf7ZgAPB-bM/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wf7ZgAPB-bM/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1298,11 +1269,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-06-21T10:00:00.000Z",
       "actualStartTime": "2026-06-21T09:56:15.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-06-20T10:52:11.000Z",
+      "actualEndTime": "2026-06-21T12:20:19.000Z",
+      "publishedAt": "2026-06-21T12:34:10.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1314,9 +1285,9 @@
       "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
       "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
       "startAt": "2026-06-21T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-06-21T11:58:08.000Z",
       "url": "https://www.youtube.com/watch?v=iZuHY3TUVPU",
-      "thumbnailUrl": "https://i.ytimg.com/vi/iZuHY3TUVPU/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iZuHY3TUVPU/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1327,42 +1298,14 @@
         "membership"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-06-21T11:00:00.000Z",
       "actualStartTime": "2026-06-21T10:55:11.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-06-17T13:40:12.000Z",
+      "actualEndTime": "2026-06-21T11:58:08.000Z",
+      "publishedAt": "2026-06-21T12:32:40.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
-    },
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "upcoming",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "youtube-page-startTimestamp",
-      "isManual": true
     },
     {
       "id": "BAmkHKb7KJk",
@@ -1391,6 +1334,34 @@
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
+    },
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき/ Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/maxresdefault_live.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-20T11:36:15.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": true,
+      "endAt": null,
+      "category": ""
     },
     {
       "id": "sWa2cz4hxTY",

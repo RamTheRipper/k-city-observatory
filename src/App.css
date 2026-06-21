@@ -460,6 +460,13 @@ input[type='checkbox'] {
   gap: 18px;
 }
 
+.channelSettingsActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
 .channelGroup h3 {
   margin: 0 0 8px;
   color: #111827;

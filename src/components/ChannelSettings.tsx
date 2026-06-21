@@ -84,8 +84,25 @@ export function ChannelSettings({ channels, settings, onChange, groupLabels }: C
     onChange({ ...settings, favoriteChannelIds: nextFavorites });
   }
 
+  function selectAllChannels(): void {
+    onChange({ ...settings, selectedChannelIds: channels.map((channel) => channel.channelId) });
+  }
+
+  function clearAllChannels(): void {
+    onChange({ ...settings, selectedChannelIds: [] });
+  }
+
   return (
     <section className="channelSettings" aria-label="配信者設定">
+      <div className="channelSettingsActions">
+        <button type="button" className="ghostButton" onClick={selectAllChannels}>
+          表示を全選択
+        </button>
+        <button type="button" className="ghostButton" onClick={clearAllChannels}>
+          表示を全解除
+        </button>
+      </div>
+
       {groupChannels(channels).map(([group, groupChannels]) => (
         <div key={group} className="channelGroup">
           <h3>{getGroupLabel(group, groupLabels)}</h3>

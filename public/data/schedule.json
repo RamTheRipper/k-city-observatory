@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T14:35:10.846Z",
+  "generatedAt": "2026-06-21T16:50:50.338Z",
   "items": [
-    {
-      "id": "FgTaLi1ReFM",
-      "videoId": "FgTaLi1ReFM",
-      "title": "【PRAGMATA】Unknown Signalやるよ #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-05-21T12:00:00.000Z",
-      "endAt": "2026-05-21T14:59:57.000Z",
-      "url": "https://www.youtube.com/watch?v=FgTaLi1ReFM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/FgTaLi1ReFM/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-21T12:00:00.000Z",
-      "actualStartTime": "2026-05-21T11:56:27.000Z",
-      "actualEndTime": "2026-05-21T14:59:57.000Z",
-      "publishedAt": "2026-05-21T17:14:44.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "SDYMacMc_Ds",
       "videoId": "SDYMacMc_Ds",

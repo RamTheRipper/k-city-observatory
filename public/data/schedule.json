@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T11:49:26.924Z",
+  "generatedAt": "2026-06-21T14:23:19.701Z",
   "items": [
     {
       "id": "cYkrCz0KaGA",
@@ -1342,7 +1342,7 @@
       "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
       "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
       "channelName": "幸祜 -KOKO-",
-      "startAt": "2026-06-21T15:00:00.000Z",
+      "startAt": "2026-06-23T11:30:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
       "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
@@ -1356,12 +1356,12 @@
       ],
       "category": "",
       "status": "upcoming",
-      "scheduledStartTime": "2026-06-21T15:00:00.000Z",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": null,
       "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
+      "startAtSource": "youtube-page-startTimestamp",
       "isManual": true
     },
     {

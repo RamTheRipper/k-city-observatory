@@ -5,6 +5,13 @@ on:
   push:
     branches:
       - main
+  workflow_run:
+    workflows:
+      - Update upcoming schedule
+      - Update stream status
+      - Update stream history
+    types:
+      - completed
 
 permissions:
   contents: read
@@ -17,6 +24,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:

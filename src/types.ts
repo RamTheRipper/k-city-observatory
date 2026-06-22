@@ -11,6 +11,7 @@ export type ScheduleItem = {
   endAt?: string | null;
   url?: string;
   thumbnailUrl?: string;
+  channelThumbnailUrl?: string;
   group?: string;
   groupIds?: string[];
   primaryGroupId?: string;
@@ -97,10 +98,13 @@ export type UserSettings = {
   selectedChannelIds: string[];
   favoriteChannelIds: string[];
   showFavoritesOnly: boolean;
+  searchQuery: string;
   statusFilter: StatusFilter;
   notificationEnabled: boolean;
   notificationBeforeStartEnabled: boolean;
   notificationAtStartEnabled: boolean;
+  notificationLeadTimeMinutes: 10 | 30;
+  notificationFavoritesOnly: boolean;
   notifiedScheduleIds: string[];
   notifiedBeforeStartScheduleIds: string[];
   notifiedStartScheduleIds: string[];

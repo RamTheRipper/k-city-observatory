@@ -8,10 +8,13 @@ export const defaultSettings: UserSettings = {
   selectedChannelIds: [],
   favoriteChannelIds: [],
   showFavoritesOnly: false,
+  searchQuery: '',
   statusFilter: 'upcoming',
   notificationEnabled: false,
   notificationBeforeStartEnabled: false,
   notificationAtStartEnabled: false,
+  notificationLeadTimeMinutes: 30,
+  notificationFavoritesOnly: false,
   notifiedScheduleIds: [],
   notifiedBeforeStartScheduleIds: [],
   notifiedStartScheduleIds: [],
@@ -43,16 +46,23 @@ export function normalizeSettings(value: unknown): UserSettings {
     typeof source.notificationBeforeStartEnabled === 'boolean'
       ? source.notificationBeforeStartEnabled
       : Boolean(source.notificationEnabled);
+  const notificationLeadTimeMinutes =
+    source.notificationLeadTimeMinutes === 10 || source.notificationLeadTimeMinutes === 30
+      ? source.notificationLeadTimeMinutes
+      : defaultSettings.notificationLeadTimeMinutes;
 
   return {
     selectedGroup: typeof source.selectedGroup === 'string' ? source.selectedGroup : 'all',
     selectedChannelIds: stringArrayOrDefault(source.selectedChannelIds, []),
     favoriteChannelIds: stringArrayOrDefault(source.favoriteChannelIds, []),
     showFavoritesOnly: Boolean(source.showFavoritesOnly),
+    searchQuery: typeof source.searchQuery === 'string' ? source.searchQuery : '',
     statusFilter,
     notificationEnabled: Boolean(source.notificationEnabled),
     notificationBeforeStartEnabled,
     notificationAtStartEnabled: Boolean(source.notificationAtStartEnabled),
+    notificationLeadTimeMinutes,
+    notificationFavoritesOnly: Boolean(source.notificationFavoritesOnly),
     notifiedScheduleIds: legacyNotifiedScheduleIds,
     notifiedBeforeStartScheduleIds: stringArrayOrDefault(
       source.notifiedBeforeStartScheduleIds,

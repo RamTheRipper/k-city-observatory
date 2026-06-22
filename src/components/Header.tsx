@@ -19,7 +19,9 @@ export function Header({ lastUpdatedAt }: HeaderProps) {
       <div className="headerTitleRow">
         <div>
           <h1>K都市観測局</h1>
-          <p className="lead">神椿関連のYouTube配信予定を、日付ごとに観測するビューアです。</p>
+          <p className="lead">
+            神椿関連のYouTube配信予定を、日付ごとに見やすく観測するビューアです。
+          </p>
         </div>
         <p className="updatedAt">最終更新: {updatedLabel}</p>
       </div>

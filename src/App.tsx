@@ -307,8 +307,66 @@ function applyChannelGroupsToSchedules(
       groupIds: channel.groupIds?.length ? channel.groupIds : schedule.groupIds,
       primaryGroupId: channel.primaryGroupId || channel.group || schedule.primaryGroupId,
       tags: channel.tags?.length ? channel.tags : schedule.tags,
+      channelThumbnailUrl: channel.thumbnailUrl || schedule.channelThumbnailUrl,
     };
   });
+}
+
+function formatTimestamp(value: string | null | undefined): string {
+  if (!value) {
+    return '未取得';
+  }
+
+  return new Intl.DateTimeFormat('ja-JP', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+  }).format(new Date(value));
+}
+
+function getFreshnessWarning(health: HealthDocument | null, lastUpdatedAt: string | null): string | null {
+  const lastSuccessAt = health?.apiUsage.lastSuccessAt ?? lastUpdatedAt;
+  const lastError = health?.apiUsage.lastError;
+
+  if (lastError?.message) {
+    return `最新情報ではない可能性があります。前回の更新でエラーが発生しました: ${lastError.message}`;
+  }
+
+  if (!lastSuccessAt) {
+    return null;
+  }
+
+  const updatedAt = new Date(lastSuccessAt);
+  const ageHours = (Date.now() - updatedAt.getTime()) / 3_600_000;
+
+  if (Number.isFinite(ageHours) && ageHours >= 8) {
+    return `最新情報ではない可能性があります。最終更新: ${formatTimestamp(lastSuccessAt)}`;
+  }
+
+  return null;
+}
+
+function getSearchText(schedule: ScheduleItem, groupLabels: GroupItem[]): string {
+  const groupLabel =
+    groupLabels.find((group) => group.groupId === schedule.group)?.displayName ?? schedule.group ?? '';
+
+  return [
+    schedule.title,
+    schedule.channelName,
+    groupLabel,
+    schedule.group,
+    schedule.category,
+    ...(schedule.tags ?? []),
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+}
+
+function isFreeChatSchedule(schedule: ScheduleItem): boolean {
+  return /\bfree\s*chat\b/i.test(schedule.title);
 }
 
 function uniqueOrderedGroups(values: string[]): string[] {
@@ -395,6 +453,7 @@ function App() {
     statusFilter: getTabFromUrl(),
   }));
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
+  const [health, setHealth] = useState<HealthDocument | null>(null);
   const [isReloading, setIsReloading] = useState(false);
   const [isChannelSettingsOpen, setIsChannelSettingsOpen] = useState(false);
   const [notificationPermission, setNotificationPermission] = useState<
@@ -424,6 +483,7 @@ function App() {
       setSchedules(nextSchedules);
       setChannels(nextChannels);
       setGroups(nextGroups);
+      setHealth(nextHealth);
       setSettings((currentSettings) => mergeSelectedChannels(currentSettings, nextChannels));
       setLastUpdatedAt(
         scheduleDocument.generatedAt ?? nextHealth?.apiUsage.lastSuccessAt ?? new Date().toISOString(),
@@ -473,6 +533,11 @@ function App() {
     }
   }, [settings]);
 
+  const effectiveFavoriteChannelIds = useMemo(
+    () => expandFavoriteChannelIds(settings.favoriteChannelIds, channels),
+    [channels, settings.favoriteChannelIds],
+  );
+
   useEffect(() => {
     if (
       (!settings.notificationBeforeStartEnabled && !settings.notificationAtStartEnabled) ||
@@ -485,19 +550,21 @@ function App() {
       const now = new Date();
       const beforeNotifiedIds = new Set(settings.notifiedBeforeStartScheduleIds);
       const startNotifiedIds = new Set(settings.notifiedStartScheduleIds);
+      const favoriteChannelIds = new Set(effectiveFavoriteChannelIds);
       const beforeTarget = settings.notificationBeforeStartEnabled
         ? schedules.find((schedule) => {
             const startAt = parseDate(schedule.startAt);
 
             if (
               !startAt ||
-              beforeNotifiedIds.has(schedule.id)
+              beforeNotifiedIds.has(schedule.id) ||
+              (settings.notificationFavoritesOnly && !favoriteChannelIds.has(schedule.channelId))
             ) {
               return false;
             }
 
             const minutesUntilStart = (startAt.getTime() - now.getTime()) / 60000;
-            return minutesUntilStart > 0 && minutesUntilStart <= 30;
+            return minutesUntilStart > 0 && minutesUntilStart <= settings.notificationLeadTimeMinutes;
           })
         : undefined;
       const startTarget = settings.notificationAtStartEnabled
@@ -506,7 +573,8 @@ function App() {
 
             if (
               !startAt ||
-              startNotifiedIds.has(schedule.id)
+              startNotifiedIds.has(schedule.id) ||
+              (settings.notificationFavoritesOnly && !favoriteChannelIds.has(schedule.channelId))
             ) {
               return false;
             }
@@ -518,7 +586,7 @@ function App() {
 
       if (beforeTarget) {
         new Notification('K都市観測局', {
-          body: `${beforeTarget.channelName} の配信が30分以内に始まります: ${beforeTarget.title}`,
+          body: `${beforeTarget.channelName} の配信が${settings.notificationLeadTimeMinutes}分以内に始まります: ${beforeTarget.title}`,
         });
 
         setSettings((currentSettings) => ({
@@ -552,8 +620,11 @@ function App() {
     schedules,
     settings.notificationAtStartEnabled,
     settings.notificationBeforeStartEnabled,
+    settings.notificationFavoritesOnly,
+    settings.notificationLeadTimeMinutes,
     settings.notifiedBeforeStartScheduleIds,
     settings.notifiedStartScheduleIds,
+    effectiveFavoriteChannelIds,
   ]);
 
   const groupOptions = useMemo(
@@ -565,17 +636,21 @@ function App() {
     [channels, schedules],
   );
 
-  const effectiveFavoriteChannelIds = useMemo(
-    () => expandFavoriteChannelIds(settings.favoriteChannelIds, channels),
-    [channels, settings.favoriteChannelIds],
-  );
-
   const filteredSchedules = useMemo(() => {
     const selectedChannelIds = new Set(settings.selectedChannelIds);
     const favoriteChannelIds = new Set(effectiveFavoriteChannelIds);
     const now = new Date();
+    const searchWords = settings.searchQuery
+      .trim()
+      .toLowerCase()
+      .split(/\s+/)
+      .filter(Boolean);
 
     return schedules.filter((schedule) => {
+      if (isFreeChatSchedule(schedule)) {
+        return false;
+      }
+
       const group = schedule.group || fallbackGroup;
       const scheduleGroupIds = schedule.groupIds ?? [];
       const matchesGroup =
@@ -587,10 +662,13 @@ function App() {
       const matchesFavorite =
         !settings.showFavoritesOnly || favoriteChannelIds.has(schedule.channelId);
       const matchesRange = isWithinVisibleRange(schedule, settings.statusFilter, now);
+      const searchableText = getSearchText(schedule, groups);
+      const matchesSearch =
+        searchWords.length === 0 || searchWords.every((word) => searchableText.includes(word));
 
-      return matchesGroup && matchesChannel && matchesFavorite && matchesRange;
+      return matchesGroup && matchesChannel && matchesFavorite && matchesRange && matchesSearch;
     });
-  }, [effectiveFavoriteChannelIds, schedules, settings]);
+  }, [effectiveFavoriteChannelIds, groups, schedules, settings]);
 
   function updateSettings(nextSettings: UserSettings): void {
     if (nextSettings.statusFilter !== settings.statusFilter) {
@@ -605,6 +683,7 @@ function App() {
       ...currentSettings,
       selectedGroup: 'all',
       showFavoritesOnly: false,
+      searchQuery: '',
       statusFilter: 'upcoming',
     }));
     updateTabUrl('upcoming');
@@ -621,9 +700,17 @@ function App() {
     setNotificationPermission(permission);
   }
 
+  const freshnessWarning = getFreshnessWarning(health, lastUpdatedAt);
+
   return (
     <main className="app">
       <Header lastUpdatedAt={lastUpdatedAt} />
+
+      {freshnessWarning ? (
+        <aside className="freshnessNotice" role="status">
+          {freshnessWarning}
+        </aside>
+      ) : null}
 
       <NotificationSettings
         settings={settings}
@@ -685,6 +772,13 @@ function App() {
           </section>
         </div>
       ) : null}
+
+      <footer className="appFooter">
+        <span>非公式ファンメイドビューア</span>
+        <a href="https://x.com/Ram_T_R" target="_blank" rel="noreferrer">
+          製作者: らむ。
+        </a>
+      </footer>
     </main>
   );
 }

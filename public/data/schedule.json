@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-21T22:20:11.229Z",
+  "generatedAt": "2026-06-22T05:32:58.508Z",
   "items": [
     {
       "id": "SDYMacMc_Ds",
@@ -1308,6 +1308,34 @@
       "isManual": false
     },
     {
+      "id": "Bg3no8l_oDc",
+      "videoId": "Bg3no8l_oDc",
+      "title": "【つみばらじお】#10",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-06-23T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Bg3no8l_oDc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Bg3no8l_oDc/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-23T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-22T03:07:23.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "c6KeOF5lR-g",
       "videoId": "c6KeOF5lR-g",
       "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき/ Ajaka",
@@ -1321,11 +1349,11 @@
         "main"
       ],
       "status": "upcoming",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "scheduledStartTime": "2026-06-23T12:00:00.000Z",
       "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
       "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/maxresdefault_live.jpg",
       "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
+      "startAt": "2026-06-23T12:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-06-20T11:36:15.000Z",

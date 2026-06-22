@@ -30,40 +30,54 @@ export function NotificationSettings({
   return (
     <details className="notificationSettings topNotificationSettings">
       <summary>
-        <span>通知設定</span>
+        <span className="summaryTitle">通知設定</span>
         <span className="summaryMeta">
           {notificationsEnabled ? `${settings.notificationLeadTimeMinutes}分前` : 'OFF'} / {permissionLabel}
         </span>
+        <button
+          type="button"
+          className="ghostButton notificationPermissionButton"
+          onClick={(event) => {
+            event.preventDefault();
+            onRequestPermission();
+          }}
+        >
+          通知を許可
+        </button>
       </summary>
 
       <div className="notificationDetails" aria-label="通知設定">
         <div className="notificationControls">
-          <label className="switchRow">
-            <input
-              type="checkbox"
-              checked={settings.notificationBeforeStartEnabled}
-              onChange={(event) =>
-                updateNotificationSettings({ notificationBeforeStartEnabled: event.target.checked })
-              }
-            />
-            開始前に通知
-          </label>
+          <div className="notificationOptionStack">
+            <label className="switchRow">
+              <input
+                type="checkbox"
+                checked={settings.notificationBeforeStartEnabled}
+                onChange={(event) =>
+                  updateNotificationSettings({ notificationBeforeStartEnabled: event.target.checked })
+                }
+              />
+              開始前に通知
+            </label>
 
-          <label className="selectField" htmlFor="notification-lead-time">
-            <span>通知タイミング</span>
-            <select
-              id="notification-lead-time"
-              value={settings.notificationLeadTimeMinutes}
-              onChange={(event) =>
-                updateNotificationSettings({
-                  notificationLeadTimeMinutes: Number(event.target.value) === 10 ? 10 : 30,
-                })
-              }
-            >
-              <option value={10}>10分前</option>
-              <option value={30}>30分前</option>
-            </select>
-          </label>
+            {settings.notificationBeforeStartEnabled ? (
+              <label className="selectField notificationTimingField" htmlFor="notification-lead-time">
+                <span>通知タイミング</span>
+                <select
+                  id="notification-lead-time"
+                  value={settings.notificationLeadTimeMinutes}
+                  onChange={(event) =>
+                    updateNotificationSettings({
+                      notificationLeadTimeMinutes: Number(event.target.value) === 10 ? 10 : 30,
+                    })
+                  }
+                >
+                  <option value={10}>10分前</option>
+                  <option value={30}>30分前</option>
+                </select>
+              </label>
+            ) : null}
+          </div>
 
           <label className="switchRow">
             <input
@@ -87,9 +101,6 @@ export function NotificationSettings({
             お気に入りのみ通知
           </label>
 
-          <button type="button" className="ghostButton" onClick={onRequestPermission}>
-            通知を許可
-          </button>
         </div>
 
         {notificationsEnabled && permission !== 'granted' ? (

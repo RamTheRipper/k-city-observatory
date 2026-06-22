@@ -74,10 +74,20 @@
   cursor: pointer;
 }
 
+.summaryTitle {
+  flex: 0 0 auto;
+}
+
 .summaryMeta {
+  margin-left: auto;
   color: #6b7280;
   font-size: 13px;
   font-weight: 600;
+}
+
+.notificationPermissionButton {
+  min-height: 34px;
+  padding: 0 12px;
 }
 
 .notificationDetails {
@@ -89,6 +99,15 @@
   flex-wrap: wrap;
   gap: 10px 14px;
   align-items: center;
+}
+
+.notificationOptionStack {
+  display: grid;
+  gap: 6px;
+}
+
+.notificationTimingField {
+  margin-left: 28px;
 }
 
 .notificationHint {

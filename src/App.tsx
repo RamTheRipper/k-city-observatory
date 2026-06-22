@@ -365,6 +365,10 @@ function getSearchText(schedule: ScheduleItem, groupLabels: GroupItem[]): string
     .toLowerCase();
 }
 
+function isFreeChatSchedule(schedule: ScheduleItem): boolean {
+  return /\bfree\s*chat\b/i.test(schedule.title);
+}
+
 function uniqueOrderedGroups(values: string[]): string[] {
   const uniqueGroups = [...new Set(values.filter(Boolean))];
   const orderByGroup = new Map(groupDisplayOrder.map((group, index) => [group, index]));
@@ -643,6 +647,10 @@ function App() {
       .filter(Boolean);
 
     return schedules.filter((schedule) => {
+      if (isFreeChatSchedule(schedule)) {
+        return false;
+      }
+
       const group = schedule.group || fallbackGroup;
       const scheduleGroupIds = schedule.groupIds ?? [];
       const matchesGroup =

@@ -72,6 +72,7 @@
   margin: -4px;
   padding: 4px;
   border-radius: 8px;
+  background: #f8fafc;
   color: #111827;
   font-weight: 700;
   cursor: pointer;
@@ -82,9 +83,9 @@
 }
 
 .notificationSettings summary:hover {
-  background: #f3f6fb;
+  background: #eef5ff;
   color: #1d4ed8;
-  box-shadow: inset 0 0 0 1px #dbeafe;
+  box-shadow: inset 0 0 0 1px #93c5fd;
 }
 
 .notificationSettings summary:focus-visible {
@@ -93,7 +94,30 @@
 }
 
 .summaryTitle {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
   flex: 0 0 auto;
+}
+
+.summaryTitle::after {
+  content: "設定を開く";
+  padding: 4px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.notificationSettings[open] .summaryTitle::after {
+  content: "閉じる";
+}
+
+.notificationSettings summary:hover .summaryTitle::after {
+  border-color: #60a5fa;
+  color: #1d4ed8;
 }
 
 .summaryMeta {

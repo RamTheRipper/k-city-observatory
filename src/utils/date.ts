@@ -82,10 +82,6 @@ export function isWithinVisibleRange(
   const startDateKey = toDateKey(startAt);
   const todayKey = toDateKey(now);
 
-  const futureEnd = new Date(now);
-  futureEnd.setDate(futureEnd.getDate() + 7);
-  const futureEndKey = toDateKey(futureEnd);
-
   const archiveStart = new Date(now);
   archiveStart.setMonth(archiveStart.getMonth() - 1);
   const archiveStartKey = toDateKey(archiveStart);
@@ -94,5 +90,5 @@ export function isWithinVisibleRange(
     return startDateKey >= archiveStartKey && startDateKey < todayKey;
   }
 
-  return startDateKey >= todayKey && startDateKey <= futureEndKey;
+  return startDateKey >= todayKey;
 }

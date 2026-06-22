@@ -63,6 +63,17 @@ export function FilterPanel({
       </div>
 
       <div className="filterBar">
+        <label className="searchField" htmlFor="schedule-search">
+          <span>検索</span>
+          <input
+            id="schedule-search"
+            type="search"
+            value={settings.searchQuery}
+            placeholder="配信者・タイトル・タグ"
+            onChange={(event) => onChange({ ...settings, searchQuery: event.target.value })}
+          />
+        </label>
+
         <label className="selectField" htmlFor="group-filter">
           <span>グループ</span>
           <select
@@ -100,7 +111,6 @@ export function FilterPanel({
           {isReloading ? '再読み込み中' : '最新データを再読み込み'}
         </button>
       </div>
-
     </section>
   );
 }

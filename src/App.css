@@ -64,7 +64,6 @@
 }
 
 .notificationSettings summary {
-  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 12px;
@@ -96,42 +95,6 @@
 
 .summaryTitle {
   flex: 0 0 auto;
-}
-
-.notificationSettings summary::after {
-  content: "設定を開く";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  z-index: 1;
-  pointer-events: none;
-  transform: translateY(-50%) translateX(6px);
-  opacity: 0;
-  padding: 4px 8px;
-  border: 1px solid #cbd5e1;
-  border-radius: 999px;
-  background: #ffffff;
-  color: #475569;
-  font-size: 12px;
-  font-weight: 700;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14);
-  transition:
-    opacity 0.16s ease,
-    transform 0.16s ease,
-    border-color 0.16s ease,
-    color 0.16s ease;
-}
-
-.notificationSettings[open] summary::after {
-  content: "閉じる";
-}
-
-.notificationSettings summary:hover::after,
-.notificationSettings summary:focus-visible::after {
-  border-color: #60a5fa;
-  color: #1d4ed8;
-  transform: translateY(-50%);
-  opacity: 1;
 }
 
 .summaryMeta {

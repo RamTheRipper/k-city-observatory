@@ -1,63 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T12:12:37.615Z",
+  "generatedAt": "2026-06-23T15:26:23.782Z",
   "items": [
-    {
-      "id": "SDYMacMc_Ds",
-      "videoId": "SDYMacMc_Ds",
-      "title": "【PRAGMATA】Unknown Signal 最終回(真)(再) #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-05-23T12:00:00.000Z",
-      "endAt": "2026-05-23T14:34:19.000Z",
-      "url": "https://www.youtube.com/watch?v=SDYMacMc_Ds",
-      "thumbnailUrl": "https://i.ytimg.com/vi/SDYMacMc_Ds/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-23T12:00:00.000Z",
-      "actualStartTime": "2026-05-23T11:55:47.000Z",
-      "actualEndTime": "2026-05-23T14:34:19.000Z",
-      "publishedAt": "2026-05-23T14:43:59.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "1Ri6HrXOiPo",
-      "videoId": "1Ri6HrXOiPo",
-      "title": "【推し曲紹介】私と皆さんのオススメを教え合えあうインターネット【琶舞/神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-05-23T12:30:00.000Z",
-      "endAt": "2026-05-23T13:50:32.000Z",
-      "url": "https://www.youtube.com/watch?v=1Ri6HrXOiPo",
-      "thumbnailUrl": "https://i.ytimg.com/vi/1Ri6HrXOiPo/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-23T12:30:00.000Z",
-      "actualStartTime": "2026-05-23T12:29:33.000Z",
-      "actualEndTime": "2026-05-23T13:50:32.000Z",
-      "publishedAt": "2026-05-23T16:19:43.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "_ujHSomhHyU",
       "videoId": "_ujHSomhHyU",
@@ -1348,19 +1292,19 @@
       "tags": [
         "main"
       ],
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-06-23T12:00:00.000Z",
       "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/maxresdefault.jpg",
       "primaryGroupId": "vwp",
       "startAt": "2026-06-23T12:00:00.000Z",
       "actualStartTime": "2026-06-23T12:02:56.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-06-20T11:36:15.000Z",
+      "actualEndTime": "2026-06-23T14:18:39.000Z",
+      "publishedAt": "2026-06-23T14:45:13.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": true,
-      "endAt": null,
+      "endAt": "2026-06-23T14:18:39.000Z",
       "category": ""
     },
     {

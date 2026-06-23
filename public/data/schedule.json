@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T10:04:48.712Z",
+  "generatedAt": "2026-06-23T12:12:37.615Z",
   "items": [
     {
       "id": "SDYMacMc_Ds",
@@ -1326,9 +1326,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-06-23T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-06-23T10:55:15.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-06-22T03:07:23.000Z",
       "source": "youtube-details",
@@ -1348,13 +1348,13 @@
       "tags": [
         "main"
       ],
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-06-23T12:00:00.000Z",
       "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
       "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/maxresdefault_live.jpg",
       "primaryGroupId": "vwp",
       "startAt": "2026-06-23T12:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-06-23T12:02:56.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-06-20T11:36:15.000Z",
       "source": "youtube-details",

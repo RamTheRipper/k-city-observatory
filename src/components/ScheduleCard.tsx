@@ -32,6 +32,8 @@ const tagClassNames: Record<string, string> = {
   ラジオ: 'tagRadio',
 };
 
+const showInternalSyncBadges = false;
+
 function getGroupLabel(group: string | undefined, groupLabels: GroupItem[]): string {
   if (!group) {
     return 'その他';
@@ -51,11 +53,14 @@ function getSyncBadges(schedule: ScheduleItem): string[] {
     badges.push('手動');
   }
 
-  if (schedule.source === 'youtube-details') {
+  if (showInternalSyncBadges && schedule.source === 'youtube-details') {
     badges.push('API同期済み');
   }
 
-  if (schedule.startAtSource?.includes('youtube-page') || schedule.startAtSource?.includes('scheduledStartTime')) {
+  if (
+    showInternalSyncBadges &&
+    (schedule.startAtSource?.includes('youtube-page') || schedule.startAtSource?.includes('scheduledStartTime'))
+  ) {
     badges.push('時刻同期');
   }
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-23T06:57:05.088Z",
+  "generatedAt": "2026-06-23T10:04:48.712Z",
   "items": [
     {
       "id": "SDYMacMc_Ds",
@@ -1364,6 +1364,34 @@
       "category": ""
     },
     {
+      "id": "Hy3hol1II8s",
+      "videoId": "Hy3hol1II8s",
+      "title": "🕯歌ってみた語り。 #御莉姫生放送",
+      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
+      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
+      "startAt": "2026-06-24T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Hy3hol1II8s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Hy3hol1II8s/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-24T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-23T06:28:16.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "sWa2cz4hxTY",
       "videoId": "sWa2cz4hxTY",
       "title": "【初コラボ】春猿火さんと！歌みたトークやマシュマロもぐもぐ【琶舞/春猿火/神椿】",
@@ -1447,6 +1475,35 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-05-21T07:54:33.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "kQum3gVZ2Ww",
+      "videoId": "kQum3gVZ2Ww",
+      "title": "【1/2大晦日】喰らえ！半年分のオススメ！【未確認少女観測部 - vol.49】",
+      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
+      "channelName": "花譜 -未確認少女観測部-",
+      "startAt": "2026-06-28T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=kQum3gVZ2Ww",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kQum3gVZ2Ww/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-28T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-23T06:54:57.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

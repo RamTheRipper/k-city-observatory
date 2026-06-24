@@ -260,16 +260,6 @@ button:disabled {
   margin-left: auto;
 }
 
-.reloadButton {
-  color: #ffffff;
-  background: #111827;
-}
-
-.reloadButton:hover {
-  border-color: #111827;
-  background: #374151;
-}
-
 .switchRow {
   display: inline-flex;
   gap: 8px;

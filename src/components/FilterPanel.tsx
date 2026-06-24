@@ -7,8 +7,6 @@ type FilterPanelProps = {
   onReset: () => void;
   onOpenChannelSettings: () => void;
   groupLabels: GroupItem[];
-  isReloading: boolean;
-  onReload: () => void;
 };
 
 const statusOptions: { value: StatusFilter; label: string }[] = [
@@ -43,8 +41,6 @@ export function FilterPanel({
   onReset,
   onOpenChannelSettings,
   groupLabels,
-  isReloading,
-  onReload,
 }: FilterPanelProps) {
   return (
     <section className="filterPanel" aria-label="フィルター">
@@ -107,9 +103,6 @@ export function FilterPanel({
           配信者設定
         </button>
 
-        <button type="button" className="reloadButton" onClick={onReload} disabled={isReloading}>
-          {isReloading ? '再読み込み中' : '最新データを再読み込み'}
-        </button>
       </div>
     </section>
   );

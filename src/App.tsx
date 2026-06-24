@@ -454,15 +454,12 @@ function App() {
   }));
   const [lastUpdatedAt, setLastUpdatedAt] = useState<string | null>(null);
   const [health, setHealth] = useState<HealthDocument | null>(null);
-  const [isReloading, setIsReloading] = useState(false);
   const [isChannelSettingsOpen, setIsChannelSettingsOpen] = useState(false);
   const [notificationPermission, setNotificationPermission] = useState<
     NotificationPermission | 'unsupported'
   >(() => ('Notification' in window ? Notification.permission : 'unsupported'));
 
   const loadData = useCallback(async (options?: { silent?: boolean }) => {
-    setIsReloading(true);
-
     try {
       const [scheduleData, channelData, manualScheduleData, healthData] = await Promise.all([
         fetchJsonWithFallback(['data/schedule.json', 'schedule.json']),
@@ -500,8 +497,6 @@ function App() {
           ? error.message
           : 'データ読み込み中に不明なエラーが発生しました';
       console.error(message);
-    } finally {
-      setIsReloading(false);
     }
   }, []);
 
@@ -726,8 +721,6 @@ function App() {
         onReset={resetFilters}
         onOpenChannelSettings={() => setIsChannelSettingsOpen(true)}
         groupLabels={groups}
-        isReloading={isReloading}
-        onReload={() => loadData()}
       />
 
       <CalendarView

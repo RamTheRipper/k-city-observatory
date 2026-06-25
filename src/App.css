@@ -608,6 +608,11 @@ input[type='checkbox'] {
   font-size: 14px;
 }
 
+.todayEmptyText {
+  display: flex;
+  margin-bottom: 4px;
+}
+
 .panelHeader {
   display: flex;
   justify-content: space-between;

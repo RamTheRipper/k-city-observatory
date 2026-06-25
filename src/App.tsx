@@ -326,12 +326,35 @@ function formatTimestamp(value: string | null | undefined): string {
   }).format(new Date(value));
 }
 
+function getUserFacingUpdateError(health: HealthDocument | null): string {
+  const lastError = health?.apiUsage.lastError;
+  const errorText = [
+    lastError?.message,
+    lastError?.reason,
+    lastError?.status,
+    lastError?.statusCode,
+  ]
+    .filter((value) => value !== undefined && value !== null)
+    .join(' ')
+    .toLowerCase();
+
+  if (
+    errorText.includes('quota') ||
+    errorText.includes('resource_exhausted') ||
+    errorText.includes('rate limit')
+  ) {
+    return '本日のYouTube情報取得上限に達しました。次回更新まで、表示内容が最新ではない可能性があります。';
+  }
+
+  return '最新情報を取得できませんでした。次回更新まで、一部情報が古い可能性があります。';
+}
+
 function getFreshnessWarning(health: HealthDocument | null, lastUpdatedAt: string | null): string | null {
   const lastSuccessAt = health?.apiUsage.lastSuccessAt ?? lastUpdatedAt;
   const lastError = health?.apiUsage.lastError;
 
   if (lastError?.message) {
-    return `最新情報ではない可能性があります。前回の更新でエラーが発生しました: ${lastError.message}`;
+    return getUserFacingUpdateError(health);
   }
 
   if (!lastSuccessAt) {

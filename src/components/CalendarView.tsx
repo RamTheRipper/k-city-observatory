@@ -15,6 +15,8 @@ type ScheduleGroup = {
   schedules: ScheduleItem[];
 };
 
+const soonWindowMs = 3 * 60 * 60 * 1000;
+
 function getScheduleTime(schedule: ScheduleItem): number {
   return parseDate(schedule.startAt)?.getTime() ?? 0;
 }
@@ -98,6 +100,17 @@ function groupPastSchedules(schedules: ScheduleItem[]): ScheduleGroup[] {
     });
 }
 
+function getSoonSchedules(schedules: ScheduleItem[], now: Date): ScheduleItem[] {
+  const nowTime = now.getTime();
+  const limitTime = nowTime + soonWindowMs;
+
+  return schedules.filter((schedule) => {
+    const startAt = parseDate(schedule.startAt);
+    const startTime = startAt?.getTime();
+    return startTime !== undefined && startTime > nowTime && startTime <= limitTime;
+  });
+}
+
 export function CalendarView({
   schedules,
   favoriteChannelIds,
@@ -143,32 +156,45 @@ export function CalendarView({
     );
   }
 
-  const nextSchedule = sortedSchedules.find((schedule) => {
+  const soonSchedules = getSoonSchedules(sortedSchedules, now);
+  const soonScheduleIds = new Set(soonSchedules.map((schedule) => schedule.id));
+  const todayKey = toDateKey(now);
+  const hasTodaySchedules = sortedSchedules.some((schedule) => {
     const startAt = parseDate(schedule.startAt);
-    return startAt ? startAt.getTime() > now.getTime() : false;
+    return startAt ? toDateKey(startAt) === todayKey : false;
   });
-  const nextScheduleId = nextSchedule?.id;
   const groupedSchedules = groupUpcomingSchedules(
-    sortedSchedules.filter((schedule) => schedule.id !== nextScheduleId),
+    sortedSchedules.filter((schedule) => !soonScheduleIds.has(schedule.id)),
     now,
   );
 
   return (
     <section className="calendarView" aria-label="配信カレンダー">
-      {nextSchedule ? (
-        <section className="nextScheduleBlock" aria-label="次の配信">
+      {soonSchedules.length > 0 ? (
+        <section className="nextScheduleBlock" aria-label="まもなく配信">
           <div className="sectionHeadingRow">
-            <h2>次の配信</h2>
-            <span>{getCountdownLabel(nextSchedule, now)}</span>
+            <h2>まもなく配信</h2>
+            <span>3時間以内</span>
           </div>
-          <ScheduleCard
-            schedule={nextSchedule}
-            isFavorite={favoriteChannelIds.includes(nextSchedule.channelId)}
-            groupLabels={groupLabels}
-            isFeatured
-            countdownLabel={getCountdownLabel(nextSchedule, now)}
-          />
+          <div className="scheduleList">
+            {soonSchedules.map((schedule) => (
+              <ScheduleCard
+                key={schedule.id}
+                schedule={schedule}
+                isFavorite={favoriteChannelIds.includes(schedule.channelId)}
+                groupLabels={groupLabels}
+                isFeatured
+                countdownLabel={getCountdownLabel(schedule, now)}
+              />
+            ))}
+          </div>
         </section>
+      ) : null}
+
+      {!hasTodaySchedules ? (
+        <p className="emptyText todayEmptyText">
+          本日の配信予定はありません。次回以降の予定は一覧をご確認ください。
+        </p>
       ) : null}
 
       {groupedSchedules.length > 0 ? (
@@ -187,7 +213,7 @@ export function CalendarView({
             </div>
           </section>
         ))
-      ) : !nextSchedule ? (
+      ) : soonSchedules.length === 0 && hasTodaySchedules ? (
         <p className="emptyText">予定なし</p>
       ) : null}
     </section>

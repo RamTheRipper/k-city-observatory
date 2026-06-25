@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-25T06:54:09.772Z",
+  "generatedAt": "2026-06-25T09:46:17.086Z",
   "items": [
     {
       "id": "Se98u_AXwZU",
@@ -1303,6 +1303,34 @@
       "actualStartTime": "2026-06-24T11:29:35.000Z",
       "actualEndTime": "2026-06-24T12:28:03.000Z",
       "publishedAt": "2026-06-24T12:54:15.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "exGINPKo2_4",
+      "videoId": "exGINPKo2_4",
+      "title": "【チャリティー配信】VTuber Summer Slam 2026! × KAMITSUBAKI STUDIO",
+      "channelId": "UCAOhUv73jM5iCpOhuJOQzxA",
+      "channelName": "KAMITSUBAKI STUDIO",
+      "startAt": "2026-06-25T14:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=exGINPKo2_4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/exGINPKo2_4/maxresdefault_live.jpg",
+      "group": "official",
+      "groupIds": [
+        "official"
+      ],
+      "primaryGroupId": "official",
+      "tags": [
+        "official"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-25T14:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-25T09:10:54.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

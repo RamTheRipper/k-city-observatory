@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-26T14:48:45.799Z",
+  "generatedAt": "2026-06-26T17:04:56.386Z",
   "items": [
-    {
-      "id": "AQTpvFureqs",
-      "videoId": "AQTpvFureqs",
-      "title": "花譜 ＃171「学園戦線」【オリジナルMV】",
-      "channelId": "UCQ1U65-CQdIoZ2_NA4Z4F7A",
-      "channelName": "花譜 -KAF-",
-      "startAt": "2026-05-26T15:00:00.000Z",
-      "endAt": "2026-05-26T15:05:44.000Z",
-      "url": "https://www.youtube.com/watch?v=AQTpvFureqs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/AQTpvFureqs/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-26T15:00:00.000Z",
-      "actualStartTime": "2026-05-26T15:00:06.000Z",
-      "actualEndTime": "2026-05-26T15:05:44.000Z",
-      "publishedAt": "2026-05-26T15:00:06.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "M5WeWkUR0Gw",
       "videoId": "M5WeWkUR0Gw",

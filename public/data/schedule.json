@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-26T09:52:56.968Z",
+  "generatedAt": "2026-06-26T11:48:50.529Z",
   "items": [
     {
       "id": "KkM5BwDUezY",
@@ -1313,9 +1313,9 @@
       "channelId": "UCJxwvbBoawRJtVgPgvMg-Qg",
       "channelName": "空爽",
       "startAt": "2026-06-26T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-06-26T10:56:45.000Z",
       "url": "https://www.youtube.com/watch?v=Z7lYGvMylbU",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Z7lYGvMylbU/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Z7lYGvMylbU/maxresdefault.jpg",
       "group": "kuusou",
       "groupIds": [
         "kuusou",
@@ -1327,11 +1327,11 @@
         "group"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-06-26T10:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-06-19T10:23:04.000Z",
+      "actualStartTime": "2026-06-26T09:55:16.000Z",
+      "actualEndTime": "2026-06-26T10:56:45.000Z",
+      "publishedAt": "2026-06-26T11:33:32.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-26T11:48:50.529Z",
+  "generatedAt": "2026-06-26T14:48:45.799Z",
   "items": [
-    {
-      "id": "KkM5BwDUezY",
-      "videoId": "KkM5BwDUezY",
-      "title": "🕯【悪意】今年一怖いと噂のゲーム、お手並み拝見ですわよ。【ゲーム実況】 #御莉姫生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-05-26T10:00:00.000Z",
-      "endAt": "2026-05-26T12:59:27.000Z",
-      "url": "https://www.youtube.com/watch?v=KkM5BwDUezY",
-      "thumbnailUrl": "https://i.ytimg.com/vi/KkM5BwDUezY/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-26T10:00:00.000Z",
-      "actualStartTime": "2026-05-26T10:28:04.000Z",
-      "actualEndTime": "2026-05-26T12:59:27.000Z",
-      "publishedAt": "2026-05-26T13:08:39.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "AQTpvFureqs",
       "videoId": "AQTpvFureqs",

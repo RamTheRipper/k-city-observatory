@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-27T14:07:51.460Z",
+  "generatedAt": "2026-06-27T16:13:47.509Z",
   "items": [
-    {
-      "id": "bIG9JuinN9A",
-      "videoId": "bIG9JuinN9A",
-      "title": "【 歌枠 - #理芽歌うってよ - 】理芽 YouTube MEMBERSHIP「STRANGE GIRL CLUB」#51",
-      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
-      "channelName": "理芽 -STRANGE GIRL CLUB-",
-      "startAt": "2026-05-27T11:00:00.000Z",
-      "endAt": "2026-05-27T14:09:03.000Z",
-      "url": "https://www.youtube.com/watch?v=bIG9JuinN9A",
-      "thumbnailUrl": "https://i.ytimg.com/vi/bIG9JuinN9A/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-27T11:00:00.000Z",
-      "actualStartTime": "2026-05-27T11:00:18.000Z",
-      "actualEndTime": "2026-05-27T14:09:03.000Z",
-      "publishedAt": "2026-05-27T14:18:46.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "XH0BJFwoSXg",
       "videoId": "XH0BJFwoSXg",

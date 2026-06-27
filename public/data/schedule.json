@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-27T11:01:44.886Z",
+  "generatedAt": "2026-06-27T14:07:51.460Z",
   "items": [
-    {
-      "id": "M5WeWkUR0Gw",
-      "videoId": "M5WeWkUR0Gw",
-      "title": "春猿火 # 65「Accomplice」【Official Music Video】",
-      "channelId": "UCE7gtjLeZKNXLp5YURzYYeg",
-      "channelName": "春猿火 -HARUSARUHI-",
-      "startAt": "2026-05-27T11:00:00.000Z",
-      "endAt": "2026-05-27T11:05:03.000Z",
-      "url": "https://www.youtube.com/watch?v=M5WeWkUR0Gw",
-      "thumbnailUrl": "https://i.ytimg.com/vi/M5WeWkUR0Gw/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-27T11:00:00.000Z",
-      "actualStartTime": "2026-05-27T11:00:06.000Z",
-      "actualEndTime": "2026-05-27T11:05:03.000Z",
-      "publishedAt": "2026-05-27T11:00:06.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "bIG9JuinN9A",
       "videoId": "bIG9JuinN9A",
@@ -55,62 +27,6 @@
       "actualStartTime": "2026-05-27T11:00:18.000Z",
       "actualEndTime": "2026-05-27T14:09:03.000Z",
       "publishedAt": "2026-05-27T14:18:46.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "jMV8ctEOaNo",
-      "videoId": "jMV8ctEOaNo",
-      "title": "【つみばらじお】#9 ちるないと",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-05-27T11:00:00.000Z",
-      "endAt": "2026-05-27T12:28:56.000Z",
-      "url": "https://www.youtube.com/watch?v=jMV8ctEOaNo",
-      "thumbnailUrl": "https://i.ytimg.com/vi/jMV8ctEOaNo/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-27T11:00:00.000Z",
-      "actualStartTime": "2026-05-27T10:56:35.000Z",
-      "actualEndTime": "2026-05-27T12:28:56.000Z",
-      "publishedAt": "2026-05-27T13:12:18.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "EFXADPaCpUE",
-      "videoId": "EFXADPaCpUE",
-      "title": "【雑談】歌ってみたを語ってみた【琶舞/神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-05-27T11:30:00.000Z",
-      "endAt": "2026-05-27T12:25:08.000Z",
-      "url": "https://www.youtube.com/watch?v=EFXADPaCpUE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/EFXADPaCpUE/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-27T11:30:00.000Z",
-      "actualStartTime": "2026-05-27T11:29:13.000Z",
-      "actualEndTime": "2026-05-27T12:25:08.000Z",
-      "publishedAt": "2026-05-27T12:40:51.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1289,7 +1205,7 @@
       "startAt": "2026-06-27T09:30:00.000Z",
       "endAt": "2026-06-27T10:53:05.000Z",
       "url": "https://www.youtube.com/watch?v=G1o4KiyY26I",
-      "thumbnailUrl": "https://i.ytimg.com/vi/G1o4KiyY26I/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/G1o4KiyY26I/maxresdefault.jpg",
       "group": "kuusou",
       "groupIds": [
         "kuusou",
@@ -1305,7 +1221,7 @@
       "scheduledStartTime": "2026-06-27T09:30:00.000Z",
       "actualStartTime": "2026-06-27T09:29:11.000Z",
       "actualEndTime": "2026-06-27T10:53:05.000Z",
-      "publishedAt": "2026-05-21T07:54:33.000Z",
+      "publishedAt": "2026-06-27T11:21:16.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1335,6 +1251,62 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-06-23T06:54:57.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "rDxHJ9EPCwU",
+      "videoId": "rDxHJ9EPCwU",
+      "title": "【緊急！】🩷歌みた記念！リズちゃんと初コラボ配信🖤【神椿/ミリプロ】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-06-28T11:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=rDxHJ9EPCwU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rDxHJ9EPCwU/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-28T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-27T10:38:35.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "OLfXjym4SmE",
+      "videoId": "OLfXjym4SmE",
+      "title": "🕯【 歌枠 】梅雨のうた。 #御莉姫生放送",
+      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
+      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
+      "startAt": "2026-06-29T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=OLfXjym4SmE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OLfXjym4SmE/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-29T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-27T11:25:00.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

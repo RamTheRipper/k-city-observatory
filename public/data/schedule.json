@@ -1,64 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-28T14:17:26.085Z",
+  "generatedAt": "2026-06-28T16:20:08.002Z",
   "items": [
-    {
-      "id": "XH0BJFwoSXg",
-      "videoId": "XH0BJFwoSXg",
-      "title": "【アクアリウムは踊らない】ともだちをさがしに🪼🫧  #硝子宮生放送",
-      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
-      "startAt": "2026-05-28T11:00:00.000Z",
-      "endAt": "2026-05-28T15:05:46.000Z",
-      "url": "https://www.youtube.com/watch?v=XH0BJFwoSXg",
-      "thumbnailUrl": "https://i.ytimg.com/vi/XH0BJFwoSXg/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-28T11:00:00.000Z",
-      "actualStartTime": "2026-05-28T10:57:37.000Z",
-      "actualEndTime": "2026-05-28T15:05:46.000Z",
-      "publishedAt": "2026-05-28T15:15:31.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "WXxDYowaXVI",
-      "videoId": "WXxDYowaXVI",
-      "title": "【 ドキドキ文芸部 #03 】決意の時、最後の文芸部活動📖 | ヰ世界情緒",
-      "channelId": "UC3VN9h8fokwB2XURWHNcdWw",
-      "channelName": "ヰ世界情緒 -ヰ世界電子通信部-",
-      "startAt": "2026-05-28T12:00:00.000Z",
-      "endAt": "2026-05-28T14:51:00.000Z",
-      "url": "https://www.youtube.com/watch?v=WXxDYowaXVI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/WXxDYowaXVI/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-28T12:00:00.000Z",
-      "actualStartTime": "2026-05-28T11:58:45.000Z",
-      "actualEndTime": "2026-05-28T14:51:00.000Z",
-      "publishedAt": "2026-05-28T14:59:16.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "WI7FT3wa2JA",
       "videoId": "WI7FT3wa2JA",

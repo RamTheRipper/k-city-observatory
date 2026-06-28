@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-28T11:13:04.950Z",
+  "generatedAt": "2026-06-28T14:17:26.085Z",
   "items": [
     {
       "id": "XH0BJFwoSXg",
@@ -1204,9 +1204,9 @@
       "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
       "channelName": "花譜 -未確認少女観測部-",
       "startAt": "2026-06-28T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-06-28T12:09:19.000Z",
       "url": "https://www.youtube.com/watch?v=kQum3gVZ2Ww",
-      "thumbnailUrl": "https://i.ytimg.com/vi/kQum3gVZ2Ww/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kQum3gVZ2Ww/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1217,11 +1217,11 @@
         "membership"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-06-28T10:00:00.000Z",
       "actualStartTime": "2026-06-28T10:01:51.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-06-23T06:54:57.000Z",
+      "actualEndTime": "2026-06-28T12:09:19.000Z",
+      "publishedAt": "2026-06-28T12:16:20.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1233,9 +1233,9 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-06-28T11:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-06-28T12:49:01.000Z",
       "url": "https://www.youtube.com/watch?v=rDxHJ9EPCwU",
-      "thumbnailUrl": "https://i.ytimg.com/vi/rDxHJ9EPCwU/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rDxHJ9EPCwU/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1245,11 +1245,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-06-28T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-06-27T10:38:35.000Z",
+      "actualStartTime": "2026-06-28T11:29:25.000Z",
+      "actualEndTime": "2026-06-28T12:49:01.000Z",
+      "publishedAt": "2026-06-28T13:17:55.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

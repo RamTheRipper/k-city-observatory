@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-29T13:13:21.332Z",
+  "generatedAt": "2026-06-29T16:13:17.686Z",
   "items": [
-    {
-      "id": "WI7FT3wa2JA",
-      "videoId": "WI7FT3wa2JA",
-      "title": "【コラボ雑談】夕凪機と大阪旅行報告会〜！！💛💙 #佳鏡院生放送",
-      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
-      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
-      "startAt": "2026-05-29T12:00:00.000Z",
-      "endAt": "2026-05-29T13:51:48.000Z",
-      "url": "https://www.youtube.com/watch?v=WI7FT3wa2JA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/WI7FT3wa2JA/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-29T12:00:00.000Z",
-      "actualStartTime": "2026-05-29T11:56:29.000Z",
-      "actualEndTime": "2026-05-29T13:51:48.000Z",
-      "publishedAt": "2026-05-29T14:40:58.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "3Owk_X2d4R0",
       "videoId": "3Owk_X2d4R0",
@@ -1221,6 +1193,91 @@
       "actualStartTime": "2026-06-29T10:02:23.000Z",
       "actualEndTime": "2026-06-29T11:26:29.000Z",
       "publishedAt": "2026-06-29T11:48:04.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "9X9ya3Rprk0",
+      "videoId": "9X9ya3Rprk0",
+      "title": "【夜雑談🌌】春猿火「台風倶楽部-生配信」",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-06-29T16:15:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=9X9ya3Rprk0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9X9ya3Rprk0/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-29T16:15:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-29T15:51:05.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "QPUo7MazVCo",
+      "videoId": "QPUo7MazVCo",
+      "title": "【めっちゃカメレオン】こんばんは、本物のカメレオンです #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-06-30T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=QPUo7MazVCo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QPUo7MazVCo/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-06-30T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-29T13:00:18.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "BjRWOcJWsB4",
+      "videoId": "BjRWOcJWsB4",
+      "title": "【つみみじかん 〜狂オシイホド愛シテル〜】 推しが失踪しました。 #硝子宮生放送",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-02T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=BjRWOcJWsB4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BjRWOcJWsB4/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-02T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-29T12:35:04.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

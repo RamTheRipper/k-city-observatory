@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-29T22:15:50.138Z",
+  "generatedAt": "2026-06-30T04:35:20.113Z",
   "items": [
-    {
-      "id": "3Owk_X2d4R0",
-      "videoId": "3Owk_X2d4R0",
-      "title": "【朝雑】おはようからおやすみまで。平日から休日まで。【琶舞/神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-05-30T00:00:00.000Z",
-      "endAt": "2026-05-30T02:16:28.000Z",
-      "url": "https://www.youtube.com/watch?v=3Owk_X2d4R0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/3Owk_X2d4R0/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-05-30T00:00:00.000Z",
-      "actualStartTime": "2026-05-29T23:59:21.000Z",
-      "actualEndTime": "2026-05-30T02:16:28.000Z",
-      "publishedAt": "2026-05-30T02:24:10.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "5u7VgyQkeKY",
       "videoId": "5u7VgyQkeKY",

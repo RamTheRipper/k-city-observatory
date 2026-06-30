@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-30T11:49:02.654Z",
+  "generatedAt": "2026-06-30T14:45:01.299Z",
   "items": [
     {
       "id": "5u7VgyQkeKY",
@@ -1205,9 +1205,9 @@
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-06-30T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-06-30T14:23:57.000Z",
       "url": "https://www.youtube.com/watch?v=QPUo7MazVCo",
-      "thumbnailUrl": "https://i.ytimg.com/vi/QPUo7MazVCo/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QPUo7MazVCo/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1217,11 +1217,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-06-30T11:00:00.000Z",
       "actualStartTime": "2026-06-30T10:55:57.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-06-29T13:00:18.000Z",
+      "actualEndTime": "2026-06-30T14:23:57.000Z",
+      "publishedAt": "2026-06-30T14:36:38.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

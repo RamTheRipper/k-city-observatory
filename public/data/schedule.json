@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-01T07:17:58.734Z",
+  "generatedAt": "2026-07-01T10:16:27.357Z",
   "items": [
     {
       "id": "5u7VgyQkeKY",
@@ -1250,6 +1250,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-06-29T12:35:04.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "M-qAsVIIrcI",
+      "videoId": "M-qAsVIIrcI",
+      "title": "【リズム天国ミラクルスターズ】ノリノリかきょちゃんをご覧あれ~♫ #佳鏡院生放送",
+      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-03T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=M-qAsVIIrcI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/M-qAsVIIrcI/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-03T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-30T04:30:50.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

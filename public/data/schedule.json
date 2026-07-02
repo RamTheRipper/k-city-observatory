@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-02T11:40:27.145Z",
+  "generatedAt": "2026-07-02T14:30:50.491Z",
   "items": [
-    {
-      "id": "LL8FbM3Mgdo",
-      "videoId": "LL8FbM3Mgdo",
-      "title": "【笑ったら即終了、告知までいけるのか！？🗿】(ゲリラ) 幸祜サブch配信「幸福拡張部電脳科 vol.56」",
-      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
-      "channelName": "幸祜 -幸福拡張部電脳科-",
-      "startAt": "2026-06-01T12:00:00.000Z",
-      "endAt": "2026-06-01T13:43:36.000Z",
-      "url": "https://www.youtube.com/watch?v=LL8FbM3Mgdo",
-      "thumbnailUrl": "https://i.ytimg.com/vi/LL8FbM3Mgdo/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-01T12:00:00.000Z",
-      "actualStartTime": "2026-06-01T11:59:08.000Z",
-      "actualEndTime": "2026-06-01T13:43:36.000Z",
-      "publishedAt": "2026-06-01T14:24:35.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "9uhnboqmKE4",
       "videoId": "9uhnboqmKE4",
@@ -1204,9 +1175,9 @@
       "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
       "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-02T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-02T13:21:00.000Z",
       "url": "https://www.youtube.com/watch?v=BjRWOcJWsB4",
-      "thumbnailUrl": "https://i.ytimg.com/vi/BjRWOcJWsB4/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BjRWOcJWsB4/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1216,11 +1187,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-02T11:00:00.000Z",
       "actualStartTime": "2026-07-02T10:56:55.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-06-29T12:35:04.000Z",
+      "actualEndTime": "2026-07-02T13:21:00.000Z",
+      "publishedAt": "2026-07-02T13:27:52.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

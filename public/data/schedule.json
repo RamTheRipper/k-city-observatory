@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-03T06:38:15.553Z",
+  "generatedAt": "2026-07-03T09:36:37.138Z",
   "items": [
     {
       "id": "9uhnboqmKE4",
@@ -1276,6 +1276,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-06-17T02:10:50.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "n00OtOEUNaI",
+      "videoId": "n00OtOEUNaI",
+      "title": "【ムーンレスムーン】#3 後日談に、そっと。#美古途生放送",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-07-07T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=n00OtOEUNaI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/n00OtOEUNaI/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-07T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-03T08:37:13.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

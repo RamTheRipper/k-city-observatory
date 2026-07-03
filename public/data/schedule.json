@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-03T14:33:26.060Z",
+  "generatedAt": "2026-07-03T16:41:38.467Z",
   "items": [
     {
       "id": "9uhnboqmKE4",
@@ -1231,9 +1231,9 @@
       "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
       "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-03T12:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-03T14:35:29.000Z",
       "url": "https://www.youtube.com/watch?v=M-qAsVIIrcI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/M-qAsVIIrcI/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/M-qAsVIIrcI/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1243,11 +1243,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-03T12:00:00.000Z",
       "actualStartTime": "2026-07-03T11:55:09.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-06-30T04:30:50.000Z",
+      "actualEndTime": "2026-07-03T14:35:29.000Z",
+      "publishedAt": "2026-07-03T14:45:09.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

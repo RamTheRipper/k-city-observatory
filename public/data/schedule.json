@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-05T14:11:10.059Z",
+  "generatedAt": "2026-07-05T16:15:37.531Z",
   "items": [
-    {
-      "id": "eRtUbIFJyqs",
-      "videoId": "eRtUbIFJyqs",
-      "title": "【アクアリウムは踊らない】どうか無事でいて🪼 #硝子宮生放送",
-      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
-      "startAt": "2026-06-04T11:00:00.000Z",
-      "endAt": "2026-06-04T16:06:21.000Z",
-      "url": "https://www.youtube.com/watch?v=eRtUbIFJyqs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/eRtUbIFJyqs/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-04T11:00:00.000Z",
-      "actualStartTime": "2026-06-04T10:58:21.000Z",
-      "actualEndTime": "2026-06-04T16:06:21.000Z",
-      "publishedAt": "2026-06-04T16:23:37.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "TVyHBnGtnLk",
       "videoId": "TVyHBnGtnLk",

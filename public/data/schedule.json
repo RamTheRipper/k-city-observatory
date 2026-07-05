@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-05T09:23:48.419Z",
+  "generatedAt": "2026-07-05T11:09:19.906Z",
   "items": [
-    {
-      "id": "bJN_VZLpZn0",
-      "videoId": "bJN_VZLpZn0",
-      "title": "【歌ってみた】Avid / SawanoHiroyuki[nZk]:Mizuki covered by 幸祜&chelly(Ex.EGOIST)",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "startAt": "2026-06-04T10:00:00.000Z",
-      "endAt": "2026-06-04T10:06:21.000Z",
-      "url": "https://www.youtube.com/watch?v=bJN_VZLpZn0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/bJN_VZLpZn0/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-04T10:00:00.000Z",
-      "actualStartTime": "2026-06-04T10:00:06.000Z",
-      "actualEndTime": "2026-06-04T10:06:21.000Z",
-      "publishedAt": "2026-06-04T10:00:06.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "eRtUbIFJyqs",
       "videoId": "eRtUbIFJyqs",
@@ -1243,9 +1215,9 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-07-05T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-07-05T10:50:07.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-06-17T02:10:50.000Z",
       "source": "youtube-details",

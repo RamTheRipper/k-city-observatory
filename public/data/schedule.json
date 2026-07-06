@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-06T07:20:05.813Z",
+  "generatedAt": "2026-07-06T11:05:37.079Z",
   "items": [
     {
       "id": "TVyHBnGtnLk",
@@ -1253,6 +1253,34 @@
       "isManual": false
     },
     {
+      "id": "B39rs-DOXes",
+      "videoId": "B39rs-DOXes",
+      "title": "【雑談】歌枠裏話したり新曲についてｵｼｬﾍﾞﾘ【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-07-07T11:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=B39rs-DOXes",
+      "thumbnailUrl": "https://i.ytimg.com/vi/B39rs-DOXes/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-07T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-06T10:30:31.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "p1WQobWjF88",
       "videoId": "p1WQobWjF88",
       "title": "あすべまる！〜明透&琶舞 初・3Dライブ「Cross Night LIVE」開催告知SP！〜 【明透/琶舞/神椿】",
@@ -1276,6 +1304,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-03T13:34:37.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "fKx-VDkGoY8",
+      "videoId": "fKx-VDkGoY8",
+      "title": "神椿報奏部 vol.62",
+      "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
+      "channelName": "ヰ世界情緒 -Isekaijoucho-",
+      "startAt": "2026-07-11T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=fKx-VDkGoY8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fKx-VDkGoY8/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-11T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-03T11:21:55.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

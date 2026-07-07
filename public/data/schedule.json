@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-07T17:23:47.926Z",
+  "generatedAt": "2026-07-07T20:16:50.831Z",
   "items": [
     {
       "id": "Lmwo5Dq7lRo",
@@ -1276,6 +1276,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-03T13:34:37.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "lPRvG9SgEHQ",
+      "videoId": "lPRvG9SgEHQ",
+      "title": "【歌枠】ちょびゆるうた ⭒₊ ⊹☾ #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-07-08T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=lPRvG9SgEHQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lPRvG9SgEHQ/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-08T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-07T16:28:42.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

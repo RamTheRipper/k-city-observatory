@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-08T11:10:38.210Z",
+  "generatedAt": "2026-07-08T14:42:21.301Z",
   "items": [
     {
       "id": "Lmwo5Dq7lRo",
@@ -1259,9 +1259,9 @@
       "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
       "channelName": "明透 -ᴀsᴜ-",
       "startAt": "2026-07-08T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-08T12:12:44.000Z",
       "url": "https://www.youtube.com/watch?v=p1WQobWjF88",
-      "thumbnailUrl": "https://i.ytimg.com/vi/p1WQobWjF88/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/p1WQobWjF88/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1271,11 +1271,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-08T11:00:00.000Z",
       "actualStartTime": "2026-07-08T10:59:05.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-03T13:34:37.000Z",
+      "actualEndTime": "2026-07-08T12:12:44.000Z",
+      "publishedAt": "2026-07-08T12:24:52.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1287,9 +1287,9 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-07-08T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-08T12:32:41.000Z",
       "url": "https://www.youtube.com/watch?v=lPRvG9SgEHQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/lPRvG9SgEHQ/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lPRvG9SgEHQ/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1299,11 +1299,39 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-08T11:00:00.000Z",
       "actualStartTime": "2026-07-08T10:55:15.000Z",
+      "actualEndTime": "2026-07-08T12:32:41.000Z",
+      "publishedAt": "2026-07-08T13:14:41.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "QqYIehGweao",
+      "videoId": "QqYIehGweao",
+      "title": "🕯【 ゲーム実況 】彼女の見えている世界。Milk outside a bag of milk outside a bag of milk #御莉姫生放送",
+      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
+      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-09T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=QqYIehGweao",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QqYIehGweao/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-09T10:00:00.000Z",
+      "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-07-07T16:28:42.000Z",
+      "publishedAt": "2026-07-08T09:48:13.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

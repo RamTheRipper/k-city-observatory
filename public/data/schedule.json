@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-08T19:56:43.482Z",
+  "generatedAt": "2026-07-08T20:07:16.954Z",
   "items": [
     {
       "id": "Lmwo5Dq7lRo",
@@ -1253,6 +1253,62 @@
       "isManual": false
     },
     {
+      "id": "M09RG8NWSD8",
+      "videoId": "M09RG8NWSD8",
+      "title": "明透 - レディース・ロール・メソッド / ASU - Feminine Role Method (Official Music Video)【神椿】",
+      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
+      "channelName": "明透 -ᴀsᴜ-",
+      "startAt": "2026-07-08T10:00:00.000Z",
+      "endAt": "2026-07-08T10:04:48.000Z",
+      "url": "https://www.youtube.com/watch?v=M09RG8NWSD8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/M09RG8NWSD8/maxresdefault.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-07-08T10:00:00.000Z",
+      "actualStartTime": "2026-07-08T10:00:06.000Z",
+      "actualEndTime": "2026-07-08T10:04:48.000Z",
+      "publishedAt": "2026-07-08T10:00:06.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "9gPO_Kd4OxY",
+      "videoId": "9gPO_Kd4OxY",
+      "title": "琶舞 - Alt Skin/ BEMA - Alt Skin(Official Music Video)【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-07-08T10:30:00.000Z",
+      "endAt": "2026-07-08T10:35:28.000Z",
+      "url": "https://www.youtube.com/watch?v=9gPO_Kd4OxY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9gPO_Kd4OxY/maxresdefault.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-07-08T10:30:00.000Z",
+      "actualStartTime": "2026-07-08T10:30:06.000Z",
+      "actualEndTime": "2026-07-08T10:35:28.000Z",
+      "publishedAt": "2026-07-08T10:30:06.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "p1WQobWjF88",
       "videoId": "p1WQobWjF88",
       "title": "あすべまる！〜明透&琶舞 初・3Dライブ「Cross Night LIVE」開催告知SP！〜 【明透/琶舞/神椿】",
@@ -1304,6 +1360,35 @@
       "actualStartTime": "2026-07-08T10:55:15.000Z",
       "actualEndTime": "2026-07-08T12:32:41.000Z",
       "publishedAt": "2026-07-08T13:14:41.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "IemZhnC0iYs",
+      "videoId": "IemZhnC0iYs",
+      "title": "【眠れないのでお掃除しましょう PowerWash Simulator】春猿火「台風倶楽部-生配信」",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-07-08T18:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=IemZhnC0iYs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IemZhnC0iYs/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "live",
+      "scheduledStartTime": "2026-07-08T18:00:00.000Z",
+      "actualStartTime": "2026-07-08T18:00:23.000Z",
+      "actualEndTime": null,
+      "publishedAt": "2026-07-08T17:45:52.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

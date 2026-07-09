@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-09T12:22:42.194Z",
+  "generatedAt": "2026-07-09T15:35:14.947Z",
   "items": [
     {
       "id": "YzRfEcGFdT8",
@@ -1418,6 +1418,34 @@
       "actualStartTime": "2026-07-09T10:59:15.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-07-09T09:39:06.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "D1mFYMYdy9M",
+      "videoId": "D1mFYMYdy9M",
+      "title": "【🎐歌枠🎐】歌ってみた動画コレクション📔 #佳鏡院生放送",
+      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-10T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=D1mFYMYdy9M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/D1mFYMYdy9M/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-10T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-09T12:45:24.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

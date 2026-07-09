@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-09T06:51:38.172Z",
+  "generatedAt": "2026-07-09T10:03:57.894Z",
   "items": [
     {
       "id": "YzRfEcGFdT8",
@@ -1384,11 +1384,40 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-07-09T10:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-07-09T09:55:33.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-07-08T09:48:13.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "9WD_bDYpRZY",
+      "videoId": "9WD_bDYpRZY",
+      "title": "【JUDGE EYES : 死神の遺言Remastered】 - Chapter 8「親子盃」-    理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-07-09T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=9WD_bDYpRZY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9WD_bDYpRZY/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-09T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-09T09:39:06.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

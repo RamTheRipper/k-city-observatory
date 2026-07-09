@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-09T10:03:57.894Z",
+  "generatedAt": "2026-07-09T12:22:42.194Z",
   "items": [
     {
       "id": "YzRfEcGFdT8",
@@ -1413,9 +1413,9 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-07-09T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-07-09T10:59:15.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-07-09T09:39:06.000Z",
       "source": "youtube-details",

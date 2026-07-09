@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-09T15:35:14.947Z",
+  "generatedAt": "2026-07-09T17:24:35.889Z",
   "items": [
-    {
-      "id": "YzRfEcGFdT8",
-      "videoId": "YzRfEcGFdT8",
-      "title": "【6月こんにちは☔】春猿火「台風倶楽部-生配信」",
-      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
-      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
-      "startAt": "2026-06-08T15:00:00.000Z",
-      "endAt": "2026-06-08T16:01:12.000Z",
-      "url": "https://www.youtube.com/watch?v=YzRfEcGFdT8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/YzRfEcGFdT8/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-08T15:00:00.000Z",
-      "actualStartTime": "2026-06-08T15:01:08.000Z",
-      "actualEndTime": "2026-06-08T16:01:12.000Z",
-      "publishedAt": "2026-06-08T16:54:19.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "hJBEtg_bAlI",
       "videoId": "hJBEtg_bAlI",
@@ -1372,9 +1343,9 @@
       "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
       "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-09T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-09T12:31:48.000Z",
       "url": "https://www.youtube.com/watch?v=QqYIehGweao",
-      "thumbnailUrl": "https://i.ytimg.com/vi/QqYIehGweao/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QqYIehGweao/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1384,11 +1355,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-09T10:00:00.000Z",
       "actualStartTime": "2026-07-09T09:55:33.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-08T09:48:13.000Z",
+      "actualEndTime": "2026-07-09T12:31:48.000Z",
+      "publishedAt": "2026-07-09T12:42:53.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1400,9 +1371,9 @@
       "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
       "channelName": "理芽 -STRANGE GIRL CLUB-",
       "startAt": "2026-07-09T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-09T15:59:02.000Z",
       "url": "https://www.youtube.com/watch?v=9WD_bDYpRZY",
-      "thumbnailUrl": "https://i.ytimg.com/vi/9WD_bDYpRZY/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9WD_bDYpRZY/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1413,11 +1384,11 @@
         "membership"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-09T11:00:00.000Z",
       "actualStartTime": "2026-07-09T10:59:15.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-09T09:39:06.000Z",
+      "actualEndTime": "2026-07-09T15:59:02.000Z",
+      "publishedAt": "2026-07-09T16:16:01.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

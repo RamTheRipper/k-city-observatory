@@ -1,63 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-10T12:05:59.466Z",
+  "generatedAt": "2026-07-10T15:03:38.737Z",
   "items": [
-    {
-      "id": "hJBEtg_bAlI",
-      "videoId": "hJBEtg_bAlI",
-      "title": "【Bento Blocks】早く食べたい #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-06-09T11:00:00.000Z",
-      "endAt": "2026-06-09T14:01:29.000Z",
-      "url": "https://www.youtube.com/watch?v=hJBEtg_bAlI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/hJBEtg_bAlI/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-09T11:00:00.000Z",
-      "actualStartTime": "2026-06-09T10:57:10.000Z",
-      "actualEndTime": "2026-06-09T14:01:29.000Z",
-      "publishedAt": "2026-06-09T14:14:09.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "8bD4WQmfV0E",
-      "videoId": "8bD4WQmfV0E",
-      "title": "【雑談】歌ってみたについて語ってみるし募ってみる【琶舞/神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-06-09T11:30:00.000Z",
-      "endAt": "2026-06-09T12:39:56.000Z",
-      "url": "https://www.youtube.com/watch?v=8bD4WQmfV0E",
-      "thumbnailUrl": "https://i.ytimg.com/vi/8bD4WQmfV0E/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-09T11:30:00.000Z",
-      "actualStartTime": "2026-06-09T11:29:19.000Z",
-      "actualEndTime": "2026-06-09T12:39:56.000Z",
-      "publishedAt": "2026-06-09T12:55:49.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "b1gpt-xIuRE",
       "videoId": "b1gpt-xIuRE",
@@ -1400,9 +1344,9 @@
       "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
       "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-10T12:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-10T13:53:32.000Z",
       "url": "https://www.youtube.com/watch?v=D1mFYMYdy9M",
-      "thumbnailUrl": "https://i.ytimg.com/vi/D1mFYMYdy9M/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/D1mFYMYdy9M/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1412,11 +1356,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-10T12:00:00.000Z",
       "actualStartTime": "2026-07-10T11:55:23.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-09T12:45:24.000Z",
+      "actualEndTime": "2026-07-10T13:53:32.000Z",
+      "publishedAt": "2026-07-10T14:34:28.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

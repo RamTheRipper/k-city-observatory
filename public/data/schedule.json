@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-11T05:46:43.974Z",
+  "generatedAt": "2026-07-11T08:15:30.728Z",
   "items": [
     {
       "id": "b1gpt-xIuRE",
@@ -1389,6 +1389,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-03T11:21:55.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "XUVu4bOICT4",
+      "videoId": "XUVu4bOICT4",
+      "title": "CIEL STREAMING COVER LIVE「ストロベリーライブ3」（STRAWBERRY LIVE3）",
+      "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
+      "channelName": "CIEL",
+      "startAt": "2026-07-25T09:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=XUVu4bOICT4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XUVu4bOICT4/maxresdefault_live.jpg",
+      "group": "kuusou",
+      "groupIds": [
+        "kuusou"
+      ],
+      "primaryGroupId": "kuusou",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-25T09:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-06-25T08:55:32.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

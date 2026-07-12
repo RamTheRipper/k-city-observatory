@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-12T10:39:33.333Z",
+  "generatedAt": "2026-07-12T13:57:49.023Z",
   "items": [
-    {
-      "id": "b1gpt-xIuRE",
-      "videoId": "b1gpt-xIuRE",
-      "title": "【歌枠】夜のChill歌 ⭒₊ ⊹☾",
-      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-06-11T12:00:00.000Z",
-      "endAt": "2026-06-11T13:45:08.000Z",
-      "url": "https://www.youtube.com/watch?v=b1gpt-xIuRE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/b1gpt-xIuRE/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-11T12:00:00.000Z",
-      "actualStartTime": "2026-06-11T12:15:06.000Z",
-      "actualEndTime": "2026-06-11T13:45:08.000Z",
-      "publishedAt": "2026-06-11T14:23:02.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "wCNmuTe2A4o",
       "videoId": "wCNmuTe2A4o",
@@ -1417,6 +1389,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-12T05:16:39.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "CUbDz__GJ6E",
+      "videoId": "CUbDz__GJ6E",
+      "title": "【リズム天国 ミラクルスターズ】 ズンチャカふぃーばーたいむ‼️ #硝子宮生放送",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-13T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=CUbDz__GJ6E",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CUbDz__GJ6E/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-13T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-12T12:57:56.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

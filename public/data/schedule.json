@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-12T06:10:00.096Z",
+  "generatedAt": "2026-07-12T08:32:30.530Z",
   "items": [
     {
       "id": "b1gpt-xIuRE",
@@ -1389,6 +1389,34 @@
       "actualStartTime": "2026-07-11T10:57:07.000Z",
       "actualEndTime": "2026-07-11T12:01:45.000Z",
       "publishedAt": "2026-07-11T12:14:21.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "Fle5mglccuE",
+      "videoId": "Fle5mglccuE",
+      "title": "【朝枠】みこもにっ！🌻2026.07.13 #美古途生放送",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-07-12T22:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Fle5mglccuE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Fle5mglccuE/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-12T22:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-12T05:16:39.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

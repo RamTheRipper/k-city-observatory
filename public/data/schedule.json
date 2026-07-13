@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-12T21:58:17.248Z",
+  "generatedAt": "2026-07-13T04:02:27.258Z",
   "items": [
     {
       "id": "wCNmuTe2A4o",
@@ -1372,9 +1372,9 @@
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
       "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2026-07-12T22:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-12T23:51:25.000Z",
       "url": "https://www.youtube.com/watch?v=Fle5mglccuE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Fle5mglccuE/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Fle5mglccuE/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1384,11 +1384,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-12T22:00:00.000Z",
       "actualStartTime": "2026-07-12T21:55:27.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-12T05:16:39.000Z",
+      "actualEndTime": "2026-07-12T23:51:25.000Z",
+      "publishedAt": "2026-07-13T00:01:48.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1417,6 +1417,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-12T12:57:56.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "ZUkGoc30UiQ",
+      "videoId": "ZUkGoc30UiQ",
+      "title": "✧ 心世紀RADIO ✧ #ココロこみゅにてぃ 【03】",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-14T10:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=ZUkGoc30UiQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZUkGoc30UiQ/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-14T10:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-13T01:47:21.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

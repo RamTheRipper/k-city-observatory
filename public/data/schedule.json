@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-13T09:48:47.989Z",
+  "generatedAt": "2026-07-13T12:14:49.403Z",
   "items": [
     {
       "id": "wCNmuTe2A4o",
@@ -1412,9 +1412,9 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-07-13T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-07-13T11:09:22.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-07-12T12:57:56.000Z",
       "source": "youtube-details",

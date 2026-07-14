@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T10:52:57.813Z",
+  "generatedAt": "2026-07-14T14:15:18.258Z",
   "items": [
-    {
-      "id": "grKueYxp4js",
-      "videoId": "grKueYxp4js",
-      "title": "【HIMAですドヨービ】幸祜サブch配信「幸福拡張部電脳科 vol.58」",
-      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
-      "channelName": "幸祜 -幸福拡張部電脳科-",
-      "startAt": "2026-06-13T08:30:00.000Z",
-      "endAt": "2026-06-13T11:14:38.000Z",
-      "url": "https://www.youtube.com/watch?v=grKueYxp4js",
-      "thumbnailUrl": "https://i.ytimg.com/vi/grKueYxp4js/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-13T08:30:00.000Z",
-      "actualStartTime": "2026-06-13T08:32:37.000Z",
-      "actualEndTime": "2026-06-13T11:14:38.000Z",
-      "publishedAt": "2026-06-13T11:22:02.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "MCVoXPoH3vU",
       "videoId": "MCVoXPoH3vU",
@@ -1401,7 +1372,7 @@
       "startAt": "2026-07-14T10:30:00.000Z",
       "endAt": "2026-07-14T10:51:19.000Z",
       "url": "https://www.youtube.com/watch?v=ZUkGoc30UiQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ZUkGoc30UiQ/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZUkGoc30UiQ/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1415,7 +1386,7 @@
       "scheduledStartTime": "2026-07-14T10:30:00.000Z",
       "actualStartTime": "2026-07-14T10:30:08.000Z",
       "actualEndTime": "2026-07-14T10:51:19.000Z",
-      "publishedAt": "2026-07-13T01:47:21.000Z",
+      "publishedAt": "2026-07-14T11:05:58.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

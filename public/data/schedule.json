@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T08:29:08.715Z",
+  "generatedAt": "2026-07-14T10:52:57.813Z",
   "items": [
     {
       "id": "grKueYxp4js",
@@ -1399,7 +1399,7 @@
       "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
       "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-14T10:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-14T10:51:19.000Z",
       "url": "https://www.youtube.com/watch?v=ZUkGoc30UiQ",
       "thumbnailUrl": "https://i.ytimg.com/vi/ZUkGoc30UiQ/maxresdefault_live.jpg",
       "group": "girls_revolution_project",
@@ -1411,10 +1411,10 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-07-14T10:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
+      "actualStartTime": "2026-07-14T10:30:08.000Z",
+      "actualEndTime": "2026-07-14T10:51:19.000Z",
       "publishedAt": "2026-07-13T01:47:21.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",

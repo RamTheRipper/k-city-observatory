@@ -1,20 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-15T19:37:55.775Z",
+  "generatedAt": "2026-07-15T19:48:31.002Z",
   "apiUsage": {
-    "searchListCalls": 1,
-    "videosListCalls": 0,
+    "searchListCalls": 0,
+    "videosListCalls": 24,
     "channelsListCalls": 0,
-    "playlistItemsListCalls": 0,
-    "estimatedUnits": 100,
-    "lastSuccessAt": "2026-07-15T16:39:08.458Z",
-    "lastError": {
-      "message": "The authenticated user cannot act on behalf of the specified Google account.",
-      "quotaExceeded": false,
-      "statusCode": 403,
-      "endpoint": "search"
-    },
-    "fetchedScope": "upcoming",
+    "playlistItemsListCalls": 24,
+    "estimatedUnits": 48,
+    "lastSuccessAt": "2026-07-15T19:48:31.002Z",
+    "lastError": null,
+    "fetchedScope": "history",
     "loadedChannels": 24,
     "enabledChannels": 24,
     "fetchTargets": 24,

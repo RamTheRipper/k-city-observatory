@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16T16:24:17.184Z",
+  "generatedAt": "2026-07-16T19:35:10.662Z",
   "items": [
     {
       "id": "TWBkJ5cvkWI",
@@ -1472,6 +1472,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-16T08:46:55.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "pgdI0ub7LeI",
+      "videoId": "pgdI0ub7LeI",
+      "title": "【歌枠】夜にとじこめたこと。【みことうた☾·̩͙⋆】",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-07-18T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=pgdI0ub7LeI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pgdI0ub7LeI/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-18T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-16T16:10:37.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

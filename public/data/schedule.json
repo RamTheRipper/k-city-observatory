@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16T14:25:21.167Z",
+  "generatedAt": "2026-07-16T16:24:17.184Z",
   "items": [
     {
       "id": "TWBkJ5cvkWI",
@@ -1342,9 +1342,9 @@
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
       "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2026-07-16T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-16T13:46:36.000Z",
       "url": "https://www.youtube.com/watch?v=Rtr9iwrczyA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Rtr9iwrczyA/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Rtr9iwrczyA/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1354,11 +1354,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-16T10:00:00.000Z",
       "actualStartTime": "2026-07-16T09:56:51.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-15T11:29:31.000Z",
+      "actualEndTime": "2026-07-16T13:46:36.000Z",
+      "publishedAt": "2026-07-16T13:57:56.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1370,9 +1370,9 @@
       "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
       "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-16T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-16T13:45:14.000Z",
       "url": "https://www.youtube.com/watch?v=qVuoB3Vb8Ek",
-      "thumbnailUrl": "https://i.ytimg.com/vi/qVuoB3Vb8Ek/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qVuoB3Vb8Ek/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1382,11 +1382,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-16T10:00:00.000Z",
       "actualStartTime": "2026-07-16T09:56:52.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-15T13:04:08.000Z",
+      "actualEndTime": "2026-07-16T13:45:14.000Z",
+      "publishedAt": "2026-07-16T14:01:07.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1398,9 +1398,9 @@
       "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
       "channelName": "理芽 -STRANGE GIRL CLUB-",
       "startAt": "2026-07-16T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-16T13:09:39.000Z",
       "url": "https://www.youtube.com/watch?v=mf9ets77150",
-      "thumbnailUrl": "https://i.ytimg.com/vi/mf9ets77150/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mf9ets77150/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1411,11 +1411,11 @@
         "membership"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-16T11:00:00.000Z",
       "actualStartTime": "2026-07-16T10:58:44.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-16T07:33:02.000Z",
+      "actualEndTime": "2026-07-16T13:09:39.000Z",
+      "publishedAt": "2026-07-16T13:17:00.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

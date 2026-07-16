@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16T19:35:10.662Z",
+  "generatedAt": "2026-07-16T19:44:13.607Z",
   "items": [
     {
       "id": "TWBkJ5cvkWI",
@@ -1416,6 +1416,35 @@
       "actualStartTime": "2026-07-16T10:58:44.000Z",
       "actualEndTime": "2026-07-16T13:09:39.000Z",
       "publishedAt": "2026-07-16T13:17:00.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "rtT2TMv8Frg",
+      "videoId": "rtT2TMv8Frg",
+      "title": "【JUDGE EYES : 死神の遺言Remastered】 - Chapter 10 「デコイトラップ」-  理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-07-16T13:10:00.000Z",
+      "endAt": "2026-07-16T15:53:01.000Z",
+      "url": "https://www.youtube.com/watch?v=rtT2TMv8Frg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rtT2TMv8Frg/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-07-16T13:10:00.000Z",
+      "actualStartTime": "2026-07-16T13:16:45.000Z",
+      "actualEndTime": "2026-07-16T15:53:01.000Z",
+      "publishedAt": "2026-07-16T16:01:00.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

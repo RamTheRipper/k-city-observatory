@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16T05:46:52.041Z",
+  "generatedAt": "2026-07-16T08:35:47.208Z",
   "items": [
     {
       "id": "MCVoXPoH3vU",
@@ -1448,6 +1448,35 @@
       "isManual": false
     },
     {
+      "id": "mf9ets77150",
+      "videoId": "mf9ets77150",
+      "title": "【JUDGE EYES : 死神の遺言Remastered】 - Chapter 9 「夢の薬」-  理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-07-16T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=mf9ets77150",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mf9ets77150/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-16T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-16T07:33:02.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "8-oyz1FjJiM",
       "videoId": "8-oyz1FjJiM",
       "title": "【雑談】初歌枠めっちゃたのしかった～！✨💫【明透/神椿】",
@@ -1471,6 +1500,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-13T09:51:28.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "Nbjss9UZhRg",
+      "videoId": "Nbjss9UZhRg",
+      "title": "ぐいりめの！GaL GaL Night Lovers. . . vol.21",
+      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "channelName": "理芽 -RIM-",
+      "startAt": "2026-07-22T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Nbjss9UZhRg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Nbjss9UZhRg/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-22T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-16T04:44:38.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

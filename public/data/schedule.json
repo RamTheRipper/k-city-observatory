@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T05:33:41.322Z",
+  "generatedAt": "2026-07-18T08:10:37.457Z",
   "items": [
     {
       "id": "Skss5LtwMZk",
@@ -1443,6 +1443,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-16T16:10:37.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "TgTc2SDdTyE",
+      "videoId": "TgTc2SDdTyE",
+      "title": "パッションEnglish任せろ🫪JP × EN【Keep Talking and Nobody Explodes】with Klara Charmwood",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "startAt": "2026-07-18T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=TgTc2SDdTyE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TgTc2SDdTyE/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-18T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-18T02:38:16.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

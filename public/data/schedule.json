@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T13:52:05.963Z",
+  "generatedAt": "2026-07-18T16:02:35.572Z",
   "items": [
     {
       "id": "CDE66D4Okmw",
@@ -1368,9 +1368,9 @@
       "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
       "channelName": "幸祜 -KOKO-",
       "startAt": "2026-07-18T12:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-18T14:22:50.000Z",
       "url": "https://www.youtube.com/watch?v=TgTc2SDdTyE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/TgTc2SDdTyE/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TgTc2SDdTyE/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1380,11 +1380,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-18T12:00:00.000Z",
       "actualStartTime": "2026-07-18T12:00:42.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-18T02:38:16.000Z",
+      "actualEndTime": "2026-07-18T14:22:50.000Z",
+      "publishedAt": "2026-07-18T14:46:02.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

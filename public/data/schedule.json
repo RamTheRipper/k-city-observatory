@@ -1,93 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T10:24:28.986Z",
+  "generatedAt": "2026-07-18T13:52:05.963Z",
   "items": [
-    {
-      "id": "Skss5LtwMZk",
-      "videoId": "Skss5LtwMZk",
-      "title": "【デイヴ・ザ・ダイバー】おさかなパラダイス #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-06-17T11:00:00.000Z",
-      "endAt": "2026-06-17T13:45:35.000Z",
-      "url": "https://www.youtube.com/watch?v=Skss5LtwMZk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Skss5LtwMZk/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-17T11:00:00.000Z",
-      "actualStartTime": "2026-06-17T10:56:37.000Z",
-      "actualEndTime": "2026-06-17T13:45:35.000Z",
-      "publishedAt": "2026-06-17T13:56:50.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "5tZhovFP9aQ",
-      "videoId": "5tZhovFP9aQ",
-      "title": "【雑談】5、6月は歌ったし踊った💃✨【明透/神椿】",
-      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
-      "channelName": "明透 -ᴀsᴜ-",
-      "startAt": "2026-06-17T11:00:00.000Z",
-      "endAt": "2026-06-17T11:47:33.000Z",
-      "url": "https://www.youtube.com/watch?v=5tZhovFP9aQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/5tZhovFP9aQ/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-17T11:00:00.000Z",
-      "actualStartTime": "2026-06-17T10:59:05.000Z",
-      "actualEndTime": "2026-06-17T11:47:33.000Z",
-      "publishedAt": "2026-06-17T11:59:43.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "6ksiB6M8nxU",
-      "videoId": "6ksiB6M8nxU",
-      "title": "空爽 (CIEL & Sooda) - 走れシュガー（Official Music Video）",
-      "channelId": "UCJxwvbBoawRJtVgPgvMg-Qg",
-      "channelName": "空爽",
-      "startAt": "2026-06-17T11:00:00.000Z",
-      "endAt": "2026-06-17T11:04:06.000Z",
-      "url": "https://www.youtube.com/watch?v=6ksiB6M8nxU",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6ksiB6M8nxU/maxresdefault.jpg",
-      "group": "kuusou",
-      "groupIds": [
-        "kuusou",
-        "official"
-      ],
-      "primaryGroupId": "kuusou",
-      "tags": [
-        "official",
-        "group"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-17T11:00:00.000Z",
-      "actualStartTime": "2026-06-17T11:00:06.000Z",
-      "actualEndTime": "2026-06-17T11:04:06.000Z",
-      "publishedAt": "2026-06-17T11:00:06.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "CDE66D4Okmw",
       "videoId": "CDE66D4Okmw",
@@ -1426,9 +1340,9 @@
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
       "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2026-07-18T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-18T13:19:30.000Z",
       "url": "https://www.youtube.com/watch?v=pgdI0ub7LeI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/pgdI0ub7LeI/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pgdI0ub7LeI/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1438,11 +1352,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-07-18T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-07-16T16:10:37.000Z",
+      "actualStartTime": "2026-07-18T10:56:22.000Z",
+      "actualEndTime": "2026-07-18T13:19:30.000Z",
+      "publishedAt": "2026-07-18T13:27:32.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1466,11 +1380,39 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-07-18T12:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-07-18T12:00:42.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-07-18T02:38:16.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "5053KUW8-Rs",
+      "videoId": "5053KUW8-Rs",
+      "title": "【夏企画】最高の夏休みの1日を計画しようず🍉【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-07-19T11:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=5053KUW8-Rs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5053KUW8-Rs/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-19T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-17T05:40:51.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

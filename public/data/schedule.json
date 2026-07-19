@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-19T10:39:50.052Z",
+  "generatedAt": "2026-07-19T13:55:39.775Z",
   "items": [
-    {
-      "id": "CDE66D4Okmw",
-      "videoId": "CDE66D4Okmw",
-      "title": "【☁️へるつのわるつ☁️】おやすみ歌枠🐏🫧 #硝子宮生放送",
-      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
-      "startAt": "2026-06-18T11:00:00.000Z",
-      "endAt": "2026-06-18T13:05:22.000Z",
-      "url": "https://www.youtube.com/watch?v=CDE66D4Okmw",
-      "thumbnailUrl": "https://i.ytimg.com/vi/CDE66D4Okmw/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-18T11:00:00.000Z",
-      "actualStartTime": "2026-06-18T10:57:19.000Z",
-      "actualEndTime": "2026-06-18T13:05:22.000Z",
-      "publishedAt": "2026-06-18T13:11:28.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "CvMIKquoNfg",
       "videoId": "CvMIKquoNfg",
@@ -1396,9 +1368,9 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-07-19T11:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-19T13:06:24.000Z",
       "url": "https://www.youtube.com/watch?v=5053KUW8-Rs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/5053KUW8-Rs/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5053KUW8-Rs/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1408,11 +1380,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-07-19T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-07-17T05:40:51.000Z",
+      "actualStartTime": "2026-07-19T11:29:33.000Z",
+      "actualEndTime": "2026-07-19T13:06:24.000Z",
+      "publishedAt": "2026-07-19T13:46:10.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

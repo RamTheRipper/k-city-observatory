@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-20T11:53:03.251Z",
+  "generatedAt": "2026-07-20T14:34:33.182Z",
   "items": [
     {
       "id": "BLm0YEIijEY",
@@ -55,35 +55,6 @@
       "actualStartTime": "2026-06-19T11:56:27.000Z",
       "actualEndTime": "2026-06-19T15:40:13.000Z",
       "publishedAt": "2026-06-19T15:49:57.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "pH4rsuSPfF8",
-      "videoId": "pH4rsuSPfF8",
-      "title": "【入賞者発表📸!!幸祜フォトコン】幸祜サブch配信「幸福拡張部電脳科 vol.60」",
-      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
-      "channelName": "幸祜 -幸福拡張部電脳科-",
-      "startAt": "2026-06-19T12:30:00.000Z",
-      "endAt": "2026-06-19T14:14:08.000Z",
-      "url": "https://www.youtube.com/watch?v=pH4rsuSPfF8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/pH4rsuSPfF8/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-19T12:30:00.000Z",
-      "actualStartTime": "2026-06-19T12:29:13.000Z",
-      "actualEndTime": "2026-06-19T14:14:08.000Z",
-      "publishedAt": "2026-06-19T14:40:20.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1327,6 +1298,62 @@
       "actualStartTime": "2026-07-19T11:29:33.000Z",
       "actualEndTime": "2026-07-19T13:06:24.000Z",
       "publishedAt": "2026-07-19T13:46:10.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "3tW0dc32zd8",
+      "videoId": "3tW0dc32zd8",
+      "title": "【朝雑】3連休あけの朝でも、心晴れやかに。【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-07-20T21:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=3tW0dc32zd8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3tW0dc32zd8/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-20T21:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-20T10:43:04.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "fCWieWCp4X0",
+      "videoId": "fCWieWCp4X0",
+      "title": "🕯【 ゲーム実況 】もう誰も信じられないかも。【 パラソーシャル 】 #御莉姫生放送",
+      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
+      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-21T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=fCWieWCp4X0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fCWieWCp4X0/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-21T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-20T10:22:26.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-20T20:10:23.166Z",
+  "generatedAt": "2026-07-20T22:07:37.836Z",
   "items": [
     {
       "id": "__ilvqAGXDs",
@@ -1264,9 +1264,9 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-07-20T21:30:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-07-20T21:29:29.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-07-20T10:43:04.000Z",
       "source": "youtube-details",

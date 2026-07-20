@@ -1,64 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-20T14:34:33.182Z",
+  "generatedAt": "2026-07-20T16:39:07.639Z",
   "items": [
-    {
-      "id": "BLm0YEIijEY",
-      "videoId": "BLm0YEIijEY",
-      "title": "【JUDGE EYES : 死神の遺言Remastered】 - Chapter 7「蝶の舞う夜」-    理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
-      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
-      "channelName": "理芽 -STRANGE GIRL CLUB-",
-      "startAt": "2026-06-19T11:00:00.000Z",
-      "endAt": "2026-06-19T14:37:30.000Z",
-      "url": "https://www.youtube.com/watch?v=BLm0YEIijEY",
-      "thumbnailUrl": "https://i.ytimg.com/vi/BLm0YEIijEY/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-19T11:00:00.000Z",
-      "actualStartTime": "2026-06-19T11:02:46.000Z",
-      "actualEndTime": "2026-06-19T14:37:30.000Z",
-      "publishedAt": "2026-06-19T14:53:07.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "TOIOJ60sI1s",
-      "videoId": "TOIOJ60sI1s",
-      "title": "【雑談】久しぶりのマシュマロぱくぱく #佳鏡院生放送",
-      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
-      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
-      "startAt": "2026-06-19T12:00:00.000Z",
-      "endAt": "2026-06-19T15:40:13.000Z",
-      "url": "https://www.youtube.com/watch?v=TOIOJ60sI1s",
-      "thumbnailUrl": "https://i.ytimg.com/vi/TOIOJ60sI1s/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-19T12:00:00.000Z",
-      "actualStartTime": "2026-06-19T11:56:27.000Z",
-      "actualEndTime": "2026-06-19T15:40:13.000Z",
-      "publishedAt": "2026-06-19T15:49:57.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "__ilvqAGXDs",
       "videoId": "__ilvqAGXDs",

@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-21T11:13:48.215Z",
+  "generatedAt": "2026-07-21T14:25:09.220Z",
   "items": [
-    {
-      "id": "__ilvqAGXDs",
-      "videoId": "__ilvqAGXDs",
-      "title": "【歌枠】ヨルシカ縛り!!🌃🦌いくぞ!! #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-06-20T11:00:00.000Z",
-      "endAt": "2026-06-20T12:44:16.000Z",
-      "url": "https://www.youtube.com/watch?v=__ilvqAGXDs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/__ilvqAGXDs/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-20T11:00:00.000Z",
-      "actualStartTime": "2026-06-20T10:56:54.000Z",
-      "actualEndTime": "2026-06-20T12:44:16.000Z",
-      "publishedAt": "2026-06-20T14:01:43.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "wf7ZgAPB-bM",
       "videoId": "wf7ZgAPB-bM",
@@ -1280,9 +1252,9 @@
       "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
       "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-21T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-21T12:29:12.000Z",
       "url": "https://www.youtube.com/watch?v=fCWieWCp4X0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/fCWieWCp4X0/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fCWieWCp4X0/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1292,11 +1264,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-21T10:00:00.000Z",
       "actualStartTime": "2026-07-21T09:55:36.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-20T10:22:26.000Z",
+      "actualEndTime": "2026-07-21T12:29:12.000Z",
+      "publishedAt": "2026-07-21T12:38:36.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1325,6 +1297,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-16T04:44:38.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "5ru0qs9g0xA",
+      "videoId": "5ru0qs9g0xA",
+      "title": "【先輩に聞きたい30の質問】花譜ちゃん先輩編🌸🩷 #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-07-22T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=5ru0qs9g0xA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5ru0qs9g0xA/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-22T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-21T07:16:33.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

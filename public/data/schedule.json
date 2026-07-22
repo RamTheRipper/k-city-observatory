@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-22T19:45:38.632Z",
+  "generatedAt": "2026-07-22T19:55:13.973Z",
   "items": [
     {
       "id": "BAmkHKb7KJk",
@@ -1217,6 +1217,34 @@
       "isManual": false
     },
     {
+      "id": "gJnOOfMJyqk",
+      "videoId": "gJnOOfMJyqk",
+      "title": "【アークナイツ：エンドフィールド】ヰ世界情緒 #76「深海のフレイム」【Official Music Video】",
+      "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
+      "channelName": "ヰ世界情緒 -Isekaijoucho-",
+      "startAt": "2026-07-22T10:00:00.000Z",
+      "endAt": "2026-07-22T10:05:46.000Z",
+      "url": "https://www.youtube.com/watch?v=gJnOOfMJyqk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gJnOOfMJyqk/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-07-22T10:00:00.000Z",
+      "actualStartTime": "2026-07-22T10:00:06.000Z",
+      "actualEndTime": "2026-07-22T10:05:46.000Z",
+      "publishedAt": "2026-07-22T10:00:06.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "Nbjss9UZhRg",
       "videoId": "Nbjss9UZhRg",
       "title": "ぐいりめの！GaL GaL Night Lovers. . . vol.21",
@@ -1253,7 +1281,7 @@
       "startAt": "2026-07-22T11:00:00.000Z",
       "endAt": "2026-07-22T14:19:46.000Z",
       "url": "https://www.youtube.com/watch?v=5ru0qs9g0xA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/5ru0qs9g0xA/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5ru0qs9g0xA/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1267,7 +1295,7 @@
       "scheduledStartTime": "2026-07-22T11:00:00.000Z",
       "actualStartTime": "2026-07-22T10:56:40.000Z",
       "actualEndTime": "2026-07-22T14:19:46.000Z",
-      "publishedAt": "2026-07-21T07:16:33.000Z",
+      "publishedAt": "2026-07-22T14:30:27.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

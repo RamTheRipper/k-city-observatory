@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-23T11:16:52.017Z",
+  "generatedAt": "2026-07-23T14:34:29.398Z",
   "items": [
-    {
-      "id": "BAmkHKb7KJk",
-      "videoId": "BAmkHKb7KJk",
-      "title": "目指せ動員数No.1！新作ボードゲーム「KAMITSUBAKI FES Star Reach WARS」",
-      "channelId": "UCAOhUv73jM5iCpOhuJOQzxA",
-      "channelName": "KAMITSUBAKI STUDIO",
-      "startAt": "2026-06-22T10:00:00.000Z",
-      "endAt": "2026-06-22T11:22:04.000Z",
-      "url": "https://www.youtube.com/watch?v=BAmkHKb7KJk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/BAmkHKb7KJk/maxresdefault.jpg",
-      "group": "official",
-      "groupIds": [
-        "official"
-      ],
-      "primaryGroupId": "official",
-      "tags": [
-        "official"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-22T10:00:00.000Z",
-      "actualStartTime": "2026-06-22T09:55:11.000Z",
-      "actualEndTime": "2026-06-22T11:22:04.000Z",
-      "publishedAt": "2026-06-22T12:11:11.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "Bg3no8l_oDc",
       "videoId": "Bg3no8l_oDc",
@@ -1307,9 +1279,9 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-07-23T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-23T13:12:49.000Z",
       "url": "https://www.youtube.com/watch?v=75XKDU94Pz8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/75XKDU94Pz8/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/75XKDU94Pz8/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1319,11 +1291,39 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-23T11:00:00.000Z",
       "actualStartTime": "2026-07-23T10:55:28.000Z",
+      "actualEndTime": "2026-07-23T13:12:49.000Z",
+      "publishedAt": "2026-07-23T13:19:42.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "zO2EHdPywHc",
+      "videoId": "zO2EHdPywHc",
+      "title": "【リズム天国 ミラクルスターズ】Shall we ｽﾞﾝﾁｬｶ❕❔ #硝子宮生放送",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-24T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=zO2EHdPywHc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zO2EHdPywHc/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-24T11:00:00.000Z",
+      "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-07-22T08:10:47.000Z",
+      "publishedAt": "2026-07-23T09:08:47.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

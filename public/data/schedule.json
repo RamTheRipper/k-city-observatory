@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-24T19:48:34.517Z",
+  "generatedAt": "2026-07-24T19:58:42.911Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1271,6 +1271,35 @@
       "isManual": false
     },
     {
+      "id": "7ReQvldVWIU",
+      "videoId": "7ReQvldVWIU",
+      "title": "『みかんれでぃお #1 自己紹介編』",
+      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
+      "channelName": "花譜 -未確認少女観測部-",
+      "startAt": "2026-07-24T09:00:00.000Z",
+      "endAt": "2026-07-24T09:26:00.000Z",
+      "url": "https://www.youtube.com/watch?v=7ReQvldVWIU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7ReQvldVWIU/hqdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-07-24T09:00:00.000Z",
+      "actualStartTime": "2026-07-24T09:00:05.000Z",
+      "actualEndTime": "2026-07-24T09:26:00.000Z",
+      "publishedAt": "2026-07-24T09:00:05.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "zO2EHdPywHc",
       "videoId": "zO2EHdPywHc",
       "title": "【リズム天国 ミラクルスターズ】Shall we ｽﾞﾝﾁｬｶ❕❔ #硝子宮生放送",
@@ -1294,6 +1323,35 @@
       "actualStartTime": "2026-07-24T10:58:16.000Z",
       "actualEndTime": "2026-07-24T14:21:09.000Z",
       "publishedAt": "2026-07-24T14:34:59.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "Oke7D_ig9vM",
+      "videoId": "Oke7D_ig9vM",
+      "title": "【暑すぎるので怖いゲームをしよう。ゆうひ不動産/黄昏ぐるめなび】春猿火「台風倶楽部-生配信」",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-07-24T16:00:00.000Z",
+      "endAt": "2026-07-24T17:59:54.000Z",
+      "url": "https://www.youtube.com/watch?v=Oke7D_ig9vM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Oke7D_ig9vM/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-07-24T16:00:00.000Z",
+      "actualStartTime": "2026-07-24T16:00:13.000Z",
+      "actualEndTime": "2026-07-24T17:59:54.000Z",
+      "publishedAt": "2026-07-24T18:41:49.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

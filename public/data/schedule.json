@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-24T11:09:06.768Z",
+  "generatedAt": "2026-07-24T14:14:38.047Z",
   "items": [
-    {
-      "id": "Bg3no8l_oDc",
-      "videoId": "Bg3no8l_oDc",
-      "title": "【つみばらじお】#10",
-      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-06-23T11:00:00.000Z",
-      "endAt": "2026-06-23T12:39:36.000Z",
-      "url": "https://www.youtube.com/watch?v=Bg3no8l_oDc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Bg3no8l_oDc/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:00:00.000Z",
-      "actualStartTime": "2026-06-23T10:55:15.000Z",
-      "actualEndTime": "2026-06-23T12:39:36.000Z",
-      "publishedAt": "2026-06-24T00:58:36.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "c6KeOF5lR-g",
       "videoId": "c6KeOF5lR-g",
@@ -1352,6 +1324,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-06-25T08:55:32.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "L5cBHl4NuwA",
+      "videoId": "L5cBHl4NuwA",
+      "title": "【セガUFOキャッチャーオンライン】オンクレ！大量に獲ったるで！ #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-07-28T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=L5cBHl4NuwA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L5cBHl4NuwA/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-28T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-23T11:25:54.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

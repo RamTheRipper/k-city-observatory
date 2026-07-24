@@ -1,35 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-24T14:14:38.047Z",
+  "generatedAt": "2026-07-24T16:48:21.215Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき/ Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T12:00:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/maxresdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T12:00:00.000Z",
-      "actualStartTime": "2026-06-23T12:02:56.000Z",
-      "actualEndTime": "2026-06-23T14:18:39.000Z",
-      "publishedAt": "2026-06-23T14:45:13.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": true,
-      "endAt": "2026-06-23T14:18:39.000Z",
-      "category": ""
-    },
     {
       "id": "Hy3hol1II8s",
       "videoId": "Hy3hol1II8s",
@@ -1279,9 +1251,9 @@
       "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
       "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-24T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-24T14:21:09.000Z",
       "url": "https://www.youtube.com/watch?v=zO2EHdPywHc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/zO2EHdPywHc/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zO2EHdPywHc/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1291,11 +1263,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-24T11:00:00.000Z",
       "actualStartTime": "2026-07-24T10:58:16.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-23T09:08:47.000Z",
+      "actualEndTime": "2026-07-24T14:21:09.000Z",
+      "publishedAt": "2026-07-24T14:34:59.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

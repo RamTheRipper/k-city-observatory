@@ -1,62 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-25T10:39:44.394Z",
+  "generatedAt": "2026-07-25T14:03:46.748Z",
   "items": [
     {
-      "id": "Hy3hol1II8s",
-      "videoId": "Hy3hol1II8s",
-      "title": "🕯歌ってみた語り。 #御莉姫生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-06-24T11:00:00.000Z",
-      "endAt": "2026-06-24T12:34:17.000Z",
-      "url": "https://www.youtube.com/watch?v=Hy3hol1II8s",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Hy3hol1II8s/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-06-24T11:00:00.000Z",
-      "actualStartTime": "2026-06-24T10:59:19.000Z",
-      "actualEndTime": "2026-06-24T12:34:17.000Z",
-      "publishedAt": "2026-06-24T13:01:16.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "sWa2cz4hxTY",
-      "videoId": "sWa2cz4hxTY",
-      "title": "【初コラボ】春猿火さんと！歌みたトークやマシュマロもぐもぐ【琶舞/春猿火/神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-06-24T11:30:00.000Z",
-      "endAt": "2026-06-24T12:28:03.000Z",
-      "url": "https://www.youtube.com/watch?v=sWa2cz4hxTY",
-      "thumbnailUrl": "https://i.ytimg.com/vi/sWa2cz4hxTY/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-06-24T11:30:00.000Z",
-      "actualStartTime": "2026-06-24T11:29:35.000Z",
-      "actualEndTime": "2026-06-24T12:28:03.000Z",
-      "publishedAt": "2026-06-24T12:54:15.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "exGINPKo2_4",
@@ -1337,9 +1307,9 @@
       "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
       "channelName": "CIEL",
       "startAt": "2026-07-25T09:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-25T10:55:39.000Z",
       "url": "https://www.youtube.com/watch?v=XUVu4bOICT4",
-      "thumbnailUrl": "https://i.ytimg.com/vi/XUVu4bOICT4/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XUVu4bOICT4/maxresdefault.jpg",
       "group": "kuusou",
       "groupIds": [
         "kuusou"
@@ -1349,11 +1319,39 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-25T09:30:00.000Z",
       "actualStartTime": "2026-07-25T09:30:16.000Z",
+      "actualEndTime": "2026-07-25T10:55:39.000Z",
+      "publishedAt": "2026-07-25T11:09:40.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "6r4zKCZkmcA",
+      "videoId": "6r4zKCZkmcA",
+      "title": "【雑談】土用はうなの日。お昼ご飯一緒に食べよ!! #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-07-26T02:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=6r4zKCZkmcA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6r4zKCZkmcA/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-26T02:00:00.000Z",
+      "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-06-25T08:55:32.000Z",
+      "publishedAt": "2026-07-25T11:46:17.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1382,6 +1380,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-25T06:45:58.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "uIz9ZpoqNeg",
+      "videoId": "uIz9ZpoqNeg",
+      "title": "登録者20万人突破企画！-20個答える-【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-07-26T11:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=uIz9ZpoqNeg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uIz9ZpoqNeg/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-26T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-25T10:55:23.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

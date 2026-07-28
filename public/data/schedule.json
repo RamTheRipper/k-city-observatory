@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T11:24:29.162Z",
+  "generatedAt": "2026-07-28T14:40:17.830Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "kQum3gVZ2Ww",
       "videoId": "kQum3gVZ2Ww",
@@ -1305,9 +1331,9 @@
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-07-28T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-28T12:41:07.000Z",
       "url": "https://www.youtube.com/watch?v=L5cBHl4NuwA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/L5cBHl4NuwA/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L5cBHl4NuwA/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1317,11 +1343,39 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-28T11:00:00.000Z",
       "actualStartTime": "2026-07-28T10:55:21.000Z",
+      "actualEndTime": "2026-07-28T12:41:07.000Z",
+      "publishedAt": "2026-07-28T12:57:19.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "j1Jglb2V5UI",
+      "videoId": "j1Jglb2V5UI",
+      "title": "冷しカップヌードルを食べながら歌みたに備える配信【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-07-29T09:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=j1Jglb2V5UI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j1Jglb2V5UI/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-29T09:30:00.000Z",
+      "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-07-23T11:25:54.000Z",
+      "publishedAt": "2026-07-28T11:05:02.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1350,6 +1404,91 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-27T04:19:11.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "V-TRVFS5Swc",
+      "videoId": "V-TRVFS5Swc",
+      "title": "【Paddle Paddle Paddle】ﾒﾁさんと！こぐ！！！💙💚 #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-07-30T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=V-TRVFS5Swc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/V-TRVFS5Swc/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-30T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-28T12:50:35.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "eChK3U-if9g",
+      "videoId": "eChK3U-if9g",
+      "title": "【THE SUSHI HOUSE】祝･みかん部放送50回目ですし、お寿司。【未確認少女観測部-vol.50】",
+      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
+      "channelName": "花譜 -未確認少女観測部-",
+      "startAt": "2026-07-31T07:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=eChK3U-if9g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eChK3U-if9g/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-31T07:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-28T10:42:42.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "phEqF2sfw5o",
+      "videoId": "phEqF2sfw5o",
+      "title": "【女子会トーク☕】CHINOさん＆VITTEさんとガールズトークがしたいっ🤍🩵 #佳鏡院生放送",
+      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
+      "startAt": "2026-07-31T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=phEqF2sfw5o",
+      "thumbnailUrl": "https://i.ytimg.com/vi/phEqF2sfw5o/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-07-31T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-28T09:21:30.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

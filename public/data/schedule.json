@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-29T09:11:04.150Z",
+  "generatedAt": "2026-07-29T11:30:54.400Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "kQum3gVZ2Ww",
       "videoId": "kQum3gVZ2Ww",
@@ -1359,9 +1333,9 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-07-29T09:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-29T10:58:06.000Z",
       "url": "https://www.youtube.com/watch?v=j1Jglb2V5UI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/j1Jglb2V5UI/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j1Jglb2V5UI/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1371,11 +1345,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-07-29T09:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-07-28T11:05:02.000Z",
+      "actualStartTime": "2026-07-29T09:30:03.000Z",
+      "actualEndTime": "2026-07-29T10:58:06.000Z",
+      "publishedAt": "2026-07-29T11:27:10.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1399,9 +1373,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-07-29T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-07-29T11:01:24.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-07-27T04:19:11.000Z",
       "source": "youtube-details",

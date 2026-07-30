@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T11:15:56.033Z",
+  "generatedAt": "2026-07-30T14:33:59.864Z",
   "items": [
     {
-      "id": "OLfXjym4SmE",
-      "videoId": "OLfXjym4SmE",
-      "title": "🕯【 歌枠 】梅雨のうた。 #御莉姫生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-06-29T10:00:00.000Z",
-      "endAt": "2026-06-29T11:26:29.000Z",
-      "url": "https://www.youtube.com/watch?v=OLfXjym4SmE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/OLfXjym4SmE/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-06-29T10:00:00.000Z",
-      "actualStartTime": "2026-06-29T10:02:23.000Z",
-      "actualEndTime": "2026-06-29T11:26:29.000Z",
-      "publishedAt": "2026-06-29T11:48:04.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "9X9ya3Rprk0",
@@ -1332,9 +1330,9 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-07-30T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-07-30T13:22:15.000Z",
       "url": "https://www.youtube.com/watch?v=V-TRVFS5Swc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/V-TRVFS5Swc/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/V-TRVFS5Swc/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1344,11 +1342,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-07-30T11:00:00.000Z",
       "actualStartTime": "2026-07-30T10:56:03.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-28T12:50:35.000Z",
+      "actualEndTime": "2026-07-30T13:22:15.000Z",
+      "publishedAt": "2026-07-30T13:28:32.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

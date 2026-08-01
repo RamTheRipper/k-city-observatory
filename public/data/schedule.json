@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T19:36:10.178Z",
+  "generatedAt": "2026-08-01T19:49:02.556Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1347,6 +1347,66 @@
       "actualStartTime": "2026-07-31T11:56:21.000Z",
       "actualEndTime": "2026-07-31T14:05:14.000Z",
       "publishedAt": "2026-07-31T14:11:37.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "jCV5rHrtfAA",
+      "videoId": "jCV5rHrtfAA",
+      "title": "【1st LIVE 「改変」】心世紀 「ミリオン・コンプレクシティ」【神椿】",
+      "channelId": "UCHIgbtz8t8snEwWlE1eyS2g",
+      "channelName": "少女革命計画",
+      "startAt": "2026-08-01T11:00:00.000Z",
+      "endAt": "2026-08-01T11:05:01.000Z",
+      "url": "https://www.youtube.com/watch?v=jCV5rHrtfAA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jCV5rHrtfAA/maxresdefault.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project",
+        "official"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "official",
+        "group"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-08-01T11:00:00.000Z",
+      "actualStartTime": "2026-08-01T11:00:07.000Z",
+      "actualEndTime": "2026-08-01T11:05:01.000Z",
+      "publishedAt": "2026-08-01T11:00:07.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "tGkbUnKZeQ4",
+      "videoId": "tGkbUnKZeQ4",
+      "title": "【1st LIVE 「改変」】罪十罰 「SURVIVAL」【神椿】",
+      "channelId": "UCHIgbtz8t8snEwWlE1eyS2g",
+      "channelName": "少女革命計画",
+      "startAt": "2026-08-01T11:04:00.000Z",
+      "endAt": "2026-08-01T11:09:24.000Z",
+      "url": "https://www.youtube.com/watch?v=tGkbUnKZeQ4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tGkbUnKZeQ4/maxresdefault.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project",
+        "official"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "official",
+        "group"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-08-01T11:04:00.000Z",
+      "actualStartTime": "2026-08-01T11:04:06.000Z",
+      "actualEndTime": "2026-08-01T11:09:24.000Z",
+      "publishedAt": "2026-08-01T11:04:06.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

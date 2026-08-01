@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T10:44:54.664Z",
+  "generatedAt": "2026-08-01T13:57:19.908Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "BjRWOcJWsB4",
       "videoId": "BjRWOcJWsB4",
@@ -1332,9 +1358,9 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-08-01T11:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-01T12:36:26.000Z",
       "url": "https://www.youtube.com/watch?v=d8b81_Suqhs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/d8b81_Suqhs/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/d8b81_Suqhs/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1344,11 +1370,39 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-08-01T11:30:00.000Z",
+      "actualStartTime": "2026-08-01T11:29:31.000Z",
+      "actualEndTime": "2026-08-01T12:36:26.000Z",
+      "publishedAt": "2026-08-01T13:25:33.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "eLFYFdnZE2w",
+      "videoId": "eLFYFdnZE2w",
+      "title": "【マリオカート8DX】はじめてのマリオカート🔰爆走するぞ💨 #佳鏡院生放送",
+      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
+      "startAt": "2026-08-02T12:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=eLFYFdnZE2w",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eLFYFdnZE2w/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-02T12:30:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-07-31T10:58:28.000Z",
+      "publishedAt": "2026-08-01T08:56:25.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T10:45:35.549Z",
+  "generatedAt": "2026-08-02T13:58:14.295Z",
   "items": [
     {
-      "id": "BjRWOcJWsB4",
-      "videoId": "BjRWOcJWsB4",
-      "title": "【つみみじかん 〜狂オシイホド愛シテル〜】 推しが失踪しました。 #硝子宮生放送",
-      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
-      "startAt": "2026-07-02T11:00:00.000Z",
-      "endAt": "2026-07-02T13:21:00.000Z",
-      "url": "https://www.youtube.com/watch?v=BjRWOcJWsB4",
-      "thumbnailUrl": "https://i.ytimg.com/vi/BjRWOcJWsB4/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-07-02T11:00:00.000Z",
-      "actualStartTime": "2026-07-02T10:56:55.000Z",
-      "actualEndTime": "2026-07-02T13:21:00.000Z",
-      "publishedAt": "2026-07-02T13:27:52.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "3Bj6N-OthA0",
@@ -1432,9 +1430,9 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-02T12:30:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-02T12:25:27.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-01T08:56:25.000Z",
       "source": "youtube-details",

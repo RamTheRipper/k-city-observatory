@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-02T13:58:14.295Z",
+  "generatedAt": "2026-08-02T16:07:39.487Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "3Bj6N-OthA0",
-      "videoId": "3Bj6N-OthA0",
-      "title": "【 #理芽歌うってよRe 】2D公開＆歌枠１周年記念歌枠‼️",
-      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
-      "channelName": "理芽 -RIM-",
-      "startAt": "2026-07-02T11:15:00.000Z",
-      "endAt": "2026-07-02T14:00:51.000Z",
-      "url": "https://www.youtube.com/watch?v=3Bj6N-OthA0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/3Bj6N-OthA0/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-02T11:15:00.000Z",
-      "actualStartTime": "2026-07-02T11:33:25.000Z",
-      "actualEndTime": "2026-07-02T14:00:51.000Z",
-      "publishedAt": "2026-07-02T14:10:07.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "M-qAsVIIrcI",
       "videoId": "M-qAsVIIrcI",
@@ -1418,9 +1364,9 @@
       "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
       "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
       "startAt": "2026-08-02T12:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-02T15:18:18.000Z",
       "url": "https://www.youtube.com/watch?v=eLFYFdnZE2w",
-      "thumbnailUrl": "https://i.ytimg.com/vi/eLFYFdnZE2w/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eLFYFdnZE2w/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1430,11 +1376,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-02T12:30:00.000Z",
       "actualStartTime": "2026-08-02T12:25:27.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-08-01T08:56:25.000Z",
+      "actualEndTime": "2026-08-02T15:18:18.000Z",
+      "publishedAt": "2026-08-02T15:29:00.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T06:30:52.555Z",
+  "generatedAt": "2026-08-03T10:07:13.871Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "M-qAsVIIrcI",
       "videoId": "M-qAsVIIrcI",
@@ -1438,6 +1464,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-02T01:58:13.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "oL-_SZ3V3GM",
+      "videoId": "oL-_SZ3V3GM",
+      "title": "【My Voice Zoo】動物園いこうよ🐏 #硝子宮生放送",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-08-04T11:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=oL-_SZ3V3GM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oL-_SZ3V3GM/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-04T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-03T09:55:22.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

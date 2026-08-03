@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T12:32:46.099Z",
+  "generatedAt": "2026-08-03T15:18:32.966Z",
   "items": [
     {
-      "id": "M-qAsVIIrcI",
-      "videoId": "M-qAsVIIrcI",
-      "title": "【リズム天国ミラクルスターズ】ノリノリかきょちゃんをご覧あれ~♫ #佳鏡院生放送",
-      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
-      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
-      "startAt": "2026-07-03T12:00:00.000Z",
-      "endAt": "2026-07-03T14:35:29.000Z",
-      "url": "https://www.youtube.com/watch?v=M-qAsVIIrcI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/M-qAsVIIrcI/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-07-03T12:00:00.000Z",
-      "actualStartTime": "2026-07-03T11:55:09.000Z",
-      "actualEndTime": "2026-07-03T14:35:29.000Z",
-      "publishedAt": "2026-07-03T14:45:09.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "MdABOdW51gU",
@@ -1394,7 +1392,7 @@
       "startAt": "2026-08-03T11:00:00.000Z",
       "endAt": "2026-08-03T12:18:19.000Z",
       "url": "https://www.youtube.com/watch?v=Ow3TacHo_s8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Ow3TacHo_s8/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ow3TacHo_s8/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1409,7 +1407,7 @@
       "scheduledStartTime": "2026-08-03T11:00:00.000Z",
       "actualStartTime": "2026-08-03T10:55:05.000Z",
       "actualEndTime": "2026-08-03T12:18:19.000Z",
-      "publishedAt": "2026-07-27T07:41:22.000Z",
+      "publishedAt": "2026-08-03T12:45:25.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1421,9 +1419,9 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-08-03T12:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-03T14:44:17.000Z",
       "url": "https://www.youtube.com/watch?v=-xq-FKbICjk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/-xq-FKbICjk/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-xq-FKbICjk/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1433,11 +1431,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-03T12:00:00.000Z",
       "actualStartTime": "2026-08-03T12:11:57.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-08-02T01:58:13.000Z",
+      "actualEndTime": "2026-08-03T14:44:17.000Z",
+      "publishedAt": "2026-08-03T14:56:41.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1466,6 +1464,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-03T09:55:22.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "Yhbyn_GvNl4",
+      "videoId": "Yhbyn_GvNl4",
+      "title": "【雑談】ゆるり🐏🫧 #みやみやゆーとぴあ",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-08-04T13:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Yhbyn_GvNl4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Yhbyn_GvNl4/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-04T13:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-03T10:00:42.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

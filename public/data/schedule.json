@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T10:07:13.871Z",
+  "generatedAt": "2026-08-03T12:32:46.099Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "M-qAsVIIrcI",
       "videoId": "M-qAsVIIrcI",
@@ -1418,7 +1392,7 @@
       "channelId": "UC3VN9h8fokwB2XURWHNcdWw",
       "channelName": "ヰ世界情緒 -ヰ世界電子通信部-",
       "startAt": "2026-08-03T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-03T12:18:19.000Z",
       "url": "https://www.youtube.com/watch?v=Ow3TacHo_s8",
       "thumbnailUrl": "https://i.ytimg.com/vi/Ow3TacHo_s8/maxresdefault_live.jpg",
       "group": "vwp",
@@ -1431,10 +1405,10 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-08-03T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
+      "actualStartTime": "2026-08-03T10:55:05.000Z",
+      "actualEndTime": "2026-08-03T12:18:19.000Z",
       "publishedAt": "2026-07-27T07:41:22.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
@@ -1459,9 +1433,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-03T12:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-03T12:11:57.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-02T01:58:13.000Z",
       "source": "youtube-details",

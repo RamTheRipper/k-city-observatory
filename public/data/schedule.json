@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T14:41:00.855Z",
+  "generatedAt": "2026-08-04T16:58:21.525Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "MdABOdW51gU",
       "videoId": "MdABOdW51gU",
@@ -1447,9 +1421,9 @@
       "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
       "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
       "startAt": "2026-08-04T11:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-04T15:35:14.000Z",
       "url": "https://www.youtube.com/watch?v=oL-_SZ3V3GM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/oL-_SZ3V3GM/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oL-_SZ3V3GM/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1459,11 +1433,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-04T11:30:00.000Z",
       "actualStartTime": "2026-08-04T11:26:37.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-08-03T09:55:22.000Z",
+      "actualEndTime": "2026-08-04T15:35:14.000Z",
+      "publishedAt": "2026-08-04T15:43:20.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

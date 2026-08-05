@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T19:56:44.547Z",
+  "generatedAt": "2026-08-05T20:12:24.662Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -425,7 +425,7 @@
     {
       "id": "ZUkGoc30UiQ",
       "videoId": "ZUkGoc30UiQ",
-      "title": "✧ 心世紀RADIO ✧ #ココロこみゅにてぃ 【03】",
+      "title": "✧ 心世紀RADIO ✧ #ココロこみゅにてぃ 【03】今明かされる、心世紀のホラー耐性",
       "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
       "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
       "startAt": "2026-07-14T10:30:00.000Z",
@@ -1532,9 +1532,9 @@
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-08-05T11:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-05T15:07:07.000Z",
       "url": "https://www.youtube.com/watch?v=bv9m7dJ-FxM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/bv9m7dJ-FxM/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bv9m7dJ-FxM/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1546,9 +1546,38 @@
       "category": "tsumitobatsu",
       "status": "ended",
       "scheduledStartTime": "2026-08-05T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-08-05T04:06:25.000Z",
+      "actualStartTime": "2026-08-05T11:26:23.000Z",
+      "actualEndTime": "2026-08-05T15:07:07.000Z",
+      "publishedAt": "2026-08-05T15:29:17.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "2ygL6y2_DNM",
+      "videoId": "2ygL6y2_DNM",
+      "title": "【JUDGE EYES : 死神の遺言Remastered】 - Chapter 12 「ダーティ ワーク」-  理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-08-05T13:00:00.000Z",
+      "endAt": "2026-08-05T15:59:03.000Z",
+      "url": "https://www.youtube.com/watch?v=2ygL6y2_DNM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2ygL6y2_DNM/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-08-05T13:00:00.000Z",
+      "actualStartTime": "2026-08-05T13:03:29.000Z",
+      "actualEndTime": "2026-08-05T15:59:03.000Z",
+      "publishedAt": "2026-08-05T16:07:53.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

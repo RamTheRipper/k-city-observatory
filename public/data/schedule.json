@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T05:52:09.297Z",
+  "generatedAt": "2026-08-05T09:07:42.625Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "MdABOdW51gU",
       "videoId": "MdABOdW51gU",
@@ -1499,6 +1525,63 @@
       "isManual": false
     },
     {
+      "id": "GYxfP8KGTug",
+      "videoId": "GYxfP8KGTug",
+      "title": "【JUDGE EYES : 死神の遺言Remastered】 - Chapter 11 「バックステージ」-  理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-08-05T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=GYxfP8KGTug",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GYxfP8KGTug/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-05T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-05T06:43:29.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "bv9m7dJ-FxM",
+      "videoId": "bv9m7dJ-FxM",
+      "title": "【Beast of Reincarnation】新作アクションRPG！いくぞ！ #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-05T11:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=bv9m7dJ-FxM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bv9m7dJ-FxM/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-05T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-05T04:06:25.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "PRYfQVgqbus",
       "videoId": "PRYfQVgqbus",
       "title": "【怪談】明透とみる視聴者投稿のホン怖怪談👻【明透/神椿】",
@@ -1522,6 +1605,62 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-07-31T11:30:12.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "iqNUOdwWgOs",
+      "videoId": "iqNUOdwWgOs",
+      "title": "【 #オンライン線香花火】 花火、ことしも、いっしょにやりませんか。  #美古途生放送",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-06T11:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=iqNUOdwWgOs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iqNUOdwWgOs/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-06T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-05T07:51:51.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "uen6r-zsxYM",
+      "videoId": "uen6r-zsxYM",
+      "title": "【🎐初見歓迎歌枠🎐】ずっと真夜中でいいのに。さん曲縛り🌙 #佳鏡院生放送",
+      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
+      "startAt": "2026-08-07T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=uen6r-zsxYM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uen6r-zsxYM/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-07T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-05T01:25:21.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

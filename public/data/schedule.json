@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T09:07:42.625Z",
+  "generatedAt": "2026-08-05T11:25:49.218Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "MdABOdW51gU",
       "videoId": "MdABOdW51gU",
@@ -1499,13 +1473,13 @@
     {
       "id": "7vR25pcNKak",
       "videoId": "7vR25pcNKak",
-      "title": "✧ 心世紀RADIO ✧ #ココロこみゅにてぃ 【04】",
+      "title": "✧ 心世紀RADIO ✧ #ココロこみゅにてぃ 【04】番組のあいさつが決定！",
       "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
       "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
       "startAt": "2026-08-05T10:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-05T10:56:11.000Z",
       "url": "https://www.youtube.com/watch?v=7vR25pcNKak",
-      "thumbnailUrl": "https://i.ytimg.com/vi/7vR25pcNKak/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7vR25pcNKak/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1515,11 +1489,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-08-05T10:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-08-04T06:38:39.000Z",
+      "actualStartTime": "2026-08-05T10:28:27.000Z",
+      "actualEndTime": "2026-08-05T10:56:11.000Z",
+      "publishedAt": "2026-08-05T11:09:27.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1544,9 +1518,9 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-05T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-05T11:03:28.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-05T06:43:29.000Z",
       "source": "youtube-details",

@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T09:08:15.617Z",
+  "generatedAt": "2026-08-06T11:29:29.579Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "-8GtWEylckA",
       "videoId": "-8GtWEylckA",
@@ -1601,9 +1575,9 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-06T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-06T10:59:07.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-07-31T11:30:12.000Z",
       "source": "youtube-details",
@@ -1630,9 +1604,9 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-06T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-06T10:59:25.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-06T07:30:15.000Z",
       "source": "youtube-details",
@@ -1658,9 +1632,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-06T11:30:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-06T11:25:47.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-05T07:51:51.000Z",
       "source": "youtube-details",

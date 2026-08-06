@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T11:29:29.579Z",
+  "generatedAt": "2026-08-06T14:36:20.936Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "-8GtWEylckA",
       "videoId": "-8GtWEylckA",
@@ -1563,9 +1589,9 @@
       "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
       "channelName": "明透 -ᴀsᴜ-",
       "startAt": "2026-08-06T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-06T11:59:05.000Z",
       "url": "https://www.youtube.com/watch?v=PRYfQVgqbus",
-      "thumbnailUrl": "https://i.ytimg.com/vi/PRYfQVgqbus/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PRYfQVgqbus/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1575,11 +1601,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-06T11:00:00.000Z",
       "actualStartTime": "2026-08-06T10:59:07.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-07-31T11:30:12.000Z",
+      "actualEndTime": "2026-08-06T11:59:05.000Z",
+      "publishedAt": "2026-08-06T12:05:48.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1637,6 +1663,34 @@
       "actualStartTime": "2026-08-06T11:25:47.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-05T07:51:51.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "osDjcNKcL0M",
+      "videoId": "osDjcNKcL0M",
+      "title": "【朝雑】ん、心艶やかなり。【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-08-06T21:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=osDjcNKcL0M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/osDjcNKcL0M/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-06T21:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-06T09:45:52.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

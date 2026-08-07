@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T10:05:58.479Z",
+  "generatedAt": "2026-08-07T13:41:06.784Z",
   "items": [
     {
-      "id": "B39rs-DOXes",
-      "videoId": "B39rs-DOXes",
-      "title": "【雑談】歌枠裏話したり新曲についてｵｼｬﾍﾞﾘ【神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-07-07T11:30:00.000Z",
-      "endAt": "2026-07-07T12:34:37.000Z",
-      "url": "https://www.youtube.com/watch?v=B39rs-DOXes",
-      "thumbnailUrl": "https://i.ytimg.com/vi/B39rs-DOXes/maxresdefault.jpg",
-      "group": "sinsekai_record",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "sinsekai_record"
+        "vwp"
       ],
-      "primaryGroupId": "sinsekai_record",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-07-07T11:30:00.000Z",
-      "actualStartTime": "2026-07-07T11:29:25.000Z",
-      "actualEndTime": "2026-07-07T12:34:37.000Z",
-      "publishedAt": "2026-07-07T13:35:13.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "n00OtOEUNaI",
@@ -1660,11 +1658,69 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-07T12:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-07T11:55:34.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-05T01:25:21.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "pLJ0n4njxB0",
+      "videoId": "pLJ0n4njxB0",
+      "title": "【冒頭無料配信】KAMITSUBAKI WARS 2026 神椿渋谷戦線 少女革命計画 2nd LIVE 『Revolutio』",
+      "channelId": "UCHIgbtz8t8snEwWlE1eyS2g",
+      "channelName": "少女革命計画",
+      "startAt": "2026-08-08T08:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=pLJ0n4njxB0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pLJ0n4njxB0/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project",
+        "official"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "official",
+        "group"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-08T08:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-07-17T04:38:29.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "0Dw4Si1zuLk",
+      "videoId": "0Dw4Si1zuLk",
+      "title": "【新衣装\"Aries\"Live2Dお披露目🐑&告知】",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "startAt": "2026-08-08T12:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=0Dw4Si1zuLk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0Dw4Si1zuLk/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-08T12:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-07T13:08:42.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

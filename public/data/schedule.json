@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T14:36:20.936Z",
+  "generatedAt": "2026-08-07T00:16:49.146Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -27,34 +27,6 @@
       "source": "manual",
       "startAtSource": "manual-scheduledStartTime",
       "isManual": true
-    },
-    {
-      "id": "-8GtWEylckA",
-      "videoId": "-8GtWEylckA",
-      "title": "【リズム天国 ミラクルスターズ】リズムを𝑩𝑶𝑫𝒀に刻み込め #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-07-06T12:00:00.000Z",
-      "endAt": "2026-07-06T15:15:20.000Z",
-      "url": "https://www.youtube.com/watch?v=-8GtWEylckA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/-8GtWEylckA/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-06T12:00:00.000Z",
-      "actualStartTime": "2026-07-06T11:55:27.000Z",
-      "actualEndTime": "2026-07-06T15:15:20.000Z",
-      "publishedAt": "2026-07-06T15:26:27.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
     },
     {
       "id": "B39rs-DOXes",
@@ -1674,9 +1646,9 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-08-06T21:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-06T22:50:13.000Z",
       "url": "https://www.youtube.com/watch?v=osDjcNKcL0M",
-      "thumbnailUrl": "https://i.ytimg.com/vi/osDjcNKcL0M/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/osDjcNKcL0M/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1686,11 +1658,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-08-06T21:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-08-06T09:45:52.000Z",
+      "actualStartTime": "2026-08-06T21:29:25.000Z",
+      "actualEndTime": "2026-08-06T22:50:13.000Z",
+      "publishedAt": "2026-08-06T23:25:30.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

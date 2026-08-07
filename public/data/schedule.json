@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-07T00:16:49.146Z",
+  "generatedAt": "2026-08-07T00:27:30.350Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1589,9 +1589,9 @@
       "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
       "channelName": "理芽 -STRANGE GIRL CLUB-",
       "startAt": "2026-08-06T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-06T18:25:30.000Z",
       "url": "https://www.youtube.com/watch?v=8GLwzqOcus0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/8GLwzqOcus0/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8GLwzqOcus0/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1602,11 +1602,11 @@
         "membership"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-06T11:00:00.000Z",
       "actualStartTime": "2026-08-06T10:59:25.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-08-06T07:30:15.000Z",
+      "actualEndTime": "2026-08-06T18:25:30.000Z",
+      "publishedAt": "2026-08-06T18:42:53.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1618,9 +1618,9 @@
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
       "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2026-08-06T11:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-06T15:20:35.000Z",
       "url": "https://www.youtube.com/watch?v=iqNUOdwWgOs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/iqNUOdwWgOs/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iqNUOdwWgOs/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1630,11 +1630,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-06T11:30:00.000Z",
       "actualStartTime": "2026-08-06T11:25:47.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-08-05T07:51:51.000Z",
+      "actualEndTime": "2026-08-06T15:20:35.000Z",
+      "publishedAt": "2026-08-06T15:31:06.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T15:36:45.464Z",
+  "generatedAt": "2026-08-08T19:00:00.862Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "IemZhnC0iYs",
       "videoId": "IemZhnC0iYs",
@@ -1560,6 +1586,34 @@
       "isManual": false
     },
     {
+      "id": "l8CMWkESFF0",
+      "videoId": "l8CMWkESFF0",
+      "title": "【マリオカート 8DX】こっそり練習！げしドリフト #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-09T02:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=l8CMWkESFF0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/l8CMWkESFF0/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-09T02:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-08T15:19:50.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "KJ3hJFxG8O4",
       "videoId": "KJ3hJFxG8O4",
       "title": "【プラトニカ・スペース】#2 ちょい速のみこ⋆͛🪐   #美古途生放送",
@@ -1611,6 +1665,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-04T04:38:20.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "1bb_g5Jg1nw",
+      "videoId": "1bb_g5Jg1nw",
+      "title": "【#マリオカート8DX 】「KOKO芸夢祭（夏）」【KAMITSUBAKI STUDIO / 幸祜】",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "startAt": "2026-08-13T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=1bb_g5Jg1nw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1bb_g5Jg1nw/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-13T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-08T13:28:10.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

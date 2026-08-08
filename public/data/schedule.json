@@ -1,118 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T09:46:10.891Z",
+  "generatedAt": "2026-08-08T13:13:54.954Z",
   "items": [
     {
-      "id": "M09RG8NWSD8",
-      "videoId": "M09RG8NWSD8",
-      "title": "明透 - レディース・ロール・メソッド / ASU - Feminine Role Method (Official Music Video)【神椿】",
-      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
-      "channelName": "明透 -ᴀsᴜ-",
-      "startAt": "2026-07-08T10:00:00.000Z",
-      "endAt": "2026-07-08T10:04:48.000Z",
-      "url": "https://www.youtube.com/watch?v=M09RG8NWSD8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/M09RG8NWSD8/maxresdefault.jpg",
-      "group": "sinsekai_record",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "sinsekai_record"
+        "vwp"
       ],
-      "primaryGroupId": "sinsekai_record",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-07-08T10:00:00.000Z",
-      "actualStartTime": "2026-07-08T10:00:06.000Z",
-      "actualEndTime": "2026-07-08T10:04:48.000Z",
-      "publishedAt": "2026-07-08T10:00:06.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "9gPO_Kd4OxY",
-      "videoId": "9gPO_Kd4OxY",
-      "title": "琶舞 - Alt Skin/ BEMA - Alt Skin(Official Music Video)【神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-07-08T10:30:00.000Z",
-      "endAt": "2026-07-08T10:35:28.000Z",
-      "url": "https://www.youtube.com/watch?v=9gPO_Kd4OxY",
-      "thumbnailUrl": "https://i.ytimg.com/vi/9gPO_Kd4OxY/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-08T10:30:00.000Z",
-      "actualStartTime": "2026-07-08T10:30:06.000Z",
-      "actualEndTime": "2026-07-08T10:35:28.000Z",
-      "publishedAt": "2026-07-08T10:30:06.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "p1WQobWjF88",
-      "videoId": "p1WQobWjF88",
-      "title": "あすべまる！〜明透&琶舞 初・3Dライブ「Cross Night LIVE」開催告知SP！〜 【明透/琶舞/神椿】",
-      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
-      "channelName": "明透 -ᴀsᴜ-",
-      "startAt": "2026-07-08T11:00:00.000Z",
-      "endAt": "2026-07-08T12:12:44.000Z",
-      "url": "https://www.youtube.com/watch?v=p1WQobWjF88",
-      "thumbnailUrl": "https://i.ytimg.com/vi/p1WQobWjF88/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-08T11:00:00.000Z",
-      "actualStartTime": "2026-07-08T10:59:05.000Z",
-      "actualEndTime": "2026-07-08T12:12:44.000Z",
-      "publishedAt": "2026-07-08T12:24:52.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "lPRvG9SgEHQ",
-      "videoId": "lPRvG9SgEHQ",
-      "title": "【歌枠】ちょびゆるうた ⭒₊ ⊹☾ #氷夏至生放送",
-      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-07-08T11:00:00.000Z",
-      "endAt": "2026-07-08T12:32:41.000Z",
-      "url": "https://www.youtube.com/watch?v=lPRvG9SgEHQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/lPRvG9SgEHQ/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-08T11:00:00.000Z",
-      "actualStartTime": "2026-07-08T10:55:15.000Z",
-      "actualEndTime": "2026-07-08T12:32:41.000Z",
-      "publishedAt": "2026-07-08T13:14:41.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "IemZhnC0iYs",
@@ -1662,9 +1576,9 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-08T12:30:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-08T12:27:56.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-07T13:08:42.000Z",
       "source": "youtube-details",

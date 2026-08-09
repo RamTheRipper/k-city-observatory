@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T09:48:47.642Z",
+  "generatedAt": "2026-08-09T13:17:02.309Z",
   "items": [
     {
-      "id": "QqYIehGweao",
-      "videoId": "QqYIehGweao",
-      "title": "🕯【 ゲーム実況 】彼女の見えている世界。Milk outside a bag of milk outside a bag of milk #御莉姫生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-07-09T10:00:00.000Z",
-      "endAt": "2026-07-09T12:31:48.000Z",
-      "url": "https://www.youtube.com/watch?v=QqYIehGweao",
-      "thumbnailUrl": "https://i.ytimg.com/vi/QqYIehGweao/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-07-09T10:00:00.000Z",
-      "actualStartTime": "2026-07-09T09:55:33.000Z",
-      "actualEndTime": "2026-07-09T12:31:48.000Z",
-      "publishedAt": "2026-07-09T12:42:53.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "9WD_bDYpRZY",
@@ -1605,9 +1603,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-09T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-09T10:56:56.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-09T03:32:14.000Z",
       "source": "youtube-details",
@@ -1638,6 +1636,64 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-04T04:38:20.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "j3Lj-JovOnc",
+      "videoId": "j3Lj-JovOnc",
+      "title": "【マリオカート8DX】幸祜ﾁｬﾝ先輩と一緒に!!駆け抜ける🚗 #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-10T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=j3Lj-JovOnc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/j3Lj-JovOnc/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-10T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-09T10:53:45.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "DPORs0g91ZM",
+      "videoId": "DPORs0g91ZM",
+      "title": "【全員集合】少女革命計画 2nd LIVE 『Revoltio』感想戦【神椿】",
+      "channelId": "UCHIgbtz8t8snEwWlE1eyS2g",
+      "channelName": "少女革命計画",
+      "startAt": "2026-08-11T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=DPORs0g91ZM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DPORs0g91ZM/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project",
+        "official"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "official",
+        "group"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-11T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-05T05:02:33.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

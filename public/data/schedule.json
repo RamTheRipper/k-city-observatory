@@ -1,35 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T15:38:40.495Z",
+  "generatedAt": "2026-08-09T19:02:52.396Z",
   "items": [
     {
-      "id": "9WD_bDYpRZY",
-      "videoId": "9WD_bDYpRZY",
-      "title": "【JUDGE EYES : 死神の遺言Remastered】 - Chapter 8「親子盃」-    理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
-      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
-      "channelName": "理芽 -STRANGE GIRL CLUB-",
-      "startAt": "2026-07-09T11:00:00.000Z",
-      "endAt": "2026-07-09T15:59:02.000Z",
-      "url": "https://www.youtube.com/watch?v=9WD_bDYpRZY",
-      "thumbnailUrl": "https://i.ytimg.com/vi/9WD_bDYpRZY/maxresdefault.jpg",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
       "group": "vwp",
       "groupIds": [
         "vwp"
       ],
-      "primaryGroupId": "vwp",
       "tags": [
-        "sub",
-        "membership"
+        "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-07-09T11:00:00.000Z",
-      "actualStartTime": "2026-07-09T10:59:15.000Z",
-      "actualEndTime": "2026-07-09T15:59:02.000Z",
-      "publishedAt": "2026-07-09T16:16:01.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "D1mFYMYdy9M",
@@ -1582,6 +1579,34 @@
       "actualStartTime": "2026-08-09T10:56:56.000Z",
       "actualEndTime": "2026-08-09T15:03:36.000Z",
       "publishedAt": "2026-08-09T15:16:05.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "RATquTLpaiI",
+      "videoId": "RATquTLpaiI",
+      "title": "【朝枠】みこもにっ！今週もふんわりと🫧 .* #美古途生放送",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-09T22:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=RATquTLpaiI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RATquTLpaiI/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-09T22:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-09T15:36:39.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

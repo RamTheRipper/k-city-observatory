@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T04:24:03.766Z",
+  "generatedAt": "2026-08-09T07:18:19.155Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "QqYIehGweao",
       "videoId": "QqYIehGweao",
@@ -1582,6 +1608,34 @@
       "actualStartTime": "2026-08-09T03:56:45.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-07T13:36:34.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "IwvNyF0LGsM",
+      "videoId": "IwvNyF0LGsM",
+      "title": "【Beast of Reincarnation】エマの過去を覗きに #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-09T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=IwvNyF0LGsM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IwvNyF0LGsM/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-09T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-09T03:32:14.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

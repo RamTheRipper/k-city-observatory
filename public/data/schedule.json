@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T04:45:38.226Z",
+  "generatedAt": "2026-08-10T08:05:33.699Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "D1mFYMYdy9M",
       "videoId": "D1mFYMYdy9M",
@@ -1695,6 +1721,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-08T13:28:10.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "jk0NO9O5Ihc",
+      "videoId": "jk0NO9O5Ihc",
+      "title": "【マリオカート8DX】アクセル全開で突き進むマリオカート！！【佳鏡院視点】 #KOKO芸夢祭",
+      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
+      "startAt": "2026-08-13T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=jk0NO9O5Ihc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jk0NO9O5Ihc/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-13T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-10T01:22:58.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

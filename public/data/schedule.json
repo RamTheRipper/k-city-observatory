@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T10:05:31.439Z",
+  "generatedAt": "2026-08-11T13:44:30.382Z",
   "items": [
     {
-      "id": "fKx-VDkGoY8",
-      "videoId": "fKx-VDkGoY8",
-      "title": "【神椿報奏部 vol.62】アーカイブ：7/17（金）23:59まで",
-      "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
-      "channelName": "ヰ世界情緒 -Isekaijoucho-",
-      "startAt": "2026-07-11T11:00:00.000Z",
-      "endAt": "2026-07-11T12:01:45.000Z",
-      "url": "https://www.youtube.com/watch?v=fKx-VDkGoY8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/fKx-VDkGoY8/maxresdefault.jpg",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
       "group": "vwp",
       "groupIds": [
         "vwp"
       ],
-      "primaryGroupId": "vwp",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-07-11T11:00:00.000Z",
-      "actualStartTime": "2026-07-11T10:57:07.000Z",
-      "actualEndTime": "2026-07-11T12:01:45.000Z",
-      "publishedAt": "2026-07-11T12:14:21.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "Fle5mglccuE",
@@ -1620,9 +1618,9 @@
       "channelId": "UCHIgbtz8t8snEwWlE1eyS2g",
       "channelName": "少女革命計画",
       "startAt": "2026-08-11T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-11T11:23:51.000Z",
       "url": "https://www.youtube.com/watch?v=DPORs0g91ZM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/DPORs0g91ZM/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DPORs0g91ZM/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project",
@@ -1634,11 +1632,39 @@
         "group"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-11T10:00:00.000Z",
       "actualStartTime": "2026-08-11T09:55:12.000Z",
+      "actualEndTime": "2026-08-11T11:23:51.000Z",
+      "publishedAt": "2026-08-11T12:35:34.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "nGPRaWNGIgA",
+      "videoId": "nGPRaWNGIgA",
+      "title": "【Beast of Reincarnation】ゴーレム、どこなの #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-12T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=nGPRaWNGIgA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nGPRaWNGIgA/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-12T11:00:00.000Z",
+      "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-08-05T05:02:33.000Z",
+      "publishedAt": "2026-08-11T11:58:07.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1751,6 +1777,63 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-11T05:55:22.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "1wKeUWTc548",
+      "videoId": "1wKeUWTc548",
+      "title": "【マリオカート8DX】勝ちにいく、最強だから 【夕凪機視点】 #KOKO芸夢祭",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-13T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=1wKeUWTc548",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1wKeUWTc548/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-13T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-11T12:01:34.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "O94WL0PcADE",
+      "videoId": "O94WL0PcADE",
+      "title": "【✧アプデ3Dお披露目✧】お顔がアップデートされました💄｜春猿火生配信",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-08-16T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=O94WL0PcADE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/O94WL0PcADE/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-16T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-11T08:59:10.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

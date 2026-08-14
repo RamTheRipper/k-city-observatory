@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T10:11:59.520Z",
+  "generatedAt": "2026-08-14T13:45:27.524Z",
   "items": [
     {
-      "id": "ZUkGoc30UiQ",
-      "videoId": "ZUkGoc30UiQ",
-      "title": "✧ 心世紀RADIO ✧ #ココロこみゅにてぃ 【03】今明かされる、心世紀のホラー耐性",
-      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
-      "startAt": "2026-07-14T10:30:00.000Z",
-      "endAt": "2026-07-14T10:51:19.000Z",
-      "url": "https://www.youtube.com/watch?v=ZUkGoc30UiQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ZUkGoc30UiQ/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-07-14T10:30:00.000Z",
-      "actualStartTime": "2026-07-14T10:30:08.000Z",
-      "actualEndTime": "2026-07-14T10:51:19.000Z",
-      "publishedAt": "2026-07-14T11:05:58.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "Rtr9iwrczyA",
@@ -1897,6 +1895,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-11T08:59:10.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "oin1m3renfo",
+      "videoId": "oin1m3renfo",
+      "title": "✨🌻 明透 - 5周年記念配信！🌻✨ 【神椿】",
+      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
+      "channelName": "明透 -ᴀsᴜ-",
+      "startAt": "2026-08-23T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=oin1m3renfo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oin1m3renfo/maxresdefault_live.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-23T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-04T00:29:41.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

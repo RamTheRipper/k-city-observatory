@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T18:48:57.126Z",
+  "generatedAt": "2026-08-15T18:59:46.926Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1866,6 +1866,63 @@
       "actualStartTime": "2026-08-13T11:27:57.000Z",
       "actualEndTime": "2026-08-13T13:04:44.000Z",
       "publishedAt": "2026-08-13T13:09:22.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "jzmBC-CUAto",
+      "videoId": "jzmBC-CUAto",
+      "title": "【突然のゲリラ配信】KOKO芸夢祭あじゃましたスーパーウルトラスペシャル🚗🎮",
+      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
+      "channelName": "幸祜 -幸福拡張部電脳科-",
+      "startAt": "2026-08-15T04:45:00.000Z",
+      "endAt": "2026-08-15T07:37:29.000Z",
+      "url": "https://www.youtube.com/watch?v=jzmBC-CUAto",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jzmBC-CUAto/hqdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-08-15T04:45:00.000Z",
+      "actualStartTime": "2026-08-15T04:47:09.000Z",
+      "actualEndTime": "2026-08-15T07:37:29.000Z",
+      "publishedAt": "2026-08-15T07:46:36.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "reK5DbRvToE",
+      "videoId": "reK5DbRvToE",
+      "title": "【 #理芽歌うってよ 】《歌枠》 夏ソングもオリ曲も歌っちゃうってよ(^^♪",
+      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "channelName": "理芽 -RIM-",
+      "startAt": "2026-08-15T12:00:00.000Z",
+      "endAt": "2026-08-15T14:26:40.000Z",
+      "url": "https://www.youtube.com/watch?v=reK5DbRvToE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/reK5DbRvToE/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-08-15T12:00:00.000Z",
+      "actualStartTime": "2026-08-15T12:00:35.000Z",
+      "actualEndTime": "2026-08-15T14:26:40.000Z",
+      "publishedAt": "2026-08-15T14:33:51.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

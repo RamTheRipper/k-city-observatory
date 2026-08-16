@@ -1,118 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T13:02:07.517Z",
+  "generatedAt": "2026-08-16T15:28:31.258Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "Rtr9iwrczyA",
-      "videoId": "Rtr9iwrczyA",
-      "title": "【違う冬のぼくら】 ふたり。どこか遠くへ🦌❄️  #ひめみこ生放送",
-      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
-      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-07-16T10:00:00.000Z",
-      "endAt": "2026-07-16T13:46:36.000Z",
-      "url": "https://www.youtube.com/watch?v=Rtr9iwrczyA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Rtr9iwrczyA/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-16T10:00:00.000Z",
-      "actualStartTime": "2026-07-16T09:56:51.000Z",
-      "actualEndTime": "2026-07-16T13:46:36.000Z",
-      "publishedAt": "2026-07-16T13:57:56.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "qVuoB3Vb8Ek",
-      "videoId": "qVuoB3Vb8Ek",
-      "title": "🕯【 ゲーム実況 】違う冬のぼくら / 御莉姫視点 #ひめみこ生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-07-16T10:00:00.000Z",
-      "endAt": "2026-07-16T13:45:14.000Z",
-      "url": "https://www.youtube.com/watch?v=qVuoB3Vb8Ek",
-      "thumbnailUrl": "https://i.ytimg.com/vi/qVuoB3Vb8Ek/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-16T10:00:00.000Z",
-      "actualStartTime": "2026-07-16T09:56:52.000Z",
-      "actualEndTime": "2026-07-16T13:45:14.000Z",
-      "publishedAt": "2026-07-16T14:01:07.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "mf9ets77150",
-      "videoId": "mf9ets77150",
-      "title": "【JUDGE EYES : 死神の遺言Remastered】 - Chapter 9 「夢の薬」-  理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
-      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
-      "channelName": "理芽 -STRANGE GIRL CLUB-",
-      "startAt": "2026-07-16T11:00:00.000Z",
-      "endAt": "2026-07-16T13:09:39.000Z",
-      "url": "https://www.youtube.com/watch?v=mf9ets77150",
-      "thumbnailUrl": "https://i.ytimg.com/vi/mf9ets77150/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-16T11:00:00.000Z",
-      "actualStartTime": "2026-07-16T10:58:44.000Z",
-      "actualEndTime": "2026-07-16T13:09:39.000Z",
-      "publishedAt": "2026-07-16T13:17:00.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "rtT2TMv8Frg",
       "videoId": "rtT2TMv8Frg",
@@ -1963,7 +1852,7 @@
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-08-16T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-16T15:10:05.000Z",
       "url": "https://www.youtube.com/watch?v=p_T8D3B6FII",
       "thumbnailUrl": "https://i.ytimg.com/vi/p_T8D3B6FII/maxresdefault_live.jpg",
       "group": "girls_revolution_project",
@@ -1975,10 +1864,10 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-16T11:00:00.000Z",
       "actualStartTime": "2026-08-16T10:57:23.000Z",
-      "actualEndTime": null,
+      "actualEndTime": "2026-08-16T15:10:05.000Z",
       "publishedAt": "2026-08-15T14:04:31.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",

@@ -1,62 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T09:51:11.466Z",
+  "generatedAt": "2026-08-17T13:07:33.646Z",
   "items": [
     {
-      "id": "8-oyz1FjJiM",
-      "videoId": "8-oyz1FjJiM",
-      "title": "【雑談】初歌枠めっちゃたのしかった～！✨💫【明透/神椿】",
-      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
-      "channelName": "明透 -ᴀsᴜ-",
-      "startAt": "2026-07-17T11:00:00.000Z",
-      "endAt": "2026-07-17T12:04:21.000Z",
-      "url": "https://www.youtube.com/watch?v=8-oyz1FjJiM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/8-oyz1FjJiM/maxresdefault.jpg",
-      "group": "sinsekai_record",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "sinsekai_record"
+        "vwp"
       ],
-      "primaryGroupId": "sinsekai_record",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-07-17T11:00:00.000Z",
-      "actualStartTime": "2026-07-17T10:59:07.000Z",
-      "actualEndTime": "2026-07-17T12:04:21.000Z",
-      "publishedAt": "2026-07-18T00:13:32.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "-Q0dWTCLltE",
-      "videoId": "-Q0dWTCLltE",
-      "title": "【歌枠】夏曲、歌うよ🌻 #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-07-17T11:00:00.000Z",
-      "endAt": "2026-07-17T12:43:50.000Z",
-      "url": "https://www.youtube.com/watch?v=-Q0dWTCLltE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/-Q0dWTCLltE/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-17T11:00:00.000Z",
-      "actualStartTime": "2026-07-17T10:56:08.000Z",
-      "actualEndTime": "2026-07-17T12:43:50.000Z",
-      "publishedAt": "2026-07-17T13:16:42.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "pgdI0ub7LeI",
@@ -1891,9 +1861,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-17T11:30:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-17T11:31:03.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-16T15:12:21.000Z",
       "source": "youtube-details",

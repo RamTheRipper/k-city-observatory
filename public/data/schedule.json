@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T03:50:24.760Z",
+  "generatedAt": "2026-08-18T07:05:51.218Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "pgdI0ub7LeI",
       "videoId": "pgdI0ub7LeI",
@@ -1840,6 +1866,35 @@
       "actualStartTime": "2026-08-17T11:31:03.000Z",
       "actualEndTime": "2026-08-17T14:59:59.000Z",
       "publishedAt": "2026-08-17T15:07:35.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "V4-g2WZEXrc",
+      "videoId": "V4-g2WZEXrc",
+      "title": "【〈MEMBERSHIP ONLY〉【「ミュウツーの逆襲EVOLUTION 」同時視聴会👀】幸祜サブch配信「幸福拡張部電脳科 vol.52」",
+      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
+      "channelName": "幸祜 -幸福拡張部電脳科-",
+      "startAt": "2026-08-18T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=V4-g2WZEXrc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/V4-g2WZEXrc/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-18T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-18T06:13:54.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

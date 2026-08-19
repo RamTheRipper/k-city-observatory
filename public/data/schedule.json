@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-19T18:54:48.666Z",
+  "generatedAt": "2026-08-19T19:05:15.513Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1816,6 +1816,34 @@
       "isManual": false
     },
     {
+      "id": "zuzQto4u1-M",
+      "videoId": "zuzQto4u1-M",
+      "title": "【 #ハウメニ 】《新曲リリース記念❕》 MV公開まで一緒に語っちゃお ^_ｰ ໒꒱︎︎𓂃⟡.·",
+      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "channelName": "理芽 -RIM-",
+      "startAt": "2026-08-19T10:00:00.000Z",
+      "endAt": "2026-08-19T11:20:15.000Z",
+      "url": "https://www.youtube.com/watch?v=zuzQto4u1-M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zuzQto4u1-M/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-08-19T10:00:00.000Z",
+      "actualStartTime": "2026-08-19T10:02:27.000Z",
+      "actualEndTime": "2026-08-19T11:20:15.000Z",
+      "publishedAt": "2026-08-19T11:24:38.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "xIj6JxLJapA",
       "videoId": "xIj6JxLJapA",
       "title": "【マシュマロ雑談】CONAちゃんが来てくれたぞー！ #夕凪機生放送",
@@ -1839,6 +1867,34 @@
       "actualStartTime": "2026-08-19T10:55:47.000Z",
       "actualEndTime": "2026-08-19T12:25:12.000Z",
       "publishedAt": "2026-08-19T12:40:40.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "A0iW2hCcwaE",
+      "videoId": "A0iW2hCcwaE",
+      "title": "理芽 - ハウメニ / RIM - How Many?｜from 神椿",
+      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "channelName": "理芽 -RIM-",
+      "startAt": "2026-08-19T11:00:00.000Z",
+      "endAt": "2026-08-19T11:05:37.000Z",
+      "url": "https://www.youtube.com/watch?v=A0iW2hCcwaE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/A0iW2hCcwaE/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-08-19T11:00:00.000Z",
+      "actualStartTime": "2026-08-19T11:00:07.000Z",
+      "actualEndTime": "2026-08-19T11:05:37.000Z",
+      "publishedAt": "2026-08-19T11:00:07.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

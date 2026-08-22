@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T09:33:57.003Z",
+  "generatedAt": "2026-08-22T13:02:14.971Z",
   "items": [
     {
-      "id": "gJnOOfMJyqk",
-      "videoId": "gJnOOfMJyqk",
-      "title": "【アークナイツ：エンドフィールド】ヰ世界情緒 #76「深海のフレイム」【Official Music Video】",
-      "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
-      "channelName": "ヰ世界情緒 -Isekaijoucho-",
-      "startAt": "2026-07-22T10:00:00.000Z",
-      "endAt": "2026-07-22T10:05:46.000Z",
-      "url": "https://www.youtube.com/watch?v=gJnOOfMJyqk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/gJnOOfMJyqk/maxresdefault.jpg",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
       "group": "vwp",
       "groupIds": [
         "vwp"
       ],
-      "primaryGroupId": "vwp",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-07-22T10:00:00.000Z",
-      "actualStartTime": "2026-07-22T10:00:06.000Z",
-      "actualEndTime": "2026-07-22T10:05:46.000Z",
-      "publishedAt": "2026-07-22T10:00:06.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "Nbjss9UZhRg",

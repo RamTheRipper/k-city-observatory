@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T21:28:23.069Z",
+  "generatedAt": "2026-08-23T02:00:51.318Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "75XKDU94Pz8",
       "videoId": "75XKDU94Pz8",
@@ -1953,6 +1979,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-04T00:29:41.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "8pV_ElshDq4",
+      "videoId": "8pV_ElshDq4",
+      "title": "🕯【 歌枠 】縛り歌枠。【 米津玄師・ハチさん 】 #御莉姫生放送",
+      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
+      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
+      "startAt": "2026-08-24T10:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=8pV_ElshDq4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8pV_ElshDq4/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-24T10:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-23T00:40:40.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

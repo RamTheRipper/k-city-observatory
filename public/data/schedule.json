@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-23T13:03:33.117Z",
+  "generatedAt": "2026-08-23T15:29:42.399Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "75XKDU94Pz8",
-      "videoId": "75XKDU94Pz8",
-      "title": "【歌枠】神椿の曲を歌っちゃうぞ⟡.· #氷夏至生放送",
-      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-07-23T11:00:00.000Z",
-      "endAt": "2026-07-23T13:12:49.000Z",
-      "url": "https://www.youtube.com/watch?v=75XKDU94Pz8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/75XKDU94Pz8/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-23T11:00:00.000Z",
-      "actualStartTime": "2026-07-23T10:55:28.000Z",
-      "actualEndTime": "2026-07-23T13:12:49.000Z",
-      "publishedAt": "2026-07-23T13:19:42.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "7ReQvldVWIU",
       "videoId": "7ReQvldVWIU",
@@ -1958,13 +1904,13 @@
     {
       "id": "oin1m3renfo",
       "videoId": "oin1m3renfo",
-      "title": "✨🌻 明透 - 5周年記念配信！🌻✨ 【神椿】",
+      "title": "✨🌻 明透 - 5周年記念配信！🌻✨ 【琶舞/美古途/理芽/梓川/米山舞/神椿】",
       "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
       "channelName": "明透 -ᴀsᴜ-",
       "startAt": "2026-08-23T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-23T13:10:30.000Z",
       "url": "https://www.youtube.com/watch?v=oin1m3renfo",
-      "thumbnailUrl": "https://i.ytimg.com/vi/oin1m3renfo/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oin1m3renfo/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1974,11 +1920,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-23T11:00:00.000Z",
       "actualStartTime": "2026-08-23T10:59:09.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-08-04T00:29:41.000Z",
+      "actualEndTime": "2026-08-23T13:10:30.000Z",
+      "publishedAt": "2026-08-23T13:17:43.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

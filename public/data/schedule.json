@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24T09:55:52.986Z",
+  "generatedAt": "2026-08-24T13:14:57.418Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "zO2EHdPywHc",
       "videoId": "zO2EHdPywHc",
@@ -1935,9 +1961,9 @@
       "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
       "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
       "startAt": "2026-08-24T10:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-24T12:08:39.000Z",
       "url": "https://www.youtube.com/watch?v=8pV_ElshDq4",
-      "thumbnailUrl": "https://i.ytimg.com/vi/8pV_ElshDq4/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8pV_ElshDq4/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1947,11 +1973,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-08-24T10:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-08-23T00:40:40.000Z",
+      "actualStartTime": "2026-08-24T10:26:45.000Z",
+      "actualEndTime": "2026-08-24T12:08:39.000Z",
+      "publishedAt": "2026-08-24T12:39:39.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

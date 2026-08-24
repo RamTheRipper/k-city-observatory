@@ -1,62 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24T07:30:02.615Z",
+  "generatedAt": "2026-08-24T09:55:52.986Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "7ReQvldVWIU",
-      "videoId": "7ReQvldVWIU",
-      "title": "『みかんれでぃお #1 自己紹介編』",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "2026-07-24T09:00:00.000Z",
-      "endAt": "2026-07-24T09:26:00.000Z",
-      "url": "https://www.youtube.com/watch?v=7ReQvldVWIU",
-      "thumbnailUrl": "https://i.ytimg.com/vi/7ReQvldVWIU/hqdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-07-24T09:00:00.000Z",
-      "actualStartTime": "2026-07-24T09:00:05.000Z",
-      "actualEndTime": "2026-07-24T09:26:00.000Z",
-      "publishedAt": "2026-07-24T09:00:05.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "zO2EHdPywHc",
       "videoId": "zO2EHdPywHc",

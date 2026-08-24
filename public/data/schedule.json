@@ -1,35 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24T15:47:25.517Z",
+  "generatedAt": "2026-08-24T19:01:01.970Z",
   "items": [
     {
-      "id": "Oke7D_ig9vM",
-      "videoId": "Oke7D_ig9vM",
-      "title": "【暑すぎるので怖いゲームをしよう。ゆうひ不動産/黄昏ぐるめなび】春猿火生配信",
-      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
-      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
-      "startAt": "2026-07-24T16:00:00.000Z",
-      "endAt": "2026-07-24T17:59:54.000Z",
-      "url": "https://www.youtube.com/watch?v=Oke7D_ig9vM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Oke7D_ig9vM/maxresdefault.jpg",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
       "group": "vwp",
       "groupIds": [
         "vwp"
       ],
-      "primaryGroupId": "vwp",
       "tags": [
-        "sub",
-        "membership"
+        "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-07-24T16:00:00.000Z",
-      "actualStartTime": "2026-07-24T16:00:13.000Z",
-      "actualEndTime": "2026-07-24T17:59:54.000Z",
-      "publishedAt": "2026-07-24T18:41:49.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "XUVu4bOICT4",

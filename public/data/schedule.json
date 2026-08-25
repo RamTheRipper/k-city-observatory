@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T09:43:09.791Z",
+  "generatedAt": "2026-08-25T13:12:57.627Z",
   "items": [
     {
-      "id": "XUVu4bOICT4",
-      "videoId": "XUVu4bOICT4",
-      "title": "CIEL STREAMING COVER LIVE「ストロベリーライブ3」（STRAWBERRY LIVE3）",
-      "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
-      "channelName": "CIEL",
-      "startAt": "2026-07-25T09:30:00.000Z",
-      "endAt": "2026-07-25T10:55:39.000Z",
-      "url": "https://www.youtube.com/watch?v=XUVu4bOICT4",
-      "thumbnailUrl": "https://i.ytimg.com/vi/XUVu4bOICT4/maxresdefault.jpg",
-      "group": "kuusou",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "kuusou"
+        "vwp"
       ],
-      "primaryGroupId": "kuusou",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-07-25T09:30:00.000Z",
-      "actualStartTime": "2026-07-25T09:30:16.000Z",
-      "actualEndTime": "2026-07-25T10:55:39.000Z",
-      "publishedAt": "2026-07-25T11:09:40.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "6r4zKCZkmcA",

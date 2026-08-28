@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T02:18:34.885Z",
+  "generatedAt": "2026-08-28T11:27:29.582Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1983,6 +1983,62 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-08-26T04:38:35.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "mUmAjEp_X3w",
+      "videoId": "mUmAjEp_X3w",
+      "title": "【歌配信】Sing #03 /ワンマンのお話もします🪐⟡【春猿火/神椿】",
+      "channelId": "UCE7gtjLeZKNXLp5YURzYYeg",
+      "channelName": "春猿火 -HARUSARUHI-",
+      "startAt": "2026-09-01T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=mUmAjEp_X3w",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mUmAjEp_X3w/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-09-01T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-28T06:10:13.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "LORkRmRxV0Y",
+      "videoId": "LORkRmRxV0Y",
+      "title": "【めっちゃカメレオン】ゆうなぎげーむぱーてぃ！スタート！ #ゆうなぎげむぱ",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-09-01T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=LORkRmRxV0Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LORkRmRxV0Y/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-09-01T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-28T09:38:11.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

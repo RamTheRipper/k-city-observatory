@@ -1,7 +1,62 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-30T09:07:45.574Z",
+  "generatedAt": "2026-08-30T11:57:30.307Z",
   "items": [
+    {
+      "id": "4qD5vEdwf9Y",
+      "videoId": "4qD5vEdwf9Y",
+      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
+      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
+      "channelName": "花譜 -未確認少女観測部-",
+      "startAt": "1970-01-01T00:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/hqdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": null,
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "1970-01-01T00:00:00.000Z",
+      "source": "youtube-search-fallback",
+      "startAtSource": "publishedAt",
+      "isManual": false
+    },
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "V-TRVFS5Swc",
       "videoId": "V-TRVFS5Swc",
@@ -1883,9 +1938,9 @@
       "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
       "channelName": "花譜 -未確認少女観測部-",
       "startAt": "2026-08-30T09:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-30T11:08:14.000Z",
       "url": "https://www.youtube.com/watch?v=xRIgpjbVF1c",
-      "thumbnailUrl": "https://i.ytimg.com/vi/xRIgpjbVF1c/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xRIgpjbVF1c/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1896,11 +1951,11 @@
         "membership"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-30T09:00:00.000Z",
       "actualStartTime": "2026-08-30T09:01:09.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-08-26T04:38:35.000Z",
+      "actualEndTime": "2026-08-30T11:08:14.000Z",
+      "publishedAt": "2026-08-30T11:14:30.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1924,11 +1979,67 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-30T11:30:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-30T11:30:11.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-29T09:02:17.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "UOmw_rWmguE",
+      "videoId": "UOmw_rWmguE",
+      "title": "【朝枠】みこもにっ！8月がおわるなんてうそです🎐 #美古途生放送",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-08-30T22:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=UOmw_rWmguE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UOmw_rWmguE/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-30T22:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-30T08:13:28.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "DUszvP4IDd4",
+      "videoId": "DUszvP4IDd4",
+      "title": "🕯真夏の夜の怖い話。【 怪談配信 】 #御莉姫生放送",
+      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
+      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
+      "startAt": "2026-08-31T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=DUszvP4IDd4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DUszvP4IDd4/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-08-31T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-08-30T06:30:41.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

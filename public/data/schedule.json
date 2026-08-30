@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-30T05:27:53.601Z",
+  "generatedAt": "2026-08-30T09:07:45.574Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "V-TRVFS5Swc",
       "videoId": "V-TRVFS5Swc",
@@ -1881,9 +1855,9 @@
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-08-30T05:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-08-30T06:45:34.000Z",
       "url": "https://www.youtube.com/watch?v=1HSZRLlQkaA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/1HSZRLlQkaA/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1HSZRLlQkaA/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1893,11 +1867,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-08-30T05:00:00.000Z",
       "actualStartTime": "2026-08-30T04:55:31.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-08-29T14:13:32.000Z",
+      "actualEndTime": "2026-08-30T06:45:34.000Z",
+      "publishedAt": "2026-08-30T08:10:04.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1922,9 +1896,9 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-08-30T09:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-08-30T09:01:09.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-08-26T04:38:35.000Z",
       "source": "youtube-details",

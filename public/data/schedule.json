@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T22:53:13.622Z",
+  "generatedAt": "2026-08-31T23:00:45.149Z",
   "items": [
-    {
-      "id": "4qD5vEdwf9Y",
-      "videoId": "4qD5vEdwf9Y",
-      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "1970-01-01T00:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/hqdefault_live.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": null,
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "1970-01-01T00:00:00.000Z",
-      "source": "youtube-search-fallback",
-      "startAtSource": "publishedAt",
-      "isManual": false
-    },
     {
       "id": "c6KeOF5lR-g",
       "videoId": "c6KeOF5lR-g",
@@ -1955,6 +1926,35 @@
       "actualStartTime": "2026-08-31T10:55:27.000Z",
       "actualEndTime": "2026-08-31T12:59:30.000Z",
       "publishedAt": "2026-08-31T13:08:27.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "IH5okHGcUGE",
+      "videoId": "IH5okHGcUGE",
+      "title": "【 雑談 - Free Style - 】8月終わっちまうぜ！！！！Helloセプテンバーさん！！！！理芽sub ch.「STRANGE GIRL CLUB」 #ストガル",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-08-31T12:00:00.000Z",
+      "endAt": "2026-08-31T15:04:09.000Z",
+      "url": "https://www.youtube.com/watch?v=IH5okHGcUGE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IH5okHGcUGE/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-08-31T12:00:00.000Z",
+      "actualStartTime": "2026-08-31T12:01:21.000Z",
+      "actualEndTime": "2026-08-31T15:04:09.000Z",
+      "publishedAt": "2026-08-31T15:12:29.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,62 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T05:14:02.542Z",
+  "generatedAt": "2026-09-01T08:32:33.784Z",
   "items": [
-    {
-      "id": "4qD5vEdwf9Y",
-      "videoId": "4qD5vEdwf9Y",
-      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "1970-01-01T00:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/hqdefault_live.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": null,
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "1970-01-01T00:00:00.000Z",
-      "source": "youtube-search-fallback",
-      "startAtSource": "publishedAt",
-      "isManual": false
-    },
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "jCV5rHrtfAA",
       "videoId": "jCV5rHrtfAA",

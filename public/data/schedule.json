@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T21:05:30.293Z",
+  "generatedAt": "2026-09-02T21:14:35.532Z",
   "items": [
-    {
-      "id": "4qD5vEdwf9Y",
-      "videoId": "4qD5vEdwf9Y",
-      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "1970-01-01T00:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/hqdefault_live.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": null,
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "1970-01-01T00:00:00.000Z",
-      "source": "youtube-search-fallback",
-      "startAtSource": "publishedAt",
-      "isManual": false
-    },
     {
       "id": "c6KeOF5lR-g",
       "videoId": "c6KeOF5lR-g",
@@ -1938,7 +1909,7 @@
       "startAt": "2026-09-01T11:00:00.000Z",
       "endAt": "2026-09-01T12:36:44.000Z",
       "url": "https://www.youtube.com/watch?v=Pb-EUDzSFh4",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Pb-EUDzSFh4/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Pb-EUDzSFh4/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1952,7 +1923,7 @@
       "scheduledStartTime": "2026-09-01T11:00:00.000Z",
       "actualStartTime": "2026-09-01T10:56:11.000Z",
       "actualEndTime": "2026-09-01T12:36:44.000Z",
-      "publishedAt": "2026-08-31T06:17:27.000Z",
+      "publishedAt": "2026-09-02T00:47:41.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1966,7 +1937,7 @@
       "startAt": "2026-09-01T11:00:00.000Z",
       "endAt": "2026-09-01T12:36:41.000Z",
       "url": "https://www.youtube.com/watch?v=f7tGjVFfG2M",
-      "thumbnailUrl": "https://i.ytimg.com/vi/f7tGjVFfG2M/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f7tGjVFfG2M/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1980,7 +1951,7 @@
       "scheduledStartTime": "2026-09-01T11:00:00.000Z",
       "actualStartTime": "2026-09-01T10:55:29.000Z",
       "actualEndTime": "2026-09-01T12:36:41.000Z",
-      "publishedAt": "2026-09-01T01:48:10.000Z",
+      "publishedAt": "2026-09-02T00:58:52.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

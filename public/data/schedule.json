@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T21:14:35.532Z",
+  "generatedAt": "2026-09-02T23:13:45.957Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "Ow3TacHo_s8",
       "videoId": "Ow3TacHo_s8",
@@ -2134,9 +2108,9 @@
       "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
       "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
       "startAt": "2026-09-02T21:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-09-02T22:30:18.000Z",
       "url": "https://www.youtube.com/watch?v=qVL8MrpSx_g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/qVL8MrpSx_g/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qVL8MrpSx_g/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -2147,11 +2121,11 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-09-02T21:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-09-02T21:02:49.000Z",
+      "actualStartTime": "2026-09-02T21:30:21.000Z",
+      "actualEndTime": "2026-09-02T22:30:18.000Z",
+      "publishedAt": "2026-09-02T22:36:21.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

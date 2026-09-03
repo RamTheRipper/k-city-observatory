@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T21:04:31.801Z",
+  "generatedAt": "2026-09-03T21:18:17.073Z",
   "items": [
-    {
-      "id": "4qD5vEdwf9Y",
-      "videoId": "4qD5vEdwf9Y",
-      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "1970-01-01T00:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/hqdefault_live.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": null,
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "1970-01-01T00:00:00.000Z",
-      "source": "youtube-search-fallback",
-      "startAtSource": "publishedAt",
-      "isManual": false
-    },
     {
       "id": "c6KeOF5lR-g",
       "videoId": "c6KeOF5lR-g",
@@ -2107,9 +2078,9 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-09-03T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-09-03T12:58:16.000Z",
       "url": "https://www.youtube.com/watch?v=D4rKlO2jsq8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/D4rKlO2jsq8/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/D4rKlO2jsq8/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -2121,9 +2092,9 @@
       "category": "tsumitobatsu",
       "status": "ended",
       "scheduledStartTime": "2026-09-03T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-09-03T03:53:53.000Z",
+      "actualStartTime": "2026-09-03T10:55:29.000Z",
+      "actualEndTime": "2026-09-03T12:58:16.000Z",
+      "publishedAt": "2026-09-03T13:06:54.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

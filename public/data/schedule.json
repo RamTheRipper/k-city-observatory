@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-09T20:58:14.264Z",
+  "generatedAt": "2026-09-09T21:08:55.842Z",
   "items": [
-    {
-      "id": "4qD5vEdwf9Y",
-      "videoId": "4qD5vEdwf9Y",
-      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "1970-01-01T00:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/hqdefault_live.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": null,
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "1970-01-01T00:00:00.000Z",
-      "source": "youtube-search-fallback",
-      "startAtSource": "publishedAt",
-      "isManual": false
-    },
     {
       "id": "c6KeOF5lR-g",
       "videoId": "c6KeOF5lR-g",
@@ -2009,6 +1980,35 @@
       "actualStartTime": "2026-09-09T09:57:49.000Z",
       "actualEndTime": "2026-09-09T12:02:14.000Z",
       "publishedAt": "2026-09-09T12:08:50.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "6OQH70A_l10",
+      "videoId": "6OQH70A_l10",
+      "title": "【Fes振り返り/ほぼ掃除🧹】春猿火生配信",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-09-09T14:30:00.000Z",
+      "endAt": "2026-09-09T19:02:22.000Z",
+      "url": "https://www.youtube.com/watch?v=6OQH70A_l10",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6OQH70A_l10/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-09-09T14:30:00.000Z",
+      "actualStartTime": "2026-09-09T14:29:46.000Z",
+      "actualEndTime": "2026-09-09T19:02:22.000Z",
+      "publishedAt": "2026-09-09T19:16:11.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

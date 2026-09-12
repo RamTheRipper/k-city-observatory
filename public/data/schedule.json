@@ -1,90 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T10:51:19.056Z",
+  "generatedAt": "2026-09-12T12:47:35.344Z",
   "items": [
-    {
-      "id": "4qD5vEdwf9Y",
-      "videoId": "4qD5vEdwf9Y",
-      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "1970-01-01T00:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/hqdefault_live.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": null,
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "1970-01-01T00:00:00.000Z",
-      "source": "youtube-search-fallback",
-      "startAtSource": "publishedAt",
-      "isManual": false
-    },
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "3i_Tkulm7hc",
-      "videoId": "3i_Tkulm7hc",
-      "title": "【雑談】MV同時視聴してライブの振り返りｯ!! #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-08-12T08:55:00.000Z",
-      "endAt": "2026-08-12T11:11:23.000Z",
-      "url": "https://www.youtube.com/watch?v=3i_Tkulm7hc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/3i_Tkulm7hc/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-08-12T08:55:00.000Z",
-      "actualStartTime": "2026-08-12T08:52:47.000Z",
-      "actualEndTime": "2026-08-12T11:11:23.000Z",
-      "publishedAt": "2026-08-12T11:21:11.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "nGPRaWNGIgA",
       "videoId": "nGPRaWNGIgA",
@@ -2046,9 +1963,9 @@
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-09-12T05:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-09-12T08:34:35.000Z",
       "url": "https://www.youtube.com/watch?v=LU2yEMnjWXM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/LU2yEMnjWXM/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LU2yEMnjWXM/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -2058,11 +1975,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-09-12T05:00:00.000Z",
       "actualStartTime": "2026-09-12T04:55:35.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-09-11T09:31:47.000Z",
+      "actualEndTime": "2026-09-12T08:34:35.000Z",
+      "publishedAt": "2026-09-12T08:50:35.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -2086,9 +2003,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-09-12T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-09-12T10:56:46.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-09-11T03:12:01.000Z",
       "source": "youtube-details",

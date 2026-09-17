@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T21:25:13.345Z",
+  "generatedAt": "2026-09-17T21:42:41.436Z",
   "items": [
-    {
-      "id": "4qD5vEdwf9Y",
-      "videoId": "4qD5vEdwf9Y",
-      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "1970-01-01T00:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/maxresdefault_live.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": null,
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "1970-01-01T00:00:00.000Z",
-      "source": "youtube-search-fallback",
-      "startAtSource": "publishedAt",
-      "isManual": false
-    },
     {
       "id": "c6KeOF5lR-g",
       "videoId": "c6KeOF5lR-g",
@@ -1862,6 +1833,63 @@
       "actualStartTime": "2026-09-16T10:57:55.000Z",
       "actualEndTime": "2026-09-16T13:06:37.000Z",
       "publishedAt": "2026-09-16T13:15:31.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "irlXoPr73so",
+      "videoId": "irlXoPr73so",
+      "title": "【復活の朝活☁】春猿火生配信",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-09-16T22:45:00.000Z",
+      "endAt": "2026-09-16T23:42:59.000Z",
+      "url": "https://www.youtube.com/watch?v=irlXoPr73so",
+      "thumbnailUrl": "https://i.ytimg.com/vi/irlXoPr73so/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-09-16T22:45:00.000Z",
+      "actualStartTime": "2026-09-16T22:45:13.000Z",
+      "actualEndTime": "2026-09-16T23:42:59.000Z",
+      "publishedAt": "2026-09-16T23:45:27.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "7501ujPQieg",
+      "videoId": "7501ujPQieg",
+      "title": "【雀魂】視聴者参加型🔰優しくしてね #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-09-17T11:00:00.000Z",
+      "endAt": "2026-09-17T15:15:46.000Z",
+      "url": "https://www.youtube.com/watch?v=7501ujPQieg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7501ujPQieg/maxresdefault.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "ended",
+      "scheduledStartTime": "2026-09-17T11:00:00.000Z",
+      "actualStartTime": "2026-09-17T10:55:52.000Z",
+      "actualEndTime": "2026-09-17T15:15:46.000Z",
+      "publishedAt": "2026-09-17T15:28:03.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

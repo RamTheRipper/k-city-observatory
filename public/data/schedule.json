@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T13:32:31.784Z",
+  "generatedAt": "2026-09-18T16:26:58.202Z",
   "items": [
     {
-      "id": "V4-g2WZEXrc",
-      "videoId": "V4-g2WZEXrc",
-      "title": "【〈MEMBERSHIP ONLY〉【「ミュウツーの逆襲EVOLUTION 」同時視聴会👀】幸祜サブch配信「幸福拡張部電脳科 vol.52」",
-      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
-      "channelName": "幸祜 -幸福拡張部電脳科-",
-      "startAt": "2026-08-18T12:00:00.000Z",
-      "endAt": "2026-08-18T14:52:53.000Z",
-      "url": "https://www.youtube.com/watch?v=V4-g2WZEXrc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/V4-g2WZEXrc/maxresdefault.jpg",
+      "id": "4qD5vEdwf9Y",
+      "videoId": "4qD5vEdwf9Y",
+      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
+      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
+      "channelName": "花譜 -未確認少女観測部-",
+      "startAt": "1970-01-01T00:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/maxresdefault_live.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -23,13 +23,39 @@
       ],
       "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-08-18T12:00:00.000Z",
-      "actualStartTime": "2026-08-18T12:02:47.000Z",
-      "actualEndTime": "2026-08-18T14:52:53.000Z",
-      "publishedAt": "2026-08-18T06:13:54.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
+      "scheduledStartTime": null,
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "1970-01-01T00:00:00.000Z",
+      "source": "youtube-search-fallback",
+      "startAtSource": "publishedAt",
       "isManual": false
+    },
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "zuzQto4u1-M",
@@ -1877,7 +1903,7 @@
       "startAt": "2026-09-18T11:30:00.000Z",
       "endAt": "2026-09-18T12:52:21.000Z",
       "url": "https://www.youtube.com/watch?v=o1ck5jyuqAA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/o1ck5jyuqAA/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/o1ck5jyuqAA/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1891,7 +1917,35 @@
       "scheduledStartTime": "2026-09-18T11:30:00.000Z",
       "actualStartTime": "2026-09-18T11:30:42.000Z",
       "actualEndTime": "2026-09-18T12:52:21.000Z",
-      "publishedAt": "2026-09-16T23:24:12.000Z",
+      "publishedAt": "2026-09-18T13:39:16.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "XFFO48i3X5c",
+      "videoId": "XFFO48i3X5c",
+      "title": "【Beast of Reincarnation】もう失いたくない #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-09-19T05:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=XFFO48i3X5c",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XFFO48i3X5c/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-09-19T05:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-09-18T14:25:21.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1920,6 +1974,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-09-18T05:49:52.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "W7oO_779gjY",
+      "videoId": "W7oO_779gjY",
+      "title": "ドラマーに任せろ【リズム天国 ミラクルスターズ】🥁",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "startAt": "2026-09-19T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=W7oO_779gjY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/W7oO_779gjY/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-09-19T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-09-18T12:28:11.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

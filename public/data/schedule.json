@@ -1,36 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T21:32:11.971Z",
+  "generatedAt": "2026-09-23T21:45:02.386Z",
   "items": [
-    {
-      "id": "4qD5vEdwf9Y",
-      "videoId": "4qD5vEdwf9Y",
-      "title": "【テスト】花のキーノート〜語彙の玉手箱や編〜【未確認少女観測部 vol.51】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "1970-01-01T00:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=4qD5vEdwf9Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/4qD5vEdwf9Y/maxresdefault_live.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": null,
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "1970-01-01T00:00:00.000Z",
-      "source": "youtube-search-fallback",
-      "startAtSource": "publishedAt",
-      "isManual": false
-    },
     {
       "id": "c6KeOF5lR-g",
       "videoId": "c6KeOF5lR-g",
@@ -1806,6 +1777,34 @@
       "actualStartTime": "2026-09-22T10:26:50.000Z",
       "actualEndTime": "2026-09-22T12:57:52.000Z",
       "publishedAt": "2026-09-22T13:09:02.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "OlLVFCdK7eI",
+      "videoId": "OlLVFCdK7eI",
+      "title": "No.049　幸祜 -KOKO- 「共回線」【Official Music Video】",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "startAt": "2026-09-23T10:00:00.000Z",
+      "endAt": "2026-09-23T10:05:01.000Z",
+      "url": "https://www.youtube.com/watch?v=OlLVFCdK7eI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OlLVFCdK7eI/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-09-23T10:00:00.000Z",
+      "actualStartTime": "2026-09-23T10:00:09.000Z",
+      "actualEndTime": "2026-09-23T10:05:01.000Z",
+      "publishedAt": "2026-09-23T10:00:09.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

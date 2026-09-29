@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T22:18:53.036Z",
+  "generatedAt": "2026-09-29T22:33:53.141Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1954,9 +1954,9 @@
       "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
       "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
       "startAt": "2026-09-29T10:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-09-29T11:50:54.000Z",
       "url": "https://www.youtube.com/watch?v=YkFnbRZHwcc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/YkFnbRZHwcc/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YkFnbRZHwcc/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1968,9 +1968,9 @@
       "category": "shinseiki",
       "status": "ended",
       "scheduledStartTime": "2026-09-29T10:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-09-29T04:31:22.000Z",
+      "actualStartTime": "2026-09-29T10:26:09.000Z",
+      "actualEndTime": "2026-09-29T11:50:54.000Z",
+      "publishedAt": "2026-09-29T12:23:31.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

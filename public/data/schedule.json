@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T12:57:27.712Z",
+  "generatedAt": "2026-09-29T19:55:13.175Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "1HSZRLlQkaA",
       "videoId": "1HSZRLlQkaA",
@@ -1982,9 +1956,9 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-09-29T11:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-09-29T13:02:11.000Z",
       "url": "https://www.youtube.com/watch?v=iurvBMDIciw",
-      "thumbnailUrl": "https://i.ytimg.com/vi/iurvBMDIciw/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iurvBMDIciw/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1994,11 +1968,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-09-29T11:30:00.000Z",
       "actualStartTime": "2026-09-29T11:29:33.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-09-28T08:07:33.000Z",
+      "actualEndTime": "2026-09-29T13:02:11.000Z",
+      "publishedAt": "2026-09-29T13:49:31.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

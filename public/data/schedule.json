@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T19:55:04.756Z",
+  "generatedAt": "2026-09-30T22:18:40.982Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "UOmw_rWmguE",
       "videoId": "UOmw_rWmguE",
@@ -1916,6 +1942,34 @@
       "actualStartTime": "2026-09-30T10:30:11.000Z",
       "actualEndTime": "2026-09-30T10:52:58.000Z",
       "publishedAt": "2026-09-30T11:04:14.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "-xz1piszv64",
+      "videoId": "-xz1piszv64",
+      "title": "【Coffee Talk Tokyo】#3  ほっとひといき、つきませんか☕️ #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-10-01T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=-xz1piszv64",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-xz1piszv64/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-01T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-09-30T14:35:55.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

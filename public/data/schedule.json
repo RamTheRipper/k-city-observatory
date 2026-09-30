@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T22:18:40.982Z",
+  "generatedAt": "2026-09-30T22:34:25.677Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1914,6 +1914,35 @@
       "actualStartTime": "2026-09-29T11:29:33.000Z",
       "actualEndTime": "2026-09-29T13:02:11.000Z",
       "publishedAt": "2026-09-29T13:49:31.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "D7QtTBWGH78",
+      "videoId": "D7QtTBWGH78",
+      "title": "『みかんれでぃお #3 ライフをハック』",
+      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
+      "channelName": "花譜 -未確認少女観測部-",
+      "startAt": "2026-09-30T09:00:00.000Z",
+      "endAt": "2026-09-30T09:26:29.000Z",
+      "url": "https://www.youtube.com/watch?v=D7QtTBWGH78",
+      "thumbnailUrl": "https://i.ytimg.com/vi/D7QtTBWGH78/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-09-30T09:00:00.000Z",
+      "actualStartTime": "2026-09-30T09:00:08.000Z",
+      "actualEndTime": "2026-09-30T09:26:29.000Z",
+      "publishedAt": "2026-09-30T09:00:08.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

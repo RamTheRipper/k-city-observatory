@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T22:34:25.677Z",
+  "generatedAt": "2026-10-01T00:28:29.101Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "UOmw_rWmguE",
-      "videoId": "UOmw_rWmguE",
-      "title": "【朝枠】みこもにっ！8月がおわるなんてうそです🎐 #美古途生放送",
-      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
-      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-08-30T22:00:00.000Z",
-      "endAt": "2026-08-30T23:47:19.000Z",
-      "url": "https://www.youtube.com/watch?v=UOmw_rWmguE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/UOmw_rWmguE/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-08-30T22:00:00.000Z",
-      "actualStartTime": "2026-08-30T22:04:53.000Z",
-      "actualEndTime": "2026-08-30T23:47:19.000Z",
-      "publishedAt": "2026-08-31T00:00:34.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "DUszvP4IDd4",
       "videoId": "DUszvP4IDd4",

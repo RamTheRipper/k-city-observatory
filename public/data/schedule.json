@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T12:40:49.704Z",
+  "generatedAt": "2026-10-02T19:51:16.624Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "mUmAjEp_X3w",
-      "videoId": "mUmAjEp_X3w",
-      "title": "【歌配信】Sing #03 /ワンマンのお話もします🪐⟡【春猿火/神椿】",
-      "channelId": "UCE7gtjLeZKNXLp5YURzYYeg",
-      "channelName": "春猿火 -HARUSARUHI-",
-      "startAt": "2026-09-01T11:30:00.000Z",
-      "endAt": "2026-09-01T13:11:14.000Z",
-      "url": "https://www.youtube.com/watch?v=mUmAjEp_X3w",
-      "thumbnailUrl": "https://i.ytimg.com/vi/mUmAjEp_X3w/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-01T11:30:00.000Z",
-      "actualStartTime": "2026-09-01T11:25:31.000Z",
-      "actualEndTime": "2026-09-01T13:11:14.000Z",
-      "publishedAt": "2026-09-01T13:18:11.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "ientJDG2ZOg",
       "videoId": "ientJDG2ZOg",

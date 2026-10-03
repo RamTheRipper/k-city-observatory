@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:43:05.409Z",
+  "generatedAt": "2026-10-03T16:20:13.851Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -27,63 +27,6 @@
       "source": "manual",
       "startAtSource": "manual-scheduledStartTime",
       "isManual": true
-    },
-    {
-      "id": "kwc_z7T-iT0",
-      "videoId": "kwc_z7T-iT0",
-      "title": "【プラトニカ・スペース】#3 グッドナイトヒーラーへ⋆͛🪐   #美古途生放送",
-      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
-      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-09-02T11:00:00.000Z",
-      "endAt": "2026-09-02T15:42:05.000Z",
-      "url": "https://www.youtube.com/watch?v=kwc_z7T-iT0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/kwc_z7T-iT0/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-02T11:00:00.000Z",
-      "actualStartTime": "2026-09-02T10:57:25.000Z",
-      "actualEndTime": "2026-09-02T15:42:05.000Z",
-      "publishedAt": "2026-09-02T15:59:59.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "6BP25DHGJFs",
-      "videoId": "6BP25DHGJFs",
-      "title": "【神椿横浜戦線2026】ライブ直前生放送！ソワソワを分かち合いたい",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "2026-09-02T11:00:00.000Z",
-      "endAt": "2026-09-02T12:11:25.000Z",
-      "url": "https://www.youtube.com/watch?v=6BP25DHGJFs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6BP25DHGJFs/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-02T11:00:00.000Z",
-      "actualStartTime": "2026-09-02T10:55:28.000Z",
-      "actualEndTime": "2026-09-02T12:11:25.000Z",
-      "publishedAt": "2026-09-02T12:31:04.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
     },
     {
       "id": "qVL8MrpSx_g",

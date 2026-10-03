@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T11:43:05.411Z",
+  "generatedAt": "2026-10-03T16:20:13.852Z",
   "apiUsage": {
     "searchListCalls": 24,
     "videosListCalls": 1,
     "channelsListCalls": 0,
     "playlistItemsListCalls": 0,
     "estimatedUnits": 2401,
-    "lastSuccessAt": "2026-10-03T11:43:05.411Z",
+    "lastSuccessAt": "2026-10-03T16:20:13.852Z",
     "lastError": null,
     "fetchedScope": "upcoming",
     "loadedChannels": 24,

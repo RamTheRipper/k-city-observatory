@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:02:32.168Z",
+  "generatedAt": "2026-10-03T11:43:05.409Z",
   "items": [
     {
-      "id": "ientJDG2ZOg",
-      "videoId": "ientJDG2ZOg",
-      "title": "【べまもぐ】麺をすすりながら、健康との共存を考える。【神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-09-02T09:30:00.000Z",
-      "endAt": "2026-09-02T11:05:50.000Z",
-      "url": "https://www.youtube.com/watch?v=ientJDG2ZOg",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ientJDG2ZOg/maxresdefault.jpg",
-      "group": "sinsekai_record",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "sinsekai_record"
+        "vwp"
       ],
-      "primaryGroupId": "sinsekai_record",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-09-02T09:30:00.000Z",
-      "actualStartTime": "2026-09-02T09:30:37.000Z",
-      "actualEndTime": "2026-09-02T11:05:50.000Z",
-      "publishedAt": "2026-09-02T11:29:05.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "kwc_z7T-iT0",
@@ -1730,7 +1728,7 @@
       "startAt": "2026-10-03T03:30:00.000Z",
       "endAt": "2026-10-03T05:06:58.000Z",
       "url": "https://www.youtube.com/watch?v=9MAqaieAag0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/9MAqaieAag0/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9MAqaieAag0/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1744,7 +1742,7 @@
       "scheduledStartTime": "2026-10-03T03:30:00.000Z",
       "actualStartTime": "2026-10-03T03:29:19.000Z",
       "actualEndTime": "2026-10-03T05:06:58.000Z",
-      "publishedAt": "2026-10-02T10:15:35.000Z",
+      "publishedAt": "2026-10-03T05:52:08.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

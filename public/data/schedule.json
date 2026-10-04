@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T12:25:49.754Z",
+  "generatedAt": "2026-10-04T18:35:42.788Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "D4rKlO2jsq8",
-      "videoId": "D4rKlO2jsq8",
-      "title": "【ちょびゆる歌】ちょびっとゆるっと歌うよ🧡💙",
-      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-09-03T11:00:00.000Z",
-      "endAt": "2026-09-03T12:58:16.000Z",
-      "url": "https://www.youtube.com/watch?v=D4rKlO2jsq8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/D4rKlO2jsq8/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-03T11:00:00.000Z",
-      "actualStartTime": "2026-09-03T10:55:29.000Z",
-      "actualEndTime": "2026-09-03T12:58:16.000Z",
-      "publishedAt": "2026-09-03T13:06:54.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "0pEZj_N-U1c",
       "videoId": "0pEZj_N-U1c",

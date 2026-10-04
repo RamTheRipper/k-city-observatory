@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T21:53:21.462Z",
+  "generatedAt": "2026-10-04T23:54:40.009Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "0pEZj_N-U1c",
       "videoId": "0pEZj_N-U1c",
@@ -1640,9 +1614,9 @@
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
       "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2026-10-04T22:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-04T23:45:59.000Z",
       "url": "https://www.youtube.com/watch?v=8cG41G0M664",
-      "thumbnailUrl": "https://i.ytimg.com/vi/8cG41G0M664/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8cG41G0M664/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1652,11 +1626,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-10-04T22:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-10-04T09:13:22.000Z",
+      "actualStartTime": "2026-10-04T21:57:25.000Z",
+      "actualEndTime": "2026-10-04T23:45:59.000Z",
+      "publishedAt": "2026-10-04T23:52:18.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

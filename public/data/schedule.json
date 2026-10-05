@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T10:17:00.755Z",
+  "generatedAt": "2026-10-05T14:46:20.063Z",
   "items": [
     {
-      "id": "0pEZj_N-U1c",
-      "videoId": "0pEZj_N-U1c",
-      "title": "【神椿おしゃべりアンバサダー】1年半ぶりのかきょみやコラボ！！🌟【ゲスト:硝子宮】#佳鏡院生放送",
-      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
-      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
-      "startAt": "2026-09-04T12:00:00.000Z",
-      "endAt": "2026-09-04T14:34:24.000Z",
-      "url": "https://www.youtube.com/watch?v=0pEZj_N-U1c",
-      "thumbnailUrl": "https://i.ytimg.com/vi/0pEZj_N-U1c/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-09-04T12:00:00.000Z",
-      "actualStartTime": "2026-09-04T11:56:47.000Z",
-      "actualEndTime": "2026-09-04T14:34:24.000Z",
-      "publishedAt": "2026-09-04T14:44:22.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "nRDDMbHAVCQ",
@@ -1687,6 +1685,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-02T03:59:56.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "dlU4VaSaADI",
+      "videoId": "dlU4VaSaADI",
+      "title": "【2026.10.09 20:00~ YouTube生配信】the story continues...",
+      "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
+      "channelName": "ヰ世界情緒 -Isekaijoucho-",
+      "startAt": "2026-10-09T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=dlU4VaSaADI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dlU4VaSaADI/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-09T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-03T15:46:55.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

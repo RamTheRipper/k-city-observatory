@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T00:18:02.119Z",
+  "generatedAt": "2026-10-06T06:25:39.958Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1634,34 +1634,6 @@
       "isManual": false
     },
     {
-      "id": "7oAEbKiD0vQ",
-      "videoId": "7oAEbKiD0vQ",
-      "title": "【Cats Organized Neatly】ふわりと、するよ🐾 #硝子宮生放送",
-      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
-      "startAt": "2026-10-06T11:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=7oAEbKiD0vQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/7oAEbKiD0vQ/maxresdefault_live.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "upcoming",
-      "scheduledStartTime": "2026-10-06T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-10-04T08:44:50.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
       "id": "y3Fjr1-VaUE",
       "videoId": "y3Fjr1-VaUE",
       "title": "SINGULAR LIVE TV（仮題）vol.１",
@@ -1685,6 +1657,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-02T03:59:56.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "7oAEbKiD0vQ",
+      "videoId": "7oAEbKiD0vQ",
+      "title": "【Cats Organized Neatly】ふわりと、するよ🐾 #硝子宮生放送",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-10-06T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=7oAEbKiD0vQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7oAEbKiD0vQ/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-06T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-04T08:44:50.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

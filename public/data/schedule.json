@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T20:07:56.842Z",
+  "generatedAt": "2026-10-06T22:46:24.195Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "B4kmQT4UVHs",
       "videoId": "B4kmQT4UVHs",
@@ -1586,9 +1612,9 @@
       "channelId": "UCAOhUv73jM5iCpOhuJOQzxA",
       "channelName": "KAMITSUBAKI STUDIO",
       "startAt": "2026-10-06T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-06T11:34:56.000Z",
       "url": "https://www.youtube.com/watch?v=y3Fjr1-VaUE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/y3Fjr1-VaUE/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/y3Fjr1-VaUE/maxresdefault.jpg",
       "group": "official",
       "groupIds": [
         "official"
@@ -1600,9 +1626,9 @@
       "category": "",
       "status": "ended",
       "scheduledStartTime": "2026-10-06T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-10-02T03:59:56.000Z",
+      "actualStartTime": "2026-10-06T10:55:06.000Z",
+      "actualEndTime": "2026-10-06T11:34:56.000Z",
+      "publishedAt": "2026-10-06T11:45:46.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

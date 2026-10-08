@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T13:35:17.502Z",
+  "generatedAt": "2026-10-08T20:38:40.073Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "fMv-7S4C4K4",
-      "videoId": "fMv-7S4C4K4",
-      "title": "【Beast of Reincarnation】強敵全員ボコボコにするやで #夕凪機生放送",
-      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
-      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-09-07T11:00:00.000Z",
-      "endAt": "2026-09-07T14:20:38.000Z",
-      "url": "https://www.youtube.com/watch?v=fMv-7S4C4K4",
-      "thumbnailUrl": "https://i.ytimg.com/vi/fMv-7S4C4K4/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-07T11:00:00.000Z",
-      "actualStartTime": "2026-09-07T10:55:06.000Z",
-      "actualEndTime": "2026-09-07T14:20:38.000Z",
-      "publishedAt": "2026-09-07T14:33:35.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "h-9-V8a1hok",
       "videoId": "h-9-V8a1hok",

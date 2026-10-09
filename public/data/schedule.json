@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-09T22:41:15.705Z",
+  "generatedAt": "2026-10-09T22:51:56.441Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1543,6 +1543,34 @@
       "actualStartTime": "2026-10-08T10:58:24.000Z",
       "actualEndTime": "2026-10-08T13:26:15.000Z",
       "publishedAt": "2026-10-08T14:27:47.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "w2t_Vm-DbuE",
+      "videoId": "w2t_Vm-DbuE",
+      "title": "【初配信】本日のお客様はララ様です🍏【CIEL / #しえるんるんランド】",
+      "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
+      "channelName": "CIEL",
+      "startAt": "2026-10-09T10:00:00.000Z",
+      "endAt": "2026-10-09T11:00:53.000Z",
+      "url": "https://www.youtube.com/watch?v=w2t_Vm-DbuE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/w2t_Vm-DbuE/maxresdefault.jpg",
+      "group": "kuusou",
+      "groupIds": [
+        "kuusou"
+      ],
+      "primaryGroupId": "kuusou",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-09T10:00:00.000Z",
+      "actualStartTime": "2026-10-09T10:19:27.000Z",
+      "actualEndTime": "2026-10-09T11:00:53.000Z",
+      "publishedAt": "2026-10-09T11:10:36.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

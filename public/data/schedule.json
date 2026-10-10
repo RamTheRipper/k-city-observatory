@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T05:56:44.864Z",
+  "generatedAt": "2026-10-10T09:41:22.514Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "TP2HKheKEcU",
       "videoId": "TP2HKheKEcU",
@@ -1638,7 +1612,7 @@
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-10-10T05:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-10T08:35:45.000Z",
       "url": "https://www.youtube.com/watch?v=dE0YPGvyyWY",
       "thumbnailUrl": "https://i.ytimg.com/vi/dE0YPGvyyWY/maxresdefault_live.jpg",
       "group": "girls_revolution_project",
@@ -1650,10 +1624,10 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-10-10T05:00:00.000Z",
       "actualStartTime": "2026-10-10T04:56:42.000Z",
-      "actualEndTime": null,
+      "actualEndTime": "2026-10-10T08:35:45.000Z",
       "publishedAt": "2026-10-09T04:16:16.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",

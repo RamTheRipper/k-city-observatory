@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T19:26:54.556Z",
+  "generatedAt": "2026-10-11T22:00:45.042Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "mMW3R0j2cLQ",
       "videoId": "mMW3R0j2cLQ",
@@ -1652,11 +1678,39 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-10-11T22:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-10-11T21:56:53.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-10-11T06:17:40.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "QYY1J3kklpk",
+      "videoId": "QYY1J3kklpk",
+      "title": "🕯【 ゲーム実況 】-鬼子母 Hariti- 絶対ビビらない姫ホラゲ  #御莉姫生放送",
+      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
+      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
+      "startAt": "2026-10-13T10:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=QYY1J3kklpk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QYY1J3kklpk/maxresdefault_live.jpg",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-13T10:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-11T17:44:51.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

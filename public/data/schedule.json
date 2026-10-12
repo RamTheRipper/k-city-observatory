@@ -1,63 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T10:35:46.507Z",
+  "generatedAt": "2026-10-12T15:32:38.621Z",
   "items": [
     {
-      "id": "mMW3R0j2cLQ",
-      "videoId": "mMW3R0j2cLQ",
-      "title": "花譜「エラーソング」Music Video — Created by Students at HAL",
-      "channelId": "UCQ1U65-CQdIoZ2_NA4Z4F7A",
-      "channelName": "花譜 -KAF-",
-      "startAt": "2026-09-11T11:00:00.000Z",
-      "endAt": "2026-09-11T11:05:19.000Z",
-      "url": "https://www.youtube.com/watch?v=mMW3R0j2cLQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/mMW3R0j2cLQ/maxresdefault.jpg",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
       "group": "vwp",
       "groupIds": [
         "vwp"
       ],
-      "primaryGroupId": "vwp",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-09-11T11:00:00.000Z",
-      "actualStartTime": "2026-09-11T11:00:06.000Z",
-      "actualEndTime": "2026-09-11T11:05:19.000Z",
-      "publishedAt": "2026-09-11T11:00:06.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "PRaEbJv0kyk",
-      "videoId": "PRaEbJv0kyk",
-      "title": "【 LOST JUDGEMENT 裁かれざる記憶 】- Chapter 01「群れの裏切り者 」- 理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
-      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
-      "channelName": "理芽 -STRANGE GIRL CLUB-",
-      "startAt": "2026-09-11T11:00:00.000Z",
-      "endAt": "2026-09-11T14:59:39.000Z",
-      "url": "https://www.youtube.com/watch?v=PRaEbJv0kyk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/PRaEbJv0kyk/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
       "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-11T11:00:00.000Z",
-      "actualStartTime": "2026-09-11T11:02:19.000Z",
-      "actualEndTime": "2026-09-11T14:59:39.000Z",
-      "publishedAt": "2026-09-11T15:15:28.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "GWZ-qZc6Qtw",

@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T20:35:18.158Z",
+  "generatedAt": "2026-10-13T22:48:00.560Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "FcrJwOliKJM",
       "videoId": "FcrJwOliKJM",
@@ -1551,7 +1577,7 @@
     {
       "id": "YzkP5J2e_-8",
       "videoId": "YzkP5J2e_-8",
-      "title": "神椿報奏部 vol.65",
+      "title": "神椿報奏部 vol.65  （アーカイブ期間：2026年10月19日(月) 23:59まで）",
       "channelId": "UCE7gtjLeZKNXLp5YURzYYeg",
       "channelName": "春猿火 -HARUSARUHI-",
       "startAt": "2026-10-13T11:00:00.000Z",

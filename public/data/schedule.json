@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T08:35:02.620Z",
+  "generatedAt": "2026-10-14T11:57:44.228Z",
   "items": [
     {
-      "id": "6N4R8JRNEpg",
-      "videoId": "6N4R8JRNEpg",
-      "title": "【雑談配信】CIEL展II 直前配信🦋【CIEL / #しえるんるんランド】",
-      "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
-      "channelName": "CIEL",
-      "startAt": "2026-09-13T10:00:00.000Z",
-      "endAt": "2026-09-13T11:15:40.000Z",
-      "url": "https://www.youtube.com/watch?v=6N4R8JRNEpg",
-      "thumbnailUrl": "https://i.ytimg.com/vi/6N4R8JRNEpg/maxresdefault.jpg",
-      "group": "kuusou",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "kuusou"
+        "vwp"
       ],
-      "primaryGroupId": "kuusou",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-09-13T10:00:00.000Z",
-      "actualStartTime": "2026-09-13T09:53:09.000Z",
-      "actualEndTime": "2026-09-13T11:15:40.000Z",
-      "publishedAt": "2026-09-13T11:42:54.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "hsa_FT6Yws0",
@@ -1598,7 +1596,7 @@
         "group"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-10-14T09:55:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
@@ -1626,9 +1624,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-10-14T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-10-14T10:57:33.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-10-13T06:07:53.000Z",
       "source": "youtube-details",

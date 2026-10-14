@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T21:43:46.881Z",
+  "generatedAt": "2026-10-14T21:54:55.965Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1601,6 +1601,63 @@
       "actualStartTime": "2026-10-14T10:57:33.000Z",
       "actualEndTime": "2026-10-14T16:26:34.000Z",
       "publishedAt": "2026-10-14T16:38:45.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "nUwewQhWBIw",
+      "videoId": "nUwewQhWBIw",
+      "title": "春猿火 # 67「HOLIC」【Official Music Video】",
+      "channelId": "UCE7gtjLeZKNXLp5YURzYYeg",
+      "channelName": "春猿火 -HARUSARUHI-",
+      "startAt": "2026-10-14T11:00:00.000Z",
+      "endAt": "2026-10-14T11:05:39.000Z",
+      "url": "https://www.youtube.com/watch?v=nUwewQhWBIw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nUwewQhWBIw/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-14T11:00:00.000Z",
+      "actualStartTime": "2026-10-14T11:00:07.000Z",
+      "actualEndTime": "2026-10-14T11:05:39.000Z",
+      "publishedAt": "2026-10-14T11:00:07.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "WRMEoEd1euc",
+      "videoId": "WRMEoEd1euc",
+      "title": "【 LOST JUDGEMENT 裁かれざる記憶 】- Chapter 02「殺された加害者 」- 理芽 Sub ch.「STRANGE GIRL CLUB」#理芽ジャッジ",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-10-14T11:30:00.000Z",
+      "endAt": "2026-10-14T14:14:53.000Z",
+      "url": "https://www.youtube.com/watch?v=WRMEoEd1euc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WRMEoEd1euc/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-14T11:30:00.000Z",
+      "actualStartTime": "2026-10-14T11:32:03.000Z",
+      "actualEndTime": "2026-10-14T14:14:53.000Z",
+      "publishedAt": "2026-10-14T14:24:59.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

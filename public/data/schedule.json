@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T10:48:48.401Z",
+  "generatedAt": "2026-10-17T12:53:00.659Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "GCOhhIYCFsI",
-      "videoId": "GCOhhIYCFsI",
-      "title": "【月見バーガー】秋だぜ！マックの月見３種食べてみた‼️🍔【明透/神椿】",
-      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
-      "channelName": "明透 -ᴀsᴜ-",
-      "startAt": "2026-09-16T11:00:00.000Z",
-      "endAt": "2026-09-16T12:03:03.000Z",
-      "url": "https://www.youtube.com/watch?v=GCOhhIYCFsI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/GCOhhIYCFsI/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-16T11:00:00.000Z",
-      "actualStartTime": "2026-09-16T10:59:37.000Z",
-      "actualEndTime": "2026-09-16T12:03:03.000Z",
-      "publishedAt": "2026-09-16T12:07:43.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "es6huqgENMQ",
       "videoId": "es6huqgENMQ",
@@ -1740,9 +1686,9 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-10-17T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-10-17T12:03:45.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-10-17T03:39:52.000Z",
       "source": "youtube-details",

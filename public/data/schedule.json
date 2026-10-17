@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T07:40:51.503Z",
+  "generatedAt": "2026-10-17T10:48:48.401Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "GCOhhIYCFsI",
       "videoId": "GCOhhIYCFsI",
@@ -1673,7 +1699,7 @@
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-10-17T05:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-17T09:44:04.000Z",
       "url": "https://www.youtube.com/watch?v=vbuCJnzP878",
       "thumbnailUrl": "https://i.ytimg.com/vi/vbuCJnzP878/maxresdefault_live.jpg",
       "group": "girls_revolution_project",
@@ -1685,11 +1711,40 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-10-17T05:00:00.000Z",
       "actualStartTime": "2026-10-17T04:56:02.000Z",
-      "actualEndTime": null,
+      "actualEndTime": "2026-10-17T09:44:04.000Z",
       "publishedAt": "2026-10-16T13:29:28.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "BuFO3gJ1klY",
+      "videoId": "BuFO3gJ1klY",
+      "title": "【やさぐれごめん、「6周年記念配信」のサムネ公開するぞ🦖‼️】　幸祜サブch配信「幸福拡張部電脳科 vol.67」",
+      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
+      "channelName": "幸祜 -幸福拡張部電脳科-",
+      "startAt": "2026-10-17T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=BuFO3gJ1klY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BuFO3gJ1klY/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-17T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-17T03:39:52.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

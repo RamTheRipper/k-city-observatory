@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T12:53:00.659Z",
+  "generatedAt": "2026-10-17T15:38:34.738Z",
   "items": [
     {
-      "id": "es6huqgENMQ",
-      "videoId": "es6huqgENMQ",
-      "title": "【Super Bunny Man】春猿火さんと仲良くなりたい💭 #硝子宮生放送",
-      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
-      "startAt": "2026-09-16T11:00:00.000Z",
-      "endAt": "2026-09-16T13:06:37.000Z",
-      "url": "https://www.youtube.com/watch?v=es6huqgENMQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/es6huqgENMQ/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-09-16T11:00:00.000Z",
-      "actualStartTime": "2026-09-16T10:57:55.000Z",
-      "actualEndTime": "2026-09-16T13:06:37.000Z",
-      "publishedAt": "2026-09-16T13:15:31.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "irlXoPr73so",
@@ -1647,7 +1645,7 @@
       "startAt": "2026-10-17T05:00:00.000Z",
       "endAt": "2026-10-17T09:44:04.000Z",
       "url": "https://www.youtube.com/watch?v=vbuCJnzP878",
-      "thumbnailUrl": "https://i.ytimg.com/vi/vbuCJnzP878/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vbuCJnzP878/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1661,7 +1659,7 @@
       "scheduledStartTime": "2026-10-17T05:00:00.000Z",
       "actualStartTime": "2026-10-17T04:56:02.000Z",
       "actualEndTime": "2026-10-17T09:44:04.000Z",
-      "publishedAt": "2026-10-16T13:29:28.000Z",
+      "publishedAt": "2026-10-17T11:42:37.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1753,6 +1751,34 @@
       "isManual": false
     },
     {
+      "id": "Wnmo6pSgZ_Q",
+      "videoId": "Wnmo6pSgZ_Q",
+      "title": "【理芽】活動7周年記念特別番組　#理芽7周年",
+      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "channelName": "理芽 -RIM-",
+      "startAt": "2026-10-22T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Wnmo6pSgZ_Q",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Wnmo6pSgZ_Q/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-22T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-17T13:17:49.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "vzQcOVGZEig",
       "videoId": "vzQcOVGZEig",
       "title": "【全編無料3Dライブ】明透・琶舞 virtual mini live「Cross Night LIVE」【神椿】",
@@ -1776,6 +1802,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-05T09:34:37.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "SBpEVYDTujs",
+      "videoId": "SBpEVYDTujs",
+      "title": "幸祜-KOKO-【6周年記念生配信🎉】歌うぞ！！",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "startAt": "2026-10-25T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=SBpEVYDTujs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SBpEVYDTujs/maxresdefault_live.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-25T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-16T13:51:30.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

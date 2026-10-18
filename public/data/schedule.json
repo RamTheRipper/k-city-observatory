@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T20:48:04.848Z",
+  "generatedAt": "2026-10-18T20:59:51.174Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1632,6 +1632,34 @@
       "actualStartTime": "2026-10-17T12:03:45.000Z",
       "actualEndTime": "2026-10-17T13:16:24.000Z",
       "publishedAt": "2026-10-17T14:24:05.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "_ao1TZuo_5M",
+      "videoId": "_ao1TZuo_5M",
+      "title": "【ライブ映像】「歌姫」Covered by KAMITSUBAKI VIRTUAL ARTISTS【#神椿7周年】",
+      "channelId": "UCAOhUv73jM5iCpOhuJOQzxA",
+      "channelName": "KAMITSUBAKI STUDIO",
+      "startAt": "2026-10-18T10:00:00.000Z",
+      "endAt": "2026-10-18T10:06:50.000Z",
+      "url": "https://www.youtube.com/watch?v=_ao1TZuo_5M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_ao1TZuo_5M/maxresdefault.jpg",
+      "group": "official",
+      "groupIds": [
+        "official"
+      ],
+      "primaryGroupId": "official",
+      "tags": [
+        "official"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-18T10:00:00.000Z",
+      "actualStartTime": "2026-10-18T10:00:07.000Z",
+      "actualEndTime": "2026-10-18T10:06:50.000Z",
+      "publishedAt": "2026-10-18T10:00:07.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

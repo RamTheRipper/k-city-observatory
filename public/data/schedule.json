@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T08:42:57.025Z",
+  "generatedAt": "2026-10-19T13:23:22.283Z",
   "items": [
     {
-      "id": "o1ck5jyuqAA",
-      "videoId": "o1ck5jyuqAA",
-      "title": "【ゆる裁判】こんなことで争うな💥ディベート対決！-日常編-【琶舞/佳鏡院/神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-09-18T11:30:00.000Z",
-      "endAt": "2026-09-18T12:52:21.000Z",
-      "url": "https://www.youtube.com/watch?v=o1ck5jyuqAA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/o1ck5jyuqAA/maxresdefault.jpg",
-      "group": "sinsekai_record",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "sinsekai_record"
+        "vwp"
       ],
-      "primaryGroupId": "sinsekai_record",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-09-18T11:30:00.000Z",
-      "actualStartTime": "2026-09-18T11:30:42.000Z",
-      "actualEndTime": "2026-09-18T12:52:21.000Z",
-      "publishedAt": "2026-09-18T13:39:16.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "XFFO48i3X5c",
@@ -1685,9 +1683,9 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-10-19T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-10-19T10:58:17.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-10-18T10:08:31.000Z",
       "source": "youtube-details",
@@ -1701,7 +1699,7 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-10-19T11:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-19T13:04:07.000Z",
       "url": "https://www.youtube.com/watch?v=Jd5JBuT1FzI",
       "thumbnailUrl": "https://i.ytimg.com/vi/Jd5JBuT1FzI/maxresdefault_live.jpg",
       "group": "sinsekai_record",
@@ -1713,10 +1711,10 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-10-19T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
+      "actualStartTime": "2026-10-19T11:29:56.000Z",
+      "actualEndTime": "2026-10-19T13:04:07.000Z",
       "publishedAt": "2026-10-18T08:50:16.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",

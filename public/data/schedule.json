@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T21:45:34.578Z",
+  "generatedAt": "2026-10-21T21:57:37.794Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1605,6 +1605,62 @@
       "actualStartTime": "2026-10-20T10:58:57.000Z",
       "actualEndTime": "2026-10-20T13:32:57.000Z",
       "publishedAt": "2026-10-20T15:59:00.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "kJOIVjsM9jk",
+      "videoId": "kJOIVjsM9jk",
+      "title": "【 #ふかいです！ 】《新曲リリース記念歌枠》 MV公開まで理芽歌うってよ𓂃⟡.·",
+      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "channelName": "理芽 -RIM-",
+      "startAt": "2026-10-21T10:00:00.000Z",
+      "endAt": "2026-10-21T11:31:44.000Z",
+      "url": "https://www.youtube.com/watch?v=kJOIVjsM9jk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kJOIVjsM9jk/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-21T10:00:00.000Z",
+      "actualStartTime": "2026-10-21T10:01:16.000Z",
+      "actualEndTime": "2026-10-21T11:31:44.000Z",
+      "publishedAt": "2026-10-21T11:52:25.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "0Qlv3Dlodhg",
+      "videoId": "0Qlv3Dlodhg",
+      "title": "理芽 - ふかいです！  / RIM - Love Me, Own Me｜from 神椿",
+      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
+      "channelName": "理芽 -RIM-",
+      "startAt": "2026-10-21T11:00:00.000Z",
+      "endAt": "2026-10-21T11:05:48.000Z",
+      "url": "https://www.youtube.com/watch?v=0Qlv3Dlodhg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0Qlv3Dlodhg/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-21T11:00:00.000Z",
+      "actualStartTime": "2026-10-21T11:00:10.000Z",
+      "actualEndTime": "2026-10-21T11:05:48.000Z",
+      "publishedAt": "2026-10-21T11:00:10.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

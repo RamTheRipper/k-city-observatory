@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T19:11:58.779Z",
+  "generatedAt": "2026-10-21T21:45:34.578Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "CLrB0COct4Y",
       "videoId": "CLrB0COct4Y",
@@ -1592,7 +1618,7 @@
       "startAt": "2026-10-22T10:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=T2lPjAFZTrA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/T2lPjAFZTrA/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/T2lPjAFZTrA/maxresdefault.jpg?v=6ad0303e",
       "group": "kuusou",
       "groupIds": [
         "kuusou"
@@ -1620,7 +1646,7 @@
       "startAt": "2026-10-22T11:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=Wnmo6pSgZ_Q",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Wnmo6pSgZ_Q/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Wnmo6pSgZ_Q/maxresdefault.jpg?v=6ad37580",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1648,7 +1674,7 @@
       "startAt": "2026-10-24T10:30:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=vzQcOVGZEig",
-      "thumbnailUrl": "https://i.ytimg.com/vi/vzQcOVGZEig/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vzQcOVGZEig/maxresdefault.jpg?v=6ac36f30",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1676,7 +1702,7 @@
       "startAt": "2026-10-25T10:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=SBpEVYDTujs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/SBpEVYDTujs/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SBpEVYDTujs/maxresdefault.jpg?v=6ad22be4",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1704,7 +1730,7 @@
       "startAt": "2026-11-14T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=g4u9tu3Bv98",
-      "thumbnailUrl": "https://i.ytimg.com/vi/g4u9tu3Bv98/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/g4u9tu3Bv98/maxresdefault.jpg?v=68d8fc72",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1733,7 +1759,7 @@
       "startAt": "2026-12-08T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=_cMS4_S6SEs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/_cMS4_S6SEs/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_cMS4_S6SEs/maxresdefault.jpg?v=6279f2b2",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1762,7 +1788,7 @@
       "startAt": "2026-12-13T10:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=K3qP4CuVyLc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/K3qP4CuVyLc/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/K3qP4CuVyLc/maxresdefault.jpg?v=6a645dde",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1791,7 +1817,7 @@
       "startAt": "2026-12-30T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=5nu9FoloUF0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/5nu9FoloUF0/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5nu9FoloUF0/maxresdefault.jpg?v=6921940d",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1820,7 +1846,7 @@
       "startAt": "2026-12-30T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=djSTx-VbLPU",
-      "thumbnailUrl": "https://i.ytimg.com/vi/djSTx-VbLPU/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/djSTx-VbLPU/maxresdefault.jpg?v=68d62933",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1849,7 +1875,7 @@
       "startAt": "2027-10-30T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=xVJGH1tiW3g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/xVJGH1tiW3g/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xVJGH1tiW3g/maxresdefault.jpg?v=6905d254",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1877,7 +1903,7 @@
       "startAt": "2027-10-30T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=3apdP8-XfGA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/3apdP8-XfGA/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3apdP8-XfGA/maxresdefault.jpg?v=6905d22c",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1905,7 +1931,7 @@
       "startAt": "2027-10-30T15:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=1DHMNx6t9SQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/1DHMNx6t9SQ/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1DHMNx6t9SQ/maxresdefault.jpg?v=6905d1fd",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1933,7 +1959,7 @@
       "startAt": "2027-11-01T07:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=zDWMNzRw5no",
-      "thumbnailUrl": "https://i.ytimg.com/vi/zDWMNzRw5no/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zDWMNzRw5no/maxresdefault.jpg?v=6905b023",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1961,7 +1987,7 @@
       "startAt": "2027-11-01T07:10:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=gQDDgBKNAdo",
-      "thumbnailUrl": "https://i.ytimg.com/vi/gQDDgBKNAdo/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gQDDgBKNAdo/maxresdefault.jpg?v=6905d75a",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1989,7 +2015,7 @@
       "startAt": "2027-11-01T07:15:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=njyY35RD9vs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/njyY35RD9vs/maxresdefault_live.jpg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/njyY35RD9vs/maxresdefault.jpg?v=6905bb86",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"

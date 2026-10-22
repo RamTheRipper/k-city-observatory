@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T08:29:30.447Z",
+  "generatedAt": "2026-10-22T11:57:43.000Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "CLrB0COct4Y",
       "videoId": "CLrB0COct4Y",
@@ -1658,9 +1684,9 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-10-22T10:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-10-22T09:53:21.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-10-15T01:45:31.000Z",
       "source": "youtube-details",
@@ -1686,11 +1712,39 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-10-22T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-10-22T11:01:42.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-10-17T13:17:49.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "jEPFRNQxavY",
+      "videoId": "jEPFRNQxavY",
+      "title": "【リトルナイトメア3】DLC1 春さんと再びリトルナイトメアの世界へ  #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-10-23T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=jEPFRNQxavY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jEPFRNQxavY/maxresdefault.jpg?v=6ad9bf8d",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-23T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-22T07:47:22.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1747,6 +1801,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-16T13:51:30.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "QsbsDLy-oQE",
+      "videoId": "QsbsDLy-oQE",
+      "title": "【Phasmophobia】ララさん廉さん詩道くんと幽霊を見つけるよ  #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-10-26T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=QsbsDLy-oQE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QsbsDLy-oQE/maxresdefault.jpg?v=6ad8696a",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-26T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-21T07:27:36.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

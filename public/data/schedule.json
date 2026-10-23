@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T11:43:28.659Z",
+  "generatedAt": "2026-10-23T14:10:47.523Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "TQ7ncnv4eSI",
-      "videoId": "TQ7ncnv4eSI",
-      "title": "🕯【 ゲーム実況 】BrokenLore: DON’T LIE #御莉姫生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-09-22T10:30:00.000Z",
-      "endAt": "2026-09-22T12:57:52.000Z",
-      "url": "https://www.youtube.com/watch?v=TQ7ncnv4eSI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/TQ7ncnv4eSI/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-22T10:30:00.000Z",
-      "actualStartTime": "2026-09-22T10:26:50.000Z",
-      "actualEndTime": "2026-09-22T12:57:52.000Z",
-      "publishedAt": "2026-09-22T13:09:02.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "OlLVFCdK7eI",
       "videoId": "OlLVFCdK7eI",
@@ -1700,7 +1646,7 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-10-23T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-23T13:28:28.000Z",
       "url": "https://www.youtube.com/watch?v=jEPFRNQxavY",
       "thumbnailUrl": "https://i.ytimg.com/vi/jEPFRNQxavY/maxresdefault.jpg?v=6ad9bf8d",
       "group": "girls_revolution_project",
@@ -1712,10 +1658,10 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-10-23T11:00:00.000Z",
       "actualStartTime": "2026-10-23T10:57:00.000Z",
-      "actualEndTime": null,
+      "actualEndTime": "2026-10-23T13:28:28.000Z",
       "publishedAt": "2026-10-22T07:47:22.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",

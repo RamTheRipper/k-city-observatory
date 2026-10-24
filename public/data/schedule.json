@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T13:13:51.895Z",
+  "generatedAt": "2026-10-24T15:59:32.097Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "1LoZe2_s9uk",
       "videoId": "1LoZe2_s9uk",
@@ -1669,6 +1695,34 @@
       "isManual": false
     },
     {
+      "id": "s5yVO6sq__0",
+      "videoId": "s5yVO6sq__0",
+      "title": "【昼雑談】ハロウィン、近いね🎃【日曜お昼のひとやすみ】 #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-10-25T04:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=s5yVO6sq__0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/s5yVO6sq__0/maxresdefault.jpg?v=6adc9abb",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-25T04:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-24T11:47:04.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "SBpEVYDTujs",
       "videoId": "SBpEVYDTujs",
       "title": "幸祜-KOKO-【6周年記念生配信🎉】歌うぞ！！",
@@ -1692,6 +1746,62 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-16T13:51:30.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "RFYaEnH5WWI",
+      "videoId": "RFYaEnH5WWI",
+      "title": "【歌枠】男性ボーカル縛り！イケメンになる。 #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-10-25T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=RFYaEnH5WWI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RFYaEnH5WWI/maxresdefault.jpg?v=6adcb9be",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-25T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-24T13:59:24.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "aiLoxv-xh_I",
+      "videoId": "aiLoxv-xh_I",
+      "title": "【緊急特番】明透・琶舞 TWO-MAN LIVE「I」開催決定&明透3rd Album「BELOVED」琶舞1st Album「LOVELESS」同時リリース決定!!  〜集まれ皆のもの〜",
+      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
+      "channelName": "明透 -ᴀsᴜ-",
+      "startAt": "2026-10-25T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=aiLoxv-xh_I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aiLoxv-xh_I/maxresdefault.jpg?v=6ad9583a",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-25T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-21T07:36:07.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

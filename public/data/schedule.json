@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T20:54:06.168Z",
+  "generatedAt": "2026-10-25T21:12:00.636Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1662,6 +1662,34 @@
       "actualStartTime": "2026-10-25T03:54:48.000Z",
       "actualEndTime": "2026-10-25T06:10:52.000Z",
       "publishedAt": "2026-10-25T06:26:18.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "Gh8vlJqNykU",
+      "videoId": "Gh8vlJqNykU",
+      "title": "【歌ってみた】Golden - HUNTR/X covered covered by 幸祜【神椿】",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "startAt": "2026-10-25T09:55:00.000Z",
+      "endAt": "2026-10-25T09:59:20.000Z",
+      "url": "https://www.youtube.com/watch?v=Gh8vlJqNykU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Gh8vlJqNykU/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-25T09:55:00.000Z",
+      "actualStartTime": "2026-10-25T09:55:10.000Z",
+      "actualEndTime": "2026-10-25T09:59:20.000Z",
+      "publishedAt": "2026-10-25T09:55:10.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

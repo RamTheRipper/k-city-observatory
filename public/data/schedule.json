@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T11:36:48.290Z",
+  "generatedAt": "2026-10-25T13:39:25.078Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "1LoZe2_s9uk",
-      "videoId": "1LoZe2_s9uk",
-      "title": "【神椿報奏部 vol.64】アーカイブ：9/30（水）23:59まで",
-      "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
-      "channelName": "ヰ世界情緒 -Isekaijoucho-",
-      "startAt": "2026-09-24T11:00:00.000Z",
-      "endAt": "2026-09-24T12:09:03.000Z",
-      "url": "https://www.youtube.com/watch?v=1LoZe2_s9uk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/1LoZe2_s9uk/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-24T11:00:00.000Z",
-      "actualStartTime": "2026-09-24T10:57:06.000Z",
-      "actualEndTime": "2026-09-24T12:09:03.000Z",
-      "publishedAt": "2026-09-24T12:14:03.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "yv9NjHEVSic",
       "videoId": "yv9NjHEVSic",
@@ -1757,9 +1703,9 @@
       "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
       "channelName": "明透 -ᴀsᴜ-",
       "startAt": "2026-10-25T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-25T11:58:49.000Z",
       "url": "https://www.youtube.com/watch?v=aiLoxv-xh_I",
-      "thumbnailUrl": "https://i.ytimg.com/vi/aiLoxv-xh_I/maxresdefault.jpg?v=6ad9583a",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aiLoxv-xh_I/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1769,11 +1715,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-10-25T11:00:00.000Z",
       "actualStartTime": "2026-10-25T10:59:09.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-10-21T07:36:07.000Z",
+      "actualEndTime": "2026-10-25T11:58:49.000Z",
+      "publishedAt": "2026-10-25T12:08:22.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1781,7 +1727,7 @@
     {
       "id": "RFYaEnH5WWI",
       "videoId": "RFYaEnH5WWI",
-      "title": "【歌枠】男性ボーカル縛り！イケメンになる。 #夕凪機生放送",
+      "title": "【歌枠】イケメンになる。 #夕凪機生放送",
       "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
       "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-10-25T12:00:00.000Z",
@@ -1797,9 +1743,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-10-25T12:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-10-25T11:57:09.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-10-24T13:59:24.000Z",
       "source": "youtube-details",

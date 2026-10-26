@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T23:08:33.645Z",
+  "generatedAt": "2026-10-26T08:45:32.926Z",
   "items": [
     {
       "id": "PVSLdGuK7HY",
@@ -1759,9 +1759,9 @@
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
       "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2026-10-25T22:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-25T23:49:26.000Z",
       "url": "https://www.youtube.com/watch?v=oOTF9bEBtqI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/oOTF9bEBtqI/maxresdefault.jpg?v=6ade00a5",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oOTF9bEBtqI/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1771,11 +1771,11 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-10-25T22:00:00.000Z",
       "actualStartTime": "2026-10-25T21:56:28.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-10-25T13:14:09.000Z",
+      "actualEndTime": "2026-10-25T23:49:26.000Z",
+      "publishedAt": "2026-10-26T00:22:28.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

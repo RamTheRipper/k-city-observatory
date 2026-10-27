@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T00:20:28.225Z",
+  "generatedAt": "2026-10-27T05:10:13.194Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "g3xGVXLTyM8",
       "videoId": "g3xGVXLTyM8",
@@ -1873,7 +1899,7 @@
       "startAt": "2026-11-08T11:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=0ueX0qTPH1Y",
-      "thumbnailUrl": "https://i.ytimg.com/vi/0ueX0qTPH1Y/maxresdefault.jpg?v=6adf0e49",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0ueX0qTPH1Y/maxresdefault.jpg?v=6ae011db",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"

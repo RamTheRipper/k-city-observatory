@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T15:16:32.842Z",
+  "generatedAt": "2026-10-27T22:17:57.683Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "Z7i1uXvSPoE",
       "videoId": "Z7i1uXvSPoE",
@@ -1809,6 +1835,34 @@
       "isManual": false
     },
     {
+      "id": "GTpM7x41-LQ",
+      "videoId": "GTpM7x41-LQ",
+      "title": "【つみばらじお】#14",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-10-28T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=GTpM7x41-LQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GTpM7x41-LQ/maxresdefault.jpg?v=6ae09f90",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-28T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-27T12:56:46.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "iejQ2Y7HHjw",
       "videoId": "iejQ2Y7HHjw",
       "title": "【 コラボ雑談 】Halloween triple party🎃🦇- ヰ世界情緒 / 御莉姫 /美古途",
@@ -1817,7 +1871,7 @@
       "startAt": "2026-10-31T11:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=iejQ2Y7HHjw",
-      "thumbnailUrl": "https://i.ytimg.com/vi/iejQ2Y7HHjw/maxresdefault.jpg?v=6aded5f4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iejQ2Y7HHjw/maxresdefault.jpg?v=6ae0cbd6",
       "group": "vwp",
       "groupIds": [
         "vwp"

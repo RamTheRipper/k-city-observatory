@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T22:38:06.579Z",
+  "generatedAt": "2026-10-28T22:49:37.179Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1858,6 +1858,62 @@
       "actualStartTime": "2026-10-28T10:57:31.000Z",
       "actualEndTime": "2026-10-28T12:33:00.000Z",
       "publishedAt": "2026-10-28T13:57:19.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "mPn6__Ke6CI",
+      "videoId": "mPn6__Ke6CI",
+      "title": "明透 - PlayFull (from「Cross Night LIVE」)/ ASU - PlayFull (Live.ver)【神椿】",
+      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
+      "channelName": "明透 -ᴀsᴜ-",
+      "startAt": "2026-10-28T11:00:00.000Z",
+      "endAt": "2026-10-28T11:04:02.000Z",
+      "url": "https://www.youtube.com/watch?v=mPn6__Ke6CI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mPn6__Ke6CI/maxresdefault.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-28T11:00:00.000Z",
+      "actualStartTime": "2026-10-28T11:00:07.000Z",
+      "actualEndTime": "2026-10-28T11:04:02.000Z",
+      "publishedAt": "2026-10-28T11:00:07.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "zO-PT2xLZNc",
+      "videoId": "zO-PT2xLZNc",
+      "title": "琶舞 - Pain Killer (from「Cross Night LIVE」)/ BEMA - Pain Killer(Live.ver)【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-10-28T11:30:00.000Z",
+      "endAt": "2026-10-28T11:34:26.000Z",
+      "url": "https://www.youtube.com/watch?v=zO-PT2xLZNc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zO-PT2xLZNc/maxresdefault.jpg",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-10-28T11:30:00.000Z",
+      "actualStartTime": "2026-10-28T11:30:08.000Z",
+      "actualEndTime": "2026-10-28T11:34:26.000Z",
+      "publishedAt": "2026-10-28T11:30:08.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

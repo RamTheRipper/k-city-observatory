@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T09:31:24.326Z",
+  "generatedAt": "2026-10-28T12:59:45.974Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "Z7i1uXvSPoE",
       "videoId": "Z7i1uXvSPoE",
@@ -1787,9 +1813,9 @@
       "channelId": "UCRYh9eOSnwcT6aftSf8hYUw",
       "channelName": "Sooda",
       "startAt": "2026-10-28T10:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-28T11:20:11.000Z",
       "url": "https://www.youtube.com/watch?v=mpa_Hmd75c0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/mpa_Hmd75c0/maxresdefault.jpg?v=6adee127",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mpa_Hmd75c0/maxresdefault.jpg",
       "group": "kuusou",
       "groupIds": [
         "kuusou"
@@ -1799,11 +1825,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-10-28T10:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-10-26T05:12:04.000Z",
+      "actualStartTime": "2026-10-28T09:57:36.000Z",
+      "actualEndTime": "2026-10-28T11:20:11.000Z",
+      "publishedAt": "2026-10-28T11:43:44.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1815,7 +1841,7 @@
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
       "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2026-10-28T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-28T12:33:00.000Z",
       "url": "https://www.youtube.com/watch?v=GTpM7x41-LQ",
       "thumbnailUrl": "https://i.ytimg.com/vi/GTpM7x41-LQ/maxresdefault.jpg?v=6ae09f90",
       "group": "girls_revolution_project",
@@ -1827,11 +1853,39 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-10-28T11:00:00.000Z",
+      "actualStartTime": "2026-10-28T10:57:31.000Z",
+      "actualEndTime": "2026-10-28T12:33:00.000Z",
+      "publishedAt": "2026-10-27T12:56:46.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "R8lza_zpzoQ",
+      "videoId": "R8lza_zpzoQ",
+      "title": "【歌枠】ハロウィンなので、ちょっぴりダークに👻 #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-10-29T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=R8lza_zpzoQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R8lza_zpzoQ/maxresdefault.jpg?v=6ae1a349",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-29T11:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-10-27T12:56:46.000Z",
+      "publishedAt": "2026-10-28T07:24:55.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1890,6 +1944,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-26T17:40:15.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "DCL6I5TtIys",
+      "videoId": "DCL6I5TtIys",
+      "title": "【11/5(木)20時スタート 】あすべまる！1周年〜二人で協力ぷれいんぐ〜【 琶舞/明透/神椿 】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-11-05T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=DCL6I5TtIys",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DCL6I5TtIys/maxresdefault.jpg?v=6ae1f156",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-05T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-28T07:53:18.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

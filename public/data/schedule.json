@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T22:47:37.517Z",
+  "generatedAt": "2026-10-29T22:56:47.854Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -482,7 +482,7 @@
     {
       "id": "w2t_Vm-DbuE",
       "videoId": "w2t_Vm-DbuE",
-      "title": "【初配信】本日のお客様はララ様です🍏【CIEL / #しえるんるんランド】",
+      "title": "本日のお客様はララ様です🍏【CIEL / #しえるんるんランド】",
       "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
       "channelName": "CIEL",
       "startAt": "2026-10-09T10:00:00.000Z",
@@ -1812,9 +1812,9 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-10-29T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-10-29T12:53:53.000Z",
       "url": "https://www.youtube.com/watch?v=R8lza_zpzoQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/R8lza_zpzoQ/maxresdefault.jpg?v=6ae1a349",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R8lza_zpzoQ/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1826,9 +1826,9 @@
       "category": "tsumitobatsu",
       "status": "ended",
       "scheduledStartTime": "2026-10-29T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-10-28T07:24:55.000Z",
+      "actualStartTime": "2026-10-29T10:57:07.000Z",
+      "actualEndTime": "2026-10-29T12:53:53.000Z",
+      "publishedAt": "2026-10-29T16:16:05.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,63 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T09:51:08.853Z",
+  "generatedAt": "2026-10-30T13:00:02.792Z",
   "items": [
     {
-      "id": "ZXGfT8oX22I",
-      "videoId": "ZXGfT8oX22I",
-      "title": "【なんの秋？】ライブ振り返り＆近況報告！【未確認少女観測部-vol.52】",
-      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
-      "channelName": "花譜 -未確認少女観測部-",
-      "startAt": "2026-09-29T10:00:00.000Z",
-      "endAt": "2026-09-29T11:38:29.000Z",
-      "url": "https://www.youtube.com/watch?v=ZXGfT8oX22I",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ZXGfT8oX22I/hqdefault.jpg",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
       "group": "vwp",
       "groupIds": [
         "vwp"
       ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-09-29T10:00:00.000Z",
-      "actualStartTime": "2026-09-29T09:58:41.000Z",
-      "actualEndTime": "2026-09-29T11:38:29.000Z",
-      "publishedAt": "2026-09-29T11:57:01.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "YkFnbRZHwcc",
-      "videoId": "YkFnbRZHwcc",
-      "title": "🕯【 ゲーム実況 】BrokenLore: DON’T LIE ♯2 #御莉姫生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-09-29T10:30:00.000Z",
-      "endAt": "2026-09-29T11:50:54.000Z",
-      "url": "https://www.youtube.com/watch?v=YkFnbRZHwcc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/YkFnbRZHwcc/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-09-29T10:30:00.000Z",
-      "actualStartTime": "2026-09-29T10:26:09.000Z",
-      "actualEndTime": "2026-09-29T11:50:54.000Z",
-      "publishedAt": "2026-09-29T12:23:31.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "iurvBMDIciw",
@@ -1774,6 +1743,34 @@
       "actualStartTime": "2026-10-29T10:57:07.000Z",
       "actualEndTime": "2026-10-29T12:53:53.000Z",
       "publishedAt": "2026-10-29T16:16:05.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "4tGMqNQHTIk",
+      "videoId": "4tGMqNQHTIk",
+      "title": "【Detroit: Become Human】へっぽこにはならない #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-10-31T05:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=4tGMqNQHTIk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4tGMqNQHTIk/maxresdefault.jpg?v=6ae47bfc",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-10-31T05:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-30T11:14:01.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

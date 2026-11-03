@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T23:26:43.947Z",
+  "generatedAt": "2026-11-03T23:39:27.281Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1843,7 +1843,7 @@
       "startAt": "2026-11-03T11:00:00.000Z",
       "endAt": "2026-11-03T12:53:14.000Z",
       "url": "https://www.youtube.com/watch?v=01wL5Ah4CHk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/01wL5Ah4CHk/maxresdefault.jpg?v=6ae85534",
+      "thumbnailUrl": "https://i.ytimg.com/vi/01wL5Ah4CHk/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1857,7 +1857,7 @@
       "scheduledStartTime": "2026-11-03T11:00:00.000Z",
       "actualStartTime": "2026-11-03T10:57:49.000Z",
       "actualEndTime": "2026-11-03T12:53:14.000Z",
-      "publishedAt": "2026-11-02T09:17:37.000Z",
+      "publishedAt": "2026-11-03T15:42:31.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T01:01:40.611Z",
+  "generatedAt": "2026-11-03T01:13:19.767Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1783,9 +1783,9 @@
       "channelId": "UC3VN9h8fokwB2XURWHNcdWw",
       "channelName": "ヰ世界情緒 -ヰ世界電子通信部-",
       "startAt": "2026-11-02T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-02T12:39:24.000Z",
       "url": "https://www.youtube.com/watch?v=BpBQKqw9OhM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/BpBQKqw9OhM/maxresdefault.jpg?v=6adf9081",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BpBQKqw9OhM/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1798,9 +1798,9 @@
       "category": "",
       "status": "ended",
       "scheduledStartTime": "2026-11-02T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-10-26T17:40:15.000Z",
+      "actualStartTime": "2026-11-02T10:55:06.000Z",
+      "actualEndTime": "2026-11-02T12:39:24.000Z",
+      "publishedAt": "2026-11-02T13:05:59.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

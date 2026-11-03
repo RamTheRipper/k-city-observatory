@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T10:43:05.115Z",
+  "generatedAt": "2026-11-03T14:21:31.199Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "8cG41G0M664",
       "videoId": "8cG41G0M664",
@@ -1815,7 +1841,7 @@
       "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
       "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
       "startAt": "2026-11-03T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-03T12:53:14.000Z",
       "url": "https://www.youtube.com/watch?v=01wL5Ah4CHk",
       "thumbnailUrl": "https://i.ytimg.com/vi/01wL5Ah4CHk/maxresdefault.jpg?v=6ae85534",
       "group": "girls_revolution_project",
@@ -1827,11 +1853,39 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-03T11:00:00.000Z",
+      "actualStartTime": "2026-11-03T10:57:49.000Z",
+      "actualEndTime": "2026-11-03T12:53:14.000Z",
+      "publishedAt": "2026-11-02T09:17:37.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "Pl1vpedod4c",
+      "videoId": "Pl1vpedod4c",
+      "title": "✧ 心世紀RADIO ✧ #ココロこみゅにてぃ 【06】",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-11-04T10:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Pl1vpedod4c",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Pl1vpedod4c/maxresdefault.jpg?v=6ae9bfeb",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-04T10:30:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-11-02T09:17:37.000Z",
+      "publishedAt": "2026-11-03T11:05:12.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

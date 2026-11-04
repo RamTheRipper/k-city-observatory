@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T06:30:22.863Z",
+  "generatedAt": "2026-11-04T19:49:15.345Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1869,9 +1869,9 @@
       "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
       "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
       "startAt": "2026-11-04T10:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-04T10:53:50.000Z",
       "url": "https://www.youtube.com/watch?v=Pl1vpedod4c",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Pl1vpedod4c/maxresdefault.jpg?v=6ae9bfeb",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Pl1vpedod4c/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1881,11 +1881,11 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-04T10:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-03T11:05:12.000Z",
+      "actualStartTime": "2026-11-04T10:30:01.000Z",
+      "actualEndTime": "2026-11-04T10:53:50.000Z",
+      "publishedAt": "2026-11-04T11:01:46.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1942,6 +1942,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-26T08:24:38.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "VLdbcbHjHYM",
+      "videoId": "VLdbcbHjHYM",
+      "title": "【🎐生誕祭歌枠🎐】後夜祭！歌います！！  #佳鏡院生誕祭2026",
+      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
+      "startAt": "2026-11-09T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=VLdbcbHjHYM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VLdbcbHjHYM/maxresdefault.jpg?v=6ae44827",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-09T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-10-30T07:32:53.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

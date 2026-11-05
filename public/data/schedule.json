@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T21:26:08.479Z",
+  "generatedAt": "2026-11-05T23:50:12.084Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "y3Fjr1-VaUE",
       "videoId": "y3Fjr1-VaUE",
@@ -1839,7 +1865,7 @@
     {
       "id": "DCL6I5TtIys",
       "videoId": "DCL6I5TtIys",
-      "title": "【11/5(木)20時スタート 】あすべまる！1周年〜二人で協力ぷれいんぐ〜【 琶舞/明透/神椿 】",
+      "title": "あすべまる！1周年〜めっちゃカメレオンとPadlePadlePadleプレイする↑↑↑〜【 琶舞/明透/神椿 】",
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-11-05T11:00:00.000Z",

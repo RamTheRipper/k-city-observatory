@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T10:41:22.485Z",
+  "generatedAt": "2026-11-05T19:59:42.792Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "y3Fjr1-VaUE",
       "videoId": "y3Fjr1-VaUE",
@@ -1843,9 +1869,9 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-11-05T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-05T12:59:45.000Z",
       "url": "https://www.youtube.com/watch?v=DCL6I5TtIys",
-      "thumbnailUrl": "https://i.ytimg.com/vi/DCL6I5TtIys/maxresdefault.jpg?v=6ae1f156",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DCL6I5TtIys/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1855,11 +1881,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-05T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-10-28T07:53:18.000Z",
+      "actualStartTime": "2026-11-05T10:59:08.000Z",
+      "actualEndTime": "2026-11-05T12:59:45.000Z",
+      "publishedAt": "2026-11-05T15:16:49.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1916,6 +1942,35 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-30T07:32:53.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "RTK8MCCW51M",
+      "videoId": "RTK8MCCW51M",
+      "title": "【最強のお弁当作ってみた🍱】みんなのリクエストおかずを入れまくって食べます｜春猿火生配信",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-11-11T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=RTK8MCCW51M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RTK8MCCW51M/maxresdefault.jpg?v=6aec362e",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-11T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-05T07:54:20.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

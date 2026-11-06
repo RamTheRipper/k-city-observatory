@@ -1,62 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T10:41:31.050Z",
+  "generatedAt": "2026-11-06T19:27:40.763Z",
   "items": [
     {
-      "id": "y3Fjr1-VaUE",
-      "videoId": "y3Fjr1-VaUE",
-      "title": "SINGULAR LIVE TV（仮題）vol.１",
-      "channelId": "UCAOhUv73jM5iCpOhuJOQzxA",
-      "channelName": "KAMITSUBAKI STUDIO",
-      "startAt": "2026-10-06T11:00:00.000Z",
-      "endAt": "2026-10-06T11:34:56.000Z",
-      "url": "https://www.youtube.com/watch?v=y3Fjr1-VaUE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/y3Fjr1-VaUE/maxresdefault.jpg",
-      "group": "official",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "official"
+        "vwp"
       ],
-      "primaryGroupId": "official",
-      "tags": [
-        "official"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-06T11:00:00.000Z",
-      "actualStartTime": "2026-10-06T10:55:06.000Z",
-      "actualEndTime": "2026-10-06T11:34:56.000Z",
-      "publishedAt": "2026-10-06T11:45:46.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "7oAEbKiD0vQ",
-      "videoId": "7oAEbKiD0vQ",
-      "title": "【Cats Organized Neatly】ふわりと、するよ🐾 #硝子宮生放送",
-      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
-      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
-      "startAt": "2026-10-06T12:00:00.000Z",
-      "endAt": "2026-10-06T14:10:23.000Z",
-      "url": "https://www.youtube.com/watch?v=7oAEbKiD0vQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/7oAEbKiD0vQ/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "shinseiki",
       "status": "ended",
-      "scheduledStartTime": "2026-10-06T12:00:00.000Z",
-      "actualStartTime": "2026-10-06T11:57:28.000Z",
-      "actualEndTime": "2026-10-06T14:10:23.000Z",
-      "publishedAt": "2026-10-06T14:15:41.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "cyQe0zt5TbY",
@@ -1893,6 +1863,34 @@
       "isManual": false
     },
     {
+      "id": "2GIQK7HhlMQ",
+      "videoId": "2GIQK7HhlMQ",
+      "title": "【雑談】11月だしお菓子食べながら雑談しようや…🍪✨【明透/神椿】",
+      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
+      "channelName": "明透 -ᴀsᴜ-",
+      "startAt": "2026-11-09T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=2GIQK7HhlMQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2GIQK7HhlMQ/maxresdefault.jpg?v=6aeaf30f",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-09T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-04T08:55:41.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "VLdbcbHjHYM",
       "videoId": "VLdbcbHjHYM",
       "title": "【🎐生誕祭歌枠🎐】後夜祭！歌います！！  #佳鏡院生誕祭2026",
@@ -1916,6 +1914,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-10-30T07:32:53.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "Tu55ujBIeQM",
+      "videoId": "Tu55ujBIeQM",
+      "title": "神椿TCG倶楽部 vol.10 ー KGC2026イベント情報発表 ー",
+      "channelId": "UCAOhUv73jM5iCpOhuJOQzxA",
+      "channelName": "KAMITSUBAKI STUDIO",
+      "startAt": "2026-11-11T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=Tu55ujBIeQM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Tu55ujBIeQM/maxresdefault.jpg?v=6aed2e21",
+      "group": "official",
+      "groupIds": [
+        "official"
+      ],
+      "primaryGroupId": "official",
+      "tags": [
+        "official"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-11T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-06T01:28:48.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

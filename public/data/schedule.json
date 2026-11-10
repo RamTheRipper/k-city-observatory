@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T01:45:58.316Z",
+  "generatedAt": "2026-11-10T07:23:58.904Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1830,6 +1830,36 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-06T09:33:47.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "R-XF1hQFDVQ",
+      "videoId": "R-XF1hQFDVQ",
+      "title": "空爽でお菓子作りしてみた🍪【 #空爽るーむ / CIEL & Sooda / 神椿】",
+      "channelId": "UCJxwvbBoawRJtVgPgvMg-Qg",
+      "channelName": "空爽",
+      "startAt": "2026-11-11T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=R-XF1hQFDVQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R-XF1hQFDVQ/maxresdefault.jpg?v=6af2c02a",
+      "group": "kuusou",
+      "groupIds": [
+        "kuusou",
+        "official"
+      ],
+      "primaryGroupId": "kuusou",
+      "tags": [
+        "official",
+        "group"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-11T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-10T06:56:40.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T21:48:33.936Z",
+  "generatedAt": "2026-11-12T23:51:20.790Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "QYY1J3kklpk",
       "videoId": "QYY1J3kklpk",
@@ -1778,6 +1804,35 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-10T09:10:11.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "EIcKiM0LDNk",
+      "videoId": "EIcKiM0LDNk",
+      "title": "【 #理芽ニューロマ1 同時視聴会 】振り返りやるよ！かってぇ理芽を一緒にみよう^_ｰ☆ 理芽sub ch.「STRANGE GIRL CLUB」 #ストガル",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-11-12T12:00:00.000Z",
+      "endAt": "2026-11-12T15:31:17.000Z",
+      "url": "https://www.youtube.com/watch?v=EIcKiM0LDNk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EIcKiM0LDNk/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-11-12T12:00:00.000Z",
+      "actualStartTime": "2026-11-12T12:02:13.000Z",
+      "actualEndTime": "2026-11-12T15:31:17.000Z",
+      "publishedAt": "2026-11-12T15:40:52.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

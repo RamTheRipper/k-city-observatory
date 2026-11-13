@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T23:51:20.790Z",
+  "generatedAt": "2026-11-13T06:51:06.663Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1833,6 +1833,63 @@
       "actualStartTime": "2026-11-12T12:02:13.000Z",
       "actualEndTime": "2026-11-12T15:31:17.000Z",
       "publishedAt": "2026-11-12T15:40:52.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "ZKp5J0H1usk",
+      "videoId": "ZKp5J0H1usk",
+      "title": "【情報全てお話します(できるだけ)】ライブ詳細／MAISONKOKOについて　幸祜サブch配信「幸福拡張部電脳科 vol.72」",
+      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
+      "channelName": "幸祜 -幸福拡張部電脳科-",
+      "startAt": "2026-11-13T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=ZKp5J0H1usk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZKp5J0H1usk/maxresdefault.jpg?v=6af68a94",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-13T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-13T03:57:06.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "0NKN8p4J9dM",
+      "videoId": "0NKN8p4J9dM",
+      "title": "『晴途』Release記念配信 【 ＃しえるんるんランド 】",
+      "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
+      "channelName": "CIEL",
+      "startAt": "2026-11-14T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=0NKN8p4J9dM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0NKN8p4J9dM/maxresdefault.jpg?v=6af68cf2",
+      "group": "kuusou",
+      "groupIds": [
+        "kuusou"
+      ],
+      "primaryGroupId": "kuusou",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-14T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-13T04:07:12.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

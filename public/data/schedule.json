@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T21:21:49.607Z",
+  "generatedAt": "2026-11-13T23:50:54.366Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "kZhpvRAMPN8",
       "videoId": "kZhpvRAMPN8",
@@ -1676,9 +1702,9 @@
       "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
       "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
       "startAt": "2026-11-12T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-12T13:09:23.000Z",
       "url": "https://www.youtube.com/watch?v=WBfQOwre--s",
-      "thumbnailUrl": "https://i.ytimg.com/vi/WBfQOwre--s/maxresdefault.jpg?v=6af2df75",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WBfQOwre--s/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1690,9 +1716,9 @@
       "category": "tsumitobatsu",
       "status": "ended",
       "scheduledStartTime": "2026-11-12T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-10T09:10:11.000Z",
+      "actualStartTime": "2026-11-12T10:55:59.000Z",
+      "actualEndTime": "2026-11-12T13:09:23.000Z",
+      "publishedAt": "2026-11-13T03:59:51.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1733,9 +1759,9 @@
       "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
       "channelName": "幸祜 -幸福拡張部電脳科-",
       "startAt": "2026-11-13T12:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-13T13:47:38.000Z",
       "url": "https://www.youtube.com/watch?v=ZKp5J0H1usk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/ZKp5J0H1usk/maxresdefault.jpg?v=6af68a94",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZKp5J0H1usk/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1748,9 +1774,9 @@
       "category": "",
       "status": "ended",
       "scheduledStartTime": "2026-11-13T12:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-13T03:57:06.000Z",
+      "actualStartTime": "2026-11-13T12:01:39.000Z",
+      "actualEndTime": "2026-11-13T13:47:38.000Z",
+      "publishedAt": "2026-11-13T17:29:42.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

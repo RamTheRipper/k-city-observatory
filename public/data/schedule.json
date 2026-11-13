@@ -1,91 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T10:48:29.170Z",
+  "generatedAt": "2026-11-13T19:46:42.869Z",
   "items": [
     {
-      "id": "QYY1J3kklpk",
-      "videoId": "QYY1J3kklpk",
-      "title": "🕯【 ゲーム実況 】-鬼子母 Hariti- 絶対ビビらない姫ホラゲ  #御莉姫生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-10-13T10:30:00.000Z",
-      "endAt": "2026-10-13T13:07:02.000Z",
-      "url": "https://www.youtube.com/watch?v=QYY1J3kklpk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/QYY1J3kklpk/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-13T10:30:00.000Z",
-      "actualStartTime": "2026-10-13T10:25:33.000Z",
-      "actualEndTime": "2026-10-13T13:07:02.000Z",
-      "publishedAt": "2026-10-13T13:17:00.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "YzkP5J2e_-8",
-      "videoId": "YzkP5J2e_-8",
-      "title": "神椿報奏部 vol.65  （アーカイブ期間：2026年10月19日(月) 23:59まで）",
-      "channelId": "UCE7gtjLeZKNXLp5YURzYYeg",
-      "channelName": "春猿火 -HARUSARUHI-",
-      "startAt": "2026-10-13T11:00:00.000Z",
-      "endAt": "2026-10-13T12:09:34.000Z",
-      "url": "https://www.youtube.com/watch?v=YzkP5J2e_-8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/YzkP5J2e_-8/maxresdefault.jpg",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
       "group": "vwp",
       "groupIds": [
         "vwp"
       ],
-      "primaryGroupId": "vwp",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-10-13T11:00:00.000Z",
-      "actualStartTime": "2026-10-13T10:57:07.000Z",
-      "actualEndTime": "2026-10-13T12:09:34.000Z",
-      "publishedAt": "2026-10-13T12:13:20.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "tAPP2n-Ko3M",
-      "videoId": "tAPP2n-Ko3M",
-      "title": "全然ビビってねぇし！！「パショグリでなんとかするKlara×KOKO Vol.2」【日本事故物件監視協会3-JSP-】　幸祜サブch配信「幸福拡張部電脳科 vol.66」",
-      "channelId": "UCyCbd63S29BuFOkJC2-aR4g",
-      "channelName": "幸祜 -幸福拡張部電脳科-",
-      "startAt": "2026-10-13T12:00:00.000Z",
-      "endAt": "2026-10-13T15:51:38.000Z",
-      "url": "https://www.youtube.com/watch?v=tAPP2n-Ko3M",
-      "thumbnailUrl": "https://i.ytimg.com/vi/tAPP2n-Ko3M/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
       "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-13T12:00:00.000Z",
-      "actualStartTime": "2026-10-13T12:00:01.000Z",
-      "actualEndTime": "2026-10-13T15:51:38.000Z",
-      "publishedAt": "2026-10-13T18:09:33.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "kZhpvRAMPN8",
@@ -1831,11 +1772,39 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-13T12:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-13T03:57:06.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "cxqnW0c082s",
+      "videoId": "cxqnW0c082s",
+      "title": "【Detroit: Become Human】 好感度アゲ⤴てこｯ! #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-11-14T05:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=cxqnW0c082s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cxqnW0c082s/maxresdefault.jpg?v=6af6d7bc",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-14T05:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-13T09:26:17.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1864,6 +1833,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-13T04:07:12.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "kM9TEmIqYpQ",
+      "videoId": "kM9TEmIqYpQ",
+      "title": "【ナツノカナタ】#4 またねのさきへ。 #美古途生放送",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-11-14T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=kM9TEmIqYpQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kM9TEmIqYpQ/maxresdefault.jpg?v=6af6c7e9",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-14T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-13T08:18:47.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1926,6 +1923,34 @@
       "isManual": false
     },
     {
+      "id": "R0fbyKV-zaI",
+      "videoId": "R0fbyKV-zaI",
+      "title": "【完全版：つみみじかん〜狂オシイホド愛シテル〜】あのこはどこへいったの #硝子宮生放送",
+      "channelId": "UCzArdRlyB498Ksl8BIiD6ZA",
+      "channelName": "硝子宮 -GARASUMIYA- / 心世紀 from 少女革命計画",
+      "startAt": "2026-11-16T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=R0fbyKV-zaI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R0fbyKV-zaI/maxresdefault.jpg?v=6af6e317",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-16T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-13T10:02:47.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "AVouKpvfTEs",
       "videoId": "AVouKpvfTEs",
       "title": "✧ 心世紀RADIO ✧ #ココロこみゅにてぃ 【07】",
@@ -1949,6 +1974,91 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-12T07:21:34.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "AAwPs8dXaQ0",
+      "videoId": "AAwPs8dXaQ0",
+      "title": "神椿報奏部 vol.66",
+      "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
+      "channelName": "ヰ世界情緒 -Isekaijoucho-",
+      "startAt": "2026-11-18T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=AAwPs8dXaQ0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AAwPs8dXaQ0/maxresdefault.jpg?v=6af67d5f",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-18T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-13T03:00:44.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "75LhiGCxHDw",
+      "videoId": "75LhiGCxHDw",
+      "title": "【おにぎり屋さん】こんばんは🍙Soodaです🫧【Sooda / #そーだろぐ 】",
+      "channelId": "UCRYh9eOSnwcT6aftSf8hYUw",
+      "channelName": "Sooda",
+      "startAt": "2026-11-18T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=75LhiGCxHDw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/75LhiGCxHDw/maxresdefault.jpg?v=6af6b3c3",
+      "group": "kuusou",
+      "groupIds": [
+        "kuusou"
+      ],
+      "primaryGroupId": "kuusou",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-18T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-13T06:52:48.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "QbDQ8AnI4Xo",
+      "videoId": "QbDQ8AnI4Xo",
+      "title": "【ゲスト回：ヨミちゃんとVRChatワールド巡り🌐】 SPゲスト：ヨミ(VESPERBELL)",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-11-19T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=QbDQ8AnI4Xo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QbDQ8AnI4Xo/maxresdefault.jpg?v=6af491f5",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-19T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-11T16:04:02.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

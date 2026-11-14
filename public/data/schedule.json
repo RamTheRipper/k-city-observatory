@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T22:29:05.252Z",
+  "generatedAt": "2026-11-14T22:43:36.894Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1701,9 +1701,9 @@
       "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
       "channelName": "CIEL",
       "startAt": "2026-11-14T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-14T12:58:11.000Z",
       "url": "https://www.youtube.com/watch?v=0NKN8p4J9dM",
-      "thumbnailUrl": "https://i.ytimg.com/vi/0NKN8p4J9dM/maxresdefault.jpg?v=6af68cf2",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0NKN8p4J9dM/maxresdefault.jpg",
       "group": "kuusou",
       "groupIds": [
         "kuusou"
@@ -1715,9 +1715,9 @@
       "category": "",
       "status": "ended",
       "scheduledStartTime": "2026-11-14T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-13T04:07:12.000Z",
+      "actualStartTime": "2026-11-14T10:56:29.000Z",
+      "actualEndTime": "2026-11-14T12:58:11.000Z",
+      "publishedAt": "2026-11-14T13:05:04.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1729,9 +1729,9 @@
       "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
       "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
       "startAt": "2026-11-14T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-14T14:55:53.000Z",
       "url": "https://www.youtube.com/watch?v=kM9TEmIqYpQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/kM9TEmIqYpQ/maxresdefault.jpg?v=6af6c7e9",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kM9TEmIqYpQ/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1743,38 +1743,9 @@
       "category": "tsumitobatsu",
       "status": "ended",
       "scheduledStartTime": "2026-11-14T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-13T08:18:47.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "g4u9tu3Bv98",
-      "videoId": "g4u9tu3Bv98",
-      "title": "FREE CHAT",
-      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
-      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
-      "startAt": "2026-11-14T15:00:00.000Z",
-      "endAt": null,
-      "url": "https://www.youtube.com/watch?v=g4u9tu3Bv98",
-      "thumbnailUrl": "https://i.ytimg.com/vi/g4u9tu3Bv98/maxresdefault.jpg?v=68d8fc72",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "sub",
-        "membership"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-11-14T15:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2022-05-27T07:49:19.000Z",
+      "actualStartTime": "2026-11-14T10:55:50.000Z",
+      "actualEndTime": "2026-11-14T14:55:53.000Z",
+      "publishedAt": "2026-11-14T17:22:11.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

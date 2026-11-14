@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T23:50:54.366Z",
+  "generatedAt": "2026-11-14T06:30:33.356Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1800,9 +1800,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-11-14T05:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-11-14T04:58:00.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-11-13T09:26:17.000Z",
       "source": "youtube-details",

@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T00:57:00.397Z",
+  "generatedAt": "2026-11-15T06:39:41.146Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "J8QJivzmT8M",
       "videoId": "J8QJivzmT8M",
@@ -1725,15 +1751,44 @@
       "isManual": false
     },
     {
+      "id": "g4u9tu3Bv98",
+      "videoId": "g4u9tu3Bv98",
+      "title": "FREE CHAT",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-11-14T15:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=g4u9tu3Bv98",
+      "thumbnailUrl": "https://i.ytimg.com/vi/g4u9tu3Bv98/maxresdefault.jpg?v=68d8fc72",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-11-14T15:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2022-05-27T07:49:19.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "R-bbgkjjNy8",
       "videoId": "R-bbgkjjNy8",
       "title": "【べまもぐ】い、異世界合体…!?カギンダコヌーンダコ！カームーチョ!を食す休日。【神椿】",
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-11-15T03:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-15T05:10:45.000Z",
       "url": "https://www.youtube.com/watch?v=R-bbgkjjNy8",
-      "thumbnailUrl": "https://i.ytimg.com/vi/R-bbgkjjNy8/maxresdefault.jpg?v=6af877b7",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R-bbgkjjNy8/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1743,11 +1798,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-15T03:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-13T08:13:30.000Z",
+      "actualStartTime": "2026-11-15T03:29:11.000Z",
+      "actualEndTime": "2026-11-15T05:10:45.000Z",
+      "publishedAt": "2026-11-15T05:17:46.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1776,6 +1831,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-06T09:37:01.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "6ZtbmJEkm8E",
+      "videoId": "6ZtbmJEkm8E",
+      "title": "【朝活】冬がこちらをみている❄️𓈒 𓂂𓏸 #みこもに",
+      "channelId": "UC1GH6W6CzBUCR_3oHegiBGw",
+      "channelName": "美古途 -MIKOTO- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-11-15T22:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=6ZtbmJEkm8E",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6ZtbmJEkm8E/maxresdefault.jpg?v=6af94b51",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-15T22:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-15T06:03:59.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

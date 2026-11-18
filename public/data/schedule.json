@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-18T11:28:07.272Z",
+  "generatedAt": "2026-11-18T20:36:42.328Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "Ufe4oAXQrWE",
       "videoId": "Ufe4oAXQrWE",
@@ -1757,9 +1783,9 @@
       "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
       "channelName": "ヰ世界情緒 -Isekaijoucho-",
       "startAt": "2026-11-18T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-18T12:07:13.000Z",
       "url": "https://www.youtube.com/watch?v=AAwPs8dXaQ0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/AAwPs8dXaQ0/maxresdefault.jpg?v=6af67d5f",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AAwPs8dXaQ0/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1769,11 +1795,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-11-18T11:00:00.000Z",
       "actualStartTime": "2026-11-18T10:57:06.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-11-13T03:00:44.000Z",
+      "actualEndTime": "2026-11-18T12:07:13.000Z",
+      "publishedAt": "2026-11-18T12:10:28.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1785,9 +1811,9 @@
       "channelId": "UCRYh9eOSnwcT6aftSf8hYUw",
       "channelName": "Sooda",
       "startAt": "2026-11-18T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-18T12:16:44.000Z",
       "url": "https://www.youtube.com/watch?v=75LhiGCxHDw",
-      "thumbnailUrl": "https://i.ytimg.com/vi/75LhiGCxHDw/maxresdefault.jpg?v=6af6b3c3",
+      "thumbnailUrl": "https://i.ytimg.com/vi/75LhiGCxHDw/maxresdefault.jpg",
       "group": "kuusou",
       "groupIds": [
         "kuusou"
@@ -1797,11 +1823,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-11-18T11:00:00.000Z",
       "actualStartTime": "2026-11-18T10:56:34.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-11-13T06:52:48.000Z",
+      "actualEndTime": "2026-11-18T12:16:44.000Z",
+      "publishedAt": "2026-11-18T12:48:56.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1864,6 +1890,35 @@
       "isManual": false
     },
     {
+      "id": "9jzuQapYIVs",
+      "videoId": "9jzuQapYIVs",
+      "title": "【おしゃべりキング】グッド・コミュニケーションのすゝめ【未確認少女観測部-vol.54】",
+      "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
+      "channelName": "花譜 -未確認少女観測部-",
+      "startAt": "2026-11-22T09:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=9jzuQapYIVs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9jzuQapYIVs/maxresdefault.jpg?v=6afd7ebe",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-22T09:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-18T10:32:28.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "QV-DbEKvZO4",
       "videoId": "QV-DbEKvZO4",
       "title": "🕯 生誕祭┊Birthday Night 2026┊#御莉姫生誕祭2026",
@@ -1916,6 +1971,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2022-05-10T05:05:52.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "t0Vnk1IFiGE",
+      "videoId": "t0Vnk1IFiGE",
+      "title": "ヰ世界情緒 - デビュー7周年記念生配信",
+      "channelId": "UCah4_WVjmr8XA7i5aigwV-Q",
+      "channelName": "ヰ世界情緒 -Isekaijoucho-",
+      "startAt": "2026-12-09T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=t0Vnk1IFiGE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/t0Vnk1IFiGE/maxresdefault.jpg?v=6afd2773",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-12-09T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-18T04:20:01.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

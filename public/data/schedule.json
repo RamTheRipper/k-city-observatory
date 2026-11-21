@@ -1,62 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T10:52:24.896Z",
+  "generatedAt": "2026-11-21T19:20:50.058Z",
   "items": [
     {
-      "id": "kJOIVjsM9jk",
-      "videoId": "kJOIVjsM9jk",
-      "title": "【 #ふかいです！ 】《新曲リリース記念歌枠》 MV公開まで理芽歌うってよ𓂃⟡.·",
-      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
-      "channelName": "理芽 -RIM-",
-      "startAt": "2026-10-21T10:00:00.000Z",
-      "endAt": "2026-10-21T11:31:44.000Z",
-      "url": "https://www.youtube.com/watch?v=kJOIVjsM9jk",
-      "thumbnailUrl": "https://i.ytimg.com/vi/kJOIVjsM9jk/maxresdefault.jpg",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
       "group": "vwp",
       "groupIds": [
         "vwp"
       ],
-      "primaryGroupId": "vwp",
       "tags": [
         "main"
       ],
-      "category": "",
       "status": "ended",
-      "scheduledStartTime": "2026-10-21T10:00:00.000Z",
-      "actualStartTime": "2026-10-21T10:01:16.000Z",
-      "actualEndTime": "2026-10-21T11:31:44.000Z",
-      "publishedAt": "2026-10-21T11:52:25.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "0Qlv3Dlodhg",
-      "videoId": "0Qlv3Dlodhg",
-      "title": "理芽 - ふかいです！  / RIM - Love Me, Own Me｜from 神椿",
-      "channelId": "UCfBkUgaJ6eqYA9_TX2cmq9A",
-      "channelName": "理芽 -RIM-",
-      "startAt": "2026-10-21T11:00:00.000Z",
-      "endAt": "2026-10-21T11:05:48.000Z",
-      "url": "https://www.youtube.com/watch?v=0Qlv3Dlodhg",
-      "thumbnailUrl": "https://i.ytimg.com/vi/0Qlv3Dlodhg/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
       "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-21T11:00:00.000Z",
-      "actualStartTime": "2026-10-21T11:00:10.000Z",
-      "actualEndTime": "2026-10-21T11:05:48.000Z",
-      "publishedAt": "2026-10-21T11:00:10.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "T2lPjAFZTrA",
@@ -1803,6 +1773,34 @@
       "actualStartTime": "2026-11-20T11:30:14.000Z",
       "actualEndTime": "2026-11-20T13:36:27.000Z",
       "publishedAt": "2026-11-20T13:42:56.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "iR6kXHr2YA0",
+      "videoId": "iR6kXHr2YA0",
+      "title": "【昼雑談】紅葉日和🍁お散歩とカメラ、捗るよね📸🚶【日曜お昼のひとやすみ】 #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-11-22T04:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=iR6kXHr2YA0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/iR6kXHr2YA0/maxresdefault.jpg?v=6b018ba4",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-22T04:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-21T12:16:33.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

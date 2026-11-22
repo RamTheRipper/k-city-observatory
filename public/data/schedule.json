@@ -1,33 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T19:45:22.488Z",
+  "generatedAt": "2026-11-22T20:59:25.864Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
     {
       "id": "jEPFRNQxavY",
       "videoId": "jEPFRNQxavY",
@@ -1756,9 +1730,9 @@
       "channelId": "UCkJYa9mVS25eHOO9bM7YK3Q",
       "channelName": "花譜 -未確認少女観測部-",
       "startAt": "2026-11-22T09:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-22T11:28:08.000Z",
       "url": "https://www.youtube.com/watch?v=9jzuQapYIVs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/9jzuQapYIVs/maxresdefault.jpg?v=6afd7ebe",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9jzuQapYIVs/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1769,11 +1743,11 @@
         "membership"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-11-22T09:00:00.000Z",
       "actualStartTime": "2026-11-22T08:59:14.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-11-18T10:32:28.000Z",
+      "actualEndTime": "2026-11-22T11:28:08.000Z",
+      "publishedAt": "2026-11-22T11:36:30.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

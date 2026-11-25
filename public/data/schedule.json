@@ -1,117 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T08:41:45.524Z",
+  "generatedAt": "2026-11-25T12:32:13.711Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "Gh8vlJqNykU",
-      "videoId": "Gh8vlJqNykU",
-      "title": "【歌ってみた】Golden - HUNTR/X covered covered by 幸祜【神椿】",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "startAt": "2026-10-25T09:55:00.000Z",
-      "endAt": "2026-10-25T09:59:20.000Z",
-      "url": "https://www.youtube.com/watch?v=Gh8vlJqNykU",
-      "thumbnailUrl": "https://i.ytimg.com/vi/Gh8vlJqNykU/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-25T09:55:00.000Z",
-      "actualStartTime": "2026-10-25T09:55:10.000Z",
-      "actualEndTime": "2026-10-25T09:59:20.000Z",
-      "publishedAt": "2026-10-25T09:55:10.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "SBpEVYDTujs",
-      "videoId": "SBpEVYDTujs",
-      "title": "幸祜-KOKO-【6周年記念生配信🎉】歌うぞ！！",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "startAt": "2026-10-25T10:00:00.000Z",
-      "endAt": "2026-10-25T10:55:00.000Z",
-      "url": "https://www.youtube.com/watch?v=SBpEVYDTujs",
-      "thumbnailUrl": "https://i.ytimg.com/vi/SBpEVYDTujs/maxresdefault.jpg",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "primaryGroupId": "vwp",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-25T10:00:00.000Z",
-      "actualStartTime": "2026-10-25T09:55:11.000Z",
-      "actualEndTime": "2026-10-25T10:55:00.000Z",
-      "publishedAt": "2026-10-25T11:50:24.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "aiLoxv-xh_I",
-      "videoId": "aiLoxv-xh_I",
-      "title": "【緊急特番】明透・琶舞 TWO-MAN LIVE「I」開催決定&明透3rd Album「BELOVED」琶舞1st Album「LOVELESS」同時リリース決定!!  〜集まれ皆のもの〜",
-      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
-      "channelName": "明透 -ᴀsᴜ-",
-      "startAt": "2026-10-25T11:00:00.000Z",
-      "endAt": "2026-10-25T11:58:49.000Z",
-      "url": "https://www.youtube.com/watch?v=aiLoxv-xh_I",
-      "thumbnailUrl": "https://i.ytimg.com/vi/aiLoxv-xh_I/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-25T11:00:00.000Z",
-      "actualStartTime": "2026-10-25T10:59:09.000Z",
-      "actualEndTime": "2026-10-25T11:58:49.000Z",
-      "publishedAt": "2026-10-25T12:08:22.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "RFYaEnH5WWI",
       "videoId": "RFYaEnH5WWI",
@@ -1825,9 +1715,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-11-25T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-11-25T10:58:31.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-11-19T04:43:30.000Z",
       "source": "youtube-details",
@@ -1854,7 +1744,7 @@
         "membership"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-25T12:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,

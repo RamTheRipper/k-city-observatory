@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T23:50:21.890Z",
+  "generatedAt": "2026-11-25T02:46:22.009Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "s5yVO6sq__0",
       "videoId": "s5yVO6sq__0",
@@ -1775,6 +1801,35 @@
       "actualStartTime": "2026-11-24T10:56:44.000Z",
       "actualEndTime": "2026-11-24T13:17:43.000Z",
       "publishedAt": "2026-11-24T13:27:17.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "i9XGPML0gMk",
+      "videoId": "i9XGPML0gMk",
+      "title": "【こんばんは夜雑談🌙】春猿火生配信",
+      "channelId": "UC5BzXtjnKt1fjEDjEJwx5JA",
+      "channelName": "春猿火 - Sub Channel - 台風倶楽部 -",
+      "startAt": "2026-11-24T14:30:00.000Z",
+      "endAt": "2026-11-24T16:06:17.000Z",
+      "url": "https://www.youtube.com/watch?v=i9XGPML0gMk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i9XGPML0gMk/maxresdefault.jpg",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "ended",
+      "scheduledStartTime": "2026-11-24T14:30:00.000Z",
+      "actualStartTime": "2026-11-24T14:30:40.000Z",
+      "actualEndTime": "2026-11-24T16:06:17.000Z",
+      "publishedAt": "2026-11-24T16:10:37.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

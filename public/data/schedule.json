@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T02:46:22.009Z",
+  "generatedAt": "2026-11-25T08:41:45.524Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -27,34 +27,6 @@
       "source": "manual",
       "startAtSource": "manual-scheduledStartTime",
       "isManual": true
-    },
-    {
-      "id": "s5yVO6sq__0",
-      "videoId": "s5yVO6sq__0",
-      "title": "【昼雑談】ハロウィン、近いね🎃【日曜お昼のひとやすみ】 #氷夏至生放送",
-      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-10-25T04:00:00.000Z",
-      "endAt": "2026-10-25T06:10:52.000Z",
-      "url": "https://www.youtube.com/watch?v=s5yVO6sq__0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/s5yVO6sq__0/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "tsumitobatsu",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-25T04:00:00.000Z",
-      "actualStartTime": "2026-10-25T03:54:48.000Z",
-      "actualEndTime": "2026-10-25T06:10:52.000Z",
-      "publishedAt": "2026-10-25T06:26:18.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
     },
     {
       "id": "Gh8vlJqNykU",
@@ -1863,6 +1835,63 @@
       "isManual": false
     },
     {
+      "id": "KNzPCWRI7vo",
+      "videoId": "KNzPCWRI7vo",
+      "title": "【 #理芽ニューロマ3 同時視聴会 】初現地ワンマンを振り返る！４thワンマンももうすぐそこまで来ている👀‼️ 理芽sub ch.「STRANGE GIRL CLUB」 #ストガル",
+      "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
+      "channelName": "理芽 -STRANGE GIRL CLUB-",
+      "startAt": "2026-11-25T12:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=KNzPCWRI7vo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KNzPCWRI7vo/maxresdefault.jpg?v=6b065ef5",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-25T12:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-25T04:07:15.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "UxVBCEG9B1Y",
+      "videoId": "UxVBCEG9B1Y",
+      "title": "【歌枠】キタニタツヤさん縛り👁️ #氷夏至生放送",
+      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
+      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-11-26T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=UxVBCEG9B1Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UxVBCEG9B1Y/maxresdefault.jpg?v=6b0647d0",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-26T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-25T02:28:30.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
       "id": "OSuw28JeOeo",
       "videoId": "OSuw28JeOeo",
       "title": "【神映画3選】明透が選ぶ、最高の映画 2026😎🎥【明透/神椿】",
@@ -1886,6 +1915,34 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-24T11:54:58.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "xvOBGvD0MKg",
+      "videoId": "xvOBGvD0MKg",
+      "title": "【寝落ちRADIO #3】眠たくなるまでおしゃべり🌕️.⋆̩꒰ঌアメリカでの生活あるある໒꒱⋆̩ #佳鏡院生放送",
+      "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
+      "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
+      "startAt": "2026-11-27T13:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=xvOBGvD0MKg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xvOBGvD0MKg/maxresdefault.jpg?v=6b0658a5",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "shinseiki",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-27T13:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-25T03:40:19.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

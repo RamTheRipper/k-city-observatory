@@ -1,34 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T12:11:11.973Z",
+  "generatedAt": "2026-11-26T21:38:14.702Z",
   "items": [
     {
-      "id": "QsbsDLy-oQE",
-      "videoId": "QsbsDLy-oQE",
-      "title": "【Phasmophobia】ララさん廉さん詩道くんと幽霊を見つけるよ  #氷夏至生放送",
-      "channelId": "UCTZyqEU7dSXbc4b-NBolgMg",
-      "channelName": "氷夏至 -HINAGESHI- / 罪十罰 from 少女革命計画",
-      "startAt": "2026-10-26T11:00:00.000Z",
-      "endAt": "2026-10-26T15:19:50.000Z",
-      "url": "https://www.youtube.com/watch?v=QsbsDLy-oQE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/QsbsDLy-oQE/maxresdefault.jpg",
-      "group": "girls_revolution_project",
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
       "groupIds": [
-        "girls_revolution_project"
+        "vwp"
       ],
-      "primaryGroupId": "girls_revolution_project",
       "tags": [
         "main"
       ],
-      "category": "tsumitobatsu",
       "status": "ended",
-      "scheduledStartTime": "2026-10-26T11:00:00.000Z",
-      "actualStartTime": "2026-10-26T10:56:18.000Z",
-      "actualEndTime": "2026-10-26T15:19:50.000Z",
-      "publishedAt": "2026-10-26T16:19:52.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
     },
     {
       "id": "5RQuONLyGBA",
@@ -1704,9 +1702,9 @@
       "channelId": "UCRvkXFtB70ZADg4L6A8L3wQ",
       "channelName": "CIEL",
       "startAt": "2026-11-26T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-26T13:02:39.000Z",
       "url": "https://www.youtube.com/watch?v=RhyYrYsIlxE",
-      "thumbnailUrl": "https://i.ytimg.com/vi/RhyYrYsIlxE/maxresdefault.jpg?v=6b063f35",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RhyYrYsIlxE/maxresdefault.jpg",
       "group": "kuusou",
       "groupIds": [
         "kuusou"
@@ -1716,11 +1714,11 @@
         "main"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-11-26T11:00:00.000Z",
       "actualStartTime": "2026-11-26T10:52:04.000Z",
-      "actualEndTime": null,
-      "publishedAt": "2026-11-24T13:49:29.000Z",
+      "actualEndTime": "2026-11-26T13:02:39.000Z",
+      "publishedAt": "2026-11-26T13:07:21.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1732,9 +1730,9 @@
       "channelId": "UCZYl1o6ftRLKZP6U4KjQl3g",
       "channelName": "理芽 -STRANGE GIRL CLUB-",
       "startAt": "2026-11-26T12:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-26T14:51:25.000Z",
       "url": "https://www.youtube.com/watch?v=1kkQu-ViG8M",
-      "thumbnailUrl": "https://i.ytimg.com/vi/1kkQu-ViG8M/maxresdefault.jpg?v=6b06d45e",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1kkQu-ViG8M/maxresdefault.jpg",
       "group": "vwp",
       "groupIds": [
         "vwp"
@@ -1745,11 +1743,39 @@
         "membership"
       ],
       "category": "",
-      "status": "live",
+      "status": "ended",
       "scheduledStartTime": "2026-11-26T12:00:00.000Z",
       "actualStartTime": "2026-11-26T11:58:07.000Z",
+      "actualEndTime": "2026-11-26T14:51:25.000Z",
+      "publishedAt": "2026-11-26T15:43:17.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "DHrPSBySR6M",
+      "videoId": "DHrPSBySR6M",
+      "title": "【 雑談 】世にも奇妙な昼間雑談。【神椿】",
+      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
+      "channelName": "琶舞 -ʙᴇᴍᴀ-",
+      "startAt": "2026-11-27T03:30:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=DHrPSBySR6M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DHrPSBySR6M/maxresdefault.jpg?v=6b07ea30",
+      "group": "sinsekai_record",
+      "groupIds": [
+        "sinsekai_record"
+      ],
+      "primaryGroupId": "sinsekai_record",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-27T03:30:00.000Z",
+      "actualStartTime": null,
       "actualEndTime": null,
-      "publishedAt": "2026-11-25T12:28:12.000Z",
+      "publishedAt": "2026-11-26T08:13:34.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

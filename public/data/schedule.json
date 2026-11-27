@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T01:55:03.053Z",
+  "generatedAt": "2026-11-27T08:40:58.739Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1759,9 +1759,9 @@
       "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
       "channelName": "琶舞 -ʙᴇᴍᴀ-",
       "startAt": "2026-11-27T03:30:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-27T05:28:43.000Z",
       "url": "https://www.youtube.com/watch?v=DHrPSBySR6M",
-      "thumbnailUrl": "https://i.ytimg.com/vi/DHrPSBySR6M/maxresdefault.jpg?v=6b07ea30",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DHrPSBySR6M/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1771,11 +1771,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-27T03:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-26T08:13:34.000Z",
+      "actualStartTime": "2026-11-27T03:29:40.000Z",
+      "actualEndTime": "2026-11-27T05:28:43.000Z",
+      "publishedAt": "2026-11-27T07:58:20.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

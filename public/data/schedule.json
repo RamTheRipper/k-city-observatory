@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T08:40:58.739Z",
+  "generatedAt": "2026-11-27T11:59:16.344Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "5RQuONLyGBA",
-      "videoId": "5RQuONLyGBA",
-      "title": "🕯【 歌枠 】 Azariさん縛り #御莉姫生放送",
-      "channelId": "UCPzB4ROWho13wC9ngTCz1hA",
-      "channelName": "御莉姫 -ORIHIME- / 心世紀 from 少女革命計画",
-      "startAt": "2026-10-27T11:00:00.000Z",
-      "endAt": "2026-10-27T11:23:16.000Z",
-      "url": "https://www.youtube.com/watch?v=5RQuONLyGBA",
-      "thumbnailUrl": "https://i.ytimg.com/vi/5RQuONLyGBA/maxresdefault.jpg",
-      "group": "girls_revolution_project",
-      "groupIds": [
-        "girls_revolution_project"
-      ],
-      "primaryGroupId": "girls_revolution_project",
-      "tags": [
-        "main"
-      ],
-      "category": "shinseiki",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-27T11:00:00.000Z",
-      "actualStartTime": "2026-10-27T10:25:24.000Z",
-      "actualEndTime": "2026-10-27T11:23:16.000Z",
-      "publishedAt": "2026-10-27T11:33:34.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "mpa_Hmd75c0",
       "videoId": "mpa_Hmd75c0",
@@ -1787,9 +1733,9 @@
       "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
       "channelName": "明透 -ᴀsᴜ-",
       "startAt": "2026-11-27T11:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-27T11:46:45.000Z",
       "url": "https://www.youtube.com/watch?v=OSuw28JeOeo",
-      "thumbnailUrl": "https://i.ytimg.com/vi/OSuw28JeOeo/maxresdefault.jpg?v=6b057b14",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OSuw28JeOeo/maxresdefault.jpg",
       "group": "sinsekai_record",
       "groupIds": [
         "sinsekai_record"
@@ -1799,11 +1745,11 @@
         "main"
       ],
       "category": "",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-27T11:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-24T11:54:58.000Z",
+      "actualStartTime": "2026-11-27T10:59:06.000Z",
+      "actualEndTime": "2026-11-27T11:46:45.000Z",
+      "publishedAt": "2026-11-27T11:55:44.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

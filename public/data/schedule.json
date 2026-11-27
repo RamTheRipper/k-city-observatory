@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T11:59:16.344Z",
+  "generatedAt": "2026-11-27T21:21:55.756Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "mpa_Hmd75c0",
       "videoId": "mpa_Hmd75c0",
@@ -1773,11 +1799,67 @@
         "main"
       ],
       "category": "shinseiki",
-      "status": "upcoming",
+      "status": "ended",
       "scheduledStartTime": "2026-11-27T13:00:00.000Z",
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-25T03:40:19.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "FBOWIox3oIc",
+      "videoId": "FBOWIox3oIc",
+      "title": "【歌枠】HoneyWorksさんの曲うたうよ🎤 #夕凪機生放送",
+      "channelId": "UC9tOWVNzMaXDD5SxKP1zAug",
+      "channelName": "夕凪機 -YUNAGI- / 罪十罰 from 少女革命計画",
+      "startAt": "2026-11-28T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=FBOWIox3oIc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FBOWIox3oIc/maxresdefault.jpg?v=6b0956b7",
+      "group": "girls_revolution_project",
+      "groupIds": [
+        "girls_revolution_project"
+      ],
+      "primaryGroupId": "girls_revolution_project",
+      "tags": [
+        "main"
+      ],
+      "category": "tsumitobatsu",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-11-28T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-27T10:08:52.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "5OfgY4_2gAI",
+      "videoId": "5OfgY4_2gAI",
+      "title": "【同時視聴】春猿火 3rd ONE-MAN LIVE シャーマニズムⅢ【#春猿火シャーマニズム3 /神椿】",
+      "channelId": "UCE7gtjLeZKNXLp5YURzYYeg",
+      "channelName": "春猿火 -HARUSARUHI-",
+      "startAt": "2026-12-05T10:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=5OfgY4_2gAI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5OfgY4_2gAI/maxresdefault.jpg?v=6b093c69",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "main"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-12-05T10:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-27T08:16:38.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

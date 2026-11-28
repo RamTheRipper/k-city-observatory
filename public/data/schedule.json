@@ -1,61 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-28T07:55:12.983Z",
+  "generatedAt": "2026-11-28T11:35:55.674Z",
   "items": [
-    {
-      "id": "c6KeOF5lR-g",
-      "videoId": "c6KeOF5lR-g",
-      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
-      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
-      "channelName": "幸祜 -KOKO-",
-      "group": "vwp",
-      "groupIds": [
-        "vwp"
-      ],
-      "tags": [
-        "main"
-      ],
-      "status": "ended",
-      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
-      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
-      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
-      "primaryGroupId": "vwp",
-      "startAt": "2026-06-23T11:30:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": null,
-      "source": "manual",
-      "startAtSource": "manual-scheduledStartTime",
-      "isManual": true
-    },
-    {
-      "id": "mpa_Hmd75c0",
-      "videoId": "mpa_Hmd75c0",
-      "title": "【弾き語り&雑談】こんばんは🌙Soodaです🫧【Sooda / #そーだろぐ 】",
-      "channelId": "UCRYh9eOSnwcT6aftSf8hYUw",
-      "channelName": "Sooda",
-      "startAt": "2026-10-28T10:00:00.000Z",
-      "endAt": "2026-10-28T11:20:11.000Z",
-      "url": "https://www.youtube.com/watch?v=mpa_Hmd75c0",
-      "thumbnailUrl": "https://i.ytimg.com/vi/mpa_Hmd75c0/maxresdefault.jpg",
-      "group": "kuusou",
-      "groupIds": [
-        "kuusou"
-      ],
-      "primaryGroupId": "kuusou",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-28T10:00:00.000Z",
-      "actualStartTime": "2026-10-28T09:57:36.000Z",
-      "actualEndTime": "2026-10-28T11:20:11.000Z",
-      "publishedAt": "2026-10-28T11:43:44.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
     {
       "id": "GTpM7x41-LQ",
       "videoId": "GTpM7x41-LQ",
@@ -80,62 +26,6 @@
       "actualStartTime": "2026-10-28T10:57:31.000Z",
       "actualEndTime": "2026-10-28T12:33:00.000Z",
       "publishedAt": "2026-10-28T13:57:19.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "mPn6__Ke6CI",
-      "videoId": "mPn6__Ke6CI",
-      "title": "明透 - PlayFull (from「Cross Night LIVE」)/ ASU - PlayFull (Live.ver)【神椿】",
-      "channelId": "UCBLGjbYv6-xxju1i44RjnnA",
-      "channelName": "明透 -ᴀsᴜ-",
-      "startAt": "2026-10-28T11:00:00.000Z",
-      "endAt": "2026-10-28T11:04:02.000Z",
-      "url": "https://www.youtube.com/watch?v=mPn6__Ke6CI",
-      "thumbnailUrl": "https://i.ytimg.com/vi/mPn6__Ke6CI/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-28T11:00:00.000Z",
-      "actualStartTime": "2026-10-28T11:00:07.000Z",
-      "actualEndTime": "2026-10-28T11:04:02.000Z",
-      "publishedAt": "2026-10-28T11:00:07.000Z",
-      "source": "youtube-details",
-      "startAtSource": "scheduledStartTime",
-      "isManual": false
-    },
-    {
-      "id": "zO-PT2xLZNc",
-      "videoId": "zO-PT2xLZNc",
-      "title": "琶舞 - Pain Killer (from「Cross Night LIVE」)/ BEMA - Pain Killer(Live.ver)【神椿】",
-      "channelId": "UCO6mA1hC3Gv9jEoCTITjAQw",
-      "channelName": "琶舞 -ʙᴇᴍᴀ-",
-      "startAt": "2026-10-28T11:30:00.000Z",
-      "endAt": "2026-10-28T11:34:26.000Z",
-      "url": "https://www.youtube.com/watch?v=zO-PT2xLZNc",
-      "thumbnailUrl": "https://i.ytimg.com/vi/zO-PT2xLZNc/maxresdefault.jpg",
-      "group": "sinsekai_record",
-      "groupIds": [
-        "sinsekai_record"
-      ],
-      "primaryGroupId": "sinsekai_record",
-      "tags": [
-        "main"
-      ],
-      "category": "",
-      "status": "ended",
-      "scheduledStartTime": "2026-10-28T11:30:00.000Z",
-      "actualStartTime": "2026-10-28T11:30:08.000Z",
-      "actualEndTime": "2026-10-28T11:34:26.000Z",
-      "publishedAt": "2026-10-28T11:30:08.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
@@ -1827,9 +1717,9 @@
         "main"
       ],
       "category": "tsumitobatsu",
-      "status": "upcoming",
+      "status": "live",
       "scheduledStartTime": "2026-11-28T11:00:00.000Z",
-      "actualStartTime": null,
+      "actualStartTime": "2026-11-28T10:56:49.000Z",
       "actualEndTime": null,
       "publishedAt": "2026-11-27T10:08:52.000Z",
       "source": "youtube-details",
@@ -1845,7 +1735,7 @@
       "startAt": "2026-12-01T11:00:00.000Z",
       "endAt": null,
       "url": "https://www.youtube.com/watch?v=1DeuDNEBv3U",
-      "thumbnailUrl": "https://i.ytimg.com/vi/1DeuDNEBv3U/maxresdefault.jpg?v=6b098c25",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1DeuDNEBv3U/maxresdefault.jpg?v=6b0a9fdb",
       "group": "vwp",
       "groupIds": [
         "vwp"

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-28T01:39:38.813Z",
+  "generatedAt": "2026-11-28T07:55:12.983Z",
   "items": [
     {
       "id": "c6KeOF5lR-g",
@@ -1832,6 +1832,35 @@
       "actualStartTime": null,
       "actualEndTime": null,
       "publishedAt": "2026-11-27T10:08:52.000Z",
+      "source": "youtube-details",
+      "startAtSource": "scheduledStartTime",
+      "isManual": false
+    },
+    {
+      "id": "1DeuDNEBv3U",
+      "videoId": "1DeuDNEBv3U",
+      "title": "【 めっちゃカメレオン 】絵描きの本気かくれんぼ会場🦎🔍 - ヰ世界情緒 | 視聴者参加型",
+      "channelId": "UC3VN9h8fokwB2XURWHNcdWw",
+      "channelName": "ヰ世界情緒 -ヰ世界電子通信部-",
+      "startAt": "2026-12-01T11:00:00.000Z",
+      "endAt": null,
+      "url": "https://www.youtube.com/watch?v=1DeuDNEBv3U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1DeuDNEBv3U/maxresdefault.jpg?v=6b098c25",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "primaryGroupId": "vwp",
+      "tags": [
+        "sub",
+        "membership"
+      ],
+      "category": "",
+      "status": "upcoming",
+      "scheduledStartTime": "2026-12-01T11:00:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": "2026-11-26T13:16:38.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false

@@ -1,7 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T23:20:43.997Z",
+  "generatedAt": "2026-11-28T01:39:38.813Z",
   "items": [
+    {
+      "id": "c6KeOF5lR-g",
+      "videoId": "c6KeOF5lR-g",
+      "title": "初メンツで命を預けるぜ...!!【LINK Penguins🐧】with 犬山たまき, Ajaka",
+      "channelId": "UC7Gow-kNHq21oejSIDg9PAg",
+      "channelName": "幸祜 -KOKO-",
+      "group": "vwp",
+      "groupIds": [
+        "vwp"
+      ],
+      "tags": [
+        "main"
+      ],
+      "status": "ended",
+      "scheduledStartTime": "2026-06-23T11:30:00.000Z",
+      "url": "https://www.youtube.com/watch?v=c6KeOF5lR-g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/c6KeOF5lR-g/hqdefault.jpg",
+      "primaryGroupId": "vwp",
+      "startAt": "2026-06-23T11:30:00.000Z",
+      "actualStartTime": null,
+      "actualEndTime": null,
+      "publishedAt": null,
+      "source": "manual",
+      "startAtSource": "manual-scheduledStartTime",
+      "isManual": true
+    },
     {
       "id": "mpa_Hmd75c0",
       "videoId": "mpa_Hmd75c0",
@@ -1761,9 +1787,9 @@
       "channelId": "UC0w13AZfaxfatdHdF-bhN3Q",
       "channelName": "佳鏡院 -KAKYOIN- / 心世紀 from 少女革命計画",
       "startAt": "2026-11-27T13:00:00.000Z",
-      "endAt": null,
+      "endAt": "2026-11-27T14:46:45.000Z",
       "url": "https://www.youtube.com/watch?v=xvOBGvD0MKg",
-      "thumbnailUrl": "https://i.ytimg.com/vi/xvOBGvD0MKg/maxresdefault.jpg?v=6b0658a5",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xvOBGvD0MKg/maxresdefault.jpg",
       "group": "girls_revolution_project",
       "groupIds": [
         "girls_revolution_project"
@@ -1775,9 +1801,9 @@
       "category": "shinseiki",
       "status": "ended",
       "scheduledStartTime": "2026-11-27T13:00:00.000Z",
-      "actualStartTime": null,
-      "actualEndTime": null,
-      "publishedAt": "2026-11-25T03:40:19.000Z",
+      "actualStartTime": "2026-11-27T12:57:22.000Z",
+      "actualEndTime": "2026-11-27T14:46:45.000Z",
+      "publishedAt": "2026-11-27T15:29:02.000Z",
       "source": "youtube-details",
       "startAtSource": "scheduledStartTime",
       "isManual": false
